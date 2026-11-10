@@ -27,6 +27,8 @@ export type Deal = {
   source_name: string;
   source_type: string;
   source_subreddit: string | null;
+  source_account: string | null;
+  source_official: boolean | number;
   verification_status: string;
   status: string;
   confidence: number;
@@ -97,6 +99,12 @@ function DealCard({ deal, rank }: { deal: Deal; rank?: number }) {
   const meta = categoryMeta[deal.category] ?? categoryMeta.other;
   const Icon = meta.icon;
   const verified = deal.verification_status === "verified";
+  const conflicting = deal.verification_status === "conflicting";
+  const verificationLabel = verified
+    ? "官方已验证"
+    : conflicting
+      ? "来源有冲突"
+      : "待核实";
   return (
     <article className="deal-card">
       <div className="deal-card__top">
@@ -119,12 +127,13 @@ function DealCard({ deal, rank }: { deal: Deal; rank?: number }) {
       <p className="deal-summary">{deal.summary}</p>
 
       <div className="status-row">
-        <span className={verified ? "status status--verified" : "status status--pending"}>
+        <span className={verified ? "status status--verified" : conflicting ? "status status--conflicting" : "status status--pending"}>
           {verified ? <BadgeCheck size={14} /> : <AlertTriangle size={14} />}
-          {verified ? "官方已验证" : "待核实"}
+          {verificationLabel}
         </span>
         <span className="status status--muted"><Clock3 size={14} /> 截止 {formatTime(deal.ends_at)}</span>
         {deal.source_type === "reddit" ? <span className="status status--reddit">Reddit 线索</span> : null}
+        {deal.source_type === "x" ? <span className={deal.source_official ? "status status--x-official" : "status status--x"}>{deal.source_official ? "X 官方账号" : "X 线索"}</span> : null}
       </div>
 
       <div className="deal-details">
@@ -136,7 +145,7 @@ function DealCard({ deal, rank }: { deal: Deal; rank?: number }) {
 
       <div className="deal-card__footer">
         <div className="source-note">
-          <span>来源：{deal.source_name}{deal.source_subreddit ? ` · r/${deal.source_subreddit}` : ""}</span>
+          <span>来源：{deal.source_name}{deal.source_subreddit ? ` · r/${deal.source_subreddit}` : ""}{deal.source_account ? ` · @${deal.source_account.replace(/^@/, "")}` : ""}</span>
           <span>最后验证：{formatTime(deal.last_verified_at)}</span>
         </div>
         <div className="link-row">
@@ -165,7 +174,10 @@ export default function DealDashboard({ deals, latestScan }: { deals: Deal[]; la
         if (activeModule === "ending") return isEndingSoon(deal);
         if (["ai", "crypto", "cloud"].includes(activeModule)) return deal.category === activeModule;
         if (activeModule === "banking") return ["banking", "cards"].includes(deal.category);
-        if (activeModule === "latest") return now - new Date(deal.first_seen_at).getTime() <= 24 * 60 * 60 * 1000 || deals.length <= 20;
+        if (activeModule === "latest") {
+          const firstSeen = new Date(deal.first_seen_at).getTime();
+          return Number.isFinite(firstSeen) && firstSeen <= now && now - firstSeen <= 24 * 60 * 60 * 1000;
+        }
         return true;
       })
       .sort((a, b) => activeModule === "high-value" ? b.value_score - a.value_score : new Date(b.first_seen_at).getTime() - new Date(a.first_seen_at).getTime());
@@ -174,8 +186,16 @@ export default function DealDashboard({ deals, latestScan }: { deals: Deal[]; la
   const activeCount = deals.filter((deal) => deal.status !== "expired").length;
   const verifiedCount = deals.filter((deal) => deal.verification_status === "verified" && deal.status !== "expired").length;
   const endingCount = deals.filter(isEndingSoon).length;
-  const redditCount = deals.filter((deal) => deal.source_type === "reddit" && deal.status !== "expired").length;
+  const socialLeadCount = deals.filter((deal) => (
+    deal.source_type === "reddit" || (deal.source_type === "x" && !deal.source_official)
+  ) && deal.status !== "expired").length;
   const currentLabel = categories.find((item) => item.id === activeModule)?.label ?? "优惠情报";
+  const scanHealthy = latestScan?.status === "success";
+  const scanStateLabel = !latestScan
+    ? "等待首次扫描"
+    : scanHealthy
+      ? "最近扫描成功"
+      : "最近扫描需检查";
 
   return (
     <div className="app-shell">
@@ -185,14 +205,16 @@ export default function DealDashboard({ deals, latestScan }: { deals: Deal[]; la
           <div><strong>GLOBAL DEAL</strong><span>HUNTER / 全球羊毛情报</span></div>
         </div>
 
-        <div className="live-chip"><i /> 监控系统在线 <span>2H</span></div>
+        <div className={scanHealthy ? "live-chip" : "live-chip live-chip--warning"}>
+          <i /> {scanStateLabel} <span>2H</span>
+        </div>
 
         <nav aria-label="情报模块">
           <p className="nav-label">情报模块</p>
           {categories.map((item) => {
             const Icon = item.icon;
             return (
-              <button key={item.id} className={activeModule === item.id ? "nav-item nav-item--active" : "nav-item"} onClick={() => setActiveModule(item.id)}>
+              <button type="button" key={item.id} aria-current={activeModule === item.id ? "page" : undefined} className={activeModule === item.id ? "nav-item nav-item--active" : "nav-item"} onClick={() => setActiveModule(item.id)}>
                 <Icon size={17} /><span>{item.label}</span><ChevronRight size={14} />
               </button>
             );
@@ -203,8 +225,8 @@ export default function DealDashboard({ deals, latestScan }: { deals: Deal[]; la
           <div className="source-panel__title"><ShieldCheck size={16} /> 来源策略</div>
           <p><b>Tier 1</b> 官方网站 / 公告</p>
           <p><b>Tier 2</b> 官方社媒 / 文档</p>
-          <p><b>线索</b> Reddit / 社区</p>
-          <small>社区信息未回溯官方前统一标记「待核实」</small>
+          <p><b>线索</b> Reddit / 非官方 X / 社区</p>
+          <small>社交信息未回溯官方前统一标记「待核实」</small>
         </div>
       </aside>
 
@@ -215,8 +237,8 @@ export default function DealDashboard({ deals, latestScan }: { deals: Deal[]; la
             <h1>{currentLabel}</h1>
           </div>
           <div className="topbar-actions">
-            <label className="search-box"><Search size={17} /><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="搜索活动、地区或来源" /></label>
-            <button className={verifiedOnly ? "filter-button filter-button--active" : "filter-button"} onClick={() => setVerifiedOnly((value) => !value)}>
+            <label className="search-box"><Search size={17} /><input aria-label="搜索活动、地区或来源" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="搜索活动、地区或来源" /></label>
+            <button type="button" aria-pressed={verifiedOnly} className={verifiedOnly ? "filter-button filter-button--active" : "filter-button"} onClick={() => setVerifiedOnly((value) => !value)}>
               <BadgeCheck size={16} /> 仅已验证
             </button>
           </div>
@@ -226,7 +248,7 @@ export default function DealDashboard({ deals, latestScan }: { deals: Deal[]; la
           <div className="metric-card metric-card--accent"><span>活跃优惠</span><strong>{activeCount}</strong><small>实时去重后的活动</small><Radar size={24} /></div>
           <div className="metric-card"><span>官方已验证</span><strong>{verifiedCount}</strong><small>可回溯一手来源</small><BadgeCheck size={24} /></div>
           <div className="metric-card"><span>7 天内截止</span><strong>{endingCount}</strong><small>建议优先处理</small><CalendarClock size={24} /></div>
-          <div className="metric-card"><span>Reddit 线索</span><strong>{redditCount}</strong><small>等待或完成交叉验证</small><WalletCards size={24} /></div>
+          <div className="metric-card"><span>社交线索</span><strong>{socialLeadCount}</strong><small>Reddit / X 等待交叉验证</small><WalletCards size={24} /></div>
         </section>
 
         <section className="intel-strip">
@@ -244,7 +266,7 @@ export default function DealDashboard({ deals, latestScan }: { deals: Deal[]; la
             <div className="empty-state">
               <div className="empty-radar"><Radar size={32} /></div>
               <h3>扫描队列已就绪</h3>
-              <p>首次定时任务完成后，经过官方回溯、地区条件识别与去重的优惠会出现在这里。Reddit 只作为发现线索，不会被自动当成事实。</p>
+              <p>首次定时任务完成后，经过官方回溯、地区条件识别与去重的优惠会出现在这里。Reddit 与非官方 X 帖子只作为发现线索，不会被自动当成事实。</p>
               <div className="empty-checks"><span><BadgeCheck size={15} /> 官方源优先</span><span><ShieldCheck size={15} /> 风险与条件必填</span><span><History size={15} /> 过期自动归档</span></div>
             </div>
           )}

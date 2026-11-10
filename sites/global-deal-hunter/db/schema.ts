@@ -23,6 +23,8 @@ export const deals = sqliteTable(
     sourceName: text("source_name").notNull(),
     sourceType: text("source_type").notNull(),
     sourceSubreddit: text("source_subreddit"),
+    sourceAccount: text("source_account"),
+    sourceOfficial: integer("source_official", { mode: "boolean" }).notNull().default(false),
     verificationStatus: text("verification_status").notNull().default("pending"),
     status: text("status").notNull().default("active"),
     confidence: integer("confidence").notNull().default(0),

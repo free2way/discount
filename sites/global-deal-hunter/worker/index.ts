@@ -1,6 +1,17 @@
 import handler from "vinext/server/fetch-handler";
 import { runWithConnectorBinding } from "../lib/connector-context";
 import type { ConnectorBinding } from "../lib/connector-contract.mjs";
+import {
+  DEAL_CATEGORIES,
+  DEAL_STATUSES,
+  SOURCE_TYPES,
+  VERIFICATION_STATUSES,
+  enumString,
+  integerValue,
+  isoTimestamp,
+  parseOfferInput,
+  requiredString,
+} from "../lib/deal-input.mts";
 
 type JsonRpcRequest = {
   jsonrpc?: string;
@@ -18,7 +29,7 @@ const toolDefinitions = [
       required: ["name", "category", "summary", "value_label", "requirements", "regions", "steps", "official_url", "source_url", "source_name", "source_type", "verification_status", "status", "confidence", "risk_notes"],
       properties: {
         name: { type: "string" },
-        category: { type: "string", enum: ["ai", "crypto", "cards", "banking", "cloud", "software", "other"] },
+        category: { type: "string", enum: DEAL_CATEGORIES },
         summary: { type: "string" },
         value_amount: { type: ["number", "null"] },
         value_currency: { type: ["string", "null"] },
@@ -33,10 +44,12 @@ const toolDefinitions = [
         official_url: { type: "string" },
         source_url: { type: "string" },
         source_name: { type: "string" },
-        source_type: { type: "string", enum: ["official", "reddit", "trusted_media", "community"] },
+        source_type: { type: "string", enum: SOURCE_TYPES },
         source_subreddit: { type: ["string", "null"] },
-        verification_status: { type: "string", enum: ["verified", "pending", "conflicting"] },
-        status: { type: "string", enum: ["active", "ending_soon", "expired", "unknown"] },
+        source_account: { type: ["string", "null"], description: "X handle or source account name when applicable" },
+        source_official: { type: "boolean", description: "True only when the source account is controlled by the named organization" },
+        verification_status: { type: "string", enum: VERIFICATION_STATUSES },
+        status: { type: "string", enum: DEAL_STATUSES },
         confidence: { type: "integer", minimum: 0, maximum: 100 },
         risk_notes: { type: "string" },
       },
@@ -75,36 +88,6 @@ const toolDefinitions = [
   },
 ];
 
-function normalizeUrl(raw: string) {
-  try {
-    const url = new URL(raw);
-    ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "ref", "referral", "source"].forEach((key) => url.searchParams.delete(key));
-    url.hash = "";
-    url.hostname = url.hostname.toLowerCase().replace(/^www\./, "");
-    url.pathname = url.pathname.replace(/\/+$/, "") || "/";
-    return url.toString().replace(/\?$/, "");
-  } catch {
-    return raw.trim().toLowerCase();
-  }
-}
-
-function canonicalKey(args: Record<string, unknown>) {
-  const url = normalizeUrl(String(args.official_url || args.source_url || ""));
-  const name = String(args.name || "").toLowerCase().replace(/[^a-z0-9\u4e00-\u9fff]+/g, "-").replace(/^-|-$/g, "");
-  return `${url}|${name}`;
-}
-
-function clampNumber(value: unknown, min: number, max: number, fallback = 0) {
-  const number = Number(value);
-  return Number.isFinite(number) ? Math.max(min, Math.min(max, Math.round(number))) : fallback;
-}
-
-function requiredString(args: Record<string, unknown>, key: string) {
-  const value = String(args[key] ?? "").trim();
-  if (!value) throw new Error(`Missing required field: ${key}`);
-  return value;
-}
-
 function ok(id: JsonRpcRequest["id"], value: unknown) {
   return Response.json({ jsonrpc: "2.0", id: id ?? null, result: value });
 }
@@ -120,57 +103,53 @@ function toolResult(value: unknown, isError = false) {
 async function callTool(db: D1Database, name: string, args: Record<string, unknown>) {
   const now = new Date().toISOString();
   if (name === "upsert_offer") {
-    const fields = {
-      key: canonicalKey(args),
-      name: requiredString(args, "name"), category: requiredString(args, "category"), summary: requiredString(args, "summary"),
-      valueAmount: args.value_amount == null ? null : Number(args.value_amount), valueCurrency: args.value_currency == null ? null : String(args.value_currency),
-      valueLabel: requiredString(args, "value_label"), valueScore: clampNumber(args.value_score, 0, 100),
-      requirements: requiredString(args, "requirements"), regions: requiredString(args, "regions"), hiddenConditions: String(args.hidden_conditions ?? ""),
-      startsAt: args.starts_at == null ? null : String(args.starts_at), endsAt: args.ends_at == null ? null : String(args.ends_at),
-      steps: requiredString(args, "steps"), officialUrl: requiredString(args, "official_url"), sourceUrl: requiredString(args, "source_url"),
-      sourceName: requiredString(args, "source_name"), sourceType: requiredString(args, "source_type"), sourceSubreddit: args.source_subreddit == null ? null : String(args.source_subreddit),
-      verificationStatus: requiredString(args, "verification_status"), status: requiredString(args, "status"), confidence: clampNumber(args.confidence, 0, 100),
-      riskNotes: requiredString(args, "risk_notes"),
-    };
+    const fields = parseOfferInput(args);
     await db.prepare(`INSERT INTO deals (
       canonical_key, name, category, summary, value_amount, value_currency, value_label, value_score, requirements, regions,
       hidden_conditions, starts_at, ends_at, steps, official_url, source_url, source_name, source_type, source_subreddit,
-      verification_status, status, confidence, risk_notes, first_seen_at, last_verified_at, updated_at
-    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+      source_account, source_official, verification_status, status, confidence, risk_notes, first_seen_at, last_verified_at, updated_at
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     ON CONFLICT(canonical_key) DO UPDATE SET
       name=excluded.name, category=excluded.category, summary=excluded.summary, value_amount=excluded.value_amount,
       value_currency=excluded.value_currency, value_label=excluded.value_label, value_score=excluded.value_score,
       requirements=excluded.requirements, regions=excluded.regions, hidden_conditions=excluded.hidden_conditions,
       starts_at=excluded.starts_at, ends_at=excluded.ends_at, steps=excluded.steps, official_url=excluded.official_url,
       source_url=excluded.source_url, source_name=excluded.source_name, source_type=excluded.source_type,
-      source_subreddit=excluded.source_subreddit, verification_status=excluded.verification_status, status=excluded.status,
+      source_subreddit=excluded.source_subreddit, source_account=excluded.source_account, source_official=excluded.source_official,
+      verification_status=excluded.verification_status, status=excluded.status,
       confidence=excluded.confidence, risk_notes=excluded.risk_notes, last_verified_at=excluded.last_verified_at, updated_at=excluded.updated_at`)
       .bind(fields.key, fields.name, fields.category, fields.summary, fields.valueAmount, fields.valueCurrency, fields.valueLabel, fields.valueScore,
         fields.requirements, fields.regions, fields.hiddenConditions, fields.startsAt, fields.endsAt, fields.steps, fields.officialUrl,
-        fields.sourceUrl, fields.sourceName, fields.sourceType, fields.sourceSubreddit, fields.verificationStatus, fields.status,
+        fields.sourceUrl, fields.sourceName, fields.sourceType, fields.sourceSubreddit, fields.sourceAccount, fields.sourceOfficial ? 1 : 0,
+        fields.verificationStatus, fields.status,
         fields.confidence, fields.riskNotes, now, now, now).run();
     return { saved: true, canonical_key: fields.key, last_verified_at: now };
   }
   if (name === "archive_expired") {
-    const cutoff = String(args.now || now);
+    const cutoff = args.now == null ? now : isoTimestamp(args, "now", true)!;
     const result = await db.prepare("UPDATE deals SET status = 'expired', updated_at = ? WHERE status != 'expired' AND ends_at IS NOT NULL AND ends_at < ?")
       .bind(now, cutoff).run();
     return { archived: result.meta.changes, cutoff };
   }
   if (name === "record_scan_run") {
+    const startedAt = isoTimestamp(args, "started_at", true)!;
+    const finishedAt = isoTimestamp(args, "finished_at", true)!;
+    if (finishedAt < startedAt) {
+      throw new Error("finished_at must not be earlier than started_at");
+    }
     await db.prepare(`INSERT INTO scan_runs (started_at, finished_at, status, sources_checked, candidates_found, verified_count, pending_count, archived_count, notes)
       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`)
-      .bind(requiredString(args, "started_at"), requiredString(args, "finished_at"), requiredString(args, "status"),
-        clampNumber(args.sources_checked, 0, 100000), clampNumber(args.candidates_found, 0, 100000), clampNumber(args.verified_count, 0, 100000),
-        clampNumber(args.pending_count, 0, 100000), clampNumber(args.archived_count, 0, 100000), String(args.notes ?? "")).run();
+      .bind(startedAt, finishedAt, requiredString(args, "status", 40),
+        integerValue(args, "sources_checked", { max: 100_000 }), integerValue(args, "candidates_found", { max: 100_000 }), integerValue(args, "verified_count", { max: 100_000 }),
+        integerValue(args, "pending_count", { max: 100_000 }), integerValue(args, "archived_count", { max: 100_000 }), requiredString(args, "notes", 8_000)).run();
     return { recorded: true };
   }
   if (name === "list_offers") {
     const conditions: string[] = [];
     const bindings: unknown[] = [];
-    if (args.status) { conditions.push("status = ?"); bindings.push(String(args.status)); }
-    if (args.category) { conditions.push("category = ?"); bindings.push(String(args.category)); }
-    const limit = clampNumber(args.limit, 1, 100, 40);
+    if (args.status != null) { conditions.push("status = ?"); bindings.push(enumString(args, "status", DEAL_STATUSES)); }
+    if (args.category != null) { conditions.push("category = ?"); bindings.push(enumString(args, "category", DEAL_CATEGORIES)); }
+    const limit = integerValue(args, "limit", { min: 1, max: 100, fallback: 40 });
     const where = conditions.length ? `WHERE ${conditions.join(" AND ")}` : "";
     const result = await db.prepare(`SELECT * FROM deals ${where} ORDER BY value_score DESC, last_verified_at DESC LIMIT ?`).bind(...bindings, limit).all();
     return result.results;

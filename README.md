@@ -5,7 +5,7 @@
 核心能力：
 
 - 每 2 小时采集与复核（发布后由 Sites 云任务执行）
-- 官方来源优先，Reddit 仅作为发现线索
+- 官方来源优先，覆盖 Reddit 与 X；非官方社交帖子仅作为发现线索
 - 链接与活动名称规范化去重
 - 有效性、截止时间、地区、资格与隐藏条件识别
 - 价值评分与高价值排序
@@ -27,6 +27,8 @@ npm run dev
 ## 验证
 
 ```bash
+npm test
+npm run lint
 npx tsc --noEmit
 npm run build
 ```

@@ -118,6 +118,8 @@ Replace the filename with the pending migration and `DB` with your D1 binding na
 ## Diagnostic Commands
 
 - `npm run install:ci`: perform the one locked dependency install
+- `npm test`: run server-side input validation regression tests
+- `npm run lint`: run the project ESLint rules
 - `npm run dev`: start the Vite/Vinext development server
 - `npm run build`: build the deployable Sites artifact
 - `npm run build:vercel`: build a standard Next.js `.next` artifact for Vercel
