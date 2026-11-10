@@ -1,3 +1,6 @@
+import { canonicalKey, normalizeUrl } from "./deal-identity.ts";
+export { canonicalKey, normalizeUrl } from "./deal-identity.ts";
+
 export const DEAL_CATEGORIES = [
   "ai",
   "crypto",
@@ -47,7 +50,6 @@ function stringValue(
   }
   return value;
 }
-
 export function requiredString(
   args: Record<string, unknown>,
   key: string,
@@ -139,32 +141,6 @@ export function isoTimestamp(
     throw new Error(`${key} must be a valid ISO 8601 timestamp`);
   }
   return date.toISOString();
-}
-
-export function normalizeUrl(raw: string) {
-  const url = new URL(raw);
-  [
-    "utm_source",
-    "utm_medium",
-    "utm_campaign",
-    "utm_term",
-    "utm_content",
-    "ref",
-    "referral",
-    "source",
-  ].forEach((key) => url.searchParams.delete(key));
-  url.hash = "";
-  url.hostname = url.hostname.toLowerCase().replace(/^www\./, "");
-  url.pathname = url.pathname.replace(/\/+$/, "") || "/";
-  return url.toString().replace(/\?$/, "");
-}
-
-export function canonicalKey(officialUrl: string, name: string) {
-  const normalizedName = name
-    .toLowerCase()
-    .replace(/[^a-z0-9\u4e00-\u9fff]+/g, "-")
-    .replace(/^-|-$/g, "");
-  return `${normalizeUrl(officialUrl)}|${normalizedName}`;
 }
 
 export function parseOfferInput(args: Record<string, unknown>) {

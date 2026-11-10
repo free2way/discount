@@ -138,7 +138,7 @@ test("integerValue requires actual bounded integers", () => {
 
 test("canonicalKey removes tracking and normalizes the host", () => {
   assert.equal(
-    canonicalKey("https://www.Example.com/deal/?ref=abc", "Deal Name"),
-    "https://example.com/deal|deal-name",
+    canonicalKey("https://www.Example.com/deal/?z=2&UTM_Source=test&a=1#details", "Deal Name"),
+    "https://example.com/deal?a=1&z=2|deal-name",
   );
 });

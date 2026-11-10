@@ -1,0 +1,93 @@
+name: Scan deals and deploy
+
+on:
+  schedule:
+    - cron: "17 */2 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: deal-source-scan
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: sites/global-deal-hunter/package-lock.json
+      - name: Install locked dependencies
+        working-directory: sites/global-deal-hunter
+        run: npm ci --no-audit --no-fund
+      - name: Scan sources with per-source retries
+        working-directory: sites/global-deal-hunter
+        env:
+          JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
+        run: npm run scan:feeds
+      - name: Evaluate consecutive failures
+        id: health
+        continue-on-error: true
+        working-directory: sites/global-deal-hunter
+        run: npm run health:feeds
+      - name: Validate generated snapshots and application
+        working-directory: sites/global-deal-hunter
+        run: npm test && npm run lint && npx tsc --noEmit
+      - name: Commit refreshed snapshots
+        run: |
+          git config user.name "deal-hunter-bot"
+          git config user.email "deal-hunter-bot@users.noreply.github.com"
+          git add sites/global-deal-hunter/data/feed-scan.json sites/global-deal-hunter/data/candidate-review.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "chore(data): refresh deal scan"
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - name: Open or update source-health alert
+        if: steps.health.outcome == 'failure'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = "Source health alert: repeated scan failures";
+            try {
+              await github.rest.issues.getLabel({ owner: context.repo.owner, repo: context.repo.repo, name: "source-health" });
+            } catch (error) {
+              if (error.status !== 404) throw error;
+              await github.rest.issues.createLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                name: "source-health",
+                color: "B42318",
+                description: "Automated deal source health alerts"
+              });
+            }
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo, state: "open", labels: "source-health"
+            });
+            const body = `The scheduled deal scan recorded at least one source with three consecutive failures.\n\nRun: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            if (issues.length) {
+              await github.rest.issues.createComment({ owner: context.repo.owner, repo: context.repo.repo, issue_number: issues[0].number, body });
+            } else {
+              await github.rest.issues.create({ owner: context.repo.owner, repo: context.repo.repo, title, body, labels: ["source-health"] });
+            }
+            core.setFailed("One or more sources failed at least three consecutive scans");
+      - name: Close resolved source-health alerts
+        if: steps.health.outcome == 'success'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo, state: "open", labels: "source-health"
+            });
+            for (const issue of issues) {
+              await github.rest.issues.createComment({ owner: context.repo.owner, repo: context.repo.repo, issue_number: issue.number, body: "All monitored sources are below the consecutive-failure alert threshold. Closing automatically." });
+              await github.rest.issues.update({ owner: context.repo.owner, repo: context.repo.repo, issue_number: issue.number, state: "closed" });
+            }

@@ -5,5 +5,5 @@ export const dynamic = "force-dynamic";
 
 export default async function Home() {
   const data = await loadDashboard();
-  return <DealDashboard deals={data.deals} latestScan={data.latestScan} />;
+  return <DealDashboard deals={data.deals} latestScan={data.latestScan} sourceHealth={data.sourceHealth} />;
 }

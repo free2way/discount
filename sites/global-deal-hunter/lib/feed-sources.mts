@@ -1,5 +1,7 @@
 import { XMLParser } from "fast-xml-parser";
 import type { Deal } from "@/components/deal-dashboard";
+import { assessDealQuality } from "./deal-quality.mts";
+import { canonicalKey } from "./deal-identity.ts";
 
 export type FeedSourceDefinition = {
   id: string;
@@ -23,6 +25,24 @@ export type FeedSourceResult = {
   finalUrl: string | null;
   items: FeedItem[];
   error: string | null;
+  attempts: number;
+  responseMs: number;
+};
+
+export type ReviewCandidate = {
+  key: string;
+  source_id: string;
+  source_name: string;
+  source_url: string;
+  title: string;
+  summary: string;
+  published_at: string | null;
+  expires_at: string | null;
+  relevance_score: number;
+  risk_score: number;
+  risk_flags: string[];
+  reasons: string[];
+  review_status: "queued" | "rejected";
 };
 
 // Source selection and parsing rules are adapted from PerkRadar (MIT).
@@ -144,11 +164,11 @@ function list(node: unknown): unknown[] {
   return Array.isArray(node) ? node : [node];
 }
 
-function safeTime(value: unknown, now: number): number | null {
+function safeTime(value: unknown): number | null {
   const raw = nodeText(value).trim();
   if (!raw) return null;
   const parsed = Date.parse(raw);
-  if (!Number.isFinite(parsed) || parsed < MIN_PUBLISH_TIME || parsed > now + SEVEN_DAYS_MS) return null;
+  if (!Number.isFinite(parsed) || parsed < MIN_PUBLISH_TIME) return null;
   return parsed;
 }
 
@@ -213,7 +233,8 @@ export function parseSyndicationFeed(xml: string, now: number): FeedItem[] {
     const url = linkValue(record.link);
     if (!title || !url) continue;
     const summary = cleanText(nodeText(record.description) || nodeText(record.summary) || nodeText(record.encoded) || nodeText(record.content), 320);
-    const publishedAt = safeTime(record.pubDate, now) ?? safeTime(record.published, now) ?? safeTime(record.updated, now) ?? safeTime(record.date, now);
+    const publishedAt = safeTime(record.pubDate) ?? safeTime(record.published) ?? safeTime(record.updated) ?? safeTime(record.date);
+    if (publishedAt != null && publishedAt > now + SEVEN_DAYS_MS) continue;
     items.push({ url, title, summary, publishedAt, expiresAt: null });
   }
   return items;
@@ -293,7 +314,10 @@ async function readLimitedResponse(response: Response): Promise<string> {
 }
 
 export async function loadFeedSource(source: FeedSourceDefinition, now: number, fetchImpl: typeof fetch = fetch): Promise<FeedSourceResult> {
-  try {
+  const startedAt = Date.now();
+  let lastError = "抓取失败";
+  for (let attempt = 1; attempt <= 3; attempt += 1) {
+   try {
     const headers: Record<string, string> = {
       accept: "application/rss+xml, application/atom+xml, application/xml, application/json, text/markdown, text/plain, */*",
       "user-agent": "GlobalDealHunter/1.0 (+https://github.com/free2way/discount)",
@@ -316,11 +340,13 @@ export async function loadFeedSource(source: FeedSourceDefinition, now: number, 
       const allowed = onAllowedHost(item.url, source);
       return allowed ? [{ ...item, url: allowed }] : [];
     });
-    return { source, ok: true, finalUrl: response.url || source.url, items, error: null };
-  } catch (error) {
-    const message = error instanceof Error ? error.message : String(error);
-    return { source, ok: false, finalUrl: null, items: [], error: message.slice(0, 180) || "抓取失败" };
+    return { source, ok: true, finalUrl: response.url || source.url, items, error: null, attempts: attempt, responseMs: Date.now() - startedAt };
+   } catch (error) {
+    lastError = (error instanceof Error ? error.message : String(error)).slice(0, 180) || "抓取失败";
+    if (attempt < 3) await new Promise((resolve) => setTimeout(resolve, attempt * 750));
+   }
   }
+  return { source, ok: false, finalUrl: null, items: [], error: lastError, attempts: 3, responseMs: Date.now() - startedAt };
 }
 
 export async function scanFeedSources(now = Date.now(), fetchImpl: typeof fetch = fetch): Promise<FeedSourceResult[]> {
@@ -357,14 +383,16 @@ export function feedResultsToDeals(
   return results.flatMap((result) => {
     if (!result.ok) return [];
     return result.items
-      .filter((item) => item.expiresAt ? item.expiresAt > now : item.publishedAt == null || item.publishedAt >= cutoff)
+      .filter((item) => (item.expiresAt == null || item.expiresAt > now)
+        && (item.publishedAt == null || (item.publishedAt >= cutoff && item.publishedAt <= now)))
+      .filter((item) => result.source.id === "epic" || assessDealQuality(item.title, item.summary).publish)
       .sort((a, b) => (b.publishedAt ?? now) - (a.publishedAt ?? now))
       .slice(0, MAX_DASHBOARD_ITEMS_PER_SOURCE)
       .map((item) => {
         const official = result.source.id === "epic";
         const category = categoryFor(item.title, result.source.id);
         const endingSoon = item.expiresAt != null && item.expiresAt - now <= SEVEN_DAYS_MS;
-        const firstSeen = previousFirstSeen.get(item.url) ?? scannedAt;
+        const firstSeen = previousFirstSeen.get(canonicalKey(item.url, item.title)) ?? scannedAt;
         return {
           id: stableId(item.url),
           name: item.title,
@@ -396,4 +424,31 @@ export function feedResultsToDeals(
         } satisfies Deal;
       });
   });
+}
+
+export function feedResultsToReviewCandidates(results: FeedSourceResult[], now = Date.now()): ReviewCandidate[] {
+  const cutoff = now - SEVEN_DAYS_MS;
+  return results.flatMap((result) => result.items
+    .filter((item) => (item.expiresAt == null || item.expiresAt > now)
+      && (item.publishedAt == null || (item.publishedAt >= cutoff && item.publishedAt <= now)))
+    .map((item) => {
+    const quality = result.source.id === "epic"
+      ? { relevanceScore: 100, riskScore: 0, publish: true, riskFlags: [], reasons: ["官方零价促销"] }
+      : assessDealQuality(item.title, item.summary);
+    return {
+      key: `${result.source.id}:${canonicalFeedUrl(item.url)}`,
+      source_id: result.source.id,
+      source_name: result.source.name,
+      source_url: item.url,
+      title: item.title,
+      summary: item.summary,
+      published_at: item.publishedAt == null ? null : new Date(item.publishedAt).toISOString(),
+      expires_at: item.expiresAt == null ? null : new Date(item.expiresAt).toISOString(),
+      relevance_score: quality.relevanceScore,
+      risk_score: quality.riskScore,
+      risk_flags: quality.riskFlags,
+      reasons: quality.reasons,
+      review_status: quality.riskFlags.length ? "rejected" : "queued",
+    } satisfies ReviewCandidate;
+  }));
 }

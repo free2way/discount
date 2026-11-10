@@ -1,12 +1,14 @@
 import type { Deal, ScanRun } from "@/components/deal-dashboard";
 import feedScan from "@/data/feed-scan.json";
 import { initialScanDeals, initialScanRun } from "@/data/initial-scan";
+import { dealUrlKey } from "@/lib/deal-identity";
 
 const byUrl = new Map<string, Deal>();
 for (const deal of [...initialScanDeals, ...(feedScan.deals as Deal[])]) {
-  const current = byUrl.get(deal.official_url);
+  const key = dealUrlKey(deal.official_url);
+  const current = byUrl.get(key);
   if (!current || deal.verification_status === "verified" || current.verification_status !== "verified") {
-    byUrl.set(deal.official_url, deal);
+    byUrl.set(key, deal);
   }
 }
 
@@ -28,3 +30,27 @@ export const snapshotScanRun: Exclude<ScanRun, null> = {
   archived_count: snapshotDeals.filter((deal) => deal.status === "expired").length,
   notes: `官方、X、Reddit 与 7 个订阅源合并快照；订阅源状态：${feedScan.status}，失败 ${feedScan.failures.length} 个。`,
 };
+
+type SnapshotSourceResult = {
+  source_id: string;
+  source_name: string;
+  ok: boolean;
+  count: number;
+  attempts?: number;
+  response_ms?: number;
+  consecutive_failures?: number;
+  last_success_at?: string | null;
+  error?: string | null;
+};
+
+export const snapshotSourceHealth = (feedScan.source_results as SnapshotSourceResult[]).map((source) => ({
+  source_id: source.source_id,
+  source_name: source.source_name,
+  ok: source.ok,
+  count: source.count,
+  attempts: source.attempts ?? 1,
+  response_ms: source.response_ms ?? 0,
+  consecutive_failures: source.consecutive_failures ?? (source.ok ? 0 : 1),
+  last_success_at: source.last_success_at ?? (source.ok ? feedScan.generated_at : null),
+  error: source.error ?? (source.ok ? null : "抓取失败"),
+}));

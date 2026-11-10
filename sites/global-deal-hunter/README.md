@@ -6,6 +6,10 @@
 
 运行 `npm run scan:feeds` 可刷新七个固定订阅源并原子更新 `data/feed-scan.json`。LINUX DO 固定经过 Jina Reader；当公开访问返回 401 时，需要通过运行环境提供 `JINA_API_KEY`，不要把密钥提交到仓库。
 
+`.github/workflows/scan-and-deploy.yml` 每两小时运行一次。扫描器对每个来源最多尝试三次，更新公开快照、候选审核队列与连续失败计数；连续失败三次会创建或更新带 `source-health` 标签的 GitHub Issue。快照提交到 `main` 后，由仓库现有的 Vercel Git 集成自动部署。若希望启用 LINUX DO，请在 GitHub Actions secrets 中配置 `JINA_API_KEY`。
+
+公开看板只展示通过相关性和风险规则的候选。`/review` 展示等待人工回溯或已被规则拦截的条目。收藏、地区/资格筛选和浏览器提醒默认保存在当前设备；D1 同时包含用户偏好、收藏、提醒与通知事件表，为后续跨设备同步保留服务端模型。
+
 A clean full-stack starter running on [vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and Drizzle support.
 
 ## Prerequisites

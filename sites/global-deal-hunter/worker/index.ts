@@ -9,6 +9,7 @@ import {
   enumString,
   integerValue,
   isoTimestamp,
+  optionalString,
   parseOfferInput,
   requiredString,
 } from "../lib/deal-input.mts";
@@ -23,7 +24,7 @@ type JsonRpcRequest = {
 const toolDefinitions = [
   {
     name: "upsert_offer",
-    description: "Create or update one deal. The server deduplicates by normalized official/source URL and deal name.",
+    description: "Create or update one deal. Existing records are matched by normalized official URL before the URL-and-name fallback key is used.",
     inputSchema: {
       type: "object",
       required: ["name", "category", "summary", "value_label", "requirements", "regions", "steps", "official_url", "source_url", "source_name", "source_type", "verification_status", "status", "confidence", "risk_notes"],
@@ -86,14 +87,64 @@ const toolDefinitions = [
     description: "Read aggregate counts and the latest scan status.",
     inputSchema: { type: "object", properties: {} },
   },
+  {
+    name: "list_review_candidates",
+    description: "Read candidates waiting for human verification. This does not publish them.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        review_status: { type: "string", enum: ["queued", "investigating", "rejected", "promoted"] },
+        limit: { type: "integer", minimum: 1, maximum: 100 },
+      },
+    },
+  },
+  {
+    name: "review_candidate",
+    description: "Move a candidate through the review queue. Promoting still requires a complete upsert_offer call.",
+    inputSchema: {
+      type: "object",
+      required: ["candidate_id", "decision", "reviewed_by"],
+      properties: {
+        candidate_id: { type: "integer", minimum: 1 },
+        decision: { type: "string", enum: ["investigating", "rejected", "promoted"] },
+        notes: { type: "string" },
+        reviewed_by: { type: "string" },
+      },
+    },
+  },
+  {
+    name: "list_offer_evidence",
+    description: "Read every source and verification snapshot attached to an offer.",
+    inputSchema: {
+      type: "object",
+      required: ["deal_id"],
+      properties: { deal_id: { type: "integer", minimum: 1 } },
+    },
+  },
 ];
+
+const WRITE_TOOLS = new Set(["upsert_offer", "archive_expired", "record_scan_run", "review_candidate"]);
+
+async function sha256(value: string) {
+  const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(value));
+  return [...new Uint8Array(digest)].map((byte) => byte.toString(16).padStart(2, "0")).join("");
+}
+
+async function secureTokenEqual(left: string, right: string) {
+  const [leftHash, rightHash] = await Promise.all([sha256(left), sha256(right)]);
+  let difference = 0;
+  for (let index = 0; index < leftHash.length; index += 1) {
+    difference |= leftHash.charCodeAt(index) ^ rightHash.charCodeAt(index);
+  }
+  return difference === 0;
+}
 
 function ok(id: JsonRpcRequest["id"], value: unknown) {
   return Response.json({ jsonrpc: "2.0", id: id ?? null, result: value });
 }
 
-function fail(id: JsonRpcRequest["id"], message: string, code = -32603) {
-  return Response.json({ jsonrpc: "2.0", id: id ?? null, error: { code, message } }, { status: code === -32603 ? 500 : 400 });
+function fail(id: JsonRpcRequest["id"], message: string, code = -32603, status = code === -32603 ? 500 : 400) {
+  return Response.json({ jsonrpc: "2.0", id: id ?? null, error: { code, message } }, { status });
 }
 
 function toolResult(value: unknown, isError = false) {
@@ -104,6 +155,9 @@ async function callTool(db: D1Database, name: string, args: Record<string, unkno
   const now = new Date().toISOString();
   if (name === "upsert_offer") {
     const fields = parseOfferInput(args);
+    const existing = await db.prepare("SELECT canonical_key FROM deals WHERE official_url = ? LIMIT 1")
+      .bind(fields.officialUrl).first<{ canonical_key: string }>();
+    const recordKey = existing?.canonical_key ?? fields.key;
     await db.prepare(`INSERT INTO deals (
       canonical_key, name, category, summary, value_amount, value_currency, value_label, value_score, requirements, regions,
       hidden_conditions, starts_at, ends_at, steps, official_url, source_url, source_name, source_type, source_subreddit,
@@ -118,12 +172,51 @@ async function callTool(db: D1Database, name: string, args: Record<string, unkno
       source_subreddit=excluded.source_subreddit, source_account=excluded.source_account, source_official=excluded.source_official,
       verification_status=excluded.verification_status, status=excluded.status,
       confidence=excluded.confidence, risk_notes=excluded.risk_notes, last_verified_at=excluded.last_verified_at, updated_at=excluded.updated_at`)
-      .bind(fields.key, fields.name, fields.category, fields.summary, fields.valueAmount, fields.valueCurrency, fields.valueLabel, fields.valueScore,
+      .bind(recordKey, fields.name, fields.category, fields.summary, fields.valueAmount, fields.valueCurrency, fields.valueLabel, fields.valueScore,
         fields.requirements, fields.regions, fields.hiddenConditions, fields.startsAt, fields.endsAt, fields.steps, fields.officialUrl,
         fields.sourceUrl, fields.sourceName, fields.sourceType, fields.sourceSubreddit, fields.sourceAccount, fields.sourceOfficial ? 1 : 0,
         fields.verificationStatus, fields.status,
         fields.confidence, fields.riskNotes, now, now, now).run();
-    return { saved: true, canonical_key: fields.key, last_verified_at: now };
+    const deal = await db.prepare("SELECT id FROM deals WHERE canonical_key = ? LIMIT 1").bind(recordKey).first<{ id: number }>();
+    if (!deal) throw new Error("Saved offer could not be read back");
+    const snapshot = {
+      name: fields.name, category: fields.category, summary: fields.summary, value_amount: fields.valueAmount,
+      value_currency: fields.valueCurrency, value_label: fields.valueLabel, value_score: fields.valueScore,
+      requirements: fields.requirements, regions: fields.regions, hidden_conditions: fields.hiddenConditions,
+      starts_at: fields.startsAt, ends_at: fields.endsAt, steps: fields.steps, official_url: fields.officialUrl,
+      verification_status: fields.verificationStatus, status: fields.status, confidence: fields.confidence,
+      risk_notes: fields.riskNotes,
+    };
+    const snapshotJson = JSON.stringify(snapshot);
+    const contentHash = await sha256(snapshotJson);
+    const previous = await db.prepare("SELECT snapshot_json FROM deal_versions WHERE deal_id = ? ORDER BY verified_at DESC LIMIT 1")
+      .bind(deal.id).first<{ snapshot_json: string }>();
+    let changedFields: string[] = [];
+    if (previous?.snapshot_json) {
+      try {
+        const old = JSON.parse(previous.snapshot_json) as Record<string, unknown>;
+        changedFields = Object.entries(snapshot).filter(([key, value]) => JSON.stringify(old[key]) !== JSON.stringify(value)).map(([key]) => key);
+      } catch {
+        changedFields = Object.keys(snapshot);
+      }
+    }
+    const evidenceHash = await sha256(JSON.stringify({ source_url: fields.sourceUrl, summary: fields.summary, verification_status: fields.verificationStatus }));
+    await db.batch([
+      db.prepare(`INSERT INTO deal_evidence
+        (deal_id, source_url, source_name, source_type, source_account, source_subreddit, source_official, verification_status, excerpt, content_hash, observed_at, updated_at)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ON CONFLICT(deal_id, source_url) DO UPDATE SET source_name=excluded.source_name, source_type=excluded.source_type,
+        source_account=excluded.source_account, source_subreddit=excluded.source_subreddit, source_official=excluded.source_official,
+        verification_status=excluded.verification_status, excerpt=excluded.excerpt, content_hash=excluded.content_hash,
+        observed_at=excluded.observed_at, updated_at=excluded.updated_at`)
+        .bind(deal.id, fields.sourceUrl, fields.sourceName, fields.sourceType, fields.sourceAccount, fields.sourceSubreddit,
+          fields.sourceOfficial ? 1 : 0, fields.verificationStatus, fields.summary, evidenceHash, now, now),
+      db.prepare(`INSERT OR IGNORE INTO deal_versions
+        (deal_id, content_hash, snapshot_json, changed_fields_json, verification_status, verified_at)
+        VALUES (?, ?, ?, ?, ?, ?)`)
+        .bind(deal.id, contentHash, snapshotJson, JSON.stringify(changedFields), fields.verificationStatus, now),
+    ]);
+    return { saved: true, deal_id: deal.id, canonical_key: recordKey, last_verified_at: now, changed_fields: changedFields };
   }
   if (name === "archive_expired") {
     const cutoff = args.now == null ? now : isoTimestamp(args, "now", true)!;
@@ -165,6 +258,33 @@ async function callTool(db: D1Database, name: string, args: Record<string, unkno
     ]);
     return { counts: counts.results[0] ?? {}, latest_scan: latest.results[0] ?? null };
   }
+  if (name === "list_review_candidates") {
+    const limit = integerValue(args, "limit", { min: 1, max: 100, fallback: 40 });
+    const status = args.review_status == null ? "queued" : requiredString(args, "review_status", 30);
+    if (!["queued", "investigating", "rejected", "promoted"].includes(status)) throw new Error("Invalid review_status");
+    const result = await db.prepare("SELECT * FROM review_candidates WHERE review_status = ? ORDER BY relevance_score DESC, last_seen_at DESC LIMIT ?")
+      .bind(status, limit).all();
+    return result.results;
+  }
+  if (name === "review_candidate") {
+    const id = integerValue(args, "candidate_id", { min: 1, max: 2_000_000_000 });
+    const decision = requiredString(args, "decision", 30);
+    if (!["investigating", "rejected", "promoted"].includes(decision)) throw new Error("Invalid decision");
+    const notes = optionalString(args, "notes", 4_000) ?? "";
+    const reviewer = requiredString(args, "reviewed_by", 240);
+    const result = await db.prepare("UPDATE review_candidates SET review_status = ?, review_notes = ?, reviewed_at = ?, reviewed_by = ? WHERE id = ?")
+      .bind(decision, notes, now, reviewer, id).run();
+    if (!result.meta.changes) throw new Error("Candidate not found");
+    return { reviewed: true, candidate_id: id, decision };
+  }
+  if (name === "list_offer_evidence") {
+    const dealId = integerValue(args, "deal_id", { min: 1, max: 2_000_000_000 });
+    const [evidence, versions] = await db.batch([
+      db.prepare("SELECT * FROM deal_evidence WHERE deal_id = ? ORDER BY source_official DESC, observed_at DESC").bind(dealId),
+      db.prepare("SELECT id, content_hash, changed_fields_json, verification_status, verified_at FROM deal_versions WHERE deal_id = ? ORDER BY verified_at DESC LIMIT 50").bind(dealId),
+    ]);
+    return { evidence: evidence.results, versions: versions.results };
+  }
   throw new Error(`Unknown tool: ${name}`);
 }
 
@@ -176,6 +296,13 @@ async function handleMcp(request: Request, env: Cloudflare.Env) {
   if (body.method === "tools/call") {
     if (!body.params?.name) return fail(body.id, "Missing tool name", -32602);
     if (!env.DB) return fail(body.id, "Database binding is unavailable");
+    if (WRITE_TOOLS.has(body.params.name)) {
+      const configured = env.DEAL_ADMIN_TOKEN?.trim();
+      const supplied = request.headers.get("authorization")?.replace(/^Bearer\s+/i, "").trim();
+      if (!configured || !supplied || !(await secureTokenEqual(supplied, configured))) {
+        return fail(body.id, "Write access is not configured or authorized", -32001, 401);
+      }
+    }
     try {
       const value = await callTool(env.DB, body.params.name, body.params.arguments ?? {});
       return ok(body.id, toolResult(value));

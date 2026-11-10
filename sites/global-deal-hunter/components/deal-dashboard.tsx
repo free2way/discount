@@ -1,10 +1,10 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState, useSyncExternalStore } from "react";
 import {
-  AlertTriangle, ArrowUpRight, BadgeCheck, Banknote, Bot, Boxes, CalendarClock,
+  Activity, AlertTriangle, ArrowUpRight, BadgeCheck, Banknote, Bell, BellRing, Bot, Boxes, CalendarClock,
   ChevronRight, CircleDollarSign, Clock3, Cloud, CreditCard, Database, Gift,
-  Globe2, History, Radar, Search, ShieldCheck, Sparkles, WalletCards,
+  Globe2, Heart, History, Radar, Search, ShieldCheck, Sparkles, WalletCards,
 } from "lucide-react";
 
 export type Deal = {
@@ -48,6 +48,18 @@ export type ScanRun = {
   notes: string;
 } | null;
 
+export type SourceHealth = {
+  source_id: string;
+  source_name: string;
+  ok: boolean;
+  count: number;
+  attempts: number;
+  response_ms: number;
+  consecutive_failures: number;
+  last_success_at: string | null;
+  error: string | null;
+};
+
 const categories = [
   { id: "latest", label: "今日最新优惠", icon: Radar },
   { id: "high-value", label: "高价值排行榜", icon: Sparkles },
@@ -89,13 +101,27 @@ function formatTime(value: string | null) {
   return new Intl.DateTimeFormat("zh-CN", { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit", timeZone: "Asia/Shanghai" }).format(date);
 }
 
-function isEndingSoon(deal: Deal) {
-  if (!deal.ends_at || deal.status === "expired") return false;
-  const remaining = new Date(deal.ends_at).getTime() - Date.now();
+function isExpired(deal: Deal, now = Date.now()) {
+  if (deal.status === "expired") return true;
+  if (!deal.ends_at) return false;
+  const deadline = Date.parse(deal.ends_at);
+  return Number.isFinite(deadline) && deadline <= now;
+}
+
+function isEndingSoon(deal: Deal, now = Date.now()) {
+  if (!deal.ends_at || isExpired(deal, now)) return false;
+  const remaining = new Date(deal.ends_at).getTime() - now;
   return remaining > 0 && remaining <= 7 * 24 * 60 * 60 * 1000;
 }
 
-function DealCard({ deal, rank }: { deal: Deal; rank?: number }) {
+function DealCard({ deal, rank, favorite, reminder, onFavorite, onReminder }: {
+  deal: Deal;
+  rank?: number;
+  favorite: boolean;
+  reminder: boolean;
+  onFavorite: () => void;
+  onReminder: () => void;
+}) {
   const meta = categoryMeta[deal.category] ?? categoryMeta.other;
   const Icon = meta.icon;
   const verified = deal.verification_status === "verified";
@@ -151,6 +177,8 @@ function DealCard({ deal, rank }: { deal: Deal; rank?: number }) {
           <span>最后验证：{formatTime(deal.last_verified_at)}</span>
         </div>
         <div className="link-row">
+          <button type="button" className={favorite ? "icon-action icon-action--active" : "icon-action"} onClick={onFavorite} aria-label={favorite ? "取消收藏" : "收藏优惠"}><Heart size={15} fill={favorite ? "currentColor" : "none"} /></button>
+          <button type="button" className={reminder ? "icon-action icon-action--active" : "icon-action"} onClick={onReminder} aria-label={reminder ? "关闭截止与变化提醒" : "开启截止与变化提醒"}>{reminder ? <BellRing size={15} /> : <Bell size={15} />}</button>
           {sourceIsOfficialPage ? null : <a href={safeUrl(deal.source_url)} target="_blank" rel="noreferrer">{verified ? "原始来源" : "线索原文"}</a>}
           {verified || deal.source_url !== deal.official_url ? <a className="primary-link" href={safeUrl(deal.official_url)} target="_blank" rel="noreferrer">官方活动 <ArrowUpRight size={14} /></a> : null}
         </div>
@@ -159,23 +187,148 @@ function DealCard({ deal, rank }: { deal: Deal; rank?: number }) {
   );
 }
 
-export default function DealDashboard({ deals, latestScan }: { deals: Deal[]; latestScan: ScanRun }) {
+const FAVORITES_KEY = "deal-hunter:favorites";
+const REMINDERS_KEY = "deal-hunter:reminders";
+const BASELINES_KEY = "deal-hunter:baselines";
+const NOTIFIED_KEY = "deal-hunter:notified";
+const STORAGE_EVENT = "deal-hunter:storage";
+const EMPTY_ID_SNAPSHOT = "[]";
+
+function parseIds(raw: string) {
+  try {
+    const value = JSON.parse(raw);
+    return new Set<number>(Array.isArray(value) ? value.filter((id) => Number.isInteger(id)) : []);
+  } catch {
+    return new Set<number>();
+  }
+}
+
+function readStringSet(key: string) {
+  try {
+    const value = JSON.parse(localStorage.getItem(key) ?? "[]");
+    return new Set<string>(Array.isArray(value) ? value.filter((item) => typeof item === "string") : []);
+  } catch {
+    return new Set<string>();
+  }
+}
+
+function readBaselines() {
+  try {
+    const value = JSON.parse(localStorage.getItem(BASELINES_KEY) ?? "{}");
+    if (!value || typeof value !== "object" || Array.isArray(value)) return {};
+    return Object.fromEntries(Object.entries(value).filter((entry): entry is [string, string] => typeof entry[1] === "string"));
+  } catch {
+    return {};
+  }
+}
+
+function writeLocalStorage(key: string, value: unknown) {
+  try {
+    localStorage.setItem(key, JSON.stringify(value));
+    window.dispatchEvent(new CustomEvent(STORAGE_EVENT, { detail: key }));
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+function useStoredIds(key: string) {
+  const subscribe = useCallback((onStoreChange: () => void) => {
+    const handleStorage = (event: StorageEvent) => {
+      if (event.key === key) onStoreChange();
+    };
+    const handleLocalStorage = (event: Event) => {
+      if ((event as CustomEvent<string>).detail === key) onStoreChange();
+    };
+    window.addEventListener("storage", handleStorage);
+    window.addEventListener(STORAGE_EVENT, handleLocalStorage);
+    return () => {
+      window.removeEventListener("storage", handleStorage);
+      window.removeEventListener(STORAGE_EVENT, handleLocalStorage);
+    };
+  }, [key]);
+  const getSnapshot = useCallback(() => localStorage.getItem(key) ?? EMPTY_ID_SNAPSHOT, [key]);
+  const raw = useSyncExternalStore(subscribe, getSnapshot, () => EMPTY_ID_SNAPSHOT);
+  return useMemo(() => parseIds(raw), [raw]);
+}
+
+export default function DealDashboard({ deals, latestScan, sourceHealth }: { deals: Deal[]; latestScan: ScanRun; sourceHealth: SourceHealth[] }) {
   const [activeModule, setActiveModule] = useState("latest");
   const [query, setQuery] = useState("");
   const [verifiedOnly, setVerifiedOnly] = useState(false);
+  const [favoritesOnly, setFavoritesOnly] = useState(false);
+  const [regionFilter, setRegionFilter] = useState("all");
+  const [eligibilityFilter, setEligibilityFilter] = useState("all");
+  const favorites = useStoredIds(FAVORITES_KEY);
+  const reminders = useStoredIds(REMINDERS_KEY);
   const referenceTime = latestScan ? Date.parse(latestScan.finished_at) : 0;
+
+  useEffect(() => {
+    if (!reminders.size || typeof Notification === "undefined" || Notification.permission !== "granted") return;
+    const notified = readStringSet(NOTIFIED_KEY);
+    const baselines = readBaselines();
+    for (const deal of deals) {
+      if (!reminders.has(deal.id)) continue;
+      const remaining = deal.ends_at ? Date.parse(deal.ends_at) - Date.now() : Number.POSITIVE_INFINITY;
+      const baseline = baselines[String(deal.id)];
+      const valueChanged = Boolean(baseline && baseline !== deal.value_label);
+      const valueEvent = `${deal.id}:value:${deal.value_label}`;
+      const deadlineEvent = `${deal.id}:deadline:${deal.ends_at ?? "unknown"}`;
+      const eventKey = valueChanged ? valueEvent : deadlineEvent;
+      if (!notified.has(eventKey) && (valueChanged || (remaining > 0 && remaining <= 3 * 86_400_000))) {
+        try {
+          new Notification(valueChanged ? `${deal.name} 权益发生变化` : `${deal.name} 即将截止`, { body: valueChanged ? `当前：${deal.value_label}` : `截止：${formatTime(deal.ends_at)}` });
+          notified.add(eventKey);
+        } catch {
+          // Browsers can still reject notifications after permission was granted.
+        }
+      }
+      baselines[String(deal.id)] = deal.value_label;
+    }
+    writeLocalStorage(NOTIFIED_KEY, [...notified]);
+    writeLocalStorage(BASELINES_KEY, baselines);
+  }, [deals, reminders]);
+
+  function toggleStored(current: Set<number>, key: string, deal: Deal) {
+    const next = new Set(current);
+    if (next.has(deal.id)) next.delete(deal.id); else next.add(deal.id);
+    writeLocalStorage(key, [...next]);
+  }
+
+  async function toggleReminder(deal: Deal) {
+    const enabling = !reminders.has(deal.id);
+    if (enabling && typeof Notification !== "undefined" && Notification.permission === "default") {
+      try { await Notification.requestPermission(); } catch { /* Permission remains unchanged. */ }
+    }
+    if (enabling) {
+      const baselines = readBaselines();
+      baselines[String(deal.id)] = deal.value_label;
+      writeLocalStorage(BASELINES_KEY, baselines);
+    }
+    toggleStored(reminders, REMINDERS_KEY, deal);
+  }
 
   const visibleDeals = useMemo(() => {
     const hasFreshActiveDeals = deals.some((deal) => {
       const firstSeen = new Date(deal.first_seen_at).getTime();
-      return deal.status !== "expired" && Number.isFinite(firstSeen) && firstSeen <= referenceTime && referenceTime - firstSeen <= 24 * 60 * 60 * 1000;
+      return !isExpired(deal) && Number.isFinite(firstSeen) && firstSeen <= referenceTime && referenceTime - firstSeen <= 24 * 60 * 60 * 1000;
     });
     return deals
       .filter((deal) => {
         if (verifiedOnly && deal.verification_status !== "verified") return false;
+        if (favoritesOnly && !favorites.has(deal.id)) return false;
+        const regionText = deal.regions.toLowerCase();
+        if (regionFilter === "global" && !/全球|global|多数|支持地区/.test(regionText)) return false;
+        if (regionFilter === "us" && !/美国|美國|united states|\bus\b/.test(regionText)) return false;
+        if (regionFilter === "cn" && !/中国|中國|大陆|大陸|china|江苏/.test(regionText)) return false;
+        const eligibilityText = `${deal.requirements} ${deal.hidden_conditions}`.toLowerCase();
+        if (eligibilityFilter === "student" && !/学生|student|在校/.test(eligibilityText)) return false;
+        if (eligibilityFilter === "new" && !/新客户|新用户|new customer|new user|首次/.test(eligibilityText)) return false;
+        if (eligibilityFilter === "kyc" && !/kyc|身份|实名/.test(eligibilityText)) return false;
+        if (eligibilityFilter === "payment" && !/付款方式|支付卡|信用卡|银行卡|payment/.test(eligibilityText)) return false;
         if (query && !`${deal.name} ${deal.summary} ${deal.source_name} ${deal.regions}`.toLowerCase().includes(query.toLowerCase())) return false;
-        if (activeModule === "expired") return deal.status === "expired";
-        if (deal.status === "expired") return false;
+        if (activeModule === "expired") return isExpired(deal);
+        if (isExpired(deal)) return false;
         if (activeModule === "high-value") return deal.value_score >= 75;
         if (activeModule === "ending") return isEndingSoon(deal);
         if (["ai", "crypto", "cloud"].includes(activeModule)) return deal.category === activeModule;
@@ -196,20 +349,21 @@ export default function DealDashboard({ deals, latestScan }: { deals: Deal[]; la
         }
         return new Date(b.first_seen_at).getTime() - new Date(a.first_seen_at).getTime();
       });
-  }, [activeModule, deals, query, referenceTime, verifiedOnly]);
+  }, [activeModule, deals, eligibilityFilter, favorites, favoritesOnly, query, referenceTime, regionFilter, verifiedOnly]);
 
-  const activeCount = deals.filter((deal) => deal.status !== "expired").length;
+  const activeCount = deals.filter((deal) => !isExpired(deal)).length;
   const latestFreshCount = deals.filter((deal) => {
     const firstSeen = new Date(deal.first_seen_at).getTime();
-    return deal.status !== "expired" && Number.isFinite(firstSeen) && firstSeen <= referenceTime && referenceTime - firstSeen <= 24 * 60 * 60 * 1000;
+    return !isExpired(deal) && Number.isFinite(firstSeen) && firstSeen <= referenceTime && referenceTime - firstSeen <= 24 * 60 * 60 * 1000;
   }).length;
-  const verifiedCount = deals.filter((deal) => deal.verification_status === "verified" && deal.status !== "expired").length;
+  const verifiedCount = deals.filter((deal) => deal.verification_status === "verified" && !isExpired(deal)).length;
   const endingCount = deals.filter(isEndingSoon).length;
   const pendingExternalCount = deals.filter((deal) => (
     deal.source_type === "reddit" || deal.source_type === "x" || deal.source_type === "feed"
-  ) && deal.verification_status !== "verified" && deal.status !== "expired").length;
+  ) && deal.verification_status !== "verified" && !isExpired(deal)).length;
   const currentLabel = categories.find((item) => item.id === activeModule)?.label ?? "优惠情报";
   const scanHealthy = latestScan?.status === "success";
+  const healthySources = sourceHealth.filter((source) => source.ok).length;
   const scanStateLabel = !latestScan
     ? "等待首次扫描"
     : scanHealthy
@@ -238,6 +392,7 @@ export default function DealDashboard({ deals, latestScan }: { deals: Deal[]; la
               </button>
             );
           })}
+          <a className="nav-item" href="/review"><ShieldCheck size={17} /><span>候选审核队列</span><ChevronRight size={14} /></a>
         </nav>
 
         <div className="source-panel">
@@ -260,8 +415,17 @@ export default function DealDashboard({ deals, latestScan }: { deals: Deal[]; la
             <button type="button" aria-pressed={verifiedOnly} className={verifiedOnly ? "filter-button filter-button--active" : "filter-button"} onClick={() => setVerifiedOnly((value) => !value)}>
               <BadgeCheck size={16} /> 仅已验证
             </button>
+            <button type="button" aria-pressed={favoritesOnly} className={favoritesOnly ? "filter-button filter-button--active" : "filter-button"} onClick={() => setFavoritesOnly((value) => !value)}>
+              <Heart size={16} /> 收藏
+            </button>
           </div>
         </header>
+
+        <section className="personal-filters" aria-label="地区与资格筛选">
+          <label>地区<select value={regionFilter} onChange={(event) => setRegionFilter(event.target.value)}><option value="all">全部地区</option><option value="global">全球/广泛可用</option><option value="us">美国</option><option value="cn">中国</option></select></label>
+          <label>资格<select value={eligibilityFilter} onChange={(event) => setEligibilityFilter(event.target.value)}><option value="all">全部资格</option><option value="student">学生</option><option value="new">新用户/新客户</option><option value="kyc">需要 KYC</option><option value="payment">需要付款方式</option></select></label>
+          <span><Bell size={14} /> 收藏和提醒保存在本设备；授权浏览器通知后可接收截止及权益变化提醒。</span>
+        </section>
 
         <section className="metric-grid" aria-label="数据摘要">
           <div className="metric-card metric-card--accent"><span>活跃优惠</span><strong>{activeCount}</strong><small>实时去重后的活动</small><Radar size={24} /></div>
@@ -273,6 +437,7 @@ export default function DealDashboard({ deals, latestScan }: { deals: Deal[]; la
         <section className="intel-strip">
           <div><span className="pulse-dot" /><strong>最近扫描</strong><span>{latestScan ? formatTime(latestScan.finished_at) : "等待首次自动扫描"}</span></div>
           <div><Database size={15} /><span>候选 {latestScan?.candidates_found ?? 0}</span><span>验证 {latestScan?.verified_count ?? 0}</span><span>归档 {latestScan?.archived_count ?? 0}</span></div>
+          <div className={healthySources === sourceHealth.length ? "source-health source-health--ok" : "source-health source-health--warning"} title={sourceHealth.map((source) => `${source.source_name}: ${source.ok ? `正常，${source.count} 条` : source.error ?? "失败"}`).join("\n")}><Activity size={15} /><span>来源健康 {healthySources}/{sourceHealth.length}</span></div>
         </section>
 
         <section className="feed-heading">
@@ -281,7 +446,7 @@ export default function DealDashboard({ deals, latestScan }: { deals: Deal[]; la
         </section>
 
         <section className="deal-feed">
-          {visibleDeals.length ? visibleDeals.map((deal, index) => <DealCard key={`${deal.id}:${deal.official_url}`} deal={deal} rank={activeModule === "high-value" ? index + 1 : undefined} />) : (
+          {visibleDeals.length ? visibleDeals.map((deal, index) => <DealCard key={`${deal.id}:${deal.official_url}`} deal={deal} rank={activeModule === "high-value" ? index + 1 : undefined} favorite={favorites.has(deal.id)} reminder={reminders.has(deal.id)} onFavorite={() => toggleStored(favorites, FAVORITES_KEY, deal)} onReminder={() => void toggleReminder(deal)} />) : (
             <div className="empty-state">
               <div className="empty-radar"><Radar size={32} /></div>
               <h3>扫描队列已就绪</h3>
