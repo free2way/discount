@@ -1,4 +1,8 @@
-# vinext-starter
+# GLOBAL DEAL HUNTER｜全球羊毛情报中心
+
+一个同时支持标准 Next.js/Vercel 与 Vinext/Sites 的全球优惠情报看板。看板优先读取数据库；数据库未连接或为空时，会回退到最近一次经过官方复核的扫描快照，避免部署后出现空白数据页。
+
+当前来源类型包括官方网站、官方公告、X、Reddit、可信媒体和社区。X 与 Reddit 默认只用于发现线索；只有回溯到官方页面或条款后才标记为 `verified`。
 
 A clean full-stack starter running on [vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and Drizzle support.
 

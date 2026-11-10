@@ -132,7 +132,7 @@ function DealCard({ deal, rank }: { deal: Deal; rank?: number }) {
           {verificationLabel}
         </span>
         <span className="status status--muted"><Clock3 size={14} /> 截止 {formatTime(deal.ends_at)}</span>
-        {deal.source_type === "reddit" ? <span className="status status--reddit">Reddit 线索</span> : null}
+        {deal.source_type === "reddit" ? <span className="status status--reddit">Reddit 发现</span> : null}
         {deal.source_type === "x" ? <span className={deal.source_official ? "status status--x-official" : "status status--x"}>{deal.source_official ? "X 官方账号" : "X 线索"}</span> : null}
       </div>
 
@@ -161,9 +161,13 @@ export default function DealDashboard({ deals, latestScan }: { deals: Deal[]; la
   const [activeModule, setActiveModule] = useState("latest");
   const [query, setQuery] = useState("");
   const [verifiedOnly, setVerifiedOnly] = useState(false);
+  const referenceTime = latestScan ? Date.parse(latestScan.finished_at) : 0;
 
   const visibleDeals = useMemo(() => {
-    const now = Date.now();
+    const hasFreshActiveDeals = deals.some((deal) => {
+      const firstSeen = new Date(deal.first_seen_at).getTime();
+      return deal.status !== "expired" && Number.isFinite(firstSeen) && firstSeen <= referenceTime && referenceTime - firstSeen <= 24 * 60 * 60 * 1000;
+    });
     return deals
       .filter((deal) => {
         if (verifiedOnly && deal.verification_status !== "verified") return false;
@@ -176,18 +180,22 @@ export default function DealDashboard({ deals, latestScan }: { deals: Deal[]; la
         if (activeModule === "banking") return ["banking", "cards"].includes(deal.category);
         if (activeModule === "latest") {
           const firstSeen = new Date(deal.first_seen_at).getTime();
-          return Number.isFinite(firstSeen) && firstSeen <= now && now - firstSeen <= 24 * 60 * 60 * 1000;
+          return !hasFreshActiveDeals || (Number.isFinite(firstSeen) && firstSeen <= referenceTime && referenceTime - firstSeen <= 24 * 60 * 60 * 1000);
         }
         return true;
       })
       .sort((a, b) => activeModule === "high-value" ? b.value_score - a.value_score : new Date(b.first_seen_at).getTime() - new Date(a.first_seen_at).getTime());
-  }, [activeModule, deals, query, verifiedOnly]);
+  }, [activeModule, deals, query, referenceTime, verifiedOnly]);
 
   const activeCount = deals.filter((deal) => deal.status !== "expired").length;
+  const latestFreshCount = deals.filter((deal) => {
+    const firstSeen = new Date(deal.first_seen_at).getTime();
+    return deal.status !== "expired" && Number.isFinite(firstSeen) && firstSeen <= referenceTime && referenceTime - firstSeen <= 24 * 60 * 60 * 1000;
+  }).length;
   const verifiedCount = deals.filter((deal) => deal.verification_status === "verified" && deal.status !== "expired").length;
   const endingCount = deals.filter(isEndingSoon).length;
-  const socialLeadCount = deals.filter((deal) => (
-    deal.source_type === "reddit" || (deal.source_type === "x" && !deal.source_official)
+  const socialSourceCount = deals.filter((deal) => (
+    deal.source_type === "reddit" || deal.source_type === "x"
   ) && deal.status !== "expired").length;
   const currentLabel = categories.find((item) => item.id === activeModule)?.label ?? "优惠情报";
   const scanHealthy = latestScan?.status === "success";
@@ -248,7 +256,7 @@ export default function DealDashboard({ deals, latestScan }: { deals: Deal[]; la
           <div className="metric-card metric-card--accent"><span>活跃优惠</span><strong>{activeCount}</strong><small>实时去重后的活动</small><Radar size={24} /></div>
           <div className="metric-card"><span>官方已验证</span><strong>{verifiedCount}</strong><small>可回溯一手来源</small><BadgeCheck size={24} /></div>
           <div className="metric-card"><span>7 天内截止</span><strong>{endingCount}</strong><small>建议优先处理</small><CalendarClock size={24} /></div>
-          <div className="metric-card"><span>社交线索</span><strong>{socialLeadCount}</strong><small>Reddit / X 等待交叉验证</small><WalletCards size={24} /></div>
+          <div className="metric-card"><span>X / Reddit 来源</span><strong>{socialSourceCount}</strong><small>均保留原帖并回溯官方页</small><WalletCards size={24} /></div>
         </section>
 
         <section className="intel-strip">
@@ -257,7 +265,7 @@ export default function DealDashboard({ deals, latestScan }: { deals: Deal[]; la
         </section>
 
         <section className="feed-heading">
-          <div><h2>{currentLabel}</h2><p>{visibleDeals.length ? `共 ${visibleDeals.length} 条，按价值与新鲜度排序` : "系统只展示有来源记录；不会用示例优惠填充看板"}</p></div>
+          <div><h2>{currentLabel}</h2><p>{visibleDeals.length ? activeModule === "latest" && latestFreshCount === 0 ? `24 小时内暂无新增，显示最近收录的 ${visibleDeals.length} 条活跃优惠` : `共 ${visibleDeals.length} 条，按价值与新鲜度排序` : "系统只展示有来源记录；不会用示例优惠填充看板"}</p></div>
           <span className="sync-label"><Radar size={14} /> 每 2 小时更新</span>
         </section>
 
