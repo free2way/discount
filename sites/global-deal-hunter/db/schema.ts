@@ -1,0 +1,58 @@
+import { index, integer, real, sqliteTable, text, uniqueIndex } from "drizzle-orm/sqlite-core";
+
+export const deals = sqliteTable(
+  "deals",
+  {
+    id: integer("id").primaryKey({ autoIncrement: true }),
+    canonicalKey: text("canonical_key").notNull(),
+    name: text("name").notNull(),
+    category: text("category").notNull(),
+    summary: text("summary").notNull(),
+    valueAmount: real("value_amount"),
+    valueCurrency: text("value_currency"),
+    valueLabel: text("value_label").notNull(),
+    valueScore: integer("value_score").notNull().default(0),
+    requirements: text("requirements").notNull(),
+    regions: text("regions").notNull(),
+    hiddenConditions: text("hidden_conditions").notNull().default(""),
+    startsAt: text("starts_at"),
+    endsAt: text("ends_at"),
+    steps: text("steps").notNull(),
+    officialUrl: text("official_url").notNull(),
+    sourceUrl: text("source_url").notNull(),
+    sourceName: text("source_name").notNull(),
+    sourceType: text("source_type").notNull(),
+    sourceSubreddit: text("source_subreddit"),
+    verificationStatus: text("verification_status").notNull().default("pending"),
+    status: text("status").notNull().default("active"),
+    confidence: integer("confidence").notNull().default(0),
+    riskNotes: text("risk_notes").notNull().default(""),
+    firstSeenAt: text("first_seen_at").notNull(),
+    lastVerifiedAt: text("last_verified_at").notNull(),
+    updatedAt: text("updated_at").notNull(),
+  },
+  (table) => [
+    uniqueIndex("deals_canonical_key_unique").on(table.canonicalKey),
+    index("deals_status_idx").on(table.status),
+    index("deals_category_idx").on(table.category),
+    index("deals_ends_at_idx").on(table.endsAt),
+    index("deals_value_score_idx").on(table.valueScore),
+  ],
+);
+
+export const scanRuns = sqliteTable(
+  "scan_runs",
+  {
+    id: integer("id").primaryKey({ autoIncrement: true }),
+    startedAt: text("started_at").notNull(),
+    finishedAt: text("finished_at").notNull(),
+    status: text("status").notNull(),
+    sourcesChecked: integer("sources_checked").notNull().default(0),
+    candidatesFound: integer("candidates_found").notNull().default(0),
+    verifiedCount: integer("verified_count").notNull().default(0),
+    pendingCount: integer("pending_count").notNull().default(0),
+    archivedCount: integer("archived_count").notNull().default(0),
+    notes: text("notes").notNull().default(""),
+  },
+  (table) => [index("scan_runs_finished_at_idx").on(table.finishedAt)],
+);
