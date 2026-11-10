@@ -30,3 +30,18 @@ npm run dev
 npx tsc --noEmit
 npm run build
 ```
+
+## Vercel 部署
+
+Vercel 项目的 Root Directory 应设置为 `sites/global-deal-hunter`。仓库中的
+`vercel.json` 会使用标准 Next.js/Webpack 构建并生成 `.next`；不要把 Output
+Directory 手动改成 Vinext 的 `dist`。
+
+```bash
+cd sites/global-deal-hunter
+npm ci
+npm run build:vercel
+```
+
+`npm run build` 保留给 OpenAI Sites/Vinext，`npm run build:vercel` 用于 Vercel，
+两套产物不能混用。

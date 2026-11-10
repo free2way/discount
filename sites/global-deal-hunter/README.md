@@ -120,6 +120,7 @@ Replace the filename with the pending migration and `DB` with your D1 binding na
 - `npm run install:ci`: perform the one locked dependency install
 - `npm run dev`: start the Vite/Vinext development server
 - `npm run build`: build the deployable Sites artifact
+- `npm run build:vercel`: build a standard Next.js `.next` artifact for Vercel
 - `npm run start`: preview the built Worker locally with D1/R2 support
 - `npm run db:generate`: generate Drizzle migrations after schema changes
 
