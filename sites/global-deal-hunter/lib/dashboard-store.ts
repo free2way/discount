@@ -1,5 +1,5 @@
 import type { Deal, ScanRun } from "@/components/deal-dashboard";
-import { initialScanDeals, initialScanRun } from "@/data/initial-scan";
+import { snapshotDeals, snapshotScanRun } from "@/lib/dashboard-snapshot";
 
 /**
  * Vercel-safe dashboard loader.
@@ -12,5 +12,5 @@ export async function loadDashboard(): Promise<{
   deals: Deal[];
   latestScan: ScanRun;
 }> {
-  return { deals: initialScanDeals, latestScan: initialScanRun };
+  return { deals: snapshotDeals, latestScan: snapshotScanRun };
 }

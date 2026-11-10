@@ -102,6 +102,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .status--reddit { color: #b83b12; background: #fff0eb; }
 .status--x { color: #3f4a57; background: #edf0f3; }
 .status--x-official { color: #075e9d; background: #e8f4fd; }
+.status--feed { color: #3d5f21; background: #edf6e5; }
 .deal-details { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 15px 0 0 52px; padding-top: 13px; border-top: 1px solid #eef1f4; }
 .deal-details span { color: #9aa4af; font-size: 8px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; }
 .deal-details p { margin: 4px 0 0; color: #536173; font-size: 9px; line-height: 1.55; }

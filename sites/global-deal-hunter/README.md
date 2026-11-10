@@ -2,7 +2,9 @@
 
 一个同时支持标准 Next.js/Vercel 与 Vinext/Sites 的全球优惠情报看板。看板优先读取数据库；数据库未连接或为空时，会回退到最近一次经过官方复核的扫描快照，避免部署后出现空白数据页。
 
-当前来源类型包括官方网站、官方公告、X、Reddit、可信媒体和社区。X 与 Reddit 默认只用于发现线索；只有回溯到官方页面或条款后才标记为 `verified`。
+当前来源类型包括官方网站、官方公告、X、Reddit，以及 LINUX DO、V2EX、Epic、NodeSeek、小众软件、果核剥壳、异次元软件世界等固定订阅源。除 Epic 当前零价促销外，社区和订阅源默认只用于发现线索；只有回溯到官方页面或条款后才标记为 `verified`。
+
+运行 `npm run scan:feeds` 可刷新七个固定订阅源并原子更新 `data/feed-scan.json`。LINUX DO 固定经过 Jina Reader；当公开访问返回 401 时，需要通过运行环境提供 `JINA_API_KEY`，不要把密钥提交到仓库。
 
 A clean full-stack starter running on [vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and Drizzle support.
 

@@ -105,6 +105,7 @@ function DealCard({ deal, rank }: { deal: Deal; rank?: number }) {
     : conflicting
       ? "来源有冲突"
       : "待核实";
+  const sourceIsOfficialPage = verified && deal.source_url === deal.official_url;
   return (
     <article className="deal-card">
       <div className="deal-card__top">
@@ -134,6 +135,7 @@ function DealCard({ deal, rank }: { deal: Deal; rank?: number }) {
         <span className="status status--muted"><Clock3 size={14} /> 截止 {formatTime(deal.ends_at)}</span>
         {deal.source_type === "reddit" ? <span className="status status--reddit">Reddit 发现</span> : null}
         {deal.source_type === "x" ? <span className={deal.source_official ? "status status--x-official" : "status status--x"}>{deal.source_official ? "X 官方账号" : "X 线索"}</span> : null}
+        {deal.source_type === "feed" ? <span className="status status--feed">RSS / Atom 线索</span> : null}
       </div>
 
       <div className="deal-details">
@@ -149,8 +151,8 @@ function DealCard({ deal, rank }: { deal: Deal; rank?: number }) {
           <span>最后验证：{formatTime(deal.last_verified_at)}</span>
         </div>
         <div className="link-row">
-          <a href={safeUrl(deal.source_url)} target="_blank" rel="noreferrer">原始来源</a>
-          <a className="primary-link" href={safeUrl(deal.official_url)} target="_blank" rel="noreferrer">官方活动 <ArrowUpRight size={14} /></a>
+          {sourceIsOfficialPage ? null : <a href={safeUrl(deal.source_url)} target="_blank" rel="noreferrer">{verified ? "原始来源" : "线索原文"}</a>}
+          {verified || deal.source_url !== deal.official_url ? <a className="primary-link" href={safeUrl(deal.official_url)} target="_blank" rel="noreferrer">官方活动 <ArrowUpRight size={14} /></a> : null}
         </div>
       </div>
     </article>
@@ -184,7 +186,16 @@ export default function DealDashboard({ deals, latestScan }: { deals: Deal[]; la
         }
         return true;
       })
-      .sort((a, b) => activeModule === "high-value" ? b.value_score - a.value_score : new Date(b.first_seen_at).getTime() - new Date(a.first_seen_at).getTime());
+      .sort((a, b) => {
+        if (activeModule === "high-value") return b.value_score - a.value_score;
+        if (activeModule === "latest") {
+          const verificationOrder = Number(b.verification_status === "verified") - Number(a.verification_status === "verified");
+          if (verificationOrder) return verificationOrder;
+          const valueOrder = b.value_score - a.value_score;
+          if (valueOrder) return valueOrder;
+        }
+        return new Date(b.first_seen_at).getTime() - new Date(a.first_seen_at).getTime();
+      });
   }, [activeModule, deals, query, referenceTime, verifiedOnly]);
 
   const activeCount = deals.filter((deal) => deal.status !== "expired").length;
@@ -194,9 +205,9 @@ export default function DealDashboard({ deals, latestScan }: { deals: Deal[]; la
   }).length;
   const verifiedCount = deals.filter((deal) => deal.verification_status === "verified" && deal.status !== "expired").length;
   const endingCount = deals.filter(isEndingSoon).length;
-  const socialSourceCount = deals.filter((deal) => (
-    deal.source_type === "reddit" || deal.source_type === "x"
-  ) && deal.status !== "expired").length;
+  const pendingExternalCount = deals.filter((deal) => (
+    deal.source_type === "reddit" || deal.source_type === "x" || deal.source_type === "feed"
+  ) && deal.verification_status !== "verified" && deal.status !== "expired").length;
   const currentLabel = categories.find((item) => item.id === activeModule)?.label ?? "优惠情报";
   const scanHealthy = latestScan?.status === "success";
   const scanStateLabel = !latestScan
@@ -233,7 +244,7 @@ export default function DealDashboard({ deals, latestScan }: { deals: Deal[]; la
           <div className="source-panel__title"><ShieldCheck size={16} /> 来源策略</div>
           <p><b>Tier 1</b> 官方网站 / 公告</p>
           <p><b>Tier 2</b> 官方社媒 / 文档</p>
-          <p><b>线索</b> Reddit / 非官方 X / 社区</p>
+          <p><b>线索</b> X / Reddit / RSS / Atom</p>
           <small>社交信息未回溯官方前统一标记「待核实」</small>
         </div>
       </aside>
@@ -256,7 +267,7 @@ export default function DealDashboard({ deals, latestScan }: { deals: Deal[]; la
           <div className="metric-card metric-card--accent"><span>活跃优惠</span><strong>{activeCount}</strong><small>实时去重后的活动</small><Radar size={24} /></div>
           <div className="metric-card"><span>官方已验证</span><strong>{verifiedCount}</strong><small>可回溯一手来源</small><BadgeCheck size={24} /></div>
           <div className="metric-card"><span>7 天内截止</span><strong>{endingCount}</strong><small>建议优先处理</small><CalendarClock size={24} /></div>
-          <div className="metric-card"><span>X / Reddit 来源</span><strong>{socialSourceCount}</strong><small>均保留原帖并回溯官方页</small><WalletCards size={24} /></div>
+          <div className="metric-card"><span>外部待核线索</span><strong>{pendingExternalCount}</strong><small>X / Reddit / RSS / Atom</small><WalletCards size={24} /></div>
         </section>
 
         <section className="intel-strip">
@@ -270,7 +281,7 @@ export default function DealDashboard({ deals, latestScan }: { deals: Deal[]; la
         </section>
 
         <section className="deal-feed">
-          {visibleDeals.length ? visibleDeals.map((deal, index) => <DealCard key={deal.id} deal={deal} rank={activeModule === "high-value" ? index + 1 : undefined} />) : (
+          {visibleDeals.length ? visibleDeals.map((deal, index) => <DealCard key={`${deal.id}:${deal.official_url}`} deal={deal} rank={activeModule === "high-value" ? index + 1 : undefined} />) : (
             <div className="empty-state">
               <div className="empty-radar"><Radar size={32} /></div>
               <h3>扫描队列已就绪</h3>

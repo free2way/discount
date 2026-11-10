@@ -1,8 +1,8 @@
 import { env } from "cloudflare:workers";
 import type { Deal, ScanRun } from "@/components/deal-dashboard";
-import { initialScanDeals, initialScanRun } from "@/data/initial-scan";
+import { snapshotDeals, snapshotScanRun } from "@/lib/dashboard-snapshot";
 
-const snapshot = { deals: initialScanDeals, latestScan: initialScanRun };
+const snapshot = { deals: snapshotDeals, latestScan: snapshotScanRun };
 
 export async function loadDashboard(): Promise<{
   deals: Deal[];
@@ -17,11 +17,15 @@ export async function loadDashboard(): Promise<{
       ),
       db.prepare("SELECT * FROM scan_runs ORDER BY finished_at DESC LIMIT 1"),
     ]);
-    const deals = (dealsResult.results ?? []) as unknown as Deal[];
-    if (!deals.length) return snapshot;
+    const databaseDeals = (dealsResult.results ?? []) as unknown as Deal[];
+    const merged = new Map(snapshotDeals.map((deal) => [deal.official_url, deal]));
+    for (const deal of databaseDeals) merged.set(deal.official_url, deal);
+    const databaseScan = (scanResult.results?.[0] ?? null) as unknown as Exclude<ScanRun, null> | null;
     return {
-      deals,
-      latestScan: (scanResult.results?.[0] ?? initialScanRun) as unknown as ScanRun,
+      deals: [...merged.values()],
+      latestScan: databaseScan && Date.parse(databaseScan.finished_at) > Date.parse(snapshotScanRun.finished_at)
+        ? databaseScan
+        : snapshotScanRun,
     };
   } catch {
     return snapshot;

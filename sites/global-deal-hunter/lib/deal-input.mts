@@ -12,6 +12,7 @@ export const SOURCE_TYPES = [
   "official",
   "reddit",
   "x",
+  "feed",
   "trusted_media",
   "community",
 ] as const;
