@@ -2,7 +2,10 @@ name: Scan deals and deploy
 
 on:
   schedule:
+    # Primary scan, compensation scan, and an offset missed-run watchdog.
     - cron: "17 */2 * * *"
+    - cron: "47 */2 * * *"
+    - cron: "43 1-23/2 * * *"
   workflow_dispatch:
 
 concurrency:
@@ -26,23 +29,68 @@ jobs:
           node-version: 22
           cache: npm
           cache-dependency-path: sites/global-deal-hunter/package-lock.json
+      - name: Check whether a scan is due
+        id: freshness
+        working-directory: sites/global-deal-hunter
+        env:
+          FORCE_SCAN: ${{ github.event_name == 'workflow_dispatch' }}
+          MAX_SCAN_AGE_MINUTES: "105"
+          STALE_SCAN_AGE_MINUTES: "180"
+        run: npm run freshness:scan
+      - name: Open or update missed-scan alert
+        if: steps.freshness.outputs.stale == 'true'
+        uses: actions/github-script@v7
+        env:
+          SCAN_AGE_MINUTES: ${{ steps.freshness.outputs.age_minutes }}
+          LAST_SCAN_AT: ${{ steps.freshness.outputs.last_scan_at }}
+        with:
+          script: |
+            const title = "Scan watchdog alert: snapshot is stale";
+            const label = "scan-watchdog";
+            try {
+              await github.rest.issues.getLabel({ owner: context.repo.owner, repo: context.repo.repo, name: label });
+            } catch (error) {
+              if (error.status !== 404) throw error;
+              await github.rest.issues.createLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                name: label,
+                color: "D93F0B",
+                description: "The deal snapshot missed its expected refresh window"
+              });
+            }
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo, state: "open", labels: label
+            });
+            const body = `The latest deal snapshot is ${process.env.SCAN_AGE_MINUTES} minutes old. Last scan: ${process.env.LAST_SCAN_AT}. A compensation scan is starting.\n\nRun: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            if (issues.length) {
+              await github.rest.issues.createComment({ owner: context.repo.owner, repo: context.repo.repo, issue_number: issues[0].number, body });
+            } else {
+              await github.rest.issues.create({ owner: context.repo.owner, repo: context.repo.repo, title, body, labels: [label] });
+            }
+            core.warning(body);
       - name: Install locked dependencies
+        if: steps.freshness.outputs.should_scan == 'true'
         working-directory: sites/global-deal-hunter
         run: npm ci --no-audit --no-fund
       - name: Scan sources with per-source retries
+        if: steps.freshness.outputs.should_scan == 'true'
         working-directory: sites/global-deal-hunter
         env:
           JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
         run: npm run scan:feeds
       - name: Evaluate consecutive failures
+        if: steps.freshness.outputs.should_scan == 'true'
         id: health
         continue-on-error: true
         working-directory: sites/global-deal-hunter
         run: npm run health:feeds
       - name: Validate generated snapshots and application
+        if: steps.freshness.outputs.should_scan == 'true'
         working-directory: sites/global-deal-hunter
         run: npm test && npm run lint && npx tsc --noEmit
       - name: Commit refreshed snapshots
+        if: steps.freshness.outputs.should_scan == 'true'
         run: |
           git config user.name "deal-hunter-bot"
           git config user.email "deal-hunter-bot@users.noreply.github.com"
@@ -52,7 +100,7 @@ jobs:
           git pull --rebase origin main
           git push origin HEAD:main
       - name: Open or update source-health alert
-        if: steps.health.outcome == 'failure'
+        if: steps.freshness.outputs.should_scan == 'true' && steps.health.outcome == 'failure'
         uses: actions/github-script@v7
         with:
           script: |
@@ -80,7 +128,7 @@ jobs:
             }
             core.setFailed("One or more sources failed at least three consecutive scans");
       - name: Close resolved source-health alerts
-        if: steps.health.outcome == 'success'
+        if: steps.freshness.outputs.should_scan == 'true' && steps.health.outcome == 'success'
         uses: actions/github-script@v7
         with:
           script: |
@@ -89,5 +137,18 @@ jobs:
             });
             for (const issue of issues) {
               await github.rest.issues.createComment({ owner: context.repo.owner, repo: context.repo.repo, issue_number: issue.number, body: "All monitored sources are below the consecutive-failure alert threshold. Closing automatically." });
+              await github.rest.issues.update({ owner: context.repo.owner, repo: context.repo.repo, issue_number: issue.number, state: "closed" });
+            }
+      - name: Close recovered missed-scan alerts
+        if: steps.freshness.outputs.should_scan == 'true' && steps.freshness.outputs.stale == 'true' && success()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo, state: "open", labels: "scan-watchdog"
+            });
+            for (const issue of issues) {
+              const body = `The compensation scan completed successfully. Recovered by run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+              await github.rest.issues.createComment({ owner: context.repo.owner, repo: context.repo.repo, issue_number: issue.number, body });
               await github.rest.issues.update({ owner: context.repo.owner, repo: context.repo.repo, issue_number: issue.number, state: "closed" });
             }
