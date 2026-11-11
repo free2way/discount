@@ -22,13 +22,13 @@ const latestFinishedAt = Date.parse(feedScan.generated_at) > Date.parse(initialS
 
 export const snapshotScanRun: Exclude<ScanRun, null> = {
   finished_at: latestFinishedAt,
-  status: feedScan.status,
+  status: initialScanRun.status === feedScan.status ? feedScan.status : "partial",
   sources_checked: initialScanRun.sources_checked + feedScan.sources_checked,
   candidates_found: initialScanRun.candidates_found + feedScan.candidates_found,
   verified_count: snapshotDeals.filter((deal) => deal.verification_status === "verified").length,
   pending_count: snapshotDeals.filter((deal) => deal.verification_status !== "verified").length,
   archived_count: snapshotDeals.filter((deal) => deal.status === "expired").length,
-  notes: `官方、X、Reddit 与 7 个订阅源合并快照；订阅源状态：${feedScan.status}，失败 ${feedScan.failures.length} 个。`,
+  notes: `${initialScanRun.notes} 订阅快照状态：${feedScan.status}，失败 ${feedScan.failures.length} 个。`,
 };
 
 type SnapshotSourceResult = {

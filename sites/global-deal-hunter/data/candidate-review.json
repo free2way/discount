@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-11-11T17:52:50.171Z",
-  "queued_count": 69,
-  "rejected_count": 29,
+  "queued_count": 67,
+  "rejected_count": 31,
   "candidates": [
     {
       "key": "v2ex:https://v2ex.com/t/1256177",
@@ -378,9 +378,10 @@
       "risk_score": 0,
       "risk_flags": [],
       "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
+        "未发现明确的免费、折扣、返现或赠送信号",
+        "开源项目讨论，未发现限时活动"
       ],
-      "review_status": "queued"
+      "review_status": "rejected"
     },
     {
       "key": "nodeseek:https://nodeseek.com/post-1047574-1",
@@ -395,9 +396,10 @@
       "risk_score": 0,
       "risk_flags": [],
       "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
+        "未发现明确的免费、折扣、返现或赠送信号",
+        "寻求分摊第三方订阅，未确认官方权益"
       ],
-      "review_status": "queued"
+      "review_status": "rejected"
     },
     {
       "key": "iplaysoft:https://iplaysoft.com/totk-recomp.html",
