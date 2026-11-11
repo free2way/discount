@@ -101,6 +101,21 @@ function formatTime(value: string | null) {
   return new Intl.DateTimeFormat("zh-CN", { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit", timeZone: "Asia/Shanghai" }).format(date);
 }
 
+function formatScanTime(value: string) {
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return "时间待核实";
+  return new Intl.DateTimeFormat("zh-CN", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false,
+    timeZone: "Asia/Shanghai",
+  }).format(date);
+}
+
 function isExpired(deal: Deal, now = Date.now()) {
   if (deal.status === "expired") return true;
   if (!deal.ends_at) return false;
@@ -435,7 +450,13 @@ export default function DealDashboard({ deals, latestScan, sourceHealth }: { dea
         </section>
 
         <section className="intel-strip">
-          <div><span className="pulse-dot" /><strong>最近扫描</strong><span>{latestScan ? formatTime(latestScan.finished_at) : "等待首次自动扫描"}</span></div>
+          <div>
+            <span className="pulse-dot" />
+            <strong>上一次扫描</strong>
+            {latestScan
+              ? <time dateTime={latestScan.finished_at}>{formatScanTime(latestScan.finished_at)}（北京时间）</time>
+              : <span>等待首次自动扫描</span>}
+          </div>
           <div><Database size={15} /><span>候选 {latestScan?.candidates_found ?? 0}</span><span>验证 {latestScan?.verified_count ?? 0}</span><span>归档 {latestScan?.archived_count ?? 0}</span></div>
           <div className={healthySources === sourceHealth.length ? "source-health source-health--ok" : "source-health source-health--warning"} title={sourceHealth.map((source) => `${source.source_name}: ${source.ok ? `正常，${source.count} 条` : source.error ?? "失败"}`).join("\n")}><Activity size={15} /><span>来源健康 {healthySources}/{sourceHealth.length}</span></div>
         </section>
