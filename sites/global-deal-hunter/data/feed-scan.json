@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-10T21:47:55.276Z",
+  "generated_at": "2026-11-11T00:25:30.685Z",
   "status": "success",
   "sources_checked": 7,
   "candidates_found": 147,
   "verified_count": 2,
-  "pending_count": 18,
+  "pending_count": 20,
   "failures": [],
   "source_results": [
     {
@@ -14,9 +14,9 @@
       "count": 25,
       "final_url": "https://r.jina.ai/https://linux.do/c/welfare/36.rss",
       "attempts": 1,
-      "response_ms": 239,
+      "response_ms": 480,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-10T21:47:55.276Z",
+      "last_success_at": "2026-11-11T00:25:30.685Z",
       "error": null
     },
     {
@@ -26,9 +26,9 @@
       "count": 50,
       "final_url": "https://www.v2ex.com/feed/promotions.xml",
       "attempts": 1,
-      "response_ms": 192,
+      "response_ms": 202,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-10T21:47:55.276Z",
+      "last_success_at": "2026-11-11T00:25:30.685Z",
       "error": null
     },
     {
@@ -38,9 +38,9 @@
       "count": 2,
       "final_url": "https://store-site-backend-static.ak.epicgames.com/freeGamesPromotions?locale=zh-CN&country=CN&allowCountries=CN",
       "attempts": 1,
-      "response_ms": 242,
+      "response_ms": 374,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-10T21:47:55.276Z",
+      "last_success_at": "2026-11-11T00:25:30.685Z",
       "error": null
     },
     {
@@ -50,9 +50,9 @@
       "count": 20,
       "final_url": "https://rss.nodeseek.com/",
       "attempts": 1,
-      "response_ms": 377,
+      "response_ms": 322,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-10T21:47:55.276Z",
+      "last_success_at": "2026-11-11T00:25:30.685Z",
       "error": null
     },
     {
@@ -62,9 +62,9 @@
       "count": 10,
       "final_url": "https://www.appinn.com/feed/",
       "attempts": 1,
-      "response_ms": 1230,
+      "response_ms": 1187,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-10T21:47:55.276Z",
+      "last_success_at": "2026-11-11T00:25:30.685Z",
       "error": null
     },
     {
@@ -74,9 +74,9 @@
       "count": 10,
       "final_url": "https://www.ghxi.com/feed",
       "attempts": 1,
-      "response_ms": 1733,
+      "response_ms": 1237,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-10T21:47:55.276Z",
+      "last_success_at": "2026-11-11T00:25:30.685Z",
       "error": null
     },
     {
@@ -86,9 +86,9 @@
       "count": 30,
       "final_url": "https://feed.iplaysoft.com/",
       "attempts": 1,
-      "response_ms": 907,
+      "response_ms": 583,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-10T21:47:55.276Z",
+      "last_success_at": "2026-11-11T00:25:30.685Z",
       "error": null
     }
   ],
@@ -119,8 +119,8 @@
       "status": "ending_soon",
       "confidence": 96,
       "risk_notes": "领取前确认结算价为 0；不要使用第三方代领或共享账号。",
-      "first_seen_at": "2026-11-10T21:47:55.276Z",
-      "last_verified_at": "2026-11-10T21:47:55.276Z"
+      "first_seen_at": "2026-11-11T00:25:30.685Z",
+      "last_verified_at": "2026-11-11T00:25:30.685Z"
     },
     {
       "id": 1023135433,
@@ -148,8 +148,8 @@
       "status": "ending_soon",
       "confidence": 96,
       "risk_notes": "领取前确认结算价为 0；不要使用第三方代领或共享账号。",
-      "first_seen_at": "2026-11-10T21:47:55.276Z",
-      "last_verified_at": "2026-11-10T21:47:55.276Z"
+      "first_seen_at": "2026-11-11T00:25:30.685Z",
+      "last_verified_at": "2026-11-11T00:25:30.685Z"
     },
     {
       "id": 469185994,
@@ -177,8 +177,8 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-10T21:47:55.276Z",
-      "last_verified_at": "2026-11-10T21:47:55.276Z"
+      "first_seen_at": "2026-11-11T00:25:30.685Z",
+      "last_verified_at": "2026-11-11T00:25:30.685Z"
     },
     {
       "id": 1421556327,
@@ -206,8 +206,8 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-10T21:47:55.276Z",
-      "last_verified_at": "2026-11-10T21:47:55.276Z"
+      "first_seen_at": "2026-11-11T00:25:30.685Z",
+      "last_verified_at": "2026-11-11T00:25:30.685Z"
     },
     {
       "id": 1008669152,
@@ -235,8 +235,8 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-10T21:47:55.276Z",
-      "last_verified_at": "2026-11-10T21:47:55.276Z"
+      "first_seen_at": "2026-11-11T00:25:30.685Z",
+      "last_verified_at": "2026-11-11T00:25:30.685Z"
     },
     {
       "id": 97806047,
@@ -264,8 +264,8 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-10T21:47:55.276Z",
-      "last_verified_at": "2026-11-10T21:47:55.276Z"
+      "first_seen_at": "2026-11-11T00:25:30.685Z",
+      "last_verified_at": "2026-11-11T00:25:30.685Z"
     },
     {
       "id": 836282348,
@@ -293,8 +293,8 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-10T21:47:55.276Z",
-      "last_verified_at": "2026-11-10T21:47:55.276Z"
+      "first_seen_at": "2026-11-11T00:25:30.685Z",
+      "last_verified_at": "2026-11-11T00:25:30.685Z"
     },
     {
       "id": 1031337736,
@@ -322,8 +322,8 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-10T21:47:55.276Z",
-      "last_verified_at": "2026-11-10T21:47:55.276Z"
+      "first_seen_at": "2026-11-11T00:25:30.685Z",
+      "last_verified_at": "2026-11-11T00:25:30.685Z"
     },
     {
       "id": 109655499,
@@ -351,8 +351,8 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-10T21:47:55.276Z",
-      "last_verified_at": "2026-11-10T21:47:55.276Z"
+      "first_seen_at": "2026-11-11T00:25:30.685Z",
+      "last_verified_at": "2026-11-11T00:25:30.685Z"
     },
     {
       "id": 1029433425,
@@ -380,8 +380,8 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-10T21:47:55.276Z",
-      "last_verified_at": "2026-11-10T21:47:55.276Z"
+      "first_seen_at": "2026-11-11T00:25:30.685Z",
+      "last_verified_at": "2026-11-11T00:25:30.685Z"
     },
     {
       "id": 266567975,
@@ -409,8 +409,8 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-10T21:47:55.276Z",
-      "last_verified_at": "2026-11-10T21:47:55.276Z"
+      "first_seen_at": "2026-11-11T00:25:30.685Z",
+      "last_verified_at": "2026-11-11T00:25:30.685Z"
     },
     {
       "id": 362707278,
@@ -438,8 +438,8 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-10T21:47:55.276Z",
-      "last_verified_at": "2026-11-10T21:47:55.276Z"
+      "first_seen_at": "2026-11-11T00:25:30.685Z",
+      "last_verified_at": "2026-11-11T00:25:30.685Z"
     },
     {
       "id": 1892980755,
@@ -467,8 +467,8 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-10T21:47:55.276Z",
-      "last_verified_at": "2026-11-10T21:47:55.276Z"
+      "first_seen_at": "2026-11-11T00:25:30.685Z",
+      "last_verified_at": "2026-11-11T00:25:30.685Z"
     },
     {
       "id": 1166028389,
@@ -496,8 +496,8 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-10T21:47:55.276Z",
-      "last_verified_at": "2026-11-10T21:47:55.276Z"
+      "first_seen_at": "2026-11-11T00:25:30.685Z",
+      "last_verified_at": "2026-11-11T00:25:30.685Z"
     },
     {
       "id": 408455092,
@@ -525,8 +525,8 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-10T21:47:55.276Z",
-      "last_verified_at": "2026-11-10T21:47:55.276Z"
+      "first_seen_at": "2026-11-11T00:25:30.685Z",
+      "last_verified_at": "2026-11-11T00:25:30.685Z"
     },
     {
       "id": 1808814290,
@@ -554,8 +554,8 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-10T21:47:55.276Z",
-      "last_verified_at": "2026-11-10T21:47:55.276Z"
+      "first_seen_at": "2026-11-11T00:25:30.685Z",
+      "last_verified_at": "2026-11-11T00:25:30.685Z"
     },
     {
       "id": 65408026,
@@ -583,8 +583,37 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-10T21:47:55.276Z",
-      "last_verified_at": "2026-11-10T21:47:55.276Z"
+      "first_seen_at": "2026-11-11T00:25:30.685Z",
+      "last_verified_at": "2026-11-11T00:25:30.685Z"
+    },
+    {
+      "id": 982280249,
+      "name": "40出酷网云5折B",
+      "category": "other",
+      "summary": "产品名称HK.EN1.B配置2核-2G-30G地区香港到期时间2026/11/1815:27:43计费周期月续费金额$2.00NS邮箱转移出",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 42,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-11T00:13:33.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://nodeseek.com/post-1045170-1",
+      "source_url": "https://nodeseek.com/post-1045170-1",
+      "source_name": "NodeSeek",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-11T00:25:30.685Z",
+      "last_verified_at": "2026-11-11T00:25:30.685Z"
     },
     {
       "id": 1559029602,
@@ -612,8 +641,8 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-10T21:47:55.276Z",
-      "last_verified_at": "2026-11-10T21:47:55.276Z"
+      "first_seen_at": "2026-11-11T00:25:30.685Z",
+      "last_verified_at": "2026-11-11T00:25:30.685Z"
     },
     {
       "id": 1712719087,
@@ -641,8 +670,37 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-10T21:47:55.276Z",
-      "last_verified_at": "2026-11-10T21:47:55.276Z"
+      "first_seen_at": "2026-11-11T00:25:30.685Z",
+      "last_verified_at": "2026-11-11T00:25:30.685Z"
+    },
+    {
+      "id": 818041480,
+      "name": "双 11 打折好价整理！全网视频 VIP / 网盘会员 / 软件打折都在这了…",
+      "category": "software",
+      "summary": "又是一年一度「 双十一大促 」了！无论是京东、天猫，还是「 腾讯云 、 阿里云 」等商家都会发力，这对买买党来说肯定特别幸福了。不过对于咱们而言，软件、 游戏 的促销同样值得关注！ 异次元特意收集了最近 双 11 精选软件/会员 等促销活动， 力度诚意都不错。包括 百度网盘 、 哔哩哔哩 、 WPS会员 、 腾讯视频 、 爱奇艺 、 网易云 ；还有正版软件打折比如 数码荔枝 、 ApsGo软购 等；另外还会收集一些值得入手的好价数码产品或 VPS 服务器 优惠等等…… 「 前往查看原文.... 」 异次元还有这些值得一看： 618 必看汇总！这些 VIP 会员打折直接“巅峰”好价！闭眼入就对了…… 免费领取 Apple Music ",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 42,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-10T21:00:48.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://iplaysoft.com/1111.html",
+      "source_url": "https://iplaysoft.com/1111.html",
+      "source_name": "异次元软件世界",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-11T00:25:30.685Z",
+      "last_verified_at": "2026-11-11T00:25:30.685Z"
     },
     {
       "id": 1539868353,
@@ -670,8 +728,8 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-10T21:47:55.276Z",
-      "last_verified_at": "2026-11-10T21:47:55.276Z"
+      "first_seen_at": "2026-11-11T00:25:30.685Z",
+      "last_verified_at": "2026-11-11T00:25:30.685Z"
     }
   ]
 }
