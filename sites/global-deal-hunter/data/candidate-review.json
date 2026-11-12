@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-11-12T00:38:39.787Z",
-  "queued_count": 61,
-  "rejected_count": 31,
+  "queued_count": 60,
+  "rejected_count": 40,
   "candidates": [
     {
       "key": "v2ex:https://v2ex.com/t/1256177",
@@ -260,6 +260,26 @@
       "review_status": "rejected"
     },
     {
+      "key": "v2ex:https://v2ex.com/t/1256297",
+      "source_id": "v2ex",
+      "source_name": "V2EX 推广",
+      "source_url": "https://v2ex.com/t/1256297",
+      "title": "gemini-4-carbon 免费一天",
+      "summary": "https://api.apichatgpt.org/ 想登的切换全模型白嫖分组就行 限制 1 并发 免费玩一天",
+      "published_at": "2026-11-11T14:36:00.000Z",
+      "expires_at": null,
+      "relevance_score": 52,
+      "risk_score": 65,
+      "risk_flags": [
+        "unverified_reseller"
+      ],
+      "reasons": [
+        "第三方模型中转站，未取得模型供应商官方活动条款",
+        "第三方 Gemini 中转，未获得上游模型供应商活动条款。"
+      ],
+      "review_status": "rejected"
+    },
+    {
       "key": "linuxdo:https://linux.do/t/topic/3155648",
       "source_id": "linuxdo",
       "source_name": "LINUX DO 福利羊毛",
@@ -335,6 +355,23 @@
         "命中高风险或不受支持的交易/软件规则"
       ],
       "review_status": "rejected"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1047712-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek",
+      "source_url": "https://nodeseek.com/post-1047712-1",
+      "title": "plasma开菲区plus是不是等于免费了？",
+      "summary": "理论返现16.66刀？",
+      "published_at": "2026-11-12T00:16:51.000Z",
+      "expires_at": null,
+      "relevance_score": 25,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "帖子为支付返现推算，缺少官方地区、卡资格与活动条款。"
+      ],
+      "review_status": "queued"
     },
     {
       "key": "v2ex:https://v2ex.com/t/1256217",
@@ -547,23 +584,6 @@
       "title": "【富可敌国】深空API 双11福利 Astra 0.01 倍不降智活动，临时增加001大鲸鱼 [活动已结束]",
       "summary": "",
       "published_at": "2026-11-11T09:41:18.000Z",
-      "expires_at": null,
-      "relevance_score": 10,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "内容更像资讯、问答、测评或普通软件更新"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "v2ex:https://v2ex.com/t/1256009",
-      "source_id": "v2ex",
-      "source_name": "V2EX 推广",
-      "source_url": "https://v2ex.com/t/1256009",
-      "title": "DBVibe 完全免费了，不用再花 Token 自己造数据库管理工具",
-      "summary": "最近更新了数据库管理工具 DBVibe ，决定完全免费开放，不再需要许可证或激活码。 DBVibe 不仅具备传统数据库管理工具的常用功能，可以满足日常数据库开发和维护需求，还针对 AI 时代增加了一些新的能力： Agent ：通过 AI Agent 自动执行数据库开发和维护任务。 MCP ：支持 AI Coding Agent 连接数据库并执行操作。 Skills ：让 AI 掌握数据库相关的操作流程和使用能力。 实时可视化 ：可以实时观看 Agent 操作数据库的过程。 安全授权 ：涉及数据库的操作，需要得到用户许可后才会继续执行。 项目地址： https://dbvibe.app 有任何问题、Bug 或功能建议，欢迎到 GitH",
-      "published_at": "2026-11-10T18:25:09.000Z",
       "expires_at": null,
       "relevance_score": 10,
       "risk_score": 0,
@@ -788,6 +808,158 @@
         "未发现明确的免费、折扣、返现或赠送信号",
         "内容更像资讯、问答、测评或普通软件更新",
         "命中高风险或不受支持的交易/软件规则"
+      ],
+      "review_status": "rejected"
+    },
+    {
+      "key": "linuxdo:https://linux.do/t/topic/3155724",
+      "source_id": "linuxdo",
+      "source_name": "LINUX DO 福利羊毛",
+      "source_url": "https://linux.do/t/topic/3155724",
+      "title": "君の星辰 双十一特价活动，gpt特惠降至0.05兑换一刀，持续到12日中午",
+      "summary": "LINUX DO 福利羊毛 返回的公开线索；原始订阅未提供摘要。",
+      "published_at": "2026-11-11T07:54:27.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 45,
+      "risk_flags": [
+        "unverified_reseller"
+      ],
+      "reasons": [
+        "第三方 GPT 中转，未获得上游模型供应商活动条款。"
+      ],
+      "review_status": "rejected"
+    },
+    {
+      "key": "v2ex:https://v2ex.com/t/1255880",
+      "source_id": "v2ex",
+      "source_name": "V2EX 推广",
+      "source_url": "https://v2ex.com/t/1255880",
+      "title": "[91Token] 新站开启， Claude、GPT、Gemini、Seedance、GLM 塞进了一个 Key，新用户留言加群领取 10 刀体验金",
+      "summary": "官网直达： https://91token.com （注册入口就是它，别搜错域名） API 地址： https://api.91token.com （ API 接入点是它，别填错了地址） 注册 + 留 ID：评论里留用户 ID ，送 5 额度体验金 加群、群里报同一个 ID：再送 5 额度 每人一号一次，两项可叠加，合计 10 额度——够你把主流模型挨个跑一遍，摸清底细再决定要不要长期待着。 24 小时内手动发放，是我一只手在点。 注册入口： https://91token.com",
+      "published_at": "2026-11-10T06:49:04.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 45,
+      "risk_flags": [
+        "unverified_reseller"
+      ],
+      "reasons": [
+        "多模型中转推广，未获得上游供应商活动条款。"
+      ],
+      "review_status": "rejected"
+    },
+    {
+      "key": "linuxdo:https://linux.do/t/topic/3157779",
+      "source_id": "linuxdo",
+      "source_name": "LINUX DO 福利羊毛",
+      "source_url": "https://linux.do/t/topic/3157779",
+      "title": "【富可敌国】SoleAPI｜双 11 | 新人注册送 $5，回帖加群再送 $5",
+      "summary": "LINUX DO 福利羊毛 返回的公开线索；原始订阅未提供摘要。",
+      "published_at": "2026-11-11T14:50:43.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 45,
+      "risk_flags": [
+        "unverified_reseller"
+      ],
+      "reasons": [
+        "第三方 API 中转推广，未获得上游供应商活动条款。"
+      ],
+      "review_status": "rejected"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1047731-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek",
+      "source_url": "https://nodeseek.com/post-1047731-1",
+      "title": "全新出四件斐乐羽绒服只有 M 码的，走鱼，明盘一件 600 打包四件优惠点，双十一凑单的，相当于拼车了",
+      "summary": "个人转售商品，并非品牌活动。",
+      "published_at": "2026-11-12T00:37:00.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 45,
+      "risk_flags": [
+        "secondary_market"
+      ],
+      "reasons": [
+        "个人转售商品，并非品牌活动。"
+      ],
+      "review_status": "rejected"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1047723-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek",
+      "source_url": "https://nodeseek.com/post-1047723-1",
+      "title": "[出] 诺联NTT LAX-CUPG Lite 轻量版 年付6折 剩余价值出",
+      "summary": "个人转售剩余服务器时长。",
+      "published_at": "2026-11-12T00:28:15.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 45,
+      "risk_flags": [
+        "secondary_market"
+      ],
+      "reasons": [
+        "个人转售剩余服务器时长。"
+      ],
+      "review_status": "rejected"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1047720-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek",
+      "source_url": "https://nodeseek.com/post-1047720-1",
+      "title": "【出鸡】 中奖5折鸡-ty云-美国2C2G -50M 三网优化 无限流量 有限速",
+      "summary": "个人转售服务器并拟转移邮箱。",
+      "published_at": "2026-11-12T00:24:15.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 45,
+      "risk_flags": [
+        "secondary_market"
+      ],
+      "reasons": [
+        "个人转售服务器并拟转移邮箱。"
+      ],
+      "review_status": "rejected"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1047717-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek",
+      "source_url": "https://nodeseek.com/post-1047717-1",
+      "title": "Apple TV端红果短剧sepia拼车",
+      "summary": "个人拼单，未找到品牌优惠条款。",
+      "published_at": "2026-11-12T00:22:04.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 45,
+      "risk_flags": [
+        "secondary_market"
+      ],
+      "reasons": [
+        "个人拼单，未找到品牌优惠条款。"
+      ],
+      "review_status": "rejected"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1047714-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek",
+      "source_url": "https://nodeseek.com/post-1047714-1",
+      "title": "收VMISS LA TRI.9929.CMIN2的Core，Pro年付",
+      "summary": "个人求购服务器，不是活动。",
+      "published_at": "2026-11-12T00:17:19.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 45,
+      "risk_flags": [
+        "secondary_market"
+      ],
+      "reasons": [
+        "个人求购服务器，不是活动。"
       ],
       "review_status": "rejected"
     },
@@ -1037,23 +1209,6 @@
       "title": "【RelayRouter】Gemini 4 Carbon 首发接入｜AI Index 全球第一｜新人留 ID 领 ¥3.5",
       "summary": "",
       "published_at": "2026-11-11T08:03:11.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "v2ex:https://v2ex.com/t/1256279",
-      "source_id": "v2ex",
-      "source_name": "V2EX 推广",
-      "source_url": "https://v2ex.com/t/1256279",
-      "title": "ZA Bank 奖励加码了。去香港众安银行开户额外返 500HKD!",
-      "summary": "操作的过程中有任何疑问，欢迎随时私信咨询我。TG: fgvbt123 电报群： https://t.me/fgvbt2",
-      "published_at": "2026-11-11T12:33:37.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
