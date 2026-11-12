@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-12T06:35:46.417Z",
+  "generated_at": "2026-11-12T08:38:22.435Z",
   "status": "partial",
   "sources_checked": 7,
   "candidates_found": 122,
   "verified_count": 3,
-  "pending_count": 12,
+  "pending_count": 9,
   "failures": [
     {
       "source_id": "linuxdo",
@@ -20,8 +20,8 @@
       "count": 0,
       "final_url": null,
       "attempts": 3,
-      "response_ms": 3463,
-      "consecutive_failures": 4,
+      "response_ms": 3488,
+      "consecutive_failures": 5,
       "last_success_at": "2026-11-12T00:38:39.787Z",
       "error": "HTTP 401"
     },
@@ -32,9 +32,9 @@
       "count": 50,
       "final_url": "https://www.v2ex.com/feed/promotions.xml",
       "attempts": 1,
-      "response_ms": 539,
+      "response_ms": 508,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-12T06:35:46.417Z",
+      "last_success_at": "2026-11-12T08:38:22.435Z",
       "error": null
     },
     {
@@ -44,9 +44,9 @@
       "count": 2,
       "final_url": "https://store-site-backend-static.ak.epicgames.com/freeGamesPromotions?locale=zh-CN&country=CN&allowCountries=CN",
       "attempts": 1,
-      "response_ms": 505,
+      "response_ms": 483,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-12T06:35:46.417Z",
+      "last_success_at": "2026-11-12T08:38:22.435Z",
       "error": null
     },
     {
@@ -56,9 +56,9 @@
       "count": 20,
       "final_url": "https://rss.nodeseek.com/",
       "attempts": 1,
-      "response_ms": 678,
+      "response_ms": 661,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-12T06:35:46.417Z",
+      "last_success_at": "2026-11-12T08:38:22.435Z",
       "error": null
     },
     {
@@ -68,9 +68,9 @@
       "count": 10,
       "final_url": "https://www.appinn.com/feed/",
       "attempts": 1,
-      "response_ms": 256,
+      "response_ms": 289,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-12T06:35:46.417Z",
+      "last_success_at": "2026-11-12T08:38:22.435Z",
       "error": null
     },
     {
@@ -80,9 +80,9 @@
       "count": 10,
       "final_url": "https://www.ghxi.com/feed",
       "attempts": 1,
-      "response_ms": 178,
+      "response_ms": 188,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-12T06:35:46.417Z",
+      "last_success_at": "2026-11-12T08:38:22.435Z",
       "error": null
     },
     {
@@ -92,9 +92,9 @@
       "count": 30,
       "final_url": "https://feed.iplaysoft.com/",
       "attempts": 2,
-      "response_ms": 21514,
+      "response_ms": 15092,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-12T06:35:46.417Z",
+      "last_success_at": "2026-11-12T08:38:22.435Z",
       "error": null
     }
   ],
@@ -126,7 +126,7 @@
       "confidence": 97,
       "risk_notes": "使用本人账户通过 Epic 登录，避免第三方代领或共享账户。",
       "first_seen_at": "2026-11-11T09:20:21.543Z",
-      "last_verified_at": "2026-11-12T06:35:46.417Z"
+      "last_verified_at": "2026-11-12T08:38:22.435Z"
     },
     {
       "id": 1023135433,
@@ -155,65 +155,7 @@
       "confidence": 97,
       "risk_notes": "领取前确认结算价为 0；不要使用第三方代领或共享账号。",
       "first_seen_at": "2026-11-11T00:25:30.685Z",
-      "last_verified_at": "2026-11-12T06:35:46.417Z"
-    },
-    {
-      "id": 33781970,
-      "name": "[NQ] 破云双11优惠款 DE9929 750G 小主机",
-      "category": "cloud",
-      "summary": "💻基本信息++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 硬件质量体检报告： 82.139.*.* https://github.com/xykt/HardwareQuality[",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 52,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-12T06:27:31.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://nodeseek.com/post-1048600-1",
-      "source_url": "https://nodeseek.com/post-1048600-1",
-      "source_name": "NodeSeek",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-12T06:35:46.417Z",
-      "last_verified_at": "2026-11-12T06:35:46.417Z"
-    },
-    {
-      "id": 1183403892,
-      "name": "LingoManga：整章漫画 AI 翻译，免费预览整章再付费下载高清 ZIP",
-      "category": "ai",
-      "summary": "项目概述 LingoManga 是一个面向漫画读者的整章翻译工具：把 raw / 生肉漫画的 ZIP 或 CBZ 上传，选目标语言，先免费看完整章低清带水印预览，确认效果后 $4.90 下载整章高清无水印 ZIP 。 https://lingomanga.com 核心功能 整章处理：3–60 页，自动自然排序，双页跨页保持为一页 免费整章预览：低清 + 水印，看完再决定付不付款 按章付费：一次 $4.90 拿整章，不是逐页积分 六种输出语言：英语 / 西班牙语 / 葡葡（巴西）/ 法语 / 意大利语 / 德语，源语言自动识别 保留原图、分镜和页面形状，气泡重新排英文；跨页气泡和画面里的拟声词也会处理 无需注册即可预览，私密链接可回看",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 52,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-11T14:23:04.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://v2ex.com/t/1256295",
-      "source_url": "https://v2ex.com/t/1256295",
-      "source_name": "V2EX 推广",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-11T14:30:17.100Z",
-      "last_verified_at": "2026-11-12T06:35:46.417Z"
+      "last_verified_at": "2026-11-12T08:38:22.435Z"
     },
     {
       "id": 1031337736,
@@ -242,7 +184,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-11T09:20:21.543Z",
-      "last_verified_at": "2026-11-12T06:35:46.417Z"
+      "last_verified_at": "2026-11-12T08:38:22.435Z"
     },
     {
       "id": 166332082,
@@ -301,35 +243,6 @@
       "risk_notes": "班次提醒依赖系统版本和通知权限；打赏不是使用条件。",
       "first_seen_at": "2026-11-10T18:24:26.203Z",
       "last_verified_at": "2026-11-11T02:33:54.215Z"
-    },
-    {
-      "id": 818041480,
-      "name": "双 11 打折好价整理！全网视频 VIP / 网盘会员 / 软件打折都在这了…",
-      "category": "software",
-      "summary": "又是一年一度「 双十一大促 」了！无论是京东、天猫，还是「 腾讯云 、 阿里云 」等商家都会发力，这对买买党来说肯定特别幸福了。不过对于咱们而言，软件、 游戏 的促销同样值得关注！ 异次元特意收集了最近 双 11 精选软件/会员 等促销活动， 力度诚意都不错。包括 百度网盘 、 哔哩哔哩 、 WPS会员 、 腾讯视频 、 爱奇艺 、 网易云 ；还有正版软件打折比如 数码荔枝 、 ApsGo软购 等；另外还会收集一些值得入手的好价数码产品或 VPS 服务器 优惠等等…… 「 前往查看原文.... 」 异次元还有这些值得一看： 618 必看汇总！这些 VIP 会员打折直接“巅峰”好价！闭眼入就对了…… 免费领取 Apple Music ",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 42,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-10T21:00:48.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://iplaysoft.com/1111.html",
-      "source_url": "https://iplaysoft.com/1111.html",
-      "source_name": "异次元软件世界",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-11T17:52:50.171Z",
-      "last_verified_at": "2026-11-12T06:35:46.417Z"
     },
     {
       "id": 231187459,
@@ -445,7 +358,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-11T12:37:02.589Z",
-      "last_verified_at": "2026-11-12T06:35:46.417Z"
+      "last_verified_at": "2026-11-12T08:38:22.435Z"
     },
     {
       "id": 1712719087,
@@ -474,7 +387,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-11T12:37:02.589Z",
-      "last_verified_at": "2026-11-12T06:35:46.417Z"
+      "last_verified_at": "2026-11-12T08:38:22.435Z"
     },
     {
       "id": 1622443166,
@@ -532,7 +445,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-11T09:20:21.543Z",
-      "last_verified_at": "2026-11-12T06:35:46.417Z"
+      "last_verified_at": "2026-11-12T08:38:22.435Z"
     }
   ]
 }
