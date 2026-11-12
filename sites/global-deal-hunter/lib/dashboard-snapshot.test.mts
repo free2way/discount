@@ -1,8 +1,13 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import type { Deal } from "../components/deal-dashboard.tsx";
+import { initialScanRun } from "../data/initial-scan.ts";
 import { buildFromSnapshot, type FeedScanSnapshot } from "./dashboard-snapshot-builder.ts";
 import { loadRemoteDashboard } from "./dashboard-runtime.ts";
+
+function scanTimeAfterManual(hours: number) {
+  return new Date(Date.parse(initialScanRun.finished_at) + hours * 60 * 60 * 1_000).toISOString();
+}
 
 function deal(name: string, score: number, firstSeen: string): Deal {
   return {
@@ -38,7 +43,7 @@ function deal(name: string, score: number, firstSeen: string): Deal {
 
 function snapshot(overrides: Partial<FeedScanSnapshot> = {}): FeedScanSnapshot {
   return {
-    generated_at: "2026-11-12T10:00:00.000Z",
+    generated_at: scanTimeAfterManual(1),
     status: "success",
     sources_checked: 2,
     candidates_found: 2,
@@ -53,9 +58,10 @@ function snapshot(overrides: Partial<FeedScanSnapshot> = {}): FeedScanSnapshot {
 }
 
 test("buildFromSnapshot sorts deals by score then first seen time", () => {
-  const result = buildFromSnapshot(snapshot());
+  const feed = snapshot();
+  const result = buildFromSnapshot(feed);
   assert.deepEqual(result.deals.slice(0, 2).map((item) => item.name), ["Higher", "Lower"]);
-  assert.equal(result.latestScan.finished_at, "2026-11-12T10:00:00.000Z");
+  assert.equal(result.latestScan.finished_at, feed.generated_at);
 });
 
 test("partial snapshot notes include the failed-source count", () => {
@@ -75,8 +81,8 @@ test("remote loader falls back to the bundled snapshot on HTTP errors", async ()
 
 test("remote loader builds a live snapshot when fetch succeeds", async () => {
   const fallback = buildFromSnapshot(snapshot());
-  const live = snapshot({ generated_at: "2026-11-12T12:00:00.000Z" });
+  const live = snapshot({ generated_at: scanTimeAfterManual(2) });
   const fetchImpl = async () => Response.json(live);
   const result = await loadRemoteDashboard({ fallback, fetchImpl: fetchImpl as typeof fetch });
-  assert.equal(result.latestScan.finished_at, "2026-11-12T12:00:00.000Z");
+  assert.equal(result.latestScan.finished_at, live.generated_at);
 });
