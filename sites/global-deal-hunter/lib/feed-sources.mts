@@ -98,6 +98,27 @@ export const FEED_SOURCE_DEFINITIONS: FeedSourceDefinition[] = [
     format: "feed",
     allowedHosts: ["iplaysoft.com"],
   },
+  {
+    id: "slickdeals",
+    name: "Slickdeals Frontpage",
+    url: "https://feeds.feedburner.com/SlickdealsnetFP",
+    format: "feed",
+    allowedHosts: ["slickdeals.net"],
+  },
+  {
+    id: "reddit_freebies",
+    name: "Reddit r/freebies",
+    url: "https://www.reddit.com/r/freebies/.rss",
+    format: "feed",
+    allowedHosts: ["reddit.com", "redd.it"],
+  },
+  {
+    id: "producthunt",
+    name: "Product Hunt",
+    url: "https://www.producthunt.com/feed",
+    format: "feed",
+    allowedHosts: ["producthunt.com"],
+  },
 ];
 
 const xmlParser = new XMLParser({

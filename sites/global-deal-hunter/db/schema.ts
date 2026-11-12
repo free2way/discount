@@ -143,6 +143,9 @@ export const sourceHealth = sqliteTable(
   (table) => [index("source_health_status_idx").on(table.status, table.consecutiveFailures)],
 );
 
+// Phase 2 reserved schema: the user preference, favorite, alert, and
+// notification tables below are intentionally not wired into Phase 1.
+// Phase 1 remains a read-only dashboard; do not treat these tables as active.
 export const userPreferences = sqliteTable("user_preferences", {
   userId: text("user_id").primaryKey(),
   regionsJson: text("regions_json").notNull().default("[]"),

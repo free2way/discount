@@ -2,9 +2,11 @@
 
 一个同时支持标准 Next.js/Vercel 与 Vinext/Sites 的全球优惠情报看板。看板优先读取数据库；数据库未连接或为空时，会回退到最近一次经过官方复核的扫描快照，避免部署后出现空白数据页。
 
-当前来源类型包括官方网站、官方公告、X、Reddit，以及 LINUX DO、V2EX、Epic、NodeSeek、小众软件、果核剥壳、异次元软件世界等固定订阅源。除 Epic 当前零价促销外，社区和订阅源默认只用于发现线索；只有回溯到官方页面或条款后才标记为 `verified`。
+当前来源类型包括官方网站、官方公告、X、Reddit，以及 LINUX DO、V2EX、Epic、NodeSeek、小众软件、果核剥壳、异次元软件世界、Slickdeals、Reddit r/freebies、Product Hunt 等固定订阅源。除 Epic 当前零价促销外，社区和订阅源默认只用于发现线索；只有回溯到官方页面或条款后才标记为 `verified`。
 
-运行 `npm run scan:feeds` 可刷新七个固定订阅源并原子更新 `data/feed-scan.json`。LINUX DO 固定经过 Jina Reader；当公开访问返回 401 时，需要通过运行环境提供 `JINA_API_KEY`，不要把密钥提交到仓库。
+运行 `npm run scan:feeds` 可刷新十个固定订阅源并原子更新 `data/feed-scan.json`。LINUX DO 固定经过 Jina Reader；当公开访问返回 401 时，需要通过运行环境提供 `JINA_API_KEY`，不要把密钥提交到仓库。
+
+Vercel 页面每 10 分钟从 GitHub Raw 重新验证最新快照，拉取失败时自动使用构建内快照，不会白屏。可通过 `SNAPSHOT_SOURCE_URL` 覆盖默认公开仓库地址。
 
 `.github/workflows/scan-and-deploy.yml` 每两小时运行一次。扫描器对每个来源最多尝试三次，更新公开快照、候选审核队列与连续失败计数；连续失败三次会创建或更新带 `source-health` 标签的 GitHub Issue。快照提交到 `main` 后，由仓库现有的 Vercel Git 集成自动部署。若希望启用 LINUX DO，请在 GitHub Actions secrets 中配置 `JINA_API_KEY`。
 

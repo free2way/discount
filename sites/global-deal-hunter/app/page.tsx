@@ -1,7 +1,7 @@
 import DealDashboard from "@/components/deal-dashboard";
 import { loadDashboard } from "@/lib/dashboard-store";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 600;
 
 export default async function Home() {
   const data = await loadDashboard();

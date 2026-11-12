@@ -11,6 +11,8 @@ const STRONG_DEAL_PATTERNS = [
   /限免|羊毛|福利|免单|赠品|领取|领鸡蛋/i,
   /(?:全场|低至|立享|优惠|折扣|促销|大促|特价)/i,
   /\b(?:free|discount|promotion|promo|coupon|cashback|rebate|giveaway|deal|trial)\b/i,
+  /\b(?:free trial|lifetime deal|bogo|clearance|price drop|limited[- ]time)\b/i,
+  /\$\s?\d+(?:\.\d+)?\s*(?:off|discount|rebate)\b/i,
   /(?:返现|返利|立减|减免|注册送|首充送|送)[^。；，,]{0,18}(?:\d|额度|会员|credits?)/i,
   /(?:\d+(?:\.\d+)?\s*折|\d+%\s*(?:off|返现|折扣))/i,
   /(?:优惠码|兑换码|coupon|promo code)/i,
@@ -36,6 +38,7 @@ const NOISE_PATTERNS = [
   /(?:漏洞|CVE-\d+|被黑客|安全警告)/i,
   /(?:测试留档|测评留档|BUG|怎么|吗[？?]?$|求助|教程|攻略)/i,
   /(?:版本发布|正式版|离线安装包|更新日志)/i,
+  /\b(?:release notes?|changelog|security advisory|how to|review)\b/i,
   /(?:^|[\s(（])v?\d+\.\d+(?:\.\d+)?(?:$|[\s)）])/i,
 ];
 

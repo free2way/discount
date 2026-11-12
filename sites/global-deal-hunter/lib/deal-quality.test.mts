@@ -51,3 +51,11 @@ test("does not treat routine freeware version updates as fresh deals", () => {
   const result = assessDealQuality("Flameshot(截图工具) v15.0.0", "免费、开源、跨平台的软件版本更新");
   assert.equal(result.publish, false);
 });
+
+test("publishes strong English discount signals", () => {
+  for (const title of ["Free trial: 3 months of X", "Lifetime deal — limited-time offer", "$20 off annual plan"]) {
+    const result = assessDealQuality(title);
+    assert.equal(result.publish, true, title);
+    assert.ok(result.relevanceScore >= 38, title);
+  }
+});

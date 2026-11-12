@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { canonicalFeedUrl, feedResultsToDeals, feedResultsToReviewCandidates, parseEpicFreePromotions, parseLinuxDoMarkdown, parseSyndicationFeed } from "./feed-sources.mts";
+import { FEED_SOURCE_DEFINITIONS, canonicalFeedUrl, feedResultsToDeals, feedResultsToReviewCandidates, loadFeedSource, parseEpicFreePromotions, parseLinuxDoMarkdown, parseSyndicationFeed } from "./feed-sources.mts";
 
 test("LINUX DO Markdown parses title, topic link, and RFC822 date", () => {
   const input = "### [免费工具](https://linux.do/t/topic/12345)\n\nhttps://linux.do/t/topic/12345\n\nMon, 09 Nov 2026 06:00:00 +0000";
@@ -64,4 +64,28 @@ test("feed publishing and review queue reject future and stale entries", () => {
   };
   assert.deepEqual(feedResultsToDeals([result], new Date(now).toISOString()).map((deal) => deal.name), ["当前限时免费"]);
   assert.deepEqual(feedResultsToReviewCandidates([result], now).map((candidate) => candidate.title), ["当前限时免费"]);
+});
+
+test("international RSS sources parse entries and reject off-domain links", async () => {
+  const now = Date.parse("2026-11-12T06:00:00.000Z");
+  const source = FEED_SOURCE_DEFINITIONS.find((item) => item.id === "reddit_freebies")!;
+  const xml = `<?xml version="1.0"?><feed xmlns="http://www.w3.org/2005/Atom">
+    <entry><title>Free trial: 3 months</title><link href="https://www.reddit.com/r/freebies/comments/abc/free_trial/"/><updated>2026-11-12T05:00:00Z</updated></entry>
+    <entry><title>Limited-time giveaway</title><link href="https://evil.example/phishing"/><updated>2026-11-12T05:00:00Z</updated></entry>
+  </feed>`;
+  const fetchImpl = async () => new Response(xml, { status: 200, headers: { "content-type": "application/atom+xml" } });
+  const result = await loadFeedSource(source, now, fetchImpl as typeof fetch);
+  assert.equal(result.ok, true);
+  assert.deepEqual(result.items.map((item) => item.url), ["https://reddit.com/r/freebies/comments/abc/free_trial"]);
+});
+
+test("Slickdeals RSS fixture keeps allowed links and dates", async () => {
+  const now = Date.parse("2026-11-12T06:00:00.000Z");
+  const source = FEED_SOURCE_DEFINITIONS.find((item) => item.id === "slickdeals")!;
+  const xml = `<?xml version="1.0"?><rss><channel><item><title>$20 off annual plan</title><link>https://slickdeals.net/f/123-example</link><pubDate>Thu, 12 Nov 2026 05:00:00 +0000</pubDate></item></channel></rss>`;
+  const fetchImpl = async () => new Response(xml, { status: 200 });
+  const result = await loadFeedSource(source, now, fetchImpl as typeof fetch);
+  assert.equal(result.ok, true);
+  assert.equal(result.items[0]?.publishedAt, Date.parse("Thu, 12 Nov 2026 05:00:00 +0000"));
+  assert.equal(result.items[0]?.url, "https://slickdeals.net/f/123-example");
 });

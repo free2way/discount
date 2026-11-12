@@ -1,5 +1,8 @@
 import type { Deal, ScanRun } from "@/components/deal-dashboard";
+import { DEFAULT_SNAPSHOT_SOURCE_URL, loadRemoteDashboard } from "@/lib/dashboard-runtime";
 import { snapshotDeals, snapshotScanRun, snapshotSourceHealth } from "@/lib/dashboard-snapshot";
+
+const fallback = { deals: snapshotDeals, latestScan: snapshotScanRun, sourceHealth: snapshotSourceHealth };
 
 /**
  * Vercel-safe dashboard loader.
@@ -13,5 +16,8 @@ export async function loadDashboard(): Promise<{
   latestScan: ScanRun;
   sourceHealth: typeof snapshotSourceHealth;
 }> {
-  return { deals: snapshotDeals, latestScan: snapshotScanRun, sourceHealth: snapshotSourceHealth };
+  return loadRemoteDashboard({
+    fallback,
+    sourceUrl: process.env.SNAPSHOT_SOURCE_URL?.trim() || DEFAULT_SNAPSHOT_SOURCE_URL,
+  });
 }

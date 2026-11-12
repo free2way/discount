@@ -2,7 +2,7 @@ import { readFile, rename, writeFile } from "node:fs/promises";
 import { feedResultsToDeals, feedResultsToReviewCandidates, scanFeedSources } from "../lib/feed-sources.mts";
 import type { ReviewCandidate } from "../lib/feed-sources.mts";
 import type { Deal } from "../components/deal-dashboard";
-import { dealUrlKey } from "../lib/deal-identity.ts";
+import { canonicalKey, dealUrlKey, mergeDealsByCanonicalKey } from "../lib/deal-identity.ts";
 
 type FeedSnapshot = {
   generated_at: string;
@@ -59,7 +59,7 @@ const previous = await readPrevious();
 const previousReview = await readPreviousReview();
 const scannedAt = new Date().toISOString();
 const results = await scanFeedSources(Date.parse(scannedAt));
-const firstSeen = new Map((previous?.deals ?? []).map((deal) => [dealUrlKey(deal.official_url), deal.first_seen_at]));
+const firstSeen = new Map((previous?.deals ?? []).map((deal) => [canonicalKey(deal.official_url, deal.name), deal.first_seen_at]));
 const freshDeals = feedResultsToDeals(results, scannedAt, firstSeen);
 const failedNames = new Set(results.filter((result) => !result.ok).map((result) => result.source.name));
 const cutoff = Date.parse(scannedAt) - 7 * 24 * 60 * 60 * 1000;
@@ -69,9 +69,8 @@ const carriedDeals = (previous?.deals ?? []).filter((deal) => {
   const published = deal.starts_at ? Date.parse(deal.starts_at) : Date.parse(deal.first_seen_at);
   return expires > Date.parse(scannedAt) && published >= cutoff;
 });
-const deduped = new Map<string, Deal>();
-for (const deal of [...carriedDeals, ...freshDeals]) deduped.set(dealUrlKey(deal.official_url), deal);
-const deals = [...deduped.values()].sort((a, b) => b.value_score - a.value_score || Date.parse(b.first_seen_at) - Date.parse(a.first_seen_at));
+const deals = mergeDealsByCanonicalKey([...carriedDeals, ...freshDeals])
+  .sort((a, b) => b.value_score - a.value_score || Date.parse(b.first_seen_at) - Date.parse(a.first_seen_at));
 const failures = results.filter((result) => !result.ok).map((result) => ({
   source_id: result.source.id,
   source_name: result.source.name,

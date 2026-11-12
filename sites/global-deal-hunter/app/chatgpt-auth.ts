@@ -1,3 +1,5 @@
+// Phase 2 reserved module: authentication routes and user-facing features are
+// not wired in Phase 1. Keep this helper dormant until the Phase 2 routes land.
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 
