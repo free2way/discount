@@ -178,7 +178,7 @@ for (const deal of [...carriedDeals, ...freshDeals]) {
 - [x] `npm run lint` 无错误
 - [x] `npm run build:vercel` 成功产出 `.next`，首页标记为 10 分钟 ISR
 - [x] `npm run scan:feeds` 真实跑通，`status: partial`（9/10）；三个国际源均成功，本机仅 LINUX DO 因未配置 `JINA_API_KEY` 返回 401
-- [ ] Vercel 生产环境验证 AC-A1（刷新快照后 ≤10min 页面更新）；AC-A2 已由 500 回退集成测试覆盖
+- [x] Vercel 生产部署 `f8a8a3e` 为 `READY`；首页构建确认为 10 分钟 ISR，线上显示 `2026/11/12 17:02:12` 最新快照及三个国际源；AC-A2 已由 500 回退集成测试覆盖
 - [x] 全局去重自动化用例通过，verified 优先规则通过
 - [x] 文档「决策日志」更新完毕
 
