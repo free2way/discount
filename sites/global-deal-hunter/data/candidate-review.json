@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-11T22:34:32.242Z",
-  "queued_count": 62,
-  "rejected_count": 35,
+  "generated_at": "2026-11-12T00:38:39.787Z",
+  "queued_count": 61,
+  "rejected_count": 31,
   "candidates": [
     {
       "key": "v2ex:https://v2ex.com/t/1256177",
@@ -240,40 +240,41 @@
       "review_status": "rejected"
     },
     {
-      "key": "v2ex:https://v2ex.com/t/1256297",
-      "source_id": "v2ex",
-      "source_name": "V2EX 推广",
-      "source_url": "https://v2ex.com/t/1256297",
-      "title": "gemini-4-carbon 免费一天",
-      "summary": "https://api.apichatgpt.org/ 想登的切换全模型白嫖分组就行 限制 1 并发 免费玩一天",
-      "published_at": "2026-11-11T14:36:00.000Z",
+      "key": "nodeseek:https://nodeseek.com/post-1047715-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek",
+      "source_url": "https://nodeseek.com/post-1047715-1",
+      "title": "【出】5折出18块钱出zorocloud的US-9929-Mini，还剩一个月，性价比不如vmiss",
+      "summary": "我换到vmiss了，剩余zorocloud的US-9929-Mini不打算要了，US-9929优化现在全部买不到了，性价比不如vmiss，但是稳定性还可以，开会期间正常稳定，我不知道怎么过户，第一次出，都可以商量着来。流量：63/500G。去程联通优化，回城联通移动优化，所有官方续费价的8.5折，循环优惠，半年付和",
+      "published_at": "2026-11-12T00:18:41.000Z",
       "expires_at": null,
-      "relevance_score": 52,
-      "risk_score": 65,
+      "relevance_score": 60,
+      "risk_score": 45,
       "risk_flags": [
-        "unverified_reseller"
+        "secondary_market"
       ],
       "reasons": [
-        "第三方模型中转站，未取得模型供应商官方活动条款"
+        "内容更像资讯、问答、测评或普通软件更新",
+        "命中高风险或不受支持的交易/软件规则"
       ],
       "review_status": "rejected"
     },
     {
-      "key": "nodeseek:https://nodeseek.com/post-1047648-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1047648-1",
-      "title": "有没有能帮谷歌 300赠金的卡啊？这个没有卡能绑上。收一个卡",
-      "summary": "有能力的代价来。谷歌300赠金的卡，20x套餐每个月送100美金，不开通有点难受。",
-      "published_at": "2026-11-11T20:06:13.000Z",
+      "key": "linuxdo:https://linux.do/t/topic/3155648",
+      "source_id": "linuxdo",
+      "source_name": "LINUX DO 福利羊毛",
+      "source_url": "https://linux.do/t/topic/3155648",
+      "title": "【富可敌国】中转站VelaMost双十一钜惠！佬友注册即送$2 评论ID再送$5 加群再送$2！充50送50，充100送100！支持对公",
+      "summary": "",
+      "published_at": "2026-11-11T07:43:37.000Z",
       "expires_at": null,
-      "relevance_score": 42,
-      "risk_score": 65,
+      "relevance_score": 38,
+      "risk_score": 45,
       "risk_flags": [
-        "account_abuse"
+        "unverified_reseller"
       ],
       "reasons": [
-        "个人求购可绑定赠金的支付卡，未发现主办方活动"
+        "命中高风险或不受支持的交易/软件规则"
       ],
       "review_status": "rejected"
     },
@@ -387,6 +388,43 @@
       "review_status": "queued"
     },
     {
+      "key": "nodeseek:https://nodeseek.com/post-1047725-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek",
+      "source_url": "https://nodeseek.com/post-1047725-1",
+      "title": "[交换] GPT额度换Deepseek",
+      "summary": "如题,有没有人愿意交换Deepseek额度的.我出GPTAPI赠金$100,换Deepseek$20.这个赠金除了不能在Codex用,还有其他明显违反TOS的如蒸馏等场景外,都可以使用.双方都必须是能够在官方端点使用的APIkey.我会提供一个反代域名,直连OpenAIAPIPlatform,方便你在国内外使用,同",
+      "published_at": "2026-11-12T00:28:58.000Z",
+      "expires_at": null,
+      "relevance_score": 12,
+      "risk_score": 45,
+      "risk_flags": [
+        "account_abuse"
+      ],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号",
+        "命中高风险或不受支持的交易/软件规则"
+      ],
+      "review_status": "rejected"
+    },
+    {
+      "key": "linuxdo:https://linux.do/t/topic/3155773",
+      "source_id": "linuxdo",
+      "source_name": "LINUX DO 福利羊毛",
+      "source_url": "https://linux.do/t/topic/3155773",
+      "title": "qwen code 1.x preview + qoder auth 可以领 500 credit",
+      "summary": "",
+      "published_at": "2026-11-11T08:00:32.000Z",
+      "expires_at": null,
+      "relevance_score": 12,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
       "key": "v2ex:https://v2ex.com/t/1256309",
       "source_id": "v2ex",
       "source_name": "V2EX 推广",
@@ -404,41 +442,6 @@
       "review_status": "queued"
     },
     {
-      "key": "nodeseek:https://nodeseek.com/post-1047660-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1047660-1",
-      "title": "gpt 20x 18号到期满额度带2卡",
-      "summary": "不是降智号500出，到期后还有15天宽限期可以玩差不多一个月",
-      "published_at": "2026-11-11T21:32:47.000Z",
-      "expires_at": null,
-      "relevance_score": 12,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号",
-        "个人转售账号及额度。"
-      ],
-      "review_status": "rejected"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1047654-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1047654-1",
-      "title": "用cc能干啥有趣的东西",
-      "summary": "额度就要刷新了，求问有哪些好玩的蹬法",
-      "published_at": "2026-11-11T20:19:52.000Z",
-      "expires_at": null,
-      "relevance_score": 12,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
       "key": "iplaysoft:https://iplaysoft.com/totk-recomp.html",
       "source_id": "iplaysoft",
       "source_name": "异次元软件世界",
@@ -446,23 +449,6 @@
       "title": "彻底破了！塞尔达传说：王国之泪 / 马力欧原生移植 PC 电脑版 (免模拟器直接运行)",
       "summary": "最近主机游戏圈发生了一场“超级大地震”，谁能想到，任天堂 (Nintendo) 那些独占的 Switch 游戏 大作，居然在短时间内被 AI 陆续“强制移植”成能原生运行的 PC 电脑版了？！ 过去《塞尔达传说：王国之泪》或《超级马力欧：奥德赛》只能 买 Switch 主机 或下载 Ryujinx 、 Yuzu 等 模拟器 ，性能效果很一般。而最近开源社区利用 AI 直接将游戏逆向解构，并重新编译王国之泪/马里奥成原生 PC 电脑版！ 无需模拟器 就能在 Windows 上丝滑 4K 高帧率运行…… 「 前往查看原文.... 」 异次元还有这些值得一看： 5 款安卓版 Switch 模拟器下载 - 在 Android 手机上流畅玩塞",
       "published_at": "2026-11-08T17:38:43.000Z",
-      "expires_at": null,
-      "relevance_score": 12,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "linuxdo:https://linux.do/t/topic/3155773",
-      "source_id": "linuxdo",
-      "source_name": "LINUX DO 福利羊毛",
-      "source_url": "https://linux.do/t/topic/3155773",
-      "title": "qwen code 1.x preview + qoder auth 可以领 500 credit",
-      "summary": "",
-      "published_at": "2026-11-11T08:00:32.000Z",
       "expires_at": null,
       "relevance_score": 12,
       "risk_score": 0,
@@ -554,12 +540,46 @@
       "review_status": "rejected"
     },
     {
+      "key": "linuxdo:https://linux.do/t/topic/3156489",
+      "source_id": "linuxdo",
+      "source_name": "LINUX DO 福利羊毛",
+      "source_url": "https://linux.do/t/topic/3156489",
+      "title": "【富可敌国】深空API 双11福利 Astra 0.01 倍不降智活动，临时增加001大鲸鱼 [活动已结束]",
+      "summary": "",
+      "published_at": "2026-11-11T09:41:18.000Z",
+      "expires_at": null,
+      "relevance_score": 10,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "内容更像资讯、问答、测评或普通软件更新"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "v2ex:https://v2ex.com/t/1256009",
+      "source_id": "v2ex",
+      "source_name": "V2EX 推广",
+      "source_url": "https://v2ex.com/t/1256009",
+      "title": "DBVibe 完全免费了，不用再花 Token 自己造数据库管理工具",
+      "summary": "最近更新了数据库管理工具 DBVibe ，决定完全免费开放，不再需要许可证或激活码。 DBVibe 不仅具备传统数据库管理工具的常用功能，可以满足日常数据库开发和维护需求，还针对 AI 时代增加了一些新的能力： Agent ：通过 AI Agent 自动执行数据库开发和维护任务。 MCP ：支持 AI Coding Agent 连接数据库并执行操作。 Skills ：让 AI 掌握数据库相关的操作流程和使用能力。 实时可视化 ：可以实时观看 Agent 操作数据库的过程。 安全授权 ：涉及数据库的操作，需要得到用户许可后才会继续执行。 项目地址： https://dbvibe.app 有任何问题、Bug 或功能建议，欢迎到 GitH",
+      "published_at": "2026-11-10T18:25:09.000Z",
+      "expires_at": null,
+      "relevance_score": 10,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "内容更像资讯、问答、测评或普通软件更新"
+      ],
+      "review_status": "queued"
+    },
+    {
       "key": "appinn:https://appinn.com/qiewenpaper-1111",
       "source_id": "appinn",
       "source_name": "小众软件",
       "source_url": "https://appinn.com/qiewenpaper-1111",
       "title": "福利｜复旦「学术版 Codex」双十一积分翻倍！",
-      "summary": "程序员被 Codex 彻底改变了。不用一行行敲代码，把需求丢给 AI，它自己写代码、跑测试、修 Bug，最后交付。 那么问题来了：科研人员天天干的活，不也是”配环境、跑实验、复现代码、查文献、写综述、画图”这些体力活吗？ 现在，复旦大学 NLP 团队把这套逻辑搬到了科研上，做",
+      "summary": "程序员被 Codex 彻底改变了。不用一行行敲代码，把需求丢给 AI，它自己写代码、跑测试、修 Bug，最后交付。 那么问题来了：科研人员天天干的活，不也是”配环境、跑实验、复现代码、查文",
       "published_at": "2026-11-10T06:46:27.000Z",
       "expires_at": null,
       "relevance_score": 10,
@@ -578,23 +598,6 @@
       "title": "Paint Net(绘画软件) v5.2 官方版",
       "summary": "Paint.NET 是 Windows 平台上的一个绘画以及图像和照片处理软件,它由华盛顿州立大学的学生开发和维护并由微软公司提供项目指导，早期定位于MSPaint的免费替代软件，...",
       "published_at": "2026-11-11T08:13:24.000Z",
-      "expires_at": null,
-      "relevance_score": 10,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "内容更像资讯、问答、测评或普通软件更新"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "linuxdo:https://linux.do/t/topic/3156489",
-      "source_id": "linuxdo",
-      "source_name": "LINUX DO 福利羊毛",
-      "source_url": "https://linux.do/t/topic/3156489",
-      "title": "【富可敌国】深空API 双11福利 Astra 0.01 倍不降智活动，临时增加001大鲸鱼 [活动已结束]",
-      "summary": "",
-      "published_at": "2026-11-11T09:41:18.000Z",
       "expires_at": null,
       "relevance_score": 10,
       "risk_score": 0,
@@ -708,39 +711,18 @@
       "review_status": "rejected"
     },
     {
-      "key": "v2ex:https://v2ex.com/t/1255720",
-      "source_id": "v2ex",
-      "source_name": "V2EX 推广",
-      "source_url": "https://v2ex.com/t/1255720",
-      "title": "万一免五是全佣 or 净佣？股票、ETF 手续费解剖给你看",
-      "summary": "开户都在找低佣、万一免五，但同样是“万一”，有人报净佣、有人报全佣，实际扣费能差不少。 先看表： 费用 A 股 场内 ETF 谁收 佣金（双向） 券商定，上限 0.3%，最低 5 元 同左 券商 印花税（只卖出） 万 5 无 税务局 过户费（双向） 万 0.1 无 中国结算 经手费（双向） 万 0.341 万 0.4 交易所 证管费（双向） 万 0.2 无 证监会 记住三句就行： 全佣 = 净佣 + 经手费 + 证管费（万 0.541 ） ，含不含过户费各家不一样，要问清。净佣万 1 ≈ 全佣万 1.541 ，别拿两个万 1 直接比。 底裤在这 ：股票规费（经手费+证管费）万 0.541 ，所以万 0.641 不含过户费的话，券商就",
-      "published_at": "2026-11-10T00:25:08.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 45,
-      "risk_flags": [
-        "unverified_financial"
-      ],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号",
-        "内容更像资讯、问答、测评或普通软件更新",
-        "命中高风险或不受支持的交易/软件规则"
-      ],
-      "review_status": "rejected"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1047668-1",
+      "key": "nodeseek:https://nodeseek.com/post-1047718-1",
       "source_id": "nodeseek",
       "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1047668-1",
-      "title": "Claude最严政策已实行. 已弹KYC",
-      "summary": "几年老号,万人骑节点,GooglePlay反代使用半个月.早上突然403.网页端登录提示KYC待会用护照试试.看一下是封号邮件先到还是继续爽蹬",
-      "published_at": "2026-11-11T22:00:01.000Z",
+      "source_url": "https://nodeseek.com/post-1047718-1",
+      "title": "出 zibll 7b2 瓜奇 OneNav 主题",
+      "summary": "ZibLL剩余2个授权位单价：88元/域名后续可换授权域名：满足条件可18元更换更换前域名与新域名所有人为同一人，或更换前域名与新域名备案人为同一人7B2剩余3个授权位单价：88元/域名授权后无法修改域名瓜奇剩余4个授权位单价：88元/域名授权后无法修改域名⚠️ZibLL、7B2、瓜奇均需低调使用：不能进授权群，也",
+      "published_at": "2026-11-12T00:22:10.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 45,
       "risk_flags": [
-        "account_abuse"
+        "secondary_market"
       ],
       "reasons": [
         "未发现明确的免费、折扣、返现或赠送信号",
@@ -749,34 +731,13 @@
       "review_status": "rejected"
     },
     {
-      "key": "nodeseek:https://nodeseek.com/post-1047666-1",
+      "key": "nodeseek:https://nodeseek.com/post-1047716-1",
       "source_id": "nodeseek",
       "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1047666-1",
-      "title": "反重力反代的3.8flash，怎么也开始超长思考了？",
-      "summary": "没问代码相关，简单问个了问题，足足思考了2分钟，生成一大堆思考内容，手机上都翻了好几页。而且感觉工作习惯也变了，这是灰测了？",
-      "published_at": "2026-11-11T21:53:27.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 45,
-      "risk_flags": [
-        "account_abuse"
-      ],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号",
-        "内容更像资讯、问答、测评或普通软件更新",
-        "命中高风险或不受支持的交易/软件规则"
-      ],
-      "review_status": "rejected"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1047651-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1047651-1",
-      "title": "「收」溢价20收 nnb NoBrand -1CM DUAL 78/年",
-      "summary": "「收」溢价20收nnbNoBrand-1CMDUAL78/年",
-      "published_at": "2026-11-11T20:13:29.000Z",
+      "source_url": "https://nodeseek.com/post-1047716-1",
+      "title": "国家税务总局11日透露，目前离岸信托收益征税政策过渡期已平稳结束",
+      "summary": "财政部税务总局7月24日公告(https://szs.mof.gov.cn/zhengcefabu/202607/t20260724_3994261.htm)，对离岸信托向委托人征收个人所得税。在装入环节按“财产转让所得”征个税，对信托收益按“利息股息红利所得”逐年征个税，依法都是20%税率。信托管理费、法律服务费",
+      "published_at": "2026-11-12T00:19:24.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 45,
@@ -831,650 +792,6 @@
       "review_status": "rejected"
     },
     {
-      "key": "v2ex:https://v2ex.com/t/1256237",
-      "source_id": "v2ex",
-      "source_name": "V2EX 推广",
-      "source_url": "https://v2ex.com/t/1256237",
-      "title": "CoreIX V4 发布，缤纷云祝“独自坚持创造的孤勇者们”节日快乐（内附赠额券）",
-      "summary": "CoreIX V4.0 上线 非常骄傲地在光棍节为 CoreIX 带来重大的全面更新，不仅朝我们 创造世界上最好的实时媒体引擎 的目标迈进了一大步，亦为你的项目带来了诸多独有的灵活功能。 希望能为你的项目带来无与伦比的全新竞争力，并祝所有 独自坚持创造的孤勇者们 节日快乐 —— COREIX20261111 —— 25%，你们懂的（ 200 元起） 各场景 性能提升 30% - 200% 不等，同时为你带来众多精彩的 全新特性 ： 视频与动图 新增 ** 视频剪辑 、 视频转动图 、 动图转视频 **，以及动图片段截取与倒放、抽帧、变速 —— 视频剪辑与动图转换 ； 新增 ** frame=auto **：自动挑选清晰、美观的一帧作",
-      "published_at": "2026-11-11T09:29:38.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号",
-        "内容更像资讯、问答、测评或普通软件更新"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "v2ex:https://v2ex.com/t/1256225",
-      "source_id": "v2ex",
-      "source_name": "V2EX 推广",
-      "source_url": "https://v2ex.com/t/1256225",
-      "title": "阿里云国际版开户充值指南：探讨 24 小时自助充值对出海高并发系统的运维价值",
-      "summary": "对于负责海外业务的架构师和研发负责人而言，评估一个云服务商除了看算力、网络和存储性能外，资源的合规采购与可持续充值能力同样是架构选型的重要指标。特别是在运营中重度出海游戏、跨境电商或实时高频交易系统时，一旦遭遇突发流量，系统需要紧急拉起数百个计算节点，如果此时遭遇云账户因欠费而无法及时扩容，将给企业带来不可估量的经济损失。因此，接入 阿里云 24 小时自助充值 渠道，是确保高并发系统稳健运行的财务技术先决条件。 正规的 阿里云国际版开户充值 流程通常通过授权代理商进行。代理商提供的 24 小时自助充值续费 平台，彻底打破了传统国际 B2B 财务审批周期长、跨境电汇到账慢的物理限制。用户通过代理商分配的独立后台，可以随时随地、全天候自",
-      "published_at": "2026-11-11T09:06:29.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "v2ex:https://v2ex.com/t/1256205",
-      "source_id": "v2ex",
-      "source_name": "V2EX 推广",
-      "source_url": "https://v2ex.com/t/1256205",
-      "title": "云杯网：阿里云国际账号购买与充值服务， 24H USDT 自助充值，香港及海外服务器",
-      "summary": "对于经常使用海外云服务器的个人开发者、网站站长以及跨境业务团队来说，选择合适的云服务渠道非常重要。特别是在使用阿里云国际站、腾讯云国际站、AWS 、Google Cloud 等海外云平台时，账号开通、账户充值以及支付方式往往是大家比较关注的问题。 今天给大家介绍一个专注于国际云服务的服务平台—— 云杯网（ CloudCup ） 。 官方网站： https://cloudcup.online 云杯网主要面向有海外云计算需求的用户，提供云账号相关服务、账户充值支持以及 USDT 自助充值服务，帮助用户更加方便地使用国际云计算产品。 一、云杯网提供哪些服务？ 云杯网主要围绕国际云服务账户及充值需求，为个人用户、开发者和企业客户提供相关服务",
-      "published_at": "2026-11-11T08:20:30.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "v2ex:https://v2ex.com/t/1256197",
-      "source_id": "v2ex",
-      "source_name": "V2EX 推广",
-      "source_url": "https://v2ex.com/t/1256197",
-      "title": "[分享创造] 做了个把 AI 生成的 PPT 图片转成可编辑 PPT 的工具",
-      "summary": "做了一个 3 分钟 gpt-img 转可编辑 ppt 并且可以保留艺术字的工具 之前做汇报 PPT 时，我发现 AI 生成的幻灯片好看得不得了，完全是我这种理科生望尘莫及的。但问题是改不了：一旦 AI 出现小幻觉，或者文案带点 AI 味，就只能重新生成、反复抽卡，结果还未必比第一次满意，让人很恼火😡。我也试过不少 skill ，烧了一堆 token ，速度和效果都不理想，于是我想，干脆自己手搓一个转换工具。 传送门： https://editableppt.com/ 我先后试过 gpt-image-2.5 的透明背景、Seedream5 、Canva 、Codia ，甚至还去闲鱼找过代做。价格倒是明码标价（一页 1 ～ 2 块），",
-      "published_at": "2026-11-11T07:50:22.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "v2ex:https://v2ex.com/t/1256107",
-      "source_id": "v2ex",
-      "source_name": "V2EX 推广",
-      "source_url": "https://v2ex.com/t/1256107",
-      "title": "[求关注]建立了一个 TG 频道 A 股资讯自动发布，回复这个帖子前 100 名送铜币",
-      "summary": "内容如下： 做了一个 Telegram 的 Bot ，每天早上会定时发布早盘情报，每小时会发布要闻，收盘发布总结。 📊 StockClaw ｜ A 股情报与复盘 早盘看重点，盘后看主线。 每日整理重要新闻、题材变化、涨停天梯与全球 Top10 ，附来源与相关题材。 👉 https://t.me/stockclawa 当前账户余额： 30 15",
-      "published_at": "2026-11-11T03:37:01.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "v2ex:https://v2ex.com/t/1256027",
-      "source_id": "v2ex",
-      "source_name": "V2EX 推广",
-      "source_url": "https://v2ex.com/t/1256027",
-      "title": "ChatGPT Plus/Pro 直充账户 长期稳定",
-      "summary": "ChatGPT Plus/Pro 直充账户 长期稳定 ChatGPT Plus -> 125 ChatGPT 10x -> 660 ChatGPT 20x -> 1150 欢迎 v 友咨询，已服务 100+ v 友 可以 +v(备注 v2) : Y2F0Y2hhZG1pbg==",
-      "published_at": "2026-11-11T00:56:23.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "v2ex:https://v2ex.com/t/1256014",
-      "source_id": "v2ex",
-      "source_name": "V2EX 推广",
-      "source_url": "https://v2ex.com/t/1256014",
-      "title": "[三万主机] 你还担心 Claude 封号？",
-      "summary": "看 V 站最近不少人在聊 Claude 封号，借这个话题打个广告。 我在做一个 Mac 租赁服务，叫三万主机，机器放在加拿大温哥华，接当地住宅宽带。整台 Mac mini / Mac Studio 租给你，给管理员账户，SSH、远程桌面都能连。 如果你平时用 Claude Code 比较多，可以把代码、工具和任务都放上面，本地电脑带着走，开发环境留在那台 Mac 上。也能拿来跑自动化、打包 iOS，具体装什么自己定。 配置和价格都放网站上了。支持银行卡、Apple Pay，也刚加了 USDT / USDC 收款。 https://30000.cn/ 有需要可以看看，想了解机器、网络或者交付方式，直接楼里问就行。",
-      "published_at": "2026-11-10T23:31:30.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "v2ex:https://v2ex.com/t/1256012",
-      "source_id": "v2ex",
-      "source_name": "V2EX 推广",
-      "source_url": "https://v2ex.com/t/1256012",
-      "title": "做了一个 MiniMax H3 Image 在线生图工具，支持文字生成和参考图编辑",
-      "summary": "最近做了一个 MiniMax H3 Image 在线生图站，想放到推广节点和大家分享。 目前可以直接在网页上输入提示词生成图片，也可以添加参考图，描述希望如何修改。生成前可设置画面比例、1K/2K/4K 分辨率、质量和张数。站里还整理了一些可浏览的提示词示例，方便找灵感或调整自己的描述。 网站： https://minimaxh3img.com/ 提示词库： https://minimaxh3img.com/prompts 欢迎反馈～",
-      "published_at": "2026-11-10T22:14:43.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "v2ex:https://v2ex.com/t/1255971",
-      "source_id": "v2ex",
-      "source_name": "V2EX 推广",
-      "source_url": "https://v2ex.com/t/1255971",
-      "title": "我开发了 AI Drake Video 生成器：用一张照片生成派对场景短视频",
-      "summary": "我最近做了个小工具 AI Drake Video 。起因是看到有人用 AI 把自己放进《 Burning Bridges 》的派对场景里，觉得挺有意思，但自己剪片段、写提示词、配音乐又有点折腾，就试着把这些步骤做成了一个网页工具。发到 V2EX 推广节点，想听听大家对效果和使用流程的意见。 AI Drake Video 简介 AI Drake Video 做的事情比较单一：上传一张照片，生成一段以照片中人物为主角的派对场景视频。房间、镜头运动和其他人物是预设的，主要替换站在镜头前的主角；输出是带音乐的 16:9 MP4 。它不生成 Drake 的声音，也不是官方产品。 AI Drake Video 的特点 只需要一张照片 ：单人、面",
-      "published_at": "2026-11-10T13:57:29.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "v2ex:https://v2ex.com/t/1255831",
-      "source_id": "v2ex",
-      "source_name": "V2EX 推广",
-      "source_url": "https://v2ex.com/t/1255831",
-      "title": "未读 Fable 5.2 王者归位，吉吉 api 第一时间上线，官方正品满血版 倍率 1.5，欢迎大佬来偿偿。",
-      "summary": "佬们，Fable 5.2 王者归位。正式登陆吉吉 API ！ https://www.jiji.cc 后台分组选 claude code max 组即可品尝。 🔥 新一代模型强势登场！这次不仅是能力升级，更是性能与成本的双重进化！ 🧠 核心性能全面提升 与其他旗舰模型正面对比 FrontierCode 2.0 编程评测： 🥇 Fable 5.2：49.1% 🥈 Opus 5.5：45.5% 🥉 GPT-6 Astra：42.8% 🏅 Gemini 4 Carbon：41.1% 在这项编程评测中，Fable 5.2 取得领先！ 相比上一代 Fable 5.1 ，官方公布的多项评测成绩显著提升： ⚡ 编程能力：32.4% →",
-      "published_at": "2026-11-10T03:59:10.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号",
-        "内容更像资讯、问答、测评或普通软件更新"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1047672-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1047672-1",
-      "title": "讨论下 windscribe 多 wg + 10069 的可行性？",
-      "summary": "前置条件（99%的人）：本地一条宽带，不准备叠加。有小鸡，非精品，随高峰期可能线路波动严重。有windscribe订阅，开3条wg即可，防止滥用，其次无限path可能也不是最佳实践。作用：在高峰期时，多path，自动寻找最佳路径到中继服务器。中继端到全球总体无障碍即可。总结：无限接近精品网，实现无限流量。",
-      "published_at": "2026-11-11T22:33:22.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1047671-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1047671-1",
-      "title": "英伟达怎么了",
-      "summary": "突然砸了",
-      "published_at": "2026-11-11T22:26:10.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号",
-        "内容更像资讯、问答、测评或普通软件更新"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1047670-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1047670-1",
-      "title": "《纽约时报》，英伟达 CEO 黄仁勋被指曾与一名英伟达高管有私人关系",
-      "summary": "老黄可以啊，玩双飞是吧",
-      "published_at": "2026-11-11T22:20:46.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1047669-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1047669-1",
-      "title": "一个坏消息和一个坏消息. Claude弹KYC, 土区Gemini已关门",
-      "summary": "",
-      "published_at": "2026-11-11T22:11:33.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1047667-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1047667-1",
-      "title": "华为云服务器断连了",
-      "summary": "5点左右ssh就连不上了，应该是华为云服务器的原因，我还以为ssh客户端有问题以前偶尔也遇到过，这次等待很久都进不去，老哥们也有这问题吗",
-      "published_at": "2026-11-11T21:56:37.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号",
-        "内容更像资讯、问答、测评或普通软件更新"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1047663-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1047663-1",
-      "title": "[nq]yunyoo 家宽",
-      "summary": "中奖小鸡，感谢大佬💻基本信息++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 硬件质量体检报告： 1.168.*.* https://github.com/xykt/Hardware",
-      "published_at": "2026-11-11T21:41:06.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1047662-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1047662-1",
-      "title": "明盘高价回收最后一波GCP",
-      "summary": "GCP300刀350GCP预付号100不要转移结算的和巴西印度这种资源有的直接DM我不用回复论坛新号不用DM我",
-      "published_at": "2026-11-11T21:40:44.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号",
-        "个人收购云服务额度。"
-      ],
-      "review_status": "rejected"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1047661-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1047661-1",
-      "title": "(上游问题)Vmiss la tri大半夜一声不响挂了。",
-      "summary": "5点多醒来，以为手机坏了，后来切到牛马云，才发现探针离线了，群里也有好多反应此事，关键没看到维护公告，要稳住哦，有点被搞得多疑了，哎",
-      "published_at": "2026-11-11T21:37:28.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1047659-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1047659-1",
-      "title": "ix能用wireguard当落地么？",
-      "summary": "事情是这样，我有个VPN账号，它的所有服务器都标配openvpn和wireguard，如果是VPS，是可以走VPN服务器的wireguard的。我没用过ix，不知道ix是不是也可以像普通VPS那样设置转发。这样一来的话，我就不用买落地了。",
-      "published_at": "2026-11-11T21:03:14.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1047658-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1047658-1",
-      "title": "我发现claude似乎道德比openai更高？",
-      "summary": "刚下载claude想让它帮我写个自动下载大姐姐写真集的脚本，它不干，这是正常现象吗？",
-      "published_at": "2026-11-11T20:57:38.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号",
-        "内容更像资讯、问答、测评或普通软件更新"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1047656-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1047656-1",
-      "title": "我的美区PayPal是活了吗？",
-      "summary": "https://www.nodeseek.com/post-982161-1当时只上传了身份证，然后有个上传护照的提示一直在消息里，我也没管他。现在啥提示也没了，是好了吗？",
-      "published_at": "2026-11-11T20:45:05.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号",
-        "内容更像资讯、问答、测评或普通软件更新"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1047650-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1047650-1",
-      "title": "UNRAID 7.4.0 支持在线升级",
-      "summary": "参考UNRAID7.3.4支持在线升级升级内容Version7.4.02026-11-10",
-      "published_at": "2026-11-11T20:11:13.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号",
-        "内容更像资讯、问答、测评或普通软件更新"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1047649-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1047649-1",
-      "title": "UNRAID 7.3.4 支持在线升级",
-      "summary": "参考UNRAID7.3.2支持在线升级升级内容Version7.3.42026-10-22",
-      "published_at": "2026-11-11T20:10:33.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号",
-        "内容更像资讯、问答、测评或普通软件更新"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "appinn:https://appinn.com/11-lightweight-self-hosted-apps-512mb-ram",
-      "source_id": "appinn",
-      "source_name": "小众软件",
-      "source_url": "https://appinn.com/11-lightweight-self-hosted-apps-512mb-ram",
-      "title": "11 款超轻量自托管工具，最低只占 5MB 内存｜OpenStick 新玩法",
-      "summary": "如果你有一台只有 512MB 内存的小主机，能用来装什么？ 终于有人干这事了！ 开发者 Laurens Bosscher 花了大约 10 美元（含运费），买来一台只有 512MB 内存、4GB 存储空间 的 OpenStick 小设备，装上 Debian Linux，竟然在上面跑起了广告过滤、AI",
-      "published_at": "2026-11-11T08:49:57.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "appinn:https://appinn.com/apple-harbor-mac-ai-cluster",
-      "source_id": "appinn",
-      "source_name": "小众软件",
-      "source_url": "https://appinn.com/apple-harbor-mac-ai-cluster",
-      "title": "苹果新应用 Harbor 曝光：插线连接多台 Mac，一起运行本地大模型",
-      "summary": "在 Mac 上运行本地大模型已经不是什么新鲜事了，但如果模型太大，一台 Mac 的内存装不下怎么办？ 苹果似乎准备提供一个更简单的办法：把几台 Mac 用 Thunderbolt 5 连接起来，让它们一起运行 AI 大模型。 近日有 X 用户 @Aaron 爆料消息称，苹果正在开发一款名为 Harb",
-      "published_at": "2026-11-11T08:14:07.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号",
-        "内容更像资讯、问答、测评或普通软件更新"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "appinn:https://appinn.com/tvport-apple-tv",
-      "source_id": "appinn",
-      "source_name": "小众软件",
-      "source_url": "https://appinn.com/tvport-apple-tv",
-      "title": "TVPort – 苹果 Apple TV 4K 原生运行《超级马力欧：奥德赛》",
-      "summary": "继《塞尔达传说：王国之泪》《塞尔达传说：时之笛》被跨平台移植到 Windows 电脑之后，现在连苹果家的电视盒子 Apple TV 4K，也能运行任天堂 Switch 游戏了！ 这次是《超级马力欧：奥德赛》（Super Mario Odyssey），开发者声称在第三代 Apple TV 4K 上可以",
-      "published_at": "2026-11-11T07:11:15.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "appinn:https://appinn.com/process-explorer-for-macos",
-      "source_id": "appinn",
-      "source_name": "小众软件",
-      "source_url": "https://appinn.com/process-explorer-for-macos",
-      "title": "微软为 Mac 推出 Process Explorer：比活动监视器更强大的进程管理工具",
-      "summary": "Mac 上的某个程序突然占用大量 CPU，却不知道它在后台干什么？想知道一个软件偷偷连接了哪些服务器，或者某个文件究竟被哪个进程占用？ macOS 自带的「活动监视器」虽然能查看 CPU、内存和进程，但遇到复杂问题时，能提供的信息就有些不够用了。 现在，微软把 Windows 上的一款经典系统工具带",
-      "published_at": "2026-11-11T06:40:36.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "appinn:https://appinn.com/nfsu2-browser-multiplayer",
-      "source_id": "appinn",
-      "source_name": "小众软件",
-      "source_url": "https://appinn.com/nfsu2-browser-multiplayer",
-      "title": "在浏览器里运行《极品飞车·地下狂飙2》支持联机",
-      "summary": "有人将 PC 版游戏本身的源代码，重新编译给 Chrome 与 Firefox 使用，最高支持 120 fps、并且可以与朋友一起在线游戏。 支持手柄、方向盘、触控操作，堪称完美运行啊。 开发者说： 大约 20 年前，我和兄弟一起玩过这款游戏。因为这样，我试着把它移植到浏览器上，让我们能再一起玩。结",
-      "published_at": "2026-11-10T05:47:21.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "appinn:https://appinn.com/hookshot",
-      "source_id": "appinn",
-      "source_name": "小众软件",
-      "source_url": "https://appinn.com/hookshot",
-      "title": "Hookshot – 《塞尔达传说：时之笛》重制版已能在 PC 原生运行，无需模拟器",
-      "summary": "Hookshot v2.1.0 发布：游戏崩溃修复、手柄陀螺仪支持、5.1 声道音频，以及更新机制的改进，搬运已同步。 11月11日更新，具体内容为： 继《塞尔达传说：王国之泪》之后，又一款塞尔达游戏可以在 Windows 电脑上原生运行了！ 这次是2026年11月5日刚刚发售的 Switch 2",
-      "published_at": "2026-11-09T08:52:41.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号",
-        "内容更像资讯、问答、测评或普通软件更新"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "appinn:https://appinn.com/faxian-top10-2645",
-      "source_id": "appinn",
-      "source_name": "小众软件",
-      "source_url": "https://appinn.com/faxian-top10-2645",
-      "title": "发现频道：10款大家发现的好评软件[2026年第45期]",
-      "summary": "最近10日，来自小众软件论坛的发现频道的热门排行榜，由系统自动生成，直接列出来： 1️⃣ SnowAir 链接：https://meta.appinn.net/t/95048 适用平台：Windows 一句话描述：Windows 上的截图工具很多，但大多要么体积不小、要么装一堆服务，要么把 OCR、",
-      "published_at": "2026-11-09T01:00:34.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "ghxi:https://ghxi.com/xl17green.html",
-      "source_id": "ghxi",
-      "source_name": "果核剥壳",
-      "source_url": "https://ghxi.com/xl17green.html",
-      "title": "迅雷17 v25.1.44.1745 绿色精简版",
-      "summary": "迅雷17绿色精简版 是基于官方迅雷17修改的下载加速与云盘客户端，主打纯净无广告、去除自动更新等冗余组件、免安装解压即用；保留云盘、片库、链接库、边下边播、极速下载等核心功能，并支...",
-      "published_at": "2026-11-11T09:51:05.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "ghxi:https://ghxi.com/hypersnap.html",
-      "source_id": "ghxi",
-      "source_name": "果核剥壳",
-      "source_url": "https://ghxi.com/hypersnap.html",
-      "title": "HyperSnap v10.5.2 修改便携版",
-      "summary": "Hypersnap汉化中文版 老牌优秀屏幕截图工具，果核剥壳独家便携。老牌优秀的屏幕截图工具，全新界面，不仅能抓取标准桌面程序，还能抓取 DirectX, 3Dfx Glide的 ...",
-      "published_at": "2026-11-11T09:30:12.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号",
-        "内容更像资讯、问答、测评或普通软件更新"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "ghxi:https://ghxi.com/mdm.html",
-      "source_id": "ghxi",
-      "source_name": "果核剥壳",
-      "source_url": "https://ghxi.com/mdm.html",
-      "title": "Mister Download Manager v0.5.2 便携版",
-      "summary": "Mister Download Manager是一款用纯 Rust 从零编写的开源下载管理器，定位为 IDM 的\"清室重制版\"——窗口、菜单、工具栏与工作流都与 IDM 一致，但更...",
-      "published_at": "2026-11-11T08:54:20.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号",
-        "内容更像资讯、问答、测评或普通软件更新"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "ghxi:https://ghxi.com/weixin.html",
-      "source_id": "ghxi",
-      "source_name": "果核剥壳",
-      "source_url": "https://ghxi.com/weixin.html",
-      "title": "微信PC v4.2.0.52 官方版",
-      "summary": "微信PC 4.0版支持Windows和macOS双端。微信PC 4.0新版本和旧版本可以共存，不会覆盖安装，进入4.0后会提示导入原来的聊天记录。软件加入了深色模式，支持跟随系统调...",
-      "published_at": "2026-11-11T08:43:18.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "ghxi:https://ghxi.com/operachrome.html",
-      "source_id": "ghxi",
-      "source_name": "果核剥壳",
-      "source_url": "https://ghxi.com/operachrome.html",
-      "title": "Opera浏览器 v140.0.6074.17 绿色便携版",
-      "summary": "Opera 是来自挪威的一个极为出色的网络浏览套件,具有速度快、节省系统资源、定制能力强、安全性高以及体积小等特点,目前已经是广受欢迎的浏览器之一。多文档接 口 (MDI)、方便的...",
-      "published_at": "2026-11-11T08:33:28.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "ghxi:https://ghxi.com/qownnotes.html",
-      "source_id": "ghxi",
-      "source_name": "果核剥壳",
-      "source_url": "https://ghxi.com/qownnotes.html",
-      "title": "QOwnNotes(开源Markdown笔记本) v26.11.7 绿色版",
-      "summary": "QOwnNotes是开源的记事本，具有 Markdown支持 和针对GNU / Linux，Mac OS X和Windows的待办事项列表管理器，可与Nextcloud Notes...",
-      "published_at": "2026-11-11T07:45:22.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号",
-        "内容更像资讯、问答、测评或普通软件更新"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "ghxi:https://ghxi.com/vnote.html",
-      "source_id": "ghxi",
-      "source_name": "果核剥壳",
-      "source_url": "https://ghxi.com/vnote.html",
-      "title": "VNote(开源Markdown笔记) v4.14.2 官方中文版",
-      "summary": "VNote官方版是一款基于qt的专业笔记型软件。VNote最新版界面简约、操作轻松、功能全面，专注于Markdown，VNote的设计是为了提供舒适的编辑体验，当然这款软件不仅仅是...",
-      "published_at": "2026-11-11T07:26:18.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号",
-        "内容更像资讯、问答、测评或普通软件更新"
-      ],
-      "review_status": "queued"
-    },
-    {
       "key": "linuxdo:https://linux.do/t/topic/3157975",
       "source_id": "linuxdo",
       "source_name": "LINUX DO 福利羊毛",
@@ -1482,23 +799,6 @@
       "title": "【抽奖】新人报道，抽一个颠影的邀请码",
       "summary": "",
       "published_at": "2026-11-11T15:36:04.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "linuxdo:https://linux.do/t/topic/3157940",
-      "source_id": "linuxdo",
-      "source_name": "LINUX DO 福利羊毛",
-      "source_url": "https://linux.do/t/topic/3157940",
-      "title": "白嫖的geminipro全掉了你们的掉了吗",
-      "summary": "",
-      "published_at": "2026-11-11T15:26:39.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -1747,21 +1047,625 @@
       "review_status": "queued"
     },
     {
-      "key": "nodeseek:https://nodeseek.com/post-1047665-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1047665-1",
-      "title": "求一个x premium 的推荐免费试用",
-      "summary": "有的大佬请私信给我link，感谢",
-      "published_at": "2026-11-11T21:51:17.000Z",
+      "key": "v2ex:https://v2ex.com/t/1256279",
+      "source_id": "v2ex",
+      "source_name": "V2EX 推广",
+      "source_url": "https://v2ex.com/t/1256279",
+      "title": "ZA Bank 奖励加码了。去香港众安银行开户额外返 500HKD!",
+      "summary": "操作的过程中有任何疑问，欢迎随时私信咨询我。TG: fgvbt123 电报群： https://t.me/fgvbt2",
+      "published_at": "2026-11-11T12:33:37.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
       "risk_flags": [],
       "reasons": [
-        "个人求试用推荐，缺少可供领取的活动。"
+        "未发现明确的免费、折扣、返现或赠送信号"
       ],
-      "review_status": "rejected"
+      "review_status": "queued"
+    },
+    {
+      "key": "v2ex:https://v2ex.com/t/1256237",
+      "source_id": "v2ex",
+      "source_name": "V2EX 推广",
+      "source_url": "https://v2ex.com/t/1256237",
+      "title": "CoreIX V4 发布，缤纷云祝“独自坚持创造的孤勇者们”节日快乐（内附赠额券）",
+      "summary": "CoreIX V4.0 上线 非常骄傲地在光棍节为 CoreIX 带来重大的全面更新，不仅朝我们 创造世界上最好的实时媒体引擎 的目标迈进了一大步，亦为你的项目带来了诸多独有的灵活功能。 希望能为你的项目带来无与伦比的全新竞争力，并祝所有 独自坚持创造的孤勇者们 节日快乐 —— COREIX20261111 —— 25%，你们懂的（ 200 元起） 各场景 性能提升 30% - 200% 不等，同时为你带来众多精彩的 全新特性 ： 视频与动图 新增 ** 视频剪辑 、 视频转动图 、 动图转视频 **，以及动图片段截取与倒放、抽帧、变速 —— 视频剪辑与动图转换 ； 新增 ** frame=auto **：自动挑选清晰、美观的一帧作",
+      "published_at": "2026-11-11T09:29:38.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号",
+        "内容更像资讯、问答、测评或普通软件更新"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "v2ex:https://v2ex.com/t/1256225",
+      "source_id": "v2ex",
+      "source_name": "V2EX 推广",
+      "source_url": "https://v2ex.com/t/1256225",
+      "title": "阿里云国际版开户充值指南：探讨 24 小时自助充值对出海高并发系统的运维价值",
+      "summary": "对于负责海外业务的架构师和研发负责人而言，评估一个云服务商除了看算力、网络和存储性能外，资源的合规采购与可持续充值能力同样是架构选型的重要指标。特别是在运营中重度出海游戏、跨境电商或实时高频交易系统时，一旦遭遇突发流量，系统需要紧急拉起数百个计算节点，如果此时遭遇云账户因欠费而无法及时扩容，将给企业带来不可估量的经济损失。因此，接入 阿里云 24 小时自助充值 渠道，是确保高并发系统稳健运行的财务技术先决条件。 正规的 阿里云国际版开户充值 流程通常通过授权代理商进行。代理商提供的 24 小时自助充值续费 平台，彻底打破了传统国际 B2B 财务审批周期长、跨境电汇到账慢的物理限制。用户通过代理商分配的独立后台，可以随时随地、全天候自",
+      "published_at": "2026-11-11T09:06:29.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "v2ex:https://v2ex.com/t/1256212",
+      "source_id": "v2ex",
+      "source_name": "V2EX 推广",
+      "source_url": "https://v2ex.com/t/1256212",
+      "title": "属于打工人的专属伴侣小程序，让摸鱼这件事变得明明白白",
+      "summary": "​ 每天两点一线，从家里到公司，坐在电脑前，匆匆忙忙，碌碌无为，一晃眼一天就过去了。 直到遇到了这个小程序 [闲隅池] ，它把我打工的一天给我记录得清清楚楚。打工人所关心的点，一览无余。 还有几天周末，还有几天发工资，最近的节日还有多少天，每一个都是给在给我们打鸡血。 还准备了 Skill ，接入自己的 AI 工具，一句话，就可以记录自己的打工生活。 把摸鱼的时间存起来 吃饭、午休、摸鱼、睡觉，把净赚的时间和薪资量化的明明白白。 工作再忙，也别忘了快乐 一些心理测试，决策辅助，日常工具，不断刷新。还有一些轻松的小玩法，让你在忙碌的工作间隙，能够暂时切换一下心情。 以后这里还会持续增加新的小功能。 不只是摸鱼，还有属于自己的成就 在「",
+      "published_at": "2026-11-11T08:39:15.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "v2ex:https://v2ex.com/t/1256205",
+      "source_id": "v2ex",
+      "source_name": "V2EX 推广",
+      "source_url": "https://v2ex.com/t/1256205",
+      "title": "云杯网：阿里云国际账号购买与充值服务， 24H USDT 自助充值，香港及海外服务器",
+      "summary": "对于经常使用海外云服务器的个人开发者、网站站长以及跨境业务团队来说，选择合适的云服务渠道非常重要。特别是在使用阿里云国际站、腾讯云国际站、AWS 、Google Cloud 等海外云平台时，账号开通、账户充值以及支付方式往往是大家比较关注的问题。 今天给大家介绍一个专注于国际云服务的服务平台—— 云杯网（ CloudCup ） 。 官方网站： https://cloudcup.online 云杯网主要面向有海外云计算需求的用户，提供云账号相关服务、账户充值支持以及 USDT 自助充值服务，帮助用户更加方便地使用国际云计算产品。 一、云杯网提供哪些服务？ 云杯网主要围绕国际云服务账户及充值需求，为个人用户、开发者和企业客户提供相关服务",
+      "published_at": "2026-11-11T08:20:30.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "v2ex:https://v2ex.com/t/1256197",
+      "source_id": "v2ex",
+      "source_name": "V2EX 推广",
+      "source_url": "https://v2ex.com/t/1256197",
+      "title": "[分享创造] 做了个把 AI 生成的 PPT 图片转成可编辑 PPT 的工具",
+      "summary": "做了一个 3 分钟 gpt-img 转可编辑 ppt 并且可以保留艺术字的工具 之前做汇报 PPT 时，我发现 AI 生成的幻灯片好看得不得了，完全是我这种理科生望尘莫及的。但问题是改不了：一旦 AI 出现小幻觉，或者文案带点 AI 味，就只能重新生成、反复抽卡，结果还未必比第一次满意，让人很恼火😡。我也试过不少 skill ，烧了一堆 token ，速度和效果都不理想，于是我想，干脆自己手搓一个转换工具。 传送门： https://editableppt.com/ 我先后试过 gpt-image-2.5 的透明背景、Seedream5 、Canva 、Codia ，甚至还去闲鱼找过代做。价格倒是明码标价（一页 1 ～ 2 块），",
+      "published_at": "2026-11-11T07:50:22.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "v2ex:https://v2ex.com/t/1256107",
+      "source_id": "v2ex",
+      "source_name": "V2EX 推广",
+      "source_url": "https://v2ex.com/t/1256107",
+      "title": "[求关注]建立了一个 TG 频道 A 股资讯自动发布，回复这个帖子前 100 名送铜币",
+      "summary": "内容如下： 做了一个 Telegram 的 Bot ，每天早上会定时发布早盘情报，每小时会发布要闻，收盘发布总结。 📊 StockClaw ｜ A 股情报与复盘 早盘看重点，盘后看主线。 每日整理重要新闻、题材变化、涨停天梯与全球 Top10 ，附来源与相关题材。 👉 https://t.me/stockclawa 当前账户余额： 30 15",
+      "published_at": "2026-11-11T03:37:01.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "v2ex:https://v2ex.com/t/1256027",
+      "source_id": "v2ex",
+      "source_name": "V2EX 推广",
+      "source_url": "https://v2ex.com/t/1256027",
+      "title": "ChatGPT Plus/Pro 直充账户 长期稳定",
+      "summary": "ChatGPT Plus/Pro 直充账户 长期稳定 ChatGPT Plus -> 125 ChatGPT 10x -> 660 ChatGPT 20x -> 1150 欢迎 v 友咨询，已服务 100+ v 友 可以 +v(备注 v2) : Y2F0Y2hhZG1pbg==",
+      "published_at": "2026-11-11T00:56:23.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "v2ex:https://v2ex.com/t/1256014",
+      "source_id": "v2ex",
+      "source_name": "V2EX 推广",
+      "source_url": "https://v2ex.com/t/1256014",
+      "title": "[三万主机] 你还担心 Claude 封号？",
+      "summary": "看 V 站最近不少人在聊 Claude 封号，借这个话题打个广告。 我在做一个 Mac 租赁服务，叫三万主机，机器放在加拿大温哥华，接当地住宅宽带。整台 Mac mini / Mac Studio 租给你，给管理员账户，SSH、远程桌面都能连。 如果你平时用 Claude Code 比较多，可以把代码、工具和任务都放上面，本地电脑带着走，开发环境留在那台 Mac 上。也能拿来跑自动化、打包 iOS，具体装什么自己定。 配置和价格都放网站上了。支持银行卡、Apple Pay，也刚加了 USDT / USDC 收款。 https://30000.cn/ 有需要可以看看，想了解机器、网络或者交付方式，直接楼里问就行。",
+      "published_at": "2026-11-10T23:31:30.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "v2ex:https://v2ex.com/t/1256012",
+      "source_id": "v2ex",
+      "source_name": "V2EX 推广",
+      "source_url": "https://v2ex.com/t/1256012",
+      "title": "做了一个 MiniMax H3 Image 在线生图工具，支持文字生成和参考图编辑",
+      "summary": "最近做了一个 MiniMax H3 Image 在线生图站，想放到推广节点和大家分享。 目前可以直接在网页上输入提示词生成图片，也可以添加参考图，描述希望如何修改。生成前可设置画面比例、1K/2K/4K 分辨率、质量和张数。站里还整理了一些可浏览的提示词示例，方便找灵感或调整自己的描述。 网站： https://minimaxh3img.com/ 提示词库： https://minimaxh3img.com/prompts 欢迎反馈～",
+      "published_at": "2026-11-10T22:14:43.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "v2ex:https://v2ex.com/t/1255971",
+      "source_id": "v2ex",
+      "source_name": "V2EX 推广",
+      "source_url": "https://v2ex.com/t/1255971",
+      "title": "我开发了 AI Drake Video 生成器：用一张照片生成派对场景短视频",
+      "summary": "我最近做了个小工具 AI Drake Video 。起因是看到有人用 AI 把自己放进《 Burning Bridges 》的派对场景里，觉得挺有意思，但自己剪片段、写提示词、配音乐又有点折腾，就试着把这些步骤做成了一个网页工具。发到 V2EX 推广节点，想听听大家对效果和使用流程的意见。 AI Drake Video 简介 AI Drake Video 做的事情比较单一：上传一张照片，生成一段以照片中人物为主角的派对场景视频。房间、镜头运动和其他人物是预设的，主要替换站在镜头前的主角；输出是带音乐的 16:9 MP4 。它不生成 Drake 的声音，也不是官方产品。 AI Drake Video 的特点 只需要一张照片 ：单人、面",
+      "published_at": "2026-11-10T13:57:29.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "v2ex:https://v2ex.com/t/1255831",
+      "source_id": "v2ex",
+      "source_name": "V2EX 推广",
+      "source_url": "https://v2ex.com/t/1255831",
+      "title": "未读 Fable 5.2 王者归位，吉吉 api 第一时间上线，官方正品满血版 倍率 1.5，欢迎大佬来偿偿。",
+      "summary": "佬们，Fable 5.2 王者归位。正式登陆吉吉 API ！ https://www.jiji.cc 后台分组选 claude code max 组即可品尝。 🔥 新一代模型强势登场！这次不仅是能力升级，更是性能与成本的双重进化！ 🧠 核心性能全面提升 与其他旗舰模型正面对比 FrontierCode 2.0 编程评测： 🥇 Fable 5.2：49.1% 🥈 Opus 5.5：45.5% 🥉 GPT-6 Astra：42.8% 🏅 Gemini 4 Carbon：41.1% 在这项编程评测中，Fable 5.2 取得领先！ 相比上一代 Fable 5.1 ，官方公布的多项评测成绩显著提升： ⚡ 编程能力：32.4% →",
+      "published_at": "2026-11-10T03:59:10.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号",
+        "内容更像资讯、问答、测评或普通软件更新"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1047733-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek",
+      "source_url": "https://nodeseek.com/post-1047733-1",
+      "title": "Google ultra 20x封车了，下个月会不会涨价呢",
+      "summary": "",
+      "published_at": "2026-11-12T00:38:24.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1047732-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek",
+      "source_url": "https://nodeseek.com/post-1047732-1",
+      "title": "听说小马哥要向社会输送大量人才",
+      "summary": "",
+      "published_at": "2026-11-12T00:37:54.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1047729-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek",
+      "source_url": "https://nodeseek.com/post-1047729-1",
+      "title": "快一个月了，喜提A\\ kyc验证",
+      "summary": "如题，你们的还好吗？",
+      "published_at": "2026-11-12T00:35:39.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号",
+        "内容更像资讯、问答、测评或普通软件更新"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1047728-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek",
+      "source_url": "https://nodeseek.com/post-1047728-1",
+      "title": "muse专家在吗 win上用muse code必须绑卡吗？",
+      "summary": "是不是不绑卡只能聊天，没有完全体的agent功能？",
+      "published_at": "2026-11-12T00:32:27.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1047727-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek",
+      "source_url": "https://nodeseek.com/post-1047727-1",
+      "title": "谷歌推出 Gemini Decisions API 快速多模态决策",
+      "summary": "谷歌发布GeminiDecisionsAPI，基于新模型GeminiDecision1，面向工具选择、策略检查、模型路由等封闭式决策。它支持文本、图像、音频、视频和PDF，单次最多可对1000个问题打分，返回概率与置信度，端到端延迟约150-250毫秒。定价为每百万输入tokens0.10美元，输出token不收费",
+      "published_at": "2026-11-12T00:30:33.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1047726-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek",
+      "source_url": "https://nodeseek.com/post-1047726-1",
+      "title": "昨天开始A畜封号又变严格了，各位注意",
+      "summary": "论坛里一下子被封的人多了",
+      "published_at": "2026-11-12T00:29:12.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1047724-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek",
+      "source_url": "https://nodeseek.com/post-1047724-1",
+      "title": "vmiss的207要再见了",
+      "summary": "IP被回收.全部拔线.我的服务又遭殃了",
+      "published_at": "2026-11-12T00:28:38.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1047722-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek",
+      "source_url": "https://nodeseek.com/post-1047722-1",
+      "title": "弄一个muse邀请码助力贴（ bot好多都瘫了",
+      "summary": "邀请码：Z3WS9N",
+      "published_at": "2026-11-12T00:27:08.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1047719-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek",
+      "source_url": "https://nodeseek.com/post-1047719-1",
+      "title": "谁有软银鸡的针呀",
+      "summary": "skyline之类的想看看老兄们的针",
+      "published_at": "2026-11-12T00:22:30.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1047713-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek",
+      "source_url": "https://nodeseek.com/post-1047713-1",
+      "title": "Google ultra 20x人找车",
+      "summary": "",
+      "published_at": "2026-11-12T00:17:09.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "appinn:https://appinn.com/11-lightweight-self-hosted-apps-512mb-ram",
+      "source_id": "appinn",
+      "source_name": "小众软件",
+      "source_url": "https://appinn.com/11-lightweight-self-hosted-apps-512mb-ram",
+      "title": "11 款超轻量自托管工具，最低只占 5MB 内存｜OpenStick 新玩法",
+      "summary": "如果你有一台只有 512MB 内存的小主机，能用来装什么？ 终于有人干这事了！ 开发者 Laurens Bosscher 花了大约 10 美元（含运费），买来一台只有 512MB 内存、4GB 存储空",
+      "published_at": "2026-11-11T08:48:57.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "appinn:https://appinn.com/apple-harbor-mac-ai-cluster",
+      "source_id": "appinn",
+      "source_name": "小众软件",
+      "source_url": "https://appinn.com/apple-harbor-mac-ai-cluster",
+      "title": "苹果新应用 Harbor 曝光：插线连接多台 Mac，一起运行本地大模型",
+      "summary": "在 Mac 上运行本地大模型已经不是什么新鲜事了，但如果模型太大，一台 Mac 的内存装不下怎么办？ 苹果似乎准备提供一个更简单的办法：把几台 Mac 用 Thunderbolt 5 连接起来，让它们",
+      "published_at": "2026-11-11T08:03:23.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号",
+        "内容更像资讯、问答、测评或普通软件更新"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "appinn:https://appinn.com/tvport-apple-tv",
+      "source_id": "appinn",
+      "source_name": "小众软件",
+      "source_url": "https://appinn.com/tvport-apple-tv",
+      "title": "TVPort – 苹果 Apple TV 4K 原生运行《超级马力欧：奥德赛》",
+      "summary": "继《塞尔达传说：王国之泪》《塞尔达传说：时之笛》被跨平台移植到 Windows 电脑之后，现在连苹果家的电视盒子 Apple TV 4K，也能运行任天堂 Switch 游戏了！ 这次是《超级马力欧：奥",
+      "published_at": "2026-11-11T07:10:18.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "appinn:https://appinn.com/process-explorer-for-macos",
+      "source_id": "appinn",
+      "source_name": "小众软件",
+      "source_url": "https://appinn.com/process-explorer-for-macos",
+      "title": "微软为 Mac 推出 Process Explorer：比活动监视器更强大的进程管理工具",
+      "summary": "Mac 上的某个程序突然占用大量 CPU，却不知道它在后台干什么？想知道一个软件偷偷连接了哪些服务器，或者某个文件究竟被哪个进程占用？ macOS 自带的「活动监视器」虽然能查看 CPU、内存和进程，",
+      "published_at": "2026-11-11T06:39:18.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "appinn:https://appinn.com/nfsu2-browser-multiplayer",
+      "source_id": "appinn",
+      "source_name": "小众软件",
+      "source_url": "https://appinn.com/nfsu2-browser-multiplayer",
+      "title": "在浏览器里运行《极品飞车·地下狂飙2》支持联机",
+      "summary": "有人将 PC 版游戏本身的源代码，重新编译给 Chrome 与 Firefox 使用，最高支持 120 fps、并且可以与朋友一起在线游戏。 支持手柄、方向盘、触控操作，堪称完美运行啊。 开发者说：",
+      "published_at": "2026-11-10T05:41:07.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "appinn:https://appinn.com/hookshot",
+      "source_id": "appinn",
+      "source_name": "小众软件",
+      "source_url": "https://appinn.com/hookshot",
+      "title": "Hookshot – 《塞尔达传说：时之笛》重制版已能在 PC 原生运行，无需模拟器",
+      "summary": "Hookshot v2.1.0 发布：游戏崩溃修复、手柄陀螺仪支持、5.1 声道音频，以及更新机制的改进，搬运已同步。 11月11日更新，具体内容为： 继《塞尔达传说：王国之泪》之后，又一款塞尔达游戏",
+      "published_at": "2026-11-09T08:52:41.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号",
+        "内容更像资讯、问答、测评或普通软件更新"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "appinn:https://appinn.com/faxian-top10-2645",
+      "source_id": "appinn",
+      "source_name": "小众软件",
+      "source_url": "https://appinn.com/faxian-top10-2645",
+      "title": "发现频道：10款大家发现的好评软件[2026年第45期]",
+      "summary": "最近10日，来自小众软件论坛的发现频道的热门排行榜，由系统自动生成，直接列出来： 1️⃣ SnowAir 链接：https://meta.appinn.net/t/95048 适用平台：Windows",
+      "published_at": "2026-11-09T01:00:37.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "ghxi:https://ghxi.com/xl17green.html",
+      "source_id": "ghxi",
+      "source_name": "果核剥壳",
+      "source_url": "https://ghxi.com/xl17green.html",
+      "title": "迅雷17 v25.1.44.1745 绿色精简版",
+      "summary": "迅雷17绿色精简版 是基于官方迅雷17修改的下载加速与云盘客户端，主打纯净无广告、去除自动更新等冗余组件、免安装解压即用；保留云盘、片库、链接库、边下边播、极速下载等核心功能，并支...",
+      "published_at": "2026-11-11T09:51:05.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "ghxi:https://ghxi.com/hypersnap.html",
+      "source_id": "ghxi",
+      "source_name": "果核剥壳",
+      "source_url": "https://ghxi.com/hypersnap.html",
+      "title": "HyperSnap v10.5.2 修改便携版",
+      "summary": "Hypersnap汉化中文版 老牌优秀屏幕截图工具，果核剥壳独家便携。老牌优秀的屏幕截图工具，全新界面，不仅能抓取标准桌面程序，还能抓取 DirectX, 3Dfx Glide的 ...",
+      "published_at": "2026-11-11T09:30:12.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号",
+        "内容更像资讯、问答、测评或普通软件更新"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "ghxi:https://ghxi.com/mdm.html",
+      "source_id": "ghxi",
+      "source_name": "果核剥壳",
+      "source_url": "https://ghxi.com/mdm.html",
+      "title": "Mister Download Manager v0.5.2 便携版",
+      "summary": "Mister Download Manager是一款用纯 Rust 从零编写的开源下载管理器，定位为 IDM 的\"清室重制版\"——窗口、菜单、工具栏与工作流都与 IDM 一致，但更...",
+      "published_at": "2026-11-11T08:54:20.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号",
+        "内容更像资讯、问答、测评或普通软件更新"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "ghxi:https://ghxi.com/weixin.html",
+      "source_id": "ghxi",
+      "source_name": "果核剥壳",
+      "source_url": "https://ghxi.com/weixin.html",
+      "title": "微信PC v4.2.0.52 官方版",
+      "summary": "微信PC 4.0版支持Windows和macOS双端。微信PC 4.0新版本和旧版本可以共存，不会覆盖安装，进入4.0后会提示导入原来的聊天记录。软件加入了深色模式，支持跟随系统调...",
+      "published_at": "2026-11-11T08:43:18.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "ghxi:https://ghxi.com/operachrome.html",
+      "source_id": "ghxi",
+      "source_name": "果核剥壳",
+      "source_url": "https://ghxi.com/operachrome.html",
+      "title": "Opera浏览器 v140.0.6074.17 绿色便携版",
+      "summary": "Opera 是来自挪威的一个极为出色的网络浏览套件,具有速度快、节省系统资源、定制能力强、安全性高以及体积小等特点,目前已经是广受欢迎的浏览器之一。多文档接 口 (MDI)、方便的...",
+      "published_at": "2026-11-11T08:33:28.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "ghxi:https://ghxi.com/qownnotes.html",
+      "source_id": "ghxi",
+      "source_name": "果核剥壳",
+      "source_url": "https://ghxi.com/qownnotes.html",
+      "title": "QOwnNotes(开源Markdown笔记本) v26.11.7 绿色版",
+      "summary": "QOwnNotes是开源的记事本，具有 Markdown支持 和针对GNU / Linux，Mac OS X和Windows的待办事项列表管理器，可与Nextcloud Notes...",
+      "published_at": "2026-11-11T07:45:22.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号",
+        "内容更像资讯、问答、测评或普通软件更新"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "ghxi:https://ghxi.com/vnote.html",
+      "source_id": "ghxi",
+      "source_name": "果核剥壳",
+      "source_url": "https://ghxi.com/vnote.html",
+      "title": "VNote(开源Markdown笔记) v4.14.2 官方中文版",
+      "summary": "VNote官方版是一款基于qt的专业笔记型软件。VNote最新版界面简约、操作轻松、功能全面，专注于Markdown，VNote的设计是为了提供舒适的编辑体验，当然这款软件不仅仅是...",
+      "published_at": "2026-11-11T07:26:18.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号",
+        "内容更像资讯、问答、测评或普通软件更新"
+      ],
+      "review_status": "queued"
     }
   ]
 }
