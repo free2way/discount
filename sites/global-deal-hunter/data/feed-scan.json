@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-12T02:35:49.918Z",
+  "generated_at": "2026-11-12T04:33:47.306Z",
   "status": "partial",
   "sources_checked": 7,
   "candidates_found": 122,
   "verified_count": 3,
-  "pending_count": 15,
+  "pending_count": 13,
   "failures": [
     {
       "source_id": "linuxdo",
@@ -20,8 +20,8 @@
       "count": 0,
       "final_url": null,
       "attempts": 3,
-      "response_ms": 3536,
-      "consecutive_failures": 1,
+      "response_ms": 3606,
+      "consecutive_failures": 2,
       "last_success_at": "2026-11-12T00:38:39.787Z",
       "error": "HTTP 401"
     },
@@ -32,9 +32,9 @@
       "count": 50,
       "final_url": "https://www.v2ex.com/feed/promotions.xml",
       "attempts": 1,
-      "response_ms": 623,
+      "response_ms": 645,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-12T02:35:49.918Z",
+      "last_success_at": "2026-11-12T04:33:47.306Z",
       "error": null
     },
     {
@@ -44,9 +44,9 @@
       "count": 2,
       "final_url": "https://store-site-backend-static.ak.epicgames.com/freeGamesPromotions?locale=zh-CN&country=CN&allowCountries=CN",
       "attempts": 1,
-      "response_ms": 728,
+      "response_ms": 902,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-12T02:35:49.918Z",
+      "last_success_at": "2026-11-12T04:33:47.306Z",
       "error": null
     },
     {
@@ -56,9 +56,9 @@
       "count": 20,
       "final_url": "https://rss.nodeseek.com/",
       "attempts": 1,
-      "response_ms": 765,
+      "response_ms": 790,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-12T02:35:49.918Z",
+      "last_success_at": "2026-11-12T04:33:47.306Z",
       "error": null
     },
     {
@@ -68,9 +68,9 @@
       "count": 10,
       "final_url": "https://www.appinn.com/feed/",
       "attempts": 1,
-      "response_ms": 134,
+      "response_ms": 120,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-12T02:35:49.918Z",
+      "last_success_at": "2026-11-12T04:33:47.306Z",
       "error": null
     },
     {
@@ -80,9 +80,9 @@
       "count": 10,
       "final_url": "https://www.ghxi.com/feed",
       "attempts": 1,
-      "response_ms": 173,
+      "response_ms": 157,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-12T02:35:49.918Z",
+      "last_success_at": "2026-11-12T04:33:47.306Z",
       "error": null
     },
     {
@@ -91,10 +91,10 @@
       "ok": true,
       "count": 30,
       "final_url": "https://feed.iplaysoft.com/",
-      "attempts": 2,
-      "response_ms": 13098,
+      "attempts": 1,
+      "response_ms": 5772,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-12T02:35:49.918Z",
+      "last_success_at": "2026-11-12T04:33:47.306Z",
       "error": null
     }
   ],
@@ -126,7 +126,7 @@
       "confidence": 97,
       "risk_notes": "使用本人账户通过 Epic 登录，避免第三方代领或共享账户。",
       "first_seen_at": "2026-11-11T09:20:21.543Z",
-      "last_verified_at": "2026-11-12T02:35:49.918Z"
+      "last_verified_at": "2026-11-12T04:33:47.306Z"
     },
     {
       "id": 1023135433,
@@ -155,36 +155,7 @@
       "confidence": 97,
       "risk_notes": "领取前确认结算价为 0；不要使用第三方代领或共享账号。",
       "first_seen_at": "2026-11-11T00:25:30.685Z",
-      "last_verified_at": "2026-11-12T02:35:49.918Z"
-    },
-    {
-      "id": 1818870977,
-      "name": "推广一下做的 AI 工具集， AI 图片/视频功能相关，后续还会继续开发更多的功能",
-      "category": "ai",
-      "summary": "大部分工具想赚刀乐儿（小菜鸡根本赚不到(´∀｀；)），有两个处理照片水印和视频水印的可以免费使用，文章由 DS4.1 总结，咋调都一股味儿 一、One Hub All AI One Hub All AI：把散落的创作工具收进一个账号 https://onehuballai.com/ 这是我的工具集合网站，后续开发的工具都会收录这里。 做内容的人，工具通常是东拼西凑的：AI 出片的站在 A，剪视频的站在 B，会员和额度各记一套账。结果每换一个工具就多一套登录，月底对账还得翻一遍邮件。 不注册也能浏览全部工具，要用账户功能再登录。登录走 Google 也行，只取基础身份信息，不碰 Gmail 和 Drive。 适合谁：一个人同时用好几个",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 52,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-11T02:24:17.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://v2ex.com/t/1256072",
-      "source_url": "https://v2ex.com/t/1256072",
-      "source_name": "V2EX 推广",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-11T17:52:50.171Z",
-      "last_verified_at": "2026-11-12T02:35:49.918Z"
+      "last_verified_at": "2026-11-12T04:33:47.306Z"
     },
     {
       "id": 1183403892,
@@ -213,7 +184,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-11T14:30:17.100Z",
-      "last_verified_at": "2026-11-12T02:35:49.918Z"
+      "last_verified_at": "2026-11-12T04:33:47.306Z"
     },
     {
       "id": 1031337736,
@@ -242,7 +213,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-11T09:20:21.543Z",
-      "last_verified_at": "2026-11-12T02:35:49.918Z"
+      "last_verified_at": "2026-11-12T04:33:47.306Z"
     },
     {
       "id": 166332082,
@@ -303,10 +274,10 @@
       "last_verified_at": "2026-11-11T02:33:54.215Z"
     },
     {
-      "id": 1257714864,
-      "name": "分享一个支持免费试用的代理服务，适合先测试再决定",
-      "category": "other",
-      "summary": "最近因为一些海外业务和日常开发测试的需求，需要用到代理服务。之前也看过不少平台，个人感觉选代理不能只看价格，实际连接质量、IP 类型、稳定性以及使用场景都比较重要。 不想一上来就直接购买套餐，所以最近比较关注支持免费试用的服务。 看到 1024Proxy 提供新用户免费试用体验，比较适合想先测试再决定的人。 简单整理一下我比较关注的几个方面： 1. 先试用，再判断是否适合 代理服务这种东西，光看官网介绍其实很难判断实际效果。 不同地区、不同网络环境以及不同业务场景，对连接速度和稳定性的要求都不一样。 如果能够先注册体验，用自己的实际环境测试一下，再决定是否长期使用，会更稳妥一些。 2. IP 类型比较丰富 1024Proxy 提供多",
+      "id": 922942679,
+      "name": "[NQ]干杯云148 ATT特价商宽pro Pomona-3线",
+      "category": "software",
+      "summary": "💻基本信息++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 硬件质量体检报告： 75.56.*.* https://github.com/xykt/HardwareQuality[0",
       "value_amount": null,
       "value_currency": null,
       "value_label": "待核实线索",
@@ -314,12 +285,12 @@
       "requirements": "需打开原文确认活动、资格、地区与有效期。",
       "regions": "来源未注明",
       "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-11T06:15:14.000Z",
+      "starts_at": "2026-11-12T04:25:44.000Z",
       "ends_at": null,
       "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://v2ex.com/t/1256156",
-      "source_url": "https://v2ex.com/t/1256156",
-      "source_name": "V2EX 推广",
+      "official_url": "https://nodeseek.com/post-1048342-1",
+      "source_url": "https://nodeseek.com/post-1048342-1",
+      "source_name": "NodeSeek",
       "source_type": "feed",
       "source_subreddit": null,
       "source_account": null,
@@ -328,8 +299,8 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-11T17:52:50.171Z",
-      "last_verified_at": "2026-11-12T02:35:49.918Z"
+      "first_seen_at": "2026-11-12T04:33:47.306Z",
+      "last_verified_at": "2026-11-12T04:33:47.306Z"
     },
     {
       "id": 818041480,
@@ -358,36 +329,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-11T17:52:50.171Z",
-      "last_verified_at": "2026-11-12T02:35:49.918Z"
-    },
-    {
-      "id": 6025011,
-      "name": "zcode鸡蛋领取失败后投放被撤销了",
-      "category": "other",
-      "summary": "LINUX DO 福利羊毛 返回的公开线索；原始订阅未提供摘要。",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 42,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-11T13:25:42.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://linux.do/t/topic/3157466",
-      "source_url": "https://linux.do/t/topic/3157466",
-      "source_name": "LINUX DO 福利羊毛",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-11T17:52:50.171Z",
-      "last_verified_at": "2026-11-12T00:38:39.787Z"
+      "last_verified_at": "2026-11-12T04:33:47.306Z"
     },
     {
       "id": 231187459,
@@ -503,7 +445,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-11T12:37:02.589Z",
-      "last_verified_at": "2026-11-12T02:35:49.918Z"
+      "last_verified_at": "2026-11-12T04:33:47.306Z"
     },
     {
       "id": 1712719087,
@@ -532,7 +474,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-11T12:37:02.589Z",
-      "last_verified_at": "2026-11-12T02:35:49.918Z"
+      "last_verified_at": "2026-11-12T04:33:47.306Z"
     },
     {
       "id": 1622443166,
@@ -590,7 +532,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-11T09:20:21.543Z",
-      "last_verified_at": "2026-11-12T02:35:49.918Z"
+      "last_verified_at": "2026-11-12T04:33:47.306Z"
     },
     {
       "id": 1539868353,
@@ -619,7 +561,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-11T09:20:21.543Z",
-      "last_verified_at": "2026-11-12T02:35:49.918Z"
+      "last_verified_at": "2026-11-12T04:33:47.306Z"
     }
   ]
 }
