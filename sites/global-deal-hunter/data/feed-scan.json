@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-12T04:33:47.306Z",
+  "generated_at": "2026-11-12T06:35:46.417Z",
   "status": "partial",
   "sources_checked": 7,
   "candidates_found": 122,
   "verified_count": 3,
-  "pending_count": 13,
+  "pending_count": 12,
   "failures": [
     {
       "source_id": "linuxdo",
@@ -20,8 +20,8 @@
       "count": 0,
       "final_url": null,
       "attempts": 3,
-      "response_ms": 3606,
-      "consecutive_failures": 2,
+      "response_ms": 3463,
+      "consecutive_failures": 4,
       "last_success_at": "2026-11-12T00:38:39.787Z",
       "error": "HTTP 401"
     },
@@ -32,9 +32,9 @@
       "count": 50,
       "final_url": "https://www.v2ex.com/feed/promotions.xml",
       "attempts": 1,
-      "response_ms": 645,
+      "response_ms": 539,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-12T04:33:47.306Z",
+      "last_success_at": "2026-11-12T06:35:46.417Z",
       "error": null
     },
     {
@@ -44,9 +44,9 @@
       "count": 2,
       "final_url": "https://store-site-backend-static.ak.epicgames.com/freeGamesPromotions?locale=zh-CN&country=CN&allowCountries=CN",
       "attempts": 1,
-      "response_ms": 902,
+      "response_ms": 505,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-12T04:33:47.306Z",
+      "last_success_at": "2026-11-12T06:35:46.417Z",
       "error": null
     },
     {
@@ -56,9 +56,9 @@
       "count": 20,
       "final_url": "https://rss.nodeseek.com/",
       "attempts": 1,
-      "response_ms": 790,
+      "response_ms": 678,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-12T04:33:47.306Z",
+      "last_success_at": "2026-11-12T06:35:46.417Z",
       "error": null
     },
     {
@@ -68,9 +68,9 @@
       "count": 10,
       "final_url": "https://www.appinn.com/feed/",
       "attempts": 1,
-      "response_ms": 120,
+      "response_ms": 256,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-12T04:33:47.306Z",
+      "last_success_at": "2026-11-12T06:35:46.417Z",
       "error": null
     },
     {
@@ -80,9 +80,9 @@
       "count": 10,
       "final_url": "https://www.ghxi.com/feed",
       "attempts": 1,
-      "response_ms": 157,
+      "response_ms": 178,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-12T04:33:47.306Z",
+      "last_success_at": "2026-11-12T06:35:46.417Z",
       "error": null
     },
     {
@@ -91,10 +91,10 @@
       "ok": true,
       "count": 30,
       "final_url": "https://feed.iplaysoft.com/",
-      "attempts": 1,
-      "response_ms": 5772,
+      "attempts": 2,
+      "response_ms": 21514,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-12T04:33:47.306Z",
+      "last_success_at": "2026-11-12T06:35:46.417Z",
       "error": null
     }
   ],
@@ -126,7 +126,7 @@
       "confidence": 97,
       "risk_notes": "使用本人账户通过 Epic 登录，避免第三方代领或共享账户。",
       "first_seen_at": "2026-11-11T09:20:21.543Z",
-      "last_verified_at": "2026-11-12T04:33:47.306Z"
+      "last_verified_at": "2026-11-12T06:35:46.417Z"
     },
     {
       "id": 1023135433,
@@ -155,7 +155,36 @@
       "confidence": 97,
       "risk_notes": "领取前确认结算价为 0；不要使用第三方代领或共享账号。",
       "first_seen_at": "2026-11-11T00:25:30.685Z",
-      "last_verified_at": "2026-11-12T04:33:47.306Z"
+      "last_verified_at": "2026-11-12T06:35:46.417Z"
+    },
+    {
+      "id": 33781970,
+      "name": "[NQ] 破云双11优惠款 DE9929 750G 小主机",
+      "category": "cloud",
+      "summary": "💻基本信息++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 硬件质量体检报告： 82.139.*.* https://github.com/xykt/HardwareQuality[",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 52,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-12T06:27:31.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://nodeseek.com/post-1048600-1",
+      "source_url": "https://nodeseek.com/post-1048600-1",
+      "source_name": "NodeSeek",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-12T06:35:46.417Z",
+      "last_verified_at": "2026-11-12T06:35:46.417Z"
     },
     {
       "id": 1183403892,
@@ -184,7 +213,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-11T14:30:17.100Z",
-      "last_verified_at": "2026-11-12T04:33:47.306Z"
+      "last_verified_at": "2026-11-12T06:35:46.417Z"
     },
     {
       "id": 1031337736,
@@ -213,7 +242,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-11T09:20:21.543Z",
-      "last_verified_at": "2026-11-12T04:33:47.306Z"
+      "last_verified_at": "2026-11-12T06:35:46.417Z"
     },
     {
       "id": 166332082,
@@ -274,35 +303,6 @@
       "last_verified_at": "2026-11-11T02:33:54.215Z"
     },
     {
-      "id": 922942679,
-      "name": "[NQ]干杯云148 ATT特价商宽pro Pomona-3线",
-      "category": "software",
-      "summary": "💻基本信息++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 硬件质量体检报告： 75.56.*.* https://github.com/xykt/HardwareQuality[0",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 42,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-12T04:25:44.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://nodeseek.com/post-1048342-1",
-      "source_url": "https://nodeseek.com/post-1048342-1",
-      "source_name": "NodeSeek",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-12T04:33:47.306Z",
-      "last_verified_at": "2026-11-12T04:33:47.306Z"
-    },
-    {
       "id": 818041480,
       "name": "双 11 打折好价整理！全网视频 VIP / 网盘会员 / 软件打折都在这了…",
       "category": "software",
@@ -329,7 +329,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-11T17:52:50.171Z",
-      "last_verified_at": "2026-11-12T04:33:47.306Z"
+      "last_verified_at": "2026-11-12T06:35:46.417Z"
     },
     {
       "id": 231187459,
@@ -445,7 +445,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-11T12:37:02.589Z",
-      "last_verified_at": "2026-11-12T04:33:47.306Z"
+      "last_verified_at": "2026-11-12T06:35:46.417Z"
     },
     {
       "id": 1712719087,
@@ -474,7 +474,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-11T12:37:02.589Z",
-      "last_verified_at": "2026-11-12T04:33:47.306Z"
+      "last_verified_at": "2026-11-12T06:35:46.417Z"
     },
     {
       "id": 1622443166,
@@ -506,35 +506,6 @@
       "last_verified_at": "2026-11-11T10:33:37.725Z"
     },
     {
-      "id": 1892980755,
-      "name": "在我哥家玩 3D 打印，后来做了个免费的 STL 修复工具",
-      "category": "software",
-      "summary": "我刚开始尝试做独立开发，做的第一个产品叫 STLFixer 。这个想法来自之前在我哥家玩 3D 打印的经历。 他找来的模型文件经常有些损坏，本来是想打印点东西玩，结果得先处理文件问题。我就想，能不能做个简单的网页工具，选好文件就能检查，能修的地方尝试修一下，不用再安装软件。 后来就做了 STLFixer 。 它能检查 STL 模型，并修复支持范围内的一些网格问题。免费，不用注册，文件在浏览器本地处理，不会上传到服务器。修复后可以对比前后变化，再下载结果。 同时，在继续深入的过程中，我发现还有不少需要做文件转换的需求。因此在 converter 页面还可以进行常规文件的互相转换...... 目前，它有不少限制，不能把所有损坏的模型都修",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 42,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-10T03:21:58.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://v2ex.com/t/1255813",
-      "source_url": "https://v2ex.com/t/1255813",
-      "source_name": "V2EX 推广",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-11T09:20:21.543Z",
-      "last_verified_at": "2026-11-12T04:33:47.306Z"
-    },
-    {
       "id": 1539868353,
       "name": "绝对值！夸克网盘 SVIP 会员优惠年卡打折！6TB 大空间 / 不限速 / 离线下载",
       "category": "software",
@@ -561,7 +532,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-11T09:20:21.543Z",
-      "last_verified_at": "2026-11-12T04:33:47.306Z"
+      "last_verified_at": "2026-11-12T06:35:46.417Z"
     }
   ]
 }

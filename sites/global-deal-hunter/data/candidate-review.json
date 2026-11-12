@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-12T04:33:47.306Z",
-  "queued_count": 67,
+  "generated_at": "2026-11-12T06:35:46.417Z",
+  "queued_count": 68,
   "rejected_count": 35,
   "candidates": [
     {
@@ -36,6 +36,45 @@
       "risk_score": 90,
       "risk_flags": [
         "account_abuse",
+        "unverified_reseller"
+      ],
+      "reasons": [
+        "内容更像资讯、问答、测评或普通软件更新",
+        "命中高风险或不受支持的交易/软件规则"
+      ],
+      "review_status": "rejected"
+    },
+    {
+      "key": "v2ex:https://v2ex.com/t/1256446",
+      "source_id": "v2ex",
+      "source_name": "V2EX 推广",
+      "source_url": "https://v2ex.com/t/1256446",
+      "title": "Hello-Code 大模型中转站点上线",
+      "summary": "Hello-Code 大模型中转站点上线 站点地址： https://hello-code.cn ✨ 站点亮点 ✅ 倍率低至 0.04x ，性价比拉满 ✅ 内置生图模型：gpt-image-2 / gpt-image-2.5 / gpt-image-2.6 ， 0.03/张 ✅ 每日签到、幸运抽奖，白嫖额度 ✅ 邀请返利： 10% 返利 ，好友消费你拿分成 ✅ 新人福利：注册后进群，领取免费测试额度 📌 简单说明 稳定中转，接口兼容 OpenAI 格式，可直接对接各类客户端、RAG 、AI 绘图程序。 支持流式输出，TTFT 低延迟，适合日常开发、绘图、调试使用。 📎 访问链接 https://hello-code.cn",
+      "published_at": "2026-11-12T05:11:08.000Z",
+      "expires_at": null,
+      "relevance_score": 100,
+      "risk_score": 45,
+      "risk_flags": [
+        "unverified_reseller"
+      ],
+      "reasons": [
+        "命中高风险或不受支持的交易/软件规则"
+      ],
+      "review_status": "rejected"
+    },
+    {
+      "key": "v2ex:https://v2ex.com/t/1256436",
+      "source_id": "v2ex",
+      "source_name": "V2EX 推广",
+      "source_url": "https://v2ex.com/t/1256436",
+      "title": "推荐自建 机场代理 有专线 有家宽 有性价比",
+      "summary": "注册免费试用，优惠截止 11 月 15 日 5 元/月 用了 6.8 折扣优惠券。一个月 3+/月。季付，半年付，年付 更有折上折。 https://m.vxcloud.cfd/coupon.html",
+      "published_at": "2026-11-12T04:32:09.000Z",
+      "expires_at": null,
+      "relevance_score": 100,
+      "risk_score": 45,
+      "risk_flags": [
         "unverified_reseller"
       ],
       "reasons": [
@@ -160,45 +199,6 @@
       "review_status": "rejected"
     },
     {
-      "key": "v2ex:https://v2ex.com/t/1255817",
-      "source_id": "v2ex",
-      "source_name": "V2EX 推广",
-      "source_url": "https://v2ex.com/t/1255817",
-      "title": "推荐一款性价比机场",
-      "summary": "5 元/月 用了 6.8 折扣优惠券。一个月 3+/月。 目前用了一个月，感觉还行。 https://m.vxcloud.cfd/coupon.html",
-      "published_at": "2026-11-10T03:24:12.000Z",
-      "expires_at": null,
-      "relevance_score": 100,
-      "risk_score": 45,
-      "risk_flags": [
-        "unverified_reseller"
-      ],
-      "reasons": [
-        "内容更像资讯、问答、测评或普通软件更新",
-        "命中高风险或不受支持的交易/软件规则"
-      ],
-      "review_status": "rejected"
-    },
-    {
-      "key": "v2ex:https://v2ex.com/t/1255755",
-      "source_id": "v2ex",
-      "source_name": "V2EX 推广",
-      "source_url": "https://v2ex.com/t/1255755",
-      "title": "[HyperAPI 中转站]新老用户们来领鸡蛋了，评论留 ID，送$10 体验额度",
-      "summary": "站点： https://hyperapi.cc QQ 交流群：1095326876",
-      "published_at": "2026-11-10T01:51:37.000Z",
-      "expires_at": null,
-      "relevance_score": 88,
-      "risk_score": 45,
-      "risk_flags": [
-        "unverified_reseller"
-      ],
-      "reasons": [
-        "命中高风险或不受支持的交易/软件规则"
-      ],
-      "review_status": "rejected"
-    },
-    {
       "key": "v2ex:https://v2ex.com/t/1256113",
       "source_id": "v2ex",
       "source_name": "V2EX 推广",
@@ -315,6 +315,23 @@
       "review_status": "rejected"
     },
     {
+      "key": "linuxdo:https://linux.do/t/topic/3157466",
+      "source_id": "linuxdo",
+      "source_name": "LINUX DO 福利羊毛",
+      "source_url": "https://linux.do/t/topic/3157466",
+      "title": "zcode鸡蛋领取失败后投放被撤销了",
+      "summary": "LINUX DO 福利羊毛 返回的公开线索；原始订阅未提供摘要。",
+      "published_at": "2026-11-11T13:25:42.000Z",
+      "expires_at": null,
+      "relevance_score": 25,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "帖子称领取失败且奖励已被撤回，没有可核实的当前权益。"
+      ],
+      "review_status": "queued"
+    },
+    {
       "key": "v2ex:https://v2ex.com/t/1256072",
       "source_id": "v2ex",
       "source_name": "V2EX 推广",
@@ -349,21 +366,25 @@
       "review_status": "queued"
     },
     {
-      "key": "linuxdo:https://linux.do/t/topic/3157466",
-      "source_id": "linuxdo",
-      "source_name": "LINUX DO 福利羊毛",
-      "source_url": "https://linux.do/t/topic/3157466",
-      "title": "zcode鸡蛋领取失败后投放被撤销了",
-      "summary": "LINUX DO 福利羊毛 返回的公开线索；原始订阅未提供摘要。",
-      "published_at": "2026-11-11T13:25:42.000Z",
+      "key": "v2ex:https://v2ex.com/t/1256451",
+      "source_id": "v2ex",
+      "source_name": "V2EX 推广",
+      "source_url": "https://v2ex.com/t/1256451",
+      "title": "[memeapi 中转站推广]gpt-pro20x 号池仅 0.1 倍率？!（非低价引流）",
+      "summary": "佬们好，咱们中转站已经稳定运营半年有余啦，用户反馈良好，群内氛围友好，欢迎各位前来吹水~ 也欢迎各位企业前来合作！ 企鹅群:789868054 我们是源头中转，倍率优惠，价格稳定，且都是自有号池，质量有保障~站点 token 消耗每天都稳定在百 b 以上，欢迎各位前来体验~ 充值比例为 1:1 ！ gpt-不降智（ pro20x 号池，全模型不降） 0.1x claude-max （ 0 注入，仅 coding ，禁蒸馏破甲） 1.1x gpt-image2.5-adobe （原生 4k ） 0.12 一张 minimax-h3 （机房自部署） 0.08/s gemini 0.25x(有 4a ，反重力反代） deepseek 0.",
+      "published_at": "2026-11-12T05:41:56.000Z",
       "expires_at": null,
-      "relevance_score": 25,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "帖子称领取失败且奖励已被撤回，没有可核实的当前权益。"
+      "relevance_score": 22,
+      "risk_score": 90,
+      "risk_flags": [
+        "account_abuse",
+        "unverified_reseller"
       ],
-      "review_status": "queued"
+      "reasons": [
+        "内容更像资讯、问答、测评或普通软件更新",
+        "命中高风险或不受支持的交易/软件规则"
+      ],
+      "review_status": "rejected"
     },
     {
       "key": "v2ex:https://v2ex.com/t/1256217",
@@ -400,6 +421,23 @@
       "review_status": "queued"
     },
     {
+      "key": "v2ex:https://v2ex.com/t/1256445",
+      "source_id": "v2ex",
+      "source_name": "V2EX 推广",
+      "source_url": "https://v2ex.com/t/1256445",
+      "title": "分享一个用过的 wechatauto 项目",
+      "summary": "最近搞微信机器人，老他妈封号，操碎心了 后来整到一个叫 WeChatAuto.SDK 的项目，GitHub 上的，MIT 开源协议 走的是 UI Automation 路线，直接操作微信客户端，不用改协议 支持微信 4.x 最新版，配 AI Agent 当底座特顺 社区版接口够用，VIP 版多了点高级功能 仓库 github.com/scottfly189/WeChatAuto.SDK 有兴趣自己去瞅 🐶",
+      "published_at": "2026-11-12T05:06:06.000Z",
+      "expires_at": null,
+      "relevance_score": 12,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
       "key": "v2ex:https://v2ex.com/t/1256309",
       "source_id": "v2ex",
       "source_name": "V2EX 推广",
@@ -407,6 +445,23 @@
       "title": "[分享] 一句话让 AI Agent 把网课视频变成讲义 PDF（开源 · 全程本地 · 零 API Key）",
       "summary": "备考的人应该都懂：强化班几十讲，做错一道题想回看对应知识点，只能凭记忆拖进度条。视频没法检索、没法打印，这个痛贯穿我整个备考期。 所以做了个开源技能 chalkpress——不是又一个「视频转文字」工具，而是把课程视频压缩成一册讲义 PDF：每页一个关键帧画面 + 该时间窗的字幕，文字层可检索可复制。 用法就是给 agent 发一句话（ ChatGPT / Claude Code 等客户端，任何能执行命令的都行）： 用这个技能把我的网课视频转成讲义： https://github.com/luolin1024/chalkpress-skill agent 会自己走完整个流程：装依赖 → ffmpeg 场景检测抓关键帧 → Whisp",
       "published_at": "2026-11-11T17:12:20.000Z",
+      "expires_at": null,
+      "relevance_score": 12,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1048601-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek",
+      "source_url": "https://nodeseek.com/post-1048601-1",
+      "title": "写了个 SSH 中继工具 Hop：约 3.7MB，目标端免 Agent，带面板和 OpenWrt 插件",
+      "summary": "手里的VPS、NAS和内网机器多了之后，同步密钥和端口就挺麻烦。换电脑要折腾，平时还要在手机Termius、本地终端、Cursor/VSCodeRemote-SSH之间来回用。JumpServer、Teleport这类开源堡垒机，对个人或两三人的小环境来说又太重了，不少带Web终端的面板还得往每台目标机器上装Age",
+      "published_at": "2026-11-12T06:28:10.000Z",
       "expires_at": null,
       "relevance_score": 12,
       "risk_score": 0,
@@ -499,26 +554,6 @@
       "title": "宝藏中转站 gpt 高缓不降智 0.09 倍率，官 key0.28 倍率 DS0.09 倍率 包稳不烧心",
       "summary": "GPT 高缓不降智低至 0.09 倍率，官 key0.28 倍率，国模 DS 0.09 倍率，满血 ccmax1.1 倍率 包稳不烧心，用了都说好 varai.top",
       "published_at": "2026-11-10T10:12:15.000Z",
-      "expires_at": null,
-      "relevance_score": 10,
-      "risk_score": 45,
-      "risk_flags": [
-        "unverified_reseller"
-      ],
-      "reasons": [
-        "内容更像资讯、问答、测评或普通软件更新",
-        "命中高风险或不受支持的交易/软件规则"
-      ],
-      "review_status": "rejected"
-    },
-    {
-      "key": "v2ex:https://v2ex.com/t/1255789",
-      "source_id": "v2ex",
-      "source_name": "V2EX 推广",
-      "source_url": "https://v2ex.com/t/1255789",
-      "title": "dsf 上游，提供官 key 直连， 3.5 折",
-      "summary": "同官方峰谷价，缓存命中 95%，3.5 折直出，官 key 直连，质量保证，隐私无忧 欢迎中转老板和公司采购，可以开票 微信号（ base64 ）：eXlxYW5kemhq",
-      "published_at": "2026-11-10T02:40:58.000Z",
       "expires_at": null,
       "relevance_score": 10,
       "risk_score": 45,
@@ -689,13 +724,13 @@
       "review_status": "rejected"
     },
     {
-      "key": "nodeseek:https://nodeseek.com/post-1048346-1",
+      "key": "nodeseek:https://nodeseek.com/post-1048616-1",
       "source_id": "nodeseek",
       "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1048346-1",
-      "title": "【收】150 收 Evoxt MY 马来优化 $2.84/月 250G",
-      "summary": "价格参考https://www.nodeseek.com/post-1047276-1剩余价值多的我再加点这玩意不是马来段的网线架电线杆上，刮阵风都影响延迟吗，咋就能溢价这么多了",
-      "published_at": "2026-11-12T04:28:44.000Z",
+      "source_url": "https://nodeseek.com/post-1048616-1",
+      "title": "【出】rabisu sg 无限流量，9.9刀每年，续费同价",
+      "summary": "100出，部分地区的移动快乐鸡，上海，广东移动极好💻基本信息🎬IP质量🌐网络质量📍回程路由NodeQuality链接续费同价，新开鸡均变为第一年9.9刀续费19.9刀，当然也可以年抛",
+      "published_at": "2026-11-12T06:34:51.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 45,
@@ -709,13 +744,54 @@
       "review_status": "rejected"
     },
     {
-      "key": "nodeseek:https://nodeseek.com/post-1048339-1",
+      "key": "nodeseek:https://nodeseek.com/post-1048603-1",
       "source_id": "nodeseek",
       "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1048339-1",
-      "title": "【收】 Claude解封 Claude 解封 号，长期收。",
-      "summary": "【收】Claude解封Claude解封号，长期收,有的私聊。",
-      "published_at": "2026-11-12T04:23:32.000Z",
+      "source_url": "https://nodeseek.com/post-1048603-1",
+      "title": "5块钱出个shandun us三网优化",
+      "summary": "续费4刀还有一个星期",
+      "published_at": "2026-11-12T06:28:24.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 45,
+      "risk_flags": [
+        "secondary_market"
+      ],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号",
+        "命中高风险或不受支持的交易/软件规则"
+      ],
+      "review_status": "rejected"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1048599-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek",
+      "source_url": "https://nodeseek.com/post-1048599-1",
+      "title": "灰鸽子求解",
+      "summary": "最近经常在某音上面刷到灰鸽子白格子啥的远程控制老板可以看到你在某鱼想问问各位这到底是啥呀有下载地址吗",
+      "published_at": "2026-11-12T06:27:30.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 45,
+      "risk_flags": [
+        "credential_theft"
+      ],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号",
+        "内容更像资讯、问答、测评或普通软件更新",
+        "命中高风险或不受支持的交易/软件规则"
+      ],
+      "review_status": "rejected"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1048598-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek",
+      "source_url": "https://nodeseek.com/post-1048598-1",
+      "title": "「收」500收 1台OVH ks-2 硬盘网络中奖ie区",
+      "summary": "rt",
+      "published_at": "2026-11-12T06:26:53.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 45,
@@ -736,26 +812,6 @@
       "title": "StartAllBack(开始菜单增强工具) v3.9.28.5428 修改版",
       "summary": "在Windows 11上使用的开始菜单增强工具 软件功能 恢复经典样式的Windows 7主题风格开始菜单 恢复和改进开始菜单样式 个性化任务栏资源管理器等功能。 界面截图 更新日...",
       "published_at": "2026-11-12T02:22:14.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 45,
-      "risk_flags": [
-        "untrusted_software"
-      ],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号",
-        "命中高风险或不受支持的交易/软件规则"
-      ],
-      "review_status": "rejected"
-    },
-    {
-      "key": "ghxi:https://ghxi.com/chrome.html",
-      "source_id": "ghxi",
-      "source_name": "果核剥壳",
-      "source_url": "https://ghxi.com/chrome.html",
-      "title": "Google Chrome v157.0.8103.79 便携增强版",
-      "summary": "谷歌浏览器，是一个由Google（谷歌）公司开发的开放原始码网页浏览器。该浏览器是基于其他开放原始码软件所撰写，包括WebKit和Mozilla，目标是提升稳定性、速度和安全性，并...",
-      "published_at": "2026-11-12T01:52:21.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 45,
@@ -841,25 +897,6 @@
       ],
       "reasons": [
         "个人发布的代理服务，未确认服务商和适用试用条款。"
-      ],
-      "review_status": "rejected"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1048332-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1048332-1",
-      "title": "muse还有没有要上车的～",
-      "summary": "个人拼车招募，没有可独立领取的官方优惠。",
-      "published_at": "2026-11-12T04:21:27.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 45,
-      "risk_flags": [
-        "secondary_market"
-      ],
-      "reasons": [
-        "个人拼车招募，没有可独立领取的官方优惠。"
       ],
       "review_status": "rejected"
     },
@@ -1071,115 +1108,13 @@
       "review_status": "queued"
     },
     {
-      "key": "nodeseek:https://nodeseek.com/post-1048351-1",
+      "key": "nodeseek:https://nodeseek.com/post-1048619-1",
       "source_id": "nodeseek",
       "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1048351-1",
-      "title": "di0.uk 是论坛哪位老哥买的域名吗？",
-      "summary": "有个事想麻烦一下",
-      "published_at": "2026-11-12T04:33:32.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1048350-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1048350-1",
-      "title": "【暂时挂个人，挂谁还不清楚】之前在老哥这里购买了PPf创始人账号，当时邮箱出的，现在163邮箱找回",
-      "summary": "今天中午左右收到密码被改短信随后12点登录发现手机号也被改了我看了下163找回账号流程，只需要大概知道邮箱内邮件内容，注册地等信息即刻找回，以后大家避雷吧，账号很长能猜对的只能是曾经拥有过这账号的认了吧幸好及时联系上了上家，上家说他也是收来的，等待后续吧上家：https://www.nodeseek.com/spa",
-      "published_at": "2026-11-12T04:32:50.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1048349-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1048349-1",
-      "title": "发点claude笑话",
-      "summary": "",
-      "published_at": "2026-11-12T04:31:46.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1048348-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1048348-1",
-      "title": "Claude存活记录帖",
-      "summary": "今天顶风作案ATT家宽,苹果礼品卡环境配置项目:https://github.com/Lee-xeo/Claude-Cage护照过的kyc",
-      "published_at": "2026-11-12T04:30:38.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1048347-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1048347-1",
-      "title": "gen2又涨价了么",
-      "summary": "现在这大环境优化直连也是猛猛涨价啊小秘书和riven都涨了",
-      "published_at": "2026-11-12T04:30:25.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1048345-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1048345-1",
-      "title": "【NQ】六六云 美西原生IP双ISP - NTT（新IP）",
-      "summary": "💻基本信息++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 硬件质量体检报告： 192.220.*.* https://github.com/xykt/HardwareQuality",
-      "published_at": "2026-11-12T04:26:55.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1048344-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1048344-1",
-      "title": "【求助】萌新求助，甲骨文ssh连不上",
-      "summary": "讲述一下过程昨天甲骨文大阪放机，手搓了好几天终于抢到了于是按照油管教程配置，前面一切正常，能连接上接着使用KEJILION脚本到如图一条龙服务时，突然断开连接不上后面就一直弹错我是不是看错教程了，不应该按这个脚本来，我的是ubuntu24.044+24arm新人求助各位大佬，还有什么办法。这才刚开始配置，是不是直接",
-      "published_at": "2026-11-12T04:26:52.000Z",
+      "source_url": "https://nodeseek.com/post-1048619-1",
+      "title": "gpt语音模式总是连接不良，怎么办",
+      "summary": "我瓦工gia，用的loon，线路应该没问题啊，不知道咋办",
+      "published_at": "2026-11-12T06:35:45.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -1191,47 +1126,13 @@
       "review_status": "queued"
     },
     {
-      "key": "nodeseek:https://nodeseek.com/post-1048343-1",
+      "key": "nodeseek:https://nodeseek.com/post-1048618-1",
       "source_id": "nodeseek",
       "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1048343-1",
-      "title": "【60出】 HK BGP Global - Standard - Debut",
-      "summary": "总流量2048GB剩余流量1960GB带宽上限1070Mbps防护峰值10Gbps续费金额￥9.90到期时间2026-11-2818:04:45",
-      "published_at": "2026-11-12T04:25:53.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1048341-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1048341-1",
-      "title": "有没有Onedrive家庭组的车？",
-      "summary": "正规家庭组订阅的车有没？想上车试试",
-      "published_at": "2026-11-12T04:24:44.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1048340-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1048340-1",
-      "title": "乌龟壳春川ARM是不准备放货了么",
-      "summary": "8月忘记看邮件，4+24的没降配，直接无法启动，也没找到怎么降配，删机重开，再也开不出来了，OCI脚本2min一次，都挂了3个月了，开不出",
-      "published_at": "2026-11-12T04:24:18.000Z",
+      "source_url": "https://nodeseek.com/post-1048618-1",
+      "title": "muse生成视频，提示所在地区不支持，怎么修改啊",
+      "summary": "",
+      "published_at": "2026-11-12T06:35:44.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -1243,13 +1144,81 @@
       "review_status": "queued"
     },
     {
-      "key": "nodeseek:https://nodeseek.com/post-1048338-1",
+      "key": "nodeseek:https://nodeseek.com/post-1048617-1",
       "source_id": "nodeseek",
       "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1048338-1",
-      "title": "有没有用 gemini 4付费pro 的",
-      "summary": "他给的那些额度在antigravity里面够用吗",
-      "published_at": "2026-11-12T04:23:18.000Z",
+      "source_url": "https://nodeseek.com/post-1048617-1",
+      "title": "【NQ】VMISS更换后的新23.236段IP(原207)",
+      "summary": "",
+      "published_at": "2026-11-12T06:35:26.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1048615-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek",
+      "source_url": "https://nodeseek.com/post-1048615-1",
+      "title": "【TQ】RakSmart 1G独享CN2",
+      "summary": "IPv4回程IPv4大包回程UDP回程教育网回程国际互联单线程测速报告链接：https://tcpquality.ibsgss.uk/r/CDAyxKfE9K欢迎走我AFFhttps://billing.raksmart.com/whmcs/aff.php?aff=9949&aff_rtype=affili",
+      "published_at": "2026-11-12T06:33:31.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1048614-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek",
+      "source_url": "https://nodeseek.com/post-1048614-1",
+      "title": "测机器质量的脚本或者链接有推荐的吗",
+      "summary": "比如ip质量，比如线路质量这种，任何能用来测试的都行，越完整、越丰富越好，不太有经验，求大佬指点！萌新发问，大佬轻喷",
+      "published_at": "2026-11-12T06:33:27.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1048613-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek",
+      "source_url": "https://nodeseek.com/post-1048613-1",
+      "title": "月付80，季付230 出一个 gpt team 车位，长期的",
+      "summary": "月付80，季付230，非周限已经续费了5个月。需要的私信。📌【使用规则】本车位仅限个人正常使用。严禁破限、逆向、接口/API转售、批量异常调用、共享滥用。⚠️🛡【质保与退款说明】如因官方系统大面积风控、平台策略调整等不可控原因，导致母号被封，按比例退款。💰👤【个人子号被封-重中之重】如仅个人子号被单独封禁，",
+      "published_at": "2026-11-12T06:32:46.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1048612-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek",
+      "source_url": "https://nodeseek.com/post-1048612-1",
+      "title": "现在看个剧开弹幕, 直接被AI喂屎",
+      "summary": "咱就是说,弹幕就非得拉屎充数吗",
+      "published_at": "2026-11-12T06:32:27.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -1261,30 +1230,13 @@
       "review_status": "queued"
     },
     {
-      "key": "nodeseek:https://nodeseek.com/post-1048337-1",
+      "key": "nodeseek:https://nodeseek.com/post-1048611-1",
       "source_id": "nodeseek",
       "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1048337-1",
-      "title": "电信用户有什么推荐的日本机器么",
-      "summary": "用的日本iij丢包好多",
-      "published_at": "2026-11-12T04:22:54.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1048336-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1048336-1",
-      "title": "瓦工9.9一年的机器，还有存货吗？",
+      "source_url": "https://nodeseek.com/post-1048611-1",
+      "title": "[NQ]VMISS-207段换23段IP",
       "summary": "",
-      "published_at": "2026-11-12T04:22:23.000Z",
+      "published_at": "2026-11-12T06:32:10.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -1295,13 +1247,13 @@
       "review_status": "queued"
     },
     {
-      "key": "nodeseek:https://nodeseek.com/post-1048335-1",
+      "key": "nodeseek:https://nodeseek.com/post-1048609-1",
       "source_id": "nodeseek",
       "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1048335-1",
-      "title": "【NQ留档】换IP VMISS US.LA.TRI.Core",
-      "summary": "",
-      "published_at": "2026-11-12T04:22:22.000Z",
+      "source_url": "https://nodeseek.com/post-1048609-1",
+      "title": "Gemini-4-Hydrogen已在vertex上线",
+      "summary": "如题，Gemini-4-Hydrogen(氢)已在vertex上线，据爆料该模型定位flash",
+      "published_at": "2026-11-12T06:29:38.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -1312,13 +1264,13 @@
       "review_status": "queued"
     },
     {
-      "key": "nodeseek:https://nodeseek.com/post-1048334-1",
+      "key": "nodeseek:https://nodeseek.com/post-1048608-1",
       "source_id": "nodeseek",
       "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1048334-1",
-      "title": "vmiss 的 207 如果清退的话",
-      "summary": "余额退回支付账号吗？那可太招笑了",
-      "published_at": "2026-11-12T04:21:55.000Z",
+      "source_url": "https://nodeseek.com/post-1048608-1",
+      "title": "有没有GPT team短期车，带质保的",
+      "summary": "之前加了个快到期了",
+      "published_at": "2026-11-12T06:29:23.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -1329,19 +1281,88 @@
       "review_status": "queued"
     },
     {
-      "key": "nodeseek:https://nodeseek.com/post-1048331-1",
+      "key": "nodeseek:https://nodeseek.com/post-1048607-1",
       "source_id": "nodeseek",
       "source_name": "NodeSeek",
-      "source_url": "https://nodeseek.com/post-1048331-1",
-      "title": "搞家宽的都是大冤种",
-      "summary": "我机房ip照样稳定运行claude刷tiktok到底为什么要搞家宽？",
-      "published_at": "2026-11-12T04:20:27.000Z",
+      "source_url": "https://nodeseek.com/post-1048607-1",
+      "title": "DEDIROCK为什么会有1核16G的配置",
+      "summary": "使用场景是啥呢",
+      "published_at": "2026-11-12T06:29:19.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
       "risk_flags": [],
       "reasons": [
         "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1048606-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek",
+      "source_url": "https://nodeseek.com/post-1048606-1",
+      "title": "【审核中】兴业寰宇人生汇到ifast入金记录",
+      "summary": "坐标杭州卡到线下网点激活了，买了50英镑试试看能不能正常汇出到ifast，现在显示审核中",
+      "published_at": "2026-11-12T06:29:07.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1048605-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek",
+      "source_url": "https://nodeseek.com/post-1048605-1",
+      "title": "清算了，谷歌账号被停用",
+      "summary": "买的jio账号，掉了之后，买了之前站里推的6块12月今天早上6点，号没了正常使用gemini，没用过反重力",
+      "published_at": "2026-11-12T06:28:48.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1048602-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek",
+      "source_url": "https://nodeseek.com/post-1048602-1",
+      "title": "Geelinx 死绝了？tmd还没退我钱",
+      "summary": "rnm填了信息也不退？倒卖信息的？这几天咋不活跃了国内也应该搞个鞭刑，把这种逼一人抽一鞭子",
+      "published_at": "2026-11-12T06:28:19.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "appinn:https://appinn.com/chrome-cve-2026-125350-zero-day-exploit",
+      "source_id": "appinn",
+      "source_name": "小众软件",
+      "source_url": "https://appinn.com/chrome-cve-2026-125350-zero-day-exploit",
+      "title": "Chrome 曝出高危 0day 漏洞：已遭黑客实际利用，Google 紧急发布更新｜CVE-2026-125350",
+      "summary": "Google Chrome 浏览器曝出一个已经被黑客实际利用的高危漏洞：CVE-2026-125350，高危，8.8分。 该漏洞编号 CVE-2026-125350，存在于 Chrome 的 XML 组件中。攻击者可以通过精心构造的恶意网页，触发浏览器内存错误，进而在 Chrome 沙箱内部执行任意",
+      "published_at": "2026-11-12T06:19:06.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号",
+        "内容更像资讯、问答、测评或普通软件更新"
       ],
       "review_status": "queued"
     },
@@ -1450,20 +1471,36 @@
       "review_status": "queued"
     },
     {
-      "key": "appinn:https://appinn.com/hookshot",
-      "source_id": "appinn",
-      "source_name": "小众软件",
-      "source_url": "https://appinn.com/hookshot",
-      "title": "Hookshot – 《塞尔达传说：时之笛》重制版已能在 PC 原生运行，无需模拟器",
-      "summary": "Hookshot v2.1.0 发布：游戏崩溃修复、手柄陀螺仪支持、5.1 声道音频，以及更新机制的改进，搬运已同步。 11月11日更新，具体内容为： 继《塞尔达传说：王国之泪》之后，又一款塞尔达游戏可以在 Windows 电脑上原生运行了！ 这次是2026年11月5日刚刚发售的 Switch 2",
-      "published_at": "2026-11-09T08:52:41.000Z",
+      "key": "ghxi:https://ghxi.com/ps2027.html",
+      "source_id": "ghxi",
+      "source_name": "果核剥壳",
+      "source_url": "https://ghxi.com/ps2027.html",
+      "title": "Adobe Photoshop 2027 (28.0.0.20) 特别版",
+      "summary": "Adobe Photoshop 2027 是 Adobe 在 2026 年 MAX 大会上发布的最新年度大版本（桌面版版本号 28.0，于 2026 年 11 月正式推送），这一代...",
+      "published_at": "2026-11-12T06:30:25.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
       "risk_flags": [],
       "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号",
-        "内容更像资讯、问答、测评或普通软件更新"
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "ghxi:https://ghxi.com/librewolf.html",
+      "source_id": "ghxi",
+      "source_name": "果核剥壳",
+      "source_url": "https://ghxi.com/librewolf.html",
+      "title": "LibreWolf浏览器 v160.0-1",
+      "summary": "LibreWolf 是Firefox的自定义独立版本，主要目标是隐私、安全和用户自由。LibreWolf旨在增强对跟踪和指纹技术的保护，同时还包括一些安全改进。这是通过我们面向隐私...",
+      "published_at": "2026-11-12T06:15:55.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
       ],
       "review_status": "queued"
     },
@@ -1570,23 +1607,6 @@
       "reasons": [
         "未发现明确的免费、折扣、返现或赠送信号",
         "内容更像资讯、问答、测评或普通软件更新"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "ghxi:https://ghxi.com/new202611121.html",
-      "source_id": "ghxi",
-      "source_name": "果核剥壳",
-      "source_url": "https://ghxi.com/new202611121.html",
-      "title": "英伟达董事会聘请外部机构物色新 CEO 候选人，并考虑任命临时 CEO",
-      "summary": "11 月 12 日消息，彭博社刚刚报道称，英伟达董事会正聘请外部专业机构物色新的 CEO 候选人，并考虑在寻找正式继任者期间任命临时 CEO。 在此之前，多个美媒报道称，英伟达董事...",
-      "published_at": "2026-11-12T02:09:48.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
       ],
       "review_status": "queued"
     },
