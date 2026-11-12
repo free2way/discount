@@ -1,23 +1,29 @@
 {
-  "generated_at": "2026-11-12T00:38:39.787Z",
-  "status": "success",
+  "generated_at": "2026-11-12T02:35:49.918Z",
+  "status": "partial",
   "sources_checked": 7,
-  "candidates_found": 147,
+  "candidates_found": 122,
   "verified_count": 3,
   "pending_count": 15,
-  "failures": [],
+  "failures": [
+    {
+      "source_id": "linuxdo",
+      "source_name": "LINUX DO 福利羊毛",
+      "error": "HTTP 401"
+    }
+  ],
   "source_results": [
     {
       "source_id": "linuxdo",
       "source_name": "LINUX DO 福利羊毛",
-      "ok": true,
-      "count": 25,
-      "final_url": "https://r.jina.ai/https://linux.do/c/welfare/36.rss",
-      "attempts": 1,
-      "response_ms": 654,
-      "consecutive_failures": 0,
+      "ok": false,
+      "count": 0,
+      "final_url": null,
+      "attempts": 3,
+      "response_ms": 3536,
+      "consecutive_failures": 1,
       "last_success_at": "2026-11-12T00:38:39.787Z",
-      "error": null
+      "error": "HTTP 401"
     },
     {
       "source_id": "v2ex",
@@ -26,9 +32,9 @@
       "count": 50,
       "final_url": "https://www.v2ex.com/feed/promotions.xml",
       "attempts": 1,
-      "response_ms": 232,
+      "response_ms": 623,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-12T00:38:39.787Z",
+      "last_success_at": "2026-11-12T02:35:49.918Z",
       "error": null
     },
     {
@@ -38,9 +44,9 @@
       "count": 2,
       "final_url": "https://store-site-backend-static.ak.epicgames.com/freeGamesPromotions?locale=zh-CN&country=CN&allowCountries=CN",
       "attempts": 1,
-      "response_ms": 321,
+      "response_ms": 728,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-12T00:38:39.787Z",
+      "last_success_at": "2026-11-12T02:35:49.918Z",
       "error": null
     },
     {
@@ -50,9 +56,9 @@
       "count": 20,
       "final_url": "https://rss.nodeseek.com/",
       "attempts": 1,
-      "response_ms": 397,
+      "response_ms": 765,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-12T00:38:39.787Z",
+      "last_success_at": "2026-11-12T02:35:49.918Z",
       "error": null
     },
     {
@@ -62,9 +68,9 @@
       "count": 10,
       "final_url": "https://www.appinn.com/feed/",
       "attempts": 1,
-      "response_ms": 2695,
+      "response_ms": 134,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-12T00:38:39.787Z",
+      "last_success_at": "2026-11-12T02:35:49.918Z",
       "error": null
     },
     {
@@ -74,9 +80,9 @@
       "count": 10,
       "final_url": "https://www.ghxi.com/feed",
       "attempts": 1,
-      "response_ms": 1400,
+      "response_ms": 173,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-12T00:38:39.787Z",
+      "last_success_at": "2026-11-12T02:35:49.918Z",
       "error": null
     },
     {
@@ -85,10 +91,10 @@
       "ok": true,
       "count": 30,
       "final_url": "https://feed.iplaysoft.com/",
-      "attempts": 1,
-      "response_ms": 1193,
+      "attempts": 2,
+      "response_ms": 13098,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-12T00:38:39.787Z",
+      "last_success_at": "2026-11-12T02:35:49.918Z",
       "error": null
     }
   ],
@@ -120,7 +126,7 @@
       "confidence": 97,
       "risk_notes": "使用本人账户通过 Epic 登录，避免第三方代领或共享账户。",
       "first_seen_at": "2026-11-11T09:20:21.543Z",
-      "last_verified_at": "2026-11-12T00:38:39.787Z"
+      "last_verified_at": "2026-11-12T02:35:49.918Z"
     },
     {
       "id": 1023135433,
@@ -149,7 +155,7 @@
       "confidence": 97,
       "risk_notes": "领取前确认结算价为 0；不要使用第三方代领或共享账号。",
       "first_seen_at": "2026-11-11T00:25:30.685Z",
-      "last_verified_at": "2026-11-12T00:38:39.787Z"
+      "last_verified_at": "2026-11-12T02:35:49.918Z"
     },
     {
       "id": 1818870977,
@@ -178,7 +184,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-11T17:52:50.171Z",
-      "last_verified_at": "2026-11-12T00:38:39.787Z"
+      "last_verified_at": "2026-11-12T02:35:49.918Z"
     },
     {
       "id": 1183403892,
@@ -207,36 +213,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-11T14:30:17.100Z",
-      "last_verified_at": "2026-11-12T00:38:39.787Z"
-    },
-    {
-      "id": 166332082,
-      "name": "快跑 AI｜11.11 幸运大转盘抽奖活动 每天豪送 $2,000 美元，连续狂欢 3 天！",
-      "category": "ai",
-      "summary": "LINUX DO 福利羊毛 返回的公开线索；原始订阅未提供摘要。",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 52,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-11T07:59:04.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://linux.do/t/topic/3155759",
-      "source_url": "https://linux.do/t/topic/3155759",
-      "source_name": "LINUX DO 福利羊毛",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-11T09:20:21.543Z",
-      "last_verified_at": "2026-11-12T00:38:39.787Z"
+      "last_verified_at": "2026-11-12T02:35:49.918Z"
     },
     {
       "id": 1031337736,
@@ -256,6 +233,35 @@
       "official_url": "https://iplaysoft.com/p/icloud",
       "source_url": "https://iplaysoft.com/p/icloud",
       "source_name": "异次元软件世界",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-11T09:20:21.543Z",
+      "last_verified_at": "2026-11-12T02:35:49.918Z"
+    },
+    {
+      "id": 166332082,
+      "name": "快跑 AI｜11.11 幸运大转盘抽奖活动 每天豪送 $2,000 美元，连续狂欢 3 天！",
+      "category": "ai",
+      "summary": "LINUX DO 福利羊毛 返回的公开线索；原始订阅未提供摘要。",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 52,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-11T07:59:04.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://linux.do/t/topic/3155759",
+      "source_url": "https://linux.do/t/topic/3155759",
+      "source_name": "LINUX DO 福利羊毛",
       "source_type": "feed",
       "source_subreddit": null,
       "source_account": null,
@@ -297,35 +303,6 @@
       "last_verified_at": "2026-11-11T02:33:54.215Z"
     },
     {
-      "id": 6025011,
-      "name": "zcode鸡蛋领取失败后投放被撤销了",
-      "category": "other",
-      "summary": "LINUX DO 福利羊毛 返回的公开线索；原始订阅未提供摘要。",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 42,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-11T13:25:42.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://linux.do/t/topic/3157466",
-      "source_url": "https://linux.do/t/topic/3157466",
-      "source_name": "LINUX DO 福利羊毛",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-11T17:52:50.171Z",
-      "last_verified_at": "2026-11-12T00:38:39.787Z"
-    },
-    {
       "id": 1257714864,
       "name": "分享一个支持免费试用的代理服务，适合先测试再决定",
       "category": "other",
@@ -352,7 +329,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-11T17:52:50.171Z",
-      "last_verified_at": "2026-11-12T00:38:39.787Z"
+      "last_verified_at": "2026-11-12T02:35:49.918Z"
     },
     {
       "id": 818041480,
@@ -372,6 +349,35 @@
       "official_url": "https://iplaysoft.com/1111.html",
       "source_url": "https://iplaysoft.com/1111.html",
       "source_name": "异次元软件世界",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-11T17:52:50.171Z",
+      "last_verified_at": "2026-11-12T02:35:49.918Z"
+    },
+    {
+      "id": 6025011,
+      "name": "zcode鸡蛋领取失败后投放被撤销了",
+      "category": "other",
+      "summary": "LINUX DO 福利羊毛 返回的公开线索；原始订阅未提供摘要。",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 42,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-11T13:25:42.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://linux.do/t/topic/3157466",
+      "source_url": "https://linux.do/t/topic/3157466",
+      "source_name": "LINUX DO 福利羊毛",
       "source_type": "feed",
       "source_subreddit": null,
       "source_account": null,
@@ -497,13 +503,13 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-11T12:37:02.589Z",
-      "last_verified_at": "2026-11-12T00:38:39.787Z"
+      "last_verified_at": "2026-11-12T02:35:49.918Z"
     },
     {
       "id": 1712719087,
       "name": "双 11 大促！150+ 款正版软件低至 6 折，AdGuard、Typora、PixPin、思源笔记、Mole 等…",
       "category": "software",
-      "summary": "一年一度的正版软件双 11 大促来了！今年的「双 11 软件狂欢节」共有超过 150 款商品参与，到手低至 6 折。 挑一些值得买的推荐给大家： AdGuard AdGuard 是一款非常",
+      "summary": "一年一度的正版软件双 11 大促来了！今年的「双 11 软件狂欢节」共有超过 150 款商品参与，到手低至 6 折。 挑一些值得买的推荐给大家： AdGuard AdGuard 是一款非常受欢迎的全平台去广告工具，它通过过滤规则，在 DNS 请求、网络连接和网页内容等层面识别并拦截广告及",
       "value_amount": null,
       "value_currency": null,
       "value_label": "待核实线索",
@@ -511,7 +517,7 @@
       "requirements": "需打开原文确认活动、资格、地区与有效期。",
       "regions": "来源未注明",
       "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-09T09:15:14.000Z",
+      "starts_at": "2026-11-09T09:16:11.000Z",
       "ends_at": null,
       "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
       "official_url": "https://appinn.com/lizhi-261111",
@@ -526,7 +532,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-11T12:37:02.589Z",
-      "last_verified_at": "2026-11-12T00:38:39.787Z"
+      "last_verified_at": "2026-11-12T02:35:49.918Z"
     },
     {
       "id": 1622443166,
@@ -584,7 +590,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-11T09:20:21.543Z",
-      "last_verified_at": "2026-11-12T00:38:39.787Z"
+      "last_verified_at": "2026-11-12T02:35:49.918Z"
     },
     {
       "id": 1539868353,
@@ -613,7 +619,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-11T09:20:21.543Z",
-      "last_verified_at": "2026-11-12T00:38:39.787Z"
+      "last_verified_at": "2026-11-12T02:35:49.918Z"
     }
   ]
 }
