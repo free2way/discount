@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-11-13T06:38:26.197Z",
-  "queued_count": 120,
-  "rejected_count": 33,
+  "queued_count": 119,
+  "rejected_count": 38,
   "candidates": [
     {
       "key": "v2ex:https://v2ex.com/t/1256720",
@@ -248,6 +248,91 @@
       "reasons": [
         "内容更像资讯、问答、测评或普通软件更新",
         "命中高风险或不受支持的交易/软件规则"
+      ],
+      "review_status": "rejected"
+    },
+    {
+      "key": "linuxdo:https://linux.do/t/topic/3165668",
+      "source_id": "linuxdo",
+      "source_name": "LINUX DO 福利羊毛",
+      "source_url": "https://linux.do/t/topic/3165668",
+      "title": "【结束等下次】刚才没加公益推广，重新发布一下，公益免费爽蹬GPT",
+      "summary": "LINUX DO 福利羊毛 返回的公开线索；原始订阅未提供摘要。",
+      "published_at": "2026-11-12T15:24:46.000Z",
+      "expires_at": null,
+      "relevance_score": 52,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "来源标题已标记活动结束"
+      ],
+      "review_status": "rejected"
+    },
+    {
+      "key": "v2ex:https://v2ex.com/t/1256297",
+      "source_id": "v2ex",
+      "source_name": "V2EX 推广",
+      "source_url": "https://v2ex.com/t/1256297",
+      "title": "gemini-4-carbon 免费一天",
+      "summary": "https://api.apichatgpt.org/ 想登的切换全模型白嫖分组就行 限制 1 并发 免费玩一天",
+      "published_at": "2026-11-11T14:36:00.000Z",
+      "expires_at": null,
+      "relevance_score": 52,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "原文仅称免费一天，旧档已过，后续另有帖子"
+      ],
+      "review_status": "rejected"
+    },
+    {
+      "key": "reddit_freebies:https://reddit.com/r/freebies/comments/1xr1zac/free_baja_blasts_today_is_the_last_day",
+      "source_id": "reddit_freebies",
+      "source_name": "Reddit r/freebies",
+      "source_url": "https://reddit.com/r/freebies/comments/1xr1zac/free_baja_blasts_today_is_the_last_day",
+      "title": "Free Baja Blasts - Today is the last day!",
+      "summary": "Today is the last day of the free Mountain Dew Baja blasts! It’s live today as a last chance until next baseball season. Ends at midnight Eastern time. Sign up to get the mobile wallet pass where you can redeem by scanning barcode at the store or sending a picture of your receipt for the rebate. Link: https://www.bajab",
+      "published_at": "2026-11-08T16:11:08.000Z",
+      "expires_at": null,
+      "relevance_score": 42,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "旧订阅正文称 11 月 8 日为最后一天"
+      ],
+      "review_status": "rejected"
+    },
+    {
+      "key": "reddit_freebies:https://reddit.com/r/freebies/comments/1xqw7gh/2_free_tickets_drummer_boy_today_only",
+      "source_id": "reddit_freebies",
+      "source_name": "Reddit r/freebies",
+      "source_url": "https://reddit.com/r/freebies/comments/1xqw7gh/2_free_tickets_drummer_boy_today_only",
+      "title": "2 Free Tickets: Drummer Boy (TODAY ONLY)",
+      "summary": "CODE: ATOMDRUMMER https://www.atomtickets.com/movies/drummer-boy/415960 submitted by /u/peacelovebre [link] [comments]",
+      "published_at": "2026-11-08T11:20:38.000Z",
+      "expires_at": null,
+      "relevance_score": 42,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "11 月 8 日原帖限定当天场次"
+      ],
+      "review_status": "rejected"
+    },
+    {
+      "key": "reddit_freebies:https://reddit.com/r/freebies/comments/1xqn4bi/free_chickfila_chicken_sandwich_for_people_close",
+      "source_id": "reddit_freebies",
+      "source_name": "Reddit r/freebies",
+      "source_url": "https://reddit.com/r/freebies/comments/1xqn4bi/free_chickfila_chicken_sandwich_for_people_close",
+      "title": "Free Chick-Fil-A Chicken Sandwich for people close to Washington D.C. (expires 11/11)",
+      "summary": "Open the app with location services turned on. I believe there’s a limited number they give as rewards on the app. This is for folks close to Washington D.C. submitted by /u/Giptner [link] [comments]",
+      "published_at": "2026-11-08T02:03:41.000Z",
+      "expires_at": null,
+      "relevance_score": 42,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "旧订阅所报 11 月 11 日已过，官方账户内优惠不可复核"
       ],
       "review_status": "rejected"
     },
@@ -1122,23 +1207,6 @@
       "title": "华为云-开发者成长中心将正式上线，还没换代金券的赶紧了",
       "summary": "",
       "published_at": "2026-11-13T02:12:13.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "linuxdo:https://linux.do/t/topic/3167882",
-      "source_id": "linuxdo",
-      "source_name": "LINUX DO 福利羊毛",
-      "source_url": "https://linux.do/t/topic/3167882",
-      "title": "【快讯】instabox结束测试全面开放了，不用候补了",
-      "summary": "",
-      "published_at": "2026-11-13T01:53:19.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
