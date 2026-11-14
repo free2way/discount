@@ -1,29 +1,23 @@
 {
-  "generated_at": "2026-11-14T18:55:46.117Z",
-  "status": "partial",
+  "generated_at": "2026-11-14T20:56:48.122Z",
+  "status": "success",
   "sources_checked": 10,
-  "candidates_found": 221,
+  "candidates_found": 246,
   "verified_count": 1,
   "pending_count": 41,
-  "failures": [
-    {
-      "source_id": "linuxdo",
-      "source_name": "LINUX DO 福利羊毛",
-      "error": "HTTP 401"
-    }
-  ],
+  "failures": [],
   "source_results": [
     {
       "source_id": "linuxdo",
       "source_name": "LINUX DO 福利羊毛",
-      "ok": false,
-      "count": 0,
-      "final_url": null,
-      "attempts": 3,
-      "response_ms": 3700,
-      "consecutive_failures": 1,
-      "last_success_at": "2026-11-14T16:06:40.596Z",
-      "error": "HTTP 401"
+      "ok": true,
+      "count": 25,
+      "final_url": "https://r.jina.ai/https://linux.do/c/welfare/36.rss",
+      "attempts": 1,
+      "response_ms": 514,
+      "consecutive_failures": 0,
+      "last_success_at": "2026-11-14T20:56:48.122Z",
+      "error": null
     },
     {
       "source_id": "v2ex",
@@ -32,9 +26,9 @@
       "count": 50,
       "final_url": "https://www.v2ex.com/feed/promotions.xml",
       "attempts": 1,
-      "response_ms": 439,
+      "response_ms": 90,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-14T18:55:46.117Z",
+      "last_success_at": "2026-11-14T20:56:48.122Z",
       "error": null
     },
     {
@@ -44,9 +38,9 @@
       "count": 1,
       "final_url": "https://store-site-backend-static.ak.epicgames.com/freeGamesPromotions?locale=zh-CN&country=CN&allowCountries=CN",
       "attempts": 1,
-      "response_ms": 416,
+      "response_ms": 346,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-14T18:55:46.117Z",
+      "last_success_at": "2026-11-14T20:56:48.122Z",
       "error": null
     },
     {
@@ -56,9 +50,9 @@
       "count": 20,
       "final_url": "https://rss.nodeseek.com/",
       "attempts": 1,
-      "response_ms": 960,
+      "response_ms": 226,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-14T18:55:46.117Z",
+      "last_success_at": "2026-11-14T20:56:48.122Z",
       "error": null
     },
     {
@@ -68,9 +62,9 @@
       "count": 10,
       "final_url": "https://www.appinn.com/feed/",
       "attempts": 1,
-      "response_ms": 111,
+      "response_ms": 1411,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-14T18:55:46.117Z",
+      "last_success_at": "2026-11-14T20:56:48.122Z",
       "error": null
     },
     {
@@ -80,9 +74,9 @@
       "count": 10,
       "final_url": "https://www.ghxi.com/feed",
       "attempts": 1,
-      "response_ms": 233,
+      "response_ms": 1531,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-14T18:55:46.117Z",
+      "last_success_at": "2026-11-14T20:56:48.122Z",
       "error": null
     },
     {
@@ -92,9 +86,9 @@
       "count": 30,
       "final_url": "https://feed.iplaysoft.com/",
       "attempts": 1,
-      "response_ms": 908,
+      "response_ms": 607,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-14T18:55:46.117Z",
+      "last_success_at": "2026-11-14T20:56:48.122Z",
       "error": null
     },
     {
@@ -104,9 +98,9 @@
       "count": 25,
       "final_url": "https://feeds.feedburner.com/SlickdealsnetFP",
       "attempts": 1,
-      "response_ms": 981,
+      "response_ms": 459,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-14T18:55:46.117Z",
+      "last_success_at": "2026-11-14T20:56:48.122Z",
       "error": null
     },
     {
@@ -116,9 +110,9 @@
       "count": 25,
       "final_url": "https://www.reddit.com/r/freebies/.rss",
       "attempts": 1,
-      "response_ms": 1102,
+      "response_ms": 845,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-14T18:55:46.117Z",
+      "last_success_at": "2026-11-14T20:56:48.122Z",
       "error": null
     },
     {
@@ -128,9 +122,9 @@
       "count": 50,
       "final_url": "https://www.producthunt.com/feed",
       "attempts": 1,
-      "response_ms": 974,
+      "response_ms": 446,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-14T18:55:46.117Z",
+      "last_success_at": "2026-11-14T20:56:48.122Z",
       "error": null
     }
   ],
@@ -162,13 +156,13 @@
       "confidence": 96,
       "risk_notes": "领取前确认结算价为 0；不要使用第三方代领或共享账号。",
       "first_seen_at": "2026-11-12T18:16:50.179Z",
-      "last_verified_at": "2026-11-14T18:55:46.117Z"
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
-      "id": 1841691014,
-      "name": "2-ct Taiofan Magnetic Rechargeable Hand Warmers w/ LED Display (Black) $7",
+      "id": 935958632,
+      "name": "免费使用gemini 4 Hydrogen ，适合文本对话与分析",
       "category": "ai",
-      "summary": "Jiayang E-commerce via Amazon [amazon.com] has *2-Count Taiofan Magnetic Rechargeable Hand Warmers w/ LED Display & 4 Heat Settings* (Black) on sale for $19.99 - *$13 off *when you apply promo code...",
+      "summary": "LINUX DO 福利羊毛 返回的公开线索；原始订阅未提供摘要。",
       "value_amount": null,
       "value_currency": null,
       "value_label": "待核实线索",
@@ -176,11 +170,40 @@
       "requirements": "需打开原文确认活动、资格、地区与有效期。",
       "regions": "来源未注明",
       "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-14T18:13:39.000Z",
+      "starts_at": "2026-11-14T20:31:05.000Z",
       "ends_at": null,
       "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20291292-2-count-taiofan-magnetic-rechargeable-hand-warmers-w-led-display-4-heat-settings-black-6-99-free-shipping-w-prime-or-on-35",
-      "source_url": "https://slickdeals.net/f/20291292-2-count-taiofan-magnetic-rechargeable-hand-warmers-w-led-display-4-heat-settings-black-6-99-free-shipping-w-prime-or-on-35",
+      "official_url": "https://linux.do/t/topic/3178208",
+      "source_url": "https://linux.do/t/topic/3178208",
+      "source_name": "LINUX DO 福利羊毛",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-14T20:56:48.122Z",
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
+    },
+    {
+      "id": 1702969208,
+      "name": "adidas Men's Tiro 24 Training Pants (Team Navy Blue 2 / White, Limited Sizes) $16.80 + Free S&H",
+      "category": "ai",
+      "summary": "Seller is adidas via eBay. Shipping is free Use 20% off code SHOPBRANDS20 https://www.ebay.com/itm/15829941...9422180547",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 52,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-14T19:10:23.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://slickdeals.net/f/20308656-16-80-adidas-mens-tiro-24-training-pants",
+      "source_url": "https://slickdeals.net/f/20308656-16-80-adidas-mens-tiro-24-training-pants",
       "source_name": "Slickdeals Frontpage",
       "source_type": "feed",
       "source_subreddit": null,
@@ -190,37 +213,8 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-14T18:55:46.117Z",
-      "last_verified_at": "2026-11-14T18:55:46.117Z"
-    },
-    {
-      "id": 223921840,
-      "name": "6-Qt. Shark Ninja Crispi Pro 6-in-1 1800W Glass Air Fryer $260 + Free S&H",
-      "category": "ai",
-      "summary": "Ninja Crispi Pro Glass Air Fryer, 6-in-1, Amazon Exclusive Bone & Champagne [amazon.com] $259.99 Max crisp, air fry, bake, roast, recrisp, dehydrate, 1800W, 450F max, 6Qt, 2.5Qt Glassware, AS101WH1",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 52,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-14T17:33:48.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20286837-ninja-crispi-pro-glass-air-fryer-6-in-1-amazon-exclusive-bone-champagne-max-crisp-air-fry-bake-roast-recrisp-dehydrate-1800w-450f-max-6qt-2-5qt-glassware-259-99",
-      "source_url": "https://slickdeals.net/f/20286837-ninja-crispi-pro-glass-air-fryer-6-in-1-amazon-exclusive-bone-champagne-max-crisp-air-fry-bake-roast-recrisp-dehydrate-1800w-450f-max-6qt-2-5qt-glassware-259-99",
-      "source_name": "Slickdeals Frontpage",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-14T18:55:46.117Z",
-      "last_verified_at": "2026-11-14T18:55:46.117Z"
+      "first_seen_at": "2026-11-14T20:56:48.122Z",
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
       "id": 248827171,
@@ -249,7 +243,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-14T13:38:24.897Z",
-      "last_verified_at": "2026-11-14T16:06:40.596Z"
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
       "id": 1692863183,
@@ -278,7 +272,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-14T13:38:24.897Z",
-      "last_verified_at": "2026-11-14T16:06:40.596Z"
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
       "id": 404402377,
@@ -307,7 +301,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-14T06:15:08.403Z",
-      "last_verified_at": "2026-11-14T18:55:46.117Z"
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
       "id": 236456185,
@@ -336,7 +330,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-14T06:15:08.403Z",
-      "last_verified_at": "2026-11-14T18:55:46.117Z"
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
       "id": 256549287,
@@ -365,13 +359,13 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-14T06:15:08.403Z",
-      "last_verified_at": "2026-11-14T18:55:46.117Z"
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
       "id": 360175216,
       "name": "赛博领鸡蛋：InstaBox，免费领 4 核 8GB 云电脑，支持 Linux 桌面、安卓镜像和 AI Agent",
       "category": "ai",
-      "summary": "可能，我们需要换一个思路来理解 VPS 了。 以前的 VPS 是一台远程的 Linux 服务器，通过 IP 地址，使用 SSH 登录，然后自己配置环境、安装软件。 现在，越来越多的服务商，直接把 VPS 包装成 AI 设备，提供图形桌面、浏览器，以及内置了 Claude Code、Codex 等 A",
+      "summary": "可能，我们需要换一个思路来理解 VPS 了。 以前的 VPS 是一台远程的 Linux 服务器，通过 IP 地址，使用 SSH 登录，然后自己配置环境、安装软件。 现在，越来越多的服务商，直接把 VP",
       "value_amount": null,
       "value_currency": null,
       "value_label": "待核实线索",
@@ -379,7 +373,7 @@
       "requirements": "需打开原文确认活动、资格、地区与有效期。",
       "regions": "来源未注明",
       "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-13T06:42:04.000Z",
+      "starts_at": "2026-11-13T06:41:06.000Z",
       "ends_at": null,
       "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
       "official_url": "https://appinn.com/egg-instabox",
@@ -394,7 +388,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-14T06:15:08.403Z",
-      "last_verified_at": "2026-11-14T18:55:46.117Z"
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
       "id": 284490379,
@@ -423,13 +417,13 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-14T06:15:08.403Z",
-      "last_verified_at": "2026-11-14T18:55:46.117Z"
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
-      "id": 1478366393,
-      "name": "nuyek特价独服其实一台也没放 我一直盯着",
+      "id": 1652827999,
+      "name": "Prime Members: 4-pk Kyekio Gen2 Flame LED Solar Lanterns $13 + Free S&H",
       "category": "other",
-      "summary": "纯他妈煞笔，不会以为有多少人稀罕你那破机器吧本来没打算买，就看个乐子等你放货",
+      "summary": "KERUN Technology-US via Amazon [amazon.com] has for *Prime Members*: *4-Pack Kyekio Gen2 Solar Flickering Flame Hanging LED Lanterns* on sale for $29.99 - 50% off when you enter the coupon code...",
       "value_amount": null,
       "value_currency": null,
       "value_label": "待核实线索",
@@ -437,40 +431,11 @@
       "requirements": "需打开原文确认活动、资格、地区与有效期。",
       "regions": "来源未注明",
       "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-14T18:48:49.000Z",
+      "starts_at": "2026-11-14T20:39:13.000Z",
       "ends_at": null,
       "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://nodeseek.com/post-1054716-1",
-      "source_url": "https://nodeseek.com/post-1054716-1",
-      "source_name": "NodeSeek",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-14T18:55:46.117Z",
-      "last_verified_at": "2026-11-14T18:55:46.117Z"
-    },
-    {
-      "id": 741204952,
-      "name": "2-Pc 6\" RYOBI Diamond Grit Impact Drive PH2 Phillips #2 Bits $5 + Free S&H",
-      "category": "other",
-      "summary": "Available for pickup and delivery Highlights Diamond Grit hardens tip for improved durability and 20X longer life Diamond Grit holds tight to fastener for pre-driving control and 2X stronger...",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 42,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-14T18:16:03.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20303337-ryobi-2-piece-6-in-diamond-grit-impact-drive-bits-home-depot-4-97",
-      "source_url": "https://slickdeals.net/f/20303337-ryobi-2-piece-6-in-diamond-grit-impact-drive-bits-home-depot-4-97",
+      "official_url": "https://slickdeals.net/f/20294415-prime-4-pack-kyekio-gen2-solar-flickering-flame-hanging-led-lanterns-14-99-free-shipping",
+      "source_url": "https://slickdeals.net/f/20294415-prime-4-pack-kyekio-gen2-solar-flickering-flame-hanging-led-lanterns-14-99-free-shipping",
       "source_name": "Slickdeals Frontpage",
       "source_type": "feed",
       "source_subreddit": null,
@@ -480,14 +445,14 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-14T18:55:46.117Z",
-      "last_verified_at": "2026-11-14T18:55:46.117Z"
+      "first_seen_at": "2026-11-14T20:56:48.122Z",
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
-      "id": 1279116268,
-      "name": "313-Piece Mega Pokémon Mini Motion Golbat w/ Wing Flapping Motion Building Set $9",
+      "id": 1603324453,
+      "name": "Nothing Phone 4a Pro Unlocked Smartphone (2026): 12+256GB $483.50, 8+128GB $398 + Free S&H",
       "category": "software",
-      "summary": "Amazon [amazon.com] has *313-Piece Mega Pokémon Action Figure Building Set Mini Motion Golbat w/ Wing Flapping Movement* for *$8.93*. Shipping is free w/ Prime or on $35+. Macy's [macys.com] has...",
+      "summary": "Amazon [amazon.com] has *Nothing Phone 4a Pro Unlocked Smartphone *(2026) for *$398*. *Shipping is free*.[LIST][*]*8+128GB* * Black [amazon.com] - *$398* * Sliver [amazon.com] - *$398* ...",
       "value_amount": null,
       "value_currency": null,
       "value_label": "待核实线索",
@@ -495,11 +460,11 @@
       "requirements": "需打开原文确认活动、资格、地区与有效期。",
       "regions": "来源未注明",
       "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-14T18:13:06.000Z",
+      "starts_at": "2026-11-14T20:32:24.000Z",
       "ends_at": null,
       "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20305701-313-piece-mega-pok-mon-action-figure-building-set-mini-motion-golbat-w-wing-flapping-movement-8-93-free-shipping-w-prime-or-on-35",
-      "source_url": "https://slickdeals.net/f/20305701-313-piece-mega-pok-mon-action-figure-building-set-mini-motion-golbat-w-wing-flapping-movement-8-93-free-shipping-w-prime-or-on-35",
+      "official_url": "https://slickdeals.net/f/20302080-398-nothing-phone-4a-pro-unlocked-smartphone-2026-at-amazon",
+      "source_url": "https://slickdeals.net/f/20302080-398-nothing-phone-4a-pro-unlocked-smartphone-2026-at-amazon",
       "source_name": "Slickdeals Frontpage",
       "source_type": "feed",
       "source_subreddit": null,
@@ -509,14 +474,14 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-14T18:55:46.117Z",
-      "last_verified_at": "2026-11-14T18:55:46.117Z"
+      "first_seen_at": "2026-11-14T20:56:48.122Z",
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
-      "id": 884458298,
-      "name": "Milwaukee M18 FUEL 3/8\" Impact Wrench w/ 2x 5.0Ah Batteries, Charger & Socket Set $298 + Free S&H",
+      "id": 661993619,
+      "name": "Crocs Men's & Women's Clogs: STAR WARS, Mickey Mouse, Super Mario, Yoshi 2 for $50 & More + Free S&H",
       "category": "other",
-      "summary": "Home Depot [homedepot.com] has *Milwaukee M18 FUEL 18V 3/8\" Cordless Impact Wrench w/ (2) 5.0Ah Batteries, Charger & 43-Piece Impact Socket Set* on sale for *$298*. *Shipping is free.* *Compiled...",
+      "summary": "Crocs [crocs.com] offers their Crocs Club Members (free to join) early access to their 2 for $50 sale. Discount automatic in cart. Free shipping on $49.99. Examples deals[list][*]Super Mario™ Core...",
       "value_amount": null,
       "value_currency": null,
       "value_label": "待核实线索",
@@ -524,11 +489,11 @@
       "requirements": "需打开原文确认活动、资格、地区与有效期。",
       "regions": "来源未注明",
       "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-14T18:12:35.000Z",
+      "starts_at": "2026-11-14T20:30:29.000Z",
       "ends_at": null,
       "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20308038-milwaukee-m18-fuel-18v-3-8-cordless-impact-wrench-w-2-5-0ah-batteries-charger-43-piece-impact-socket-set-298-free-shipping",
-      "source_url": "https://slickdeals.net/f/20308038-milwaukee-m18-fuel-18v-3-8-cordless-impact-wrench-w-2-5-0ah-batteries-charger-43-piece-impact-socket-set-298-free-shipping",
+      "official_url": "https://slickdeals.net/f/20287554-crocs-men-s-women-s-clogs-star-wars-mickey-mouse-super-mario-yoshi-2-for-50-more-free-s-h-on-55",
+      "source_url": "https://slickdeals.net/f/20287554-crocs-men-s-women-s-clogs-star-wars-mickey-mouse-super-mario-yoshi-2-for-50-more-free-s-h-on-55",
       "source_name": "Slickdeals Frontpage",
       "source_type": "feed",
       "source_subreddit": null,
@@ -538,14 +503,14 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-14T18:55:46.117Z",
-      "last_verified_at": "2026-11-14T18:55:46.117Z"
+      "first_seen_at": "2026-11-14T20:56:48.122Z",
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
-      "id": 1027938056,
-      "name": "G Gradual Men's Quick Dry Athletic Shorts w/ Zipper Pockets (Various) $10",
+      "id": 401792142,
+      "name": "DJI Osmo Nano 4K Wearable Action Camera (Standard Combo): 128GB $249, 64GB $204 + Free S&H",
       "category": "other",
-      "summary": "G-GRADUAL via Amazon [amazon.com] has *G Gradual Men's 7\" Athletic Running Shorts w/ 2 Zipper Pockets (various colors & sizes)* on sale for $19.99 - 50% off when you apply promo code DOJC551V at...",
+      "summary": "LensAero Pro Local Store via AliExpress [aliexpress.us] has *(New) DJI Osmo Nano Standard Combo 64GB* on sale for *$204* w/ code *USD1140* or *USDEAL38*. *Shipping is free.* LensAero Pro Local...",
       "value_amount": null,
       "value_currency": null,
       "value_label": "待核实线索",
@@ -553,11 +518,11 @@
       "requirements": "需打开原文确认活动、资格、地区与有效期。",
       "regions": "来源未注明",
       "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-14T18:04:23.000Z",
+      "starts_at": "2026-11-14T20:17:32.000Z",
       "ends_at": null,
       "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20084739-g-gradual-men-s-7-athletic-running-shorts-w-2-zipper-pockets-various-9-99-free-shipping-w-prime-or-on-35",
-      "source_url": "https://slickdeals.net/f/20084739-g-gradual-men-s-7-athletic-running-shorts-w-2-zipper-pockets-various-9-99-free-shipping-w-prime-or-on-35",
+      "official_url": "https://slickdeals.net/f/20242011-dji-osmo-nano-4k-wearable-action-camera-standard-combo-128gb-249-64gb-204-free-s-h",
+      "source_url": "https://slickdeals.net/f/20242011-dji-osmo-nano-4k-wearable-action-camera-standard-combo-128gb-249-64gb-204-free-s-h",
       "source_name": "Slickdeals Frontpage",
       "source_type": "feed",
       "source_subreddit": null,
@@ -567,14 +532,72 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-14T18:55:46.117Z",
-      "last_verified_at": "2026-11-14T18:55:46.117Z"
+      "first_seen_at": "2026-11-14T20:56:48.122Z",
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
-      "id": 834925248,
-      "name": "EF ECOFLOW Rapid Pro 146W 4-Port GaN Charging Block (3x USB-C + USB-A) $38 + Free S&H",
+      "id": 99342457,
+      "name": "eufy C31 1080p Wired Security Cam w/ 360° Coverage, Pan & Tilt (3 Colors) $40 + Free S&H",
+      "category": "other",
+      "summary": "Anker EufyHome via Amazon has *eufy C31 1080p Wired Indoor/Outdoor Security Camera w/ 360° Coverage, Pan & Tilt* (3 Colors, T817L) on sale for *$39.99*. *Shipping is free*. Thanks to Community...",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 42,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-14T20:09:19.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://slickdeals.net/f/20301162-eufy-c31-1080p-wired-security-cam-w-360-coverage-pan-tilt-3-colors-40-free-s-h",
+      "source_url": "https://slickdeals.net/f/20301162-eufy-c31-1080p-wired-security-cam-w-360-coverage-pan-tilt-3-colors-40-free-s-h",
+      "source_name": "Slickdeals Frontpage",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-14T20:56:48.122Z",
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
+    },
+    {
+      "id": 1091054572,
+      "name": "Character Toddler Fleece Robe (Spider-Man, Bluey, Mickey & More) from $6",
+      "category": "other",
+      "summary": "Walmart [walmart.com] has* select Character Toddler Fleece Robe: Spider-Man, Bluey, Mickey & More (Sizes 12M-5T)* on sale from *$6*. Shipping is free w/ Walmart+ ($1 trial available [walmart.com]) or...",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 42,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-14T20:06:49.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://slickdeals.net/f/20305560-character-toddler-fleece-robe-spider-man-bluey-mickey-more-sizes-12m-5t-from-6-free-shipping-w-walmart-or-on-35",
+      "source_url": "https://slickdeals.net/f/20305560-character-toddler-fleece-robe-spider-man-bluey-mickey-more-sizes-12m-5t-from-6-free-shipping-w-walmart-or-on-35",
+      "source_name": "Slickdeals Frontpage",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-14T20:56:48.122Z",
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
+    },
+    {
+      "id": 82184578,
+      "name": "Shokz OpenRun Pro Premium Bone Conduction Open-Ear Sport Headphones (Black) $90 + Free S&H",
       "category": "software",
-      "summary": "ECOFLOW Direct via Amazon [amazon.com] has *EF ECOFLOW Rapid Pro 146W 4-Port GaN Charging Block *(3x USB-C + USB-A) for *$37.99*. *Shipping is free*. *** Previous *Frontpage Deal* at *$38* with...",
+      "summary": "Shokz - OpenRun Pro Premium Bone Conduction Open-Ear Sport Headphones - Black https://www.bestbuy.com/product/s...ku/6492430",
       "value_amount": null,
       "value_currency": null,
       "value_label": "待核实线索",
@@ -582,11 +605,11 @@
       "requirements": "需打开原文确认活动、资格、地区与有效期。",
       "regions": "来源未注明",
       "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-14T17:59:01.000Z",
+      "starts_at": "2026-11-14T19:55:07.000Z",
       "ends_at": null,
       "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20308248-37-99-ef-ecoflow-rapid-pro-146w-4-port-gan-charging-block-3x-usb-c-usb-a-at-amazon",
-      "source_url": "https://slickdeals.net/f/20308248-37-99-ef-ecoflow-rapid-pro-146w-4-port-gan-charging-block-3x-usb-c-usb-a-at-amazon",
+      "official_url": "https://slickdeals.net/f/20301585-shokz-openrun-pro-premium-bone-conduction-open-ear-sport-headphones-black-89-99",
+      "source_url": "https://slickdeals.net/f/20301585-shokz-openrun-pro-premium-bone-conduction-open-ear-sport-headphones-black-89-99",
       "source_name": "Slickdeals Frontpage",
       "source_type": "feed",
       "source_subreddit": null,
@@ -596,14 +619,14 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-14T18:55:46.117Z",
-      "last_verified_at": "2026-11-14T18:55:46.117Z"
+      "first_seen_at": "2026-11-14T20:56:48.122Z",
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
-      "id": 1700737937,
-      "name": "2-Ct 10.8-Oz Kitty City Slow-Feed Elevated Cat Bowls $7.50",
+      "id": 1821209246,
+      "name": "Fisher-Price Wood Montessori Triangle Puzzle Learning Activity $2.85",
       "category": "other",
-      "summary": "*Chewy* [chewy.com] has *Kitty City Slow-Feed Elevated Cat Bowls, White & Grey, 10-oz, 2 count* for *$7.49*. *Save 25%* at checkout, *no code required*. *Free 1-3 day delivery* on *first-time*...",
+      "summary": "Amazon [amazon.com] has *10-Piece Fisher-Price Wood Montessori Toy Triangle Puzzle* for *$2.86*. Shipping is free w/ Prime or on $35+. Product Description from Amazon:[list][*]​Montessori toy...",
       "value_amount": null,
       "value_currency": null,
       "value_label": "待核实线索",
@@ -611,11 +634,11 @@
       "requirements": "需打开原文确认活动、资格、地区与有效期。",
       "regions": "来源未注明",
       "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-14T17:42:56.000Z",
+      "starts_at": "2026-11-14T19:50:25.000Z",
       "ends_at": null,
       "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20300139-chewy-kitty-city-slow-feed-elevated-cat-bowls-white-grey-10-oz-2-count-7-49",
-      "source_url": "https://slickdeals.net/f/20300139-chewy-kitty-city-slow-feed-elevated-cat-bowls-white-grey-10-oz-2-count-7-49",
+      "official_url": "https://slickdeals.net/f/20296497-10-piece-fisher-price-wood-montessori-toy-triangle-puzzle-2-86-free-shipping-w-prime-or-on-35",
+      "source_url": "https://slickdeals.net/f/20296497-10-piece-fisher-price-wood-montessori-toy-triangle-puzzle-2-86-free-shipping-w-prime-or-on-35",
       "source_name": "Slickdeals Frontpage",
       "source_type": "feed",
       "source_subreddit": null,
@@ -625,14 +648,14 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-14T18:55:46.117Z",
-      "last_verified_at": "2026-11-14T18:55:46.117Z"
+      "first_seen_at": "2026-11-14T20:56:48.122Z",
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
-      "id": 652703686,
-      "name": "Suzume 3/8\" Drive Digital Torque Wrench (5.02-99.57 Ft-Lb) $48 + Free S&H",
+      "id": 7347623,
+      "name": "The Super Mario Galaxy Movie: Collector's Edition (4K UHD + Blu-ray + Digital) $13",
       "category": "other",
-      "summary": "SUZUME US via Amazon [amazon.com] has *SUZUME 3/8\" Drive Digital Torque Wrench (5.02-99.57 Ft-Lb)* on sale for $69.58 - $21.57 with promo code CYEB1JH0 = *$48.01*. *Shipping is free*.",
+      "summary": "Amazon [amazon.com] has *The Super Mario Galaxy Movie: Collector's Edition *(4K Ultra HD + Blu-ray + Digital 4K) for *$12.99*. *Shipping is free* with Prime or on $35+ orders. ...",
       "value_amount": null,
       "value_currency": null,
       "value_label": "待核实线索",
@@ -640,11 +663,11 @@
       "requirements": "需打开原文确认活动、资格、地区与有效期。",
       "regions": "来源未注明",
       "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-14T17:42:22.000Z",
+      "starts_at": "2026-11-14T19:38:02.000Z",
       "ends_at": null,
       "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20286765-suzume-3-8-drive-digital-torque-wrench-5-02-99-57-ft-lb-48-01-free-shipping",
-      "source_url": "https://slickdeals.net/f/20286765-suzume-3-8-drive-digital-torque-wrench-5-02-99-57-ft-lb-48-01-free-shipping",
+      "official_url": "https://slickdeals.net/f/20308083-new-12-99-the-super-mario-galaxy-movie-collector-s-edition-4k-ultra-hd-blu-ray-digital-4k-at-amazon",
+      "source_url": "https://slickdeals.net/f/20308083-new-12-99-the-super-mario-galaxy-movie-collector-s-edition-4k-ultra-hd-blu-ray-digital-4k-at-amazon",
       "source_name": "Slickdeals Frontpage",
       "source_type": "feed",
       "source_subreddit": null,
@@ -654,14 +677,14 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-14T18:55:46.117Z",
-      "last_verified_at": "2026-11-14T18:55:46.117Z"
+      "first_seen_at": "2026-11-14T20:56:48.122Z",
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
-      "id": 327186343,
-      "name": "SAROS (PS5) $42 + Free S&H",
+      "id": 421985187,
+      "name": "Osprey Daylite Expandable 26+6 Travel Pack (Tunnel Vision Grey) $71.50 + Free S&H",
       "category": "other",
-      "summary": "Amazon.com has SAROS PS5 for $41.99. Shipping is free. https://www.amazon.com/dp/B0G5RRPGFF",
+      "summary": "Amazon has Osprey Daylite Expandable 26+6 Travel Pack for $72. Shipping is free. https://www.amazon.com/dp/B0DSQX5N64",
       "value_amount": null,
       "value_currency": null,
       "value_label": "待核实线索",
@@ -669,11 +692,11 @@
       "requirements": "需打开原文确认活动、资格、地区与有效期。",
       "regions": "来源未注明",
       "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-14T17:21:57.000Z",
+      "starts_at": "2026-11-14T19:26:44.000Z",
       "ends_at": null,
       "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20307849-saros-ps5-41-99-free-s-h-at-amazon",
-      "source_url": "https://slickdeals.net/f/20307849-saros-ps5-41-99-free-s-h-at-amazon",
+      "official_url": "https://slickdeals.net/f/20302719-osprey-daylite-expandable-26-6-travel-pack-tunnel-vision-grey-71-50-free-s-h",
+      "source_url": "https://slickdeals.net/f/20302719-osprey-daylite-expandable-26-6-travel-pack-tunnel-vision-grey-71-50-free-s-h",
       "source_name": "Slickdeals Frontpage",
       "source_type": "feed",
       "source_subreddit": null,
@@ -683,14 +706,14 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-14T18:55:46.117Z",
-      "last_verified_at": "2026-11-14T18:55:46.117Z"
+      "first_seen_at": "2026-11-14T20:56:48.122Z",
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
-      "id": 1335268527,
-      "name": "140W 3-Port TALIX 20000mAh Laptop Power Bank w/ Built-In USB-C Cable $30 + Free S&H",
+      "id": 1366550559,
+      "name": "259-Pc LEGO Botanicals Botanical Collection Water Lilies $25.50",
       "category": "other",
-      "summary": "Lenovo Product Marketplace, Inc. via Amazon [amazon.com] has *3-Port TALIX 20000mAh Laptop Power Bank w/ Built-in USB-C Cable* (140W max, Up to 190W) on sale for $49.99 - *50% off* when you apply...",
+      "summary": "Walmart [walmart.com] has *259-Pc LEGO Botanicals Botanical Collection Water Lilies* (11511) for *$25.49*. *Shipping is free* w/ Walmart+ or on orders $35+ Target [target.com] also has *259-Pc...",
       "value_amount": null,
       "value_currency": null,
       "value_label": "待核实线索",
@@ -698,11 +721,11 @@
       "requirements": "需打开原文确认活动、资格、地区与有效期。",
       "regions": "来源未注明",
       "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-14T17:13:16.000Z",
+      "starts_at": "2026-11-14T19:23:38.000Z",
       "ends_at": null,
       "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20285388-3-port-talix-20000mah-laptop-power-bank-w-built-in-usb-c-cable-140w-max-up-to-190w-29-99-free-shipping",
-      "source_url": "https://slickdeals.net/f/20285388-3-port-talix-20000mah-laptop-power-bank-w-built-in-usb-c-cable-140w-max-up-to-190w-29-99-free-shipping",
+      "official_url": "https://slickdeals.net/f/20301771-259-pc-lego-botanicals-botanical-collection-water-lilies-11511-25-49-free-shipping-w-walmart-or-on-35",
+      "source_url": "https://slickdeals.net/f/20301771-259-pc-lego-botanicals-botanical-collection-water-lilies-11511-25-49-free-shipping-w-walmart-or-on-35",
       "source_name": "Slickdeals Frontpage",
       "source_type": "feed",
       "source_subreddit": null,
@@ -712,37 +735,8 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-14T18:55:46.117Z",
-      "last_verified_at": "2026-11-14T18:55:46.117Z"
-    },
-    {
-      "id": 1627688301,
-      "name": "Crocs Women's Classic Platform Clog (Size 11, Bone or Taupe) $20",
-      "category": "other",
-      "summary": "AltCom via Amazon [amazon.com] has *select* *Crocs Women's Classic Platform Clog* on sale from *$19.95*. Shipping is free w/ Prime or on orders $35+. *Available Deals*:[LIST][*]Size 9 White...",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 42,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-14T17:06:25.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20297640-crocs-women-s-classic-platform-clog-size-9-white-size-10-bone-size-11-bone-taupe-19-95-free-shipping-w-prime-or-on-35",
-      "source_url": "https://slickdeals.net/f/20297640-crocs-women-s-classic-platform-clog-size-9-white-size-10-bone-size-11-bone-taupe-19-95-free-shipping-w-prime-or-on-35",
-      "source_name": "Slickdeals Frontpage",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-14T18:55:46.117Z",
-      "last_verified_at": "2026-11-14T18:55:46.117Z"
+      "first_seen_at": "2026-11-14T20:56:48.122Z",
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
       "id": 1086824003,
@@ -771,7 +765,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-14T16:06:40.596Z",
-      "last_verified_at": "2026-11-14T16:06:40.596Z"
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
       "id": 831969955,
@@ -800,7 +794,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-14T16:06:40.596Z",
-      "last_verified_at": "2026-11-14T16:06:40.596Z"
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
       "id": 623290936,
@@ -829,7 +823,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-14T16:06:40.596Z",
-      "last_verified_at": "2026-11-14T16:06:40.596Z"
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
       "id": 837038653,
@@ -858,7 +852,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-14T16:06:40.596Z",
-      "last_verified_at": "2026-11-14T16:06:40.596Z"
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
       "id": 374611171,
@@ -887,7 +881,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-14T13:38:24.897Z",
-      "last_verified_at": "2026-11-14T16:06:40.596Z"
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
       "id": 509043297,
@@ -916,7 +910,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-14T13:38:24.897Z",
-      "last_verified_at": "2026-11-14T16:06:40.596Z"
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
       "id": 593078487,
@@ -945,7 +939,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-14T13:38:24.897Z",
-      "last_verified_at": "2026-11-14T16:06:40.596Z"
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
       "id": 198347219,
@@ -974,7 +968,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-14T13:38:24.897Z",
-      "last_verified_at": "2026-11-14T16:06:40.596Z"
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
       "id": 214195831,
@@ -1003,7 +997,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-14T08:00:42.032Z",
-      "last_verified_at": "2026-11-14T18:55:46.117Z"
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
       "id": 1881154984,
@@ -1032,7 +1026,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-14T06:15:08.403Z",
-      "last_verified_at": "2026-11-14T18:55:46.117Z"
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
       "id": 289412977,
@@ -1061,13 +1055,13 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-14T06:15:08.403Z",
-      "last_verified_at": "2026-11-14T18:55:46.117Z"
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
       "id": 1095761323,
       "name": "本周赛博领鸡蛋（11.13~11.19）：《斗阵骑士》",
       "category": "other",
-      "summary": "本周赛博领鸡蛋 Epic 送出 1 款游戏：《斗阵骑士 / Knightica》，手机端与电脑端。 《斗阵骑士 / Knightica》 《斗阵骑士》是一款结合空间规划与军队构筑的回合制类 Roguelike 自走棋。玩家招募形状、大小和能力各异的部队，通过摆放位置、调整朝向和搭配单位协同效果来准备",
+      "summary": "本周赛博领鸡蛋 Epic 送出 1 款游戏：《斗阵骑士 / Knightica》，手机端与电脑端。 《斗阵骑士 / Knightica》 《斗阵骑士》是一款结合空间规划与军队构筑的回合制类 Rogue",
       "value_amount": null,
       "value_currency": null,
       "value_label": "待核实线索",
@@ -1075,7 +1069,7 @@
       "requirements": "需打开原文确认活动、资格、地区与有效期。",
       "regions": "来源未注明",
       "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-13T06:01:49.000Z",
+      "starts_at": "2026-11-13T06:00:10.000Z",
       "ends_at": null,
       "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
       "official_url": "https://appinn.com/eggs-261113",
@@ -1090,7 +1084,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-14T06:15:08.403Z",
-      "last_verified_at": "2026-11-14T18:55:46.117Z"
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
       "id": 151972098,
@@ -1119,7 +1113,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-14T06:15:08.403Z",
-      "last_verified_at": "2026-11-14T18:55:46.117Z"
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
       "id": 393424595,
@@ -1148,7 +1142,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-14T06:15:08.403Z",
-      "last_verified_at": "2026-11-14T18:55:46.117Z"
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
       "id": 1342656714,
@@ -1177,7 +1171,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-14T06:15:08.403Z",
-      "last_verified_at": "2026-11-14T18:55:46.117Z"
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
       "id": 1896410960,
@@ -1206,7 +1200,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-14T06:15:08.403Z",
-      "last_verified_at": "2026-11-14T18:55:46.117Z"
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
       "id": 1203993838,
@@ -1235,7 +1229,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-14T06:15:08.403Z",
-      "last_verified_at": "2026-11-14T18:55:46.117Z"
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
       "id": 621130494,
@@ -1264,7 +1258,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-13T02:54:35.872Z",
-      "last_verified_at": "2026-11-14T18:55:46.117Z"
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
       "id": 818041480,
@@ -1293,7 +1287,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-13T02:54:35.872Z",
-      "last_verified_at": "2026-11-14T18:55:46.117Z"
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
       "id": 98725383,
@@ -1322,7 +1316,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-13T02:54:35.872Z",
-      "last_verified_at": "2026-11-14T18:55:46.117Z"
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     },
     {
       "id": 1561516047,
@@ -1351,7 +1345,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-12T09:02:12.773Z",
-      "last_verified_at": "2026-11-14T18:55:46.117Z"
+      "last_verified_at": "2026-11-14T20:56:48.122Z"
     }
   ]
 }
