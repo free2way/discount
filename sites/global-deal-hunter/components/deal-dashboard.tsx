@@ -6,6 +6,8 @@ import {
   ChevronRight, CircleDollarSign, Clock3, Cloud, CreditCard, Database, Gift,
   Globe2, Heart, History, Radar, Search, ShieldCheck, Sparkles, WalletCards,
 } from "lucide-react";
+import SourceCenter from "@/components/source-center";
+import { sourceIdForName } from "@/lib/source-catalog";
 
 export type Deal = {
   id: number;
@@ -69,6 +71,7 @@ const categories = [
   { id: "cloud", label: "VPS 与云服务", icon: Cloud },
   { id: "ending", label: "即将截止", icon: CalendarClock },
   { id: "expired", label: "已结束档案", icon: History },
+  { id: "sources", label: "数据源中心", icon: Database },
 ];
 
 function LandmarkIcon({ className }: { className?: string }) {
@@ -206,6 +209,8 @@ const FAVORITES_KEY = "deal-hunter:favorites";
 const REMINDERS_KEY = "deal-hunter:reminders";
 const BASELINES_KEY = "deal-hunter:baselines";
 const NOTIFIED_KEY = "deal-hunter:notified";
+const FOCUSED_SOURCES_KEY = "deal-hunter:v1:focused-sources";
+const MUTED_SOURCES_KEY = "deal-hunter:v1:muted-sources";
 const STORAGE_EVENT = "deal-hunter:storage";
 const EMPTY_ID_SNAPSHOT = "[]";
 
@@ -218,13 +223,17 @@ function parseIds(raw: string) {
   }
 }
 
-function readStringSet(key: string) {
+function parseStrings(raw: string) {
   try {
-    const value = JSON.parse(localStorage.getItem(key) ?? "[]");
+    const value = JSON.parse(raw);
     return new Set<string>(Array.isArray(value) ? value.filter((item) => typeof item === "string") : []);
   } catch {
     return new Set<string>();
   }
+}
+
+function readStringSet(key: string) {
+  return parseStrings(localStorage.getItem(key) ?? "[]");
 }
 
 function readBaselines() {
@@ -267,6 +276,37 @@ function useStoredIds(key: string) {
   return useMemo(() => parseIds(raw), [raw]);
 }
 
+function useSourcePreferences() {
+  const subscribe = useCallback((onStoreChange: () => void) => {
+    const handleStorage = (event: StorageEvent) => {
+      if (event.key === FOCUSED_SOURCES_KEY || event.key === MUTED_SOURCES_KEY) onStoreChange();
+    };
+    const handleLocalStorage = (event: Event) => {
+      const key = (event as CustomEvent<string>).detail;
+      if (key === FOCUSED_SOURCES_KEY || key === MUTED_SOURCES_KEY) onStoreChange();
+    };
+    window.addEventListener("storage", handleStorage);
+    window.addEventListener(STORAGE_EVENT, handleLocalStorage);
+    return () => {
+      window.removeEventListener("storage", handleStorage);
+      window.removeEventListener(STORAGE_EVENT, handleLocalStorage);
+    };
+  }, []);
+  const getSnapshot = useCallback(() => JSON.stringify([
+    localStorage.getItem(FOCUSED_SOURCES_KEY) ?? EMPTY_ID_SNAPSHOT,
+    localStorage.getItem(MUTED_SOURCES_KEY) ?? EMPTY_ID_SNAPSHOT,
+  ]), []);
+  const raw = useSyncExternalStore(subscribe, getSnapshot, () => '["[]","[]"]');
+  return useMemo(() => {
+    try {
+      const [focused = "[]", muted = "[]"] = JSON.parse(raw) as string[];
+      return { focusedSources: parseStrings(focused), mutedSources: parseStrings(muted) };
+    } catch {
+      return { focusedSources: new Set<string>(), mutedSources: new Set<string>() };
+    }
+  }, [raw]);
+}
+
 export default function DealDashboard({ deals, latestScan, sourceHealth }: { deals: Deal[]; latestScan: ScanRun; sourceHealth: SourceHealth[] }) {
   const [activeModule, setActiveModule] = useState("latest");
   const [query, setQuery] = useState("");
@@ -276,6 +316,7 @@ export default function DealDashboard({ deals, latestScan, sourceHealth }: { dea
   const [eligibilityFilter, setEligibilityFilter] = useState("all");
   const favorites = useStoredIds(FAVORITES_KEY);
   const reminders = useStoredIds(REMINDERS_KEY);
+  const { focusedSources, mutedSources } = useSourcePreferences();
   const referenceTime = latestScan ? Date.parse(latestScan.finished_at) : 0;
 
   useEffect(() => {
@@ -323,6 +364,12 @@ export default function DealDashboard({ deals, latestScan, sourceHealth }: { dea
     toggleStored(reminders, REMINDERS_KEY, deal);
   }
 
+  function toggleSourcePreference(current: Set<string>, key: string, sourceId: string) {
+    const next = new Set(current);
+    if (next.has(sourceId)) next.delete(sourceId); else next.add(sourceId);
+    writeLocalStorage(key, [...next]);
+  }
+
   const visibleDeals = useMemo(() => {
     const hasFreshActiveDeals = deals.some((deal) => {
       const firstSeen = new Date(deal.first_seen_at).getTime();
@@ -330,6 +377,8 @@ export default function DealDashboard({ deals, latestScan, sourceHealth }: { dea
     });
     return deals
       .filter((deal) => {
+        const sourceId = sourceIdForName(deal.source_name);
+        if (sourceId && mutedSources.has(sourceId)) return false;
         if (verifiedOnly && deal.verification_status !== "verified") return false;
         if (favoritesOnly && !favorites.has(deal.id)) return false;
         const regionText = deal.regions.toLowerCase();
@@ -355,6 +404,8 @@ export default function DealDashboard({ deals, latestScan, sourceHealth }: { dea
         return true;
       })
       .sort((a, b) => {
+        const focusOrder = Number(focusedSources.has(sourceIdForName(b.source_name) ?? "")) - Number(focusedSources.has(sourceIdForName(a.source_name) ?? ""));
+        if (focusOrder) return focusOrder;
         if (activeModule === "high-value") return b.value_score - a.value_score;
         if (activeModule === "latest") {
           const verificationOrder = Number(b.verification_status === "verified") - Number(a.verification_status === "verified");
@@ -364,7 +415,7 @@ export default function DealDashboard({ deals, latestScan, sourceHealth }: { dea
         }
         return new Date(b.first_seen_at).getTime() - new Date(a.first_seen_at).getTime();
       });
-  }, [activeModule, deals, eligibilityFilter, favorites, favoritesOnly, query, referenceTime, regionFilter, verifiedOnly]);
+  }, [activeModule, deals, eligibilityFilter, favorites, favoritesOnly, focusedSources, mutedSources, query, referenceTime, regionFilter, verifiedOnly]);
 
   const activeCount = deals.filter((deal) => !isExpired(deal)).length;
   const latestFreshCount = deals.filter((deal) => {
@@ -426,16 +477,28 @@ export default function DealDashboard({ deals, latestScan, sourceHealth }: { dea
             <h1>{currentLabel}</h1>
           </div>
           <div className="topbar-actions">
-            <label className="search-box"><Search size={17} /><input aria-label="搜索活动、地区或来源" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="搜索活动、地区或来源" /></label>
-            <button type="button" aria-pressed={verifiedOnly} className={verifiedOnly ? "filter-button filter-button--active" : "filter-button"} onClick={() => setVerifiedOnly((value) => !value)}>
-              <BadgeCheck size={16} /> 仅已验证
-            </button>
-            <button type="button" aria-pressed={favoritesOnly} className={favoritesOnly ? "filter-button filter-button--active" : "filter-button"} onClick={() => setFavoritesOnly((value) => !value)}>
-              <Heart size={16} /> 收藏
-            </button>
+            <label className="search-box"><Search size={17} /><input aria-label={activeModule === "sources" ? "搜索数据源" : "搜索活动、地区或来源"} value={query} onChange={(event) => setQuery(event.target.value)} placeholder={activeModule === "sources" ? "搜索来源、接入方式或领域" : "搜索活动、地区或来源"} /></label>
+            {activeModule === "sources" ? null : <>
+              <button type="button" aria-pressed={verifiedOnly} className={verifiedOnly ? "filter-button filter-button--active" : "filter-button"} onClick={() => setVerifiedOnly((value) => !value)}>
+                <BadgeCheck size={16} /> 仅已验证
+              </button>
+              <button type="button" aria-pressed={favoritesOnly} className={favoritesOnly ? "filter-button filter-button--active" : "filter-button"} onClick={() => setFavoritesOnly((value) => !value)}>
+                <Heart size={16} /> 收藏
+              </button>
+            </>}
           </div>
         </header>
 
+        {activeModule === "sources" ? (
+          <SourceCenter
+            sourceHealth={sourceHealth}
+            query={query}
+            focusedSources={focusedSources}
+            mutedSources={mutedSources}
+            onToggleFocus={(sourceId) => toggleSourcePreference(focusedSources, FOCUSED_SOURCES_KEY, sourceId)}
+            onToggleMuted={(sourceId) => toggleSourcePreference(mutedSources, MUTED_SOURCES_KEY, sourceId)}
+          />
+        ) : <>
         <section className="personal-filters" aria-label="地区与资格筛选">
           <label>地区<select value={regionFilter} onChange={(event) => setRegionFilter(event.target.value)}><option value="all">全部地区</option><option value="global">全球/广泛可用</option><option value="us">美国</option><option value="cn">中国</option></select></label>
           <label>资格<select value={eligibilityFilter} onChange={(event) => setEligibilityFilter(event.target.value)}><option value="all">全部资格</option><option value="student">学生</option><option value="new">新用户/新客户</option><option value="kyc">需要 KYC</option><option value="payment">需要付款方式</option></select></label>
@@ -476,6 +539,7 @@ export default function DealDashboard({ deals, latestScan, sourceHealth }: { dea
             </div>
           )}
         </section>
+        </>}
       </main>
     </div>
   );

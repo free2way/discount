@@ -8,6 +8,8 @@
 
 小红书不支持可靠的匿名服务端抓取。若已部署带登录态、只返回公开笔记的私有 RSS/浏览器桥接器，可在 GitHub Actions Secret 中配置 `XHS_RSS_URL`；未配置时不会显示或伪造小红书数据。连接器要求见 [`docs/XIAOHONGSHU-CONNECTOR.md`](docs/XIAOHONGSHU-CONNECTOR.md)。
 
+看板内置“数据源中心”，可查看来源健康度、响应耗时、重试与密钥边界，并在本设备设置重点或隐藏来源。产品能力对照与后续路线见 [`docs/FREEBIE-RADAR-COMPARISON.md`](docs/FREEBIE-RADAR-COMPARISON.md)。
+
 Vercel 页面每 10 分钟从 GitHub Raw 重新验证最新快照，拉取失败时自动使用构建内快照，不会白屏。可通过 `SNAPSHOT_SOURCE_URL` 覆盖默认公开仓库地址。
 
 `.github/workflows/scan-and-deploy.yml` 每两小时运行一次。扫描器对每个来源最多尝试三次，更新公开快照、候选审核队列与连续失败计数；连续失败三次会创建或更新带 `source-health` 标签的 GitHub Issue。快照提交到 `main` 后，由仓库现有的 Vercel Git 集成自动部署。若希望启用 LINUX DO，请在 GitHub Actions secrets 中配置 `JINA_API_KEY`。
