@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { FEED_SOURCE_DEFINITIONS, canonicalFeedUrl, feedResultsToDeals, feedResultsToReviewCandidates, loadFeedSource, parseEpicFreePromotions, parseLinuxDoMarkdown, parseSyndicationFeed } from "./feed-sources.mts";
+import { FEED_SOURCE_DEFINITIONS, canonicalFeedUrl, feedResultsToDeals, feedResultsToReviewCandidates, loadFeedSource, parseEpicFreePromotions, parseLinuxDoMarkdown, parseSyndicationFeed, parseTelegramPreview, parseV2exTopics } from "./feed-sources.mts";
 
 test("LINUX DO Markdown parses title, topic link, and RFC822 date", () => {
   const input = "### [免费工具](https://linux.do/t/topic/12345)\n\nhttps://linux.do/t/topic/12345\n\nMon, 09 Nov 2026 06:00:00 +0000";
@@ -15,6 +15,28 @@ test("V2EX Atom parses entries and canonical URL removes reply hash", () => {
   const [item] = parseSyndicationFeed(xml, Date.parse("2026-11-10T06:00:00Z"));
   assert.equal(canonicalFeedUrl(item!.url), "https://v2ex.com/t/123");
   assert.equal(item?.summary, "测试摘要");
+});
+
+test("V2EX free-node JSON parses topic metadata", () => {
+  const now = Date.parse("2026-11-15T06:00:00Z");
+  const [item] = parseV2exTopics([{
+    id: 123,
+    title: "免费赠送开发者额度",
+    url: "https://www.v2ex.com/t/123",
+    content: "新用户可以领取",
+    created: now / 1_000,
+  }], now);
+  assert.equal(item?.url, "https://www.v2ex.com/t/123");
+  assert.equal(item?.summary, "新用户可以领取");
+  assert.equal(item?.publishedAt, now);
+});
+
+test("Telegram public preview parses messages without executing page scripts", () => {
+  const html = `<div class="tgme_widget_message_wrap"><div data-post="freegamesnews/456"><div class="tgme_widget_message_text js-message_text" dir="auto">Limited-time <b>free game</b></div><time datetime="2026-11-15T05:00:00+00:00"></time></div></div>`;
+  const [item] = parseTelegramPreview(html, "freegamesnews");
+  assert.equal(item?.url, "https://t.me/freegamesnews/456");
+  assert.equal(item?.title, "Limited-time free game");
+  assert.equal(item?.publishedAt, Date.parse("2026-11-15T05:00:00+00:00"));
 });
 
 test("RSS parser rejects HTML challenge pages", () => {
@@ -88,4 +110,42 @@ test("Slickdeals RSS fixture keeps allowed links and dates", async () => {
   assert.equal(result.ok, true);
   assert.equal(result.items[0]?.publishedAt, Date.parse("Thu, 12 Nov 2026 05:00:00 +0000"));
   assert.equal(result.items[0]?.url, "https://slickdeals.net/f/123-example");
+});
+
+test("new community source registry includes requested public sources", () => {
+  const ids = new Set(FEED_SOURCE_DEFINITIONS.map((source) => source.id));
+  for (const id of [
+    "linuxdo",
+    "linuxdo_resource",
+    "deepflood",
+    "nodeloc",
+    "nodeseek",
+    "v2ex",
+    "v2ex_free",
+    "telegram_freegames",
+    "telegram_cn_deals",
+    "reddit_freebies",
+    "reddit_tech_deals",
+  ]) assert.ok(ids.has(id), id);
+});
+
+test("Reddit VPS and crypto items keep community metadata and category hints", () => {
+  const scannedAt = "2026-11-15T06:00:00.000Z";
+  const source = FEED_SOURCE_DEFINITIONS.find((item) => item.id === "reddit_tech_deals")!;
+  const deals = feedResultsToDeals([{
+    source,
+    ok: true,
+    finalUrl: source.url,
+    error: null,
+    attempts: 1,
+    responseMs: 20,
+    items: [
+      { url: "https://reddit.com/r/VPS/comments/one/deal", title: "Limited-time VPS deal $20 off", summary: "annual hosting", publishedAt: Date.parse(scannedAt), expiresAt: null },
+      { url: "https://reddit.com/r/CryptoAirdrops/comments/two/drop", title: "New testnet airdrop task rewards", summary: "verify official terms", publishedAt: Date.parse(scannedAt), expiresAt: null },
+    ],
+  }], scannedAt);
+  assert.deepEqual(deals.map((deal) => [deal.category, deal.source_type, deal.source_subreddit]), [
+    ["cloud", "reddit", "VPS"],
+    ["crypto", "reddit", "CryptoAirdrops"],
+  ]);
 });

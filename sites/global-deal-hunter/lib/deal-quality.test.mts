@@ -59,3 +59,11 @@ test("publishes strong English discount signals", () => {
     assert.ok(result.relevanceScore >= 38, title);
   }
 });
+
+test("publishes VPS and crypto campaign signals", () => {
+  for (const title of ["Black Friday VPS deal", "New testnet airdrop task rewards", "云主机年付特价"]) {
+    const result = assessDealQuality(title);
+    assert.equal(result.publish, true, title);
+    assert.ok(result.relevanceScore >= 38, title);
+  }
+});

@@ -7,8 +7,12 @@ export type FeedSourceDefinition = {
   id: string;
   name: string;
   url: string;
-  format: "linuxdo_markdown" | "feed" | "epic_json";
+  format: "linuxdo_markdown" | "feed" | "epic_json" | "v2ex_json" | "telegram_html";
   allowedHosts: string[];
+  categoryHint?: Deal["category"];
+  sourceType?: Deal["source_type"];
+  sourceSubreddit?: string;
+  sourceAccount?: string;
 };
 
 export type FeedItem = {
@@ -45,14 +49,22 @@ export type ReviewCandidate = {
   review_status: "queued" | "rejected";
 };
 
-// Source selection and parsing rules are adapted from PerkRadar (MIT).
+// Source selection and parsing rules are adapted from PerkRadar and
+// freebie-radar (both MIT).
 // See THIRD_PARTY_NOTICES.md. URLs are fixed so callers cannot turn the
 // scanner into an arbitrary network fetcher.
-export const FEED_SOURCE_DEFINITIONS: FeedSourceDefinition[] = [
+const FIXED_FEED_SOURCE_DEFINITIONS: FeedSourceDefinition[] = [
   {
     id: "linuxdo",
     name: "LINUX DO 福利羊毛",
     url: "https://r.jina.ai/https://linux.do/c/welfare/36.rss",
+    format: "linuxdo_markdown",
+    allowedHosts: ["linux.do"],
+  },
+  {
+    id: "linuxdo_resource",
+    name: "LINUX DO 资源荟萃",
+    url: "https://r.jina.ai/https://linux.do/c/resource/14.rss",
     format: "linuxdo_markdown",
     allowedHosts: ["linux.do"],
   },
@@ -64,6 +76,13 @@ export const FEED_SOURCE_DEFINITIONS: FeedSourceDefinition[] = [
     allowedHosts: ["v2ex.com"],
   },
   {
+    id: "v2ex_free",
+    name: "V2EX 免费赠送",
+    url: "https://www.v2ex.com/api/topics/show.json?node_name=free",
+    format: "v2ex_json",
+    allowedHosts: ["v2ex.com"],
+  },
+  {
     id: "epic",
     name: "Epic Games",
     url: "https://store-site-backend-static.ak.epicgames.com/freeGamesPromotions?locale=zh-CN&country=CN&allowCountries=CN",
@@ -72,10 +91,26 @@ export const FEED_SOURCE_DEFINITIONS: FeedSourceDefinition[] = [
   },
   {
     id: "nodeseek",
-    name: "NodeSeek",
+    name: "NodeSeek 福利情报",
     url: "https://rss.nodeseek.com/",
     format: "feed",
     allowedHosts: ["nodeseek.com"],
+    categoryHint: "cloud",
+  },
+  {
+    id: "deepflood",
+    name: "DeepFlood AI 与实用资源",
+    url: "https://deepflood.com/rss.xml",
+    format: "feed",
+    allowedHosts: ["deepflood.com"],
+  },
+  {
+    id: "nodeloc",
+    name: "NodeLoc 中文羊毛与 VPS",
+    url: "https://www.nodeloc.com/latest.rss",
+    format: "feed",
+    allowedHosts: ["nodeloc.com"],
+    categoryHint: "cloud",
   },
   {
     id: "appinn",
@@ -111,6 +146,17 @@ export const FEED_SOURCE_DEFINITIONS: FeedSourceDefinition[] = [
     url: "https://www.reddit.com/r/freebies/.rss",
     format: "feed",
     allowedHosts: ["reddit.com", "redd.it"],
+    sourceType: "reddit",
+    sourceSubreddit: "freebies",
+  },
+  {
+    id: "reddit_tech_deals",
+    name: "Reddit IT / VPS / Crypto / Hosting",
+    url: "https://www.reddit.com/r/selfhosted+VPS+webhosting+CryptoAirdrops/hot.rss",
+    format: "feed",
+    allowedHosts: ["reddit.com", "redd.it"],
+    sourceType: "reddit",
+    sourceSubreddit: "selfhosted+VPS+webhosting+CryptoAirdrops",
   },
   {
     id: "producthunt",
@@ -119,6 +165,49 @@ export const FEED_SOURCE_DEFINITIONS: FeedSourceDefinition[] = [
     format: "feed",
     allowedHosts: ["producthunt.com"],
   },
+  {
+    id: "telegram_freegames",
+    name: "Telegram 免费游戏情报",
+    url: "https://t.me/s/freegamesnews",
+    format: "telegram_html",
+    allowedHosts: ["t.me"],
+    categoryHint: "software",
+    sourceType: "community",
+    sourceAccount: "freegamesnews",
+  },
+  {
+    id: "telegram_cn_deals",
+    name: "Telegram 中文科技与羊毛",
+    url: "https://t.me/s/zaihuapd",
+    format: "telegram_html",
+    allowedHosts: ["t.me"],
+    sourceType: "community",
+    sourceAccount: "zaihuapd",
+  },
+];
+
+function optionalXiaohongshuSource(): FeedSourceDefinition[] {
+  const raw = process.env.XHS_RSS_URL?.trim();
+  if (!raw) return [];
+  try {
+    const url = new URL(raw);
+    if (url.protocol !== "https:" || url.username || url.password) return [];
+    return [{
+      id: "xiaohongshu_connector",
+      name: "小红书福利搜索（登录态连接器）",
+      url: url.toString(),
+      format: "feed",
+      allowedHosts: ["xiaohongshu.com", "xhslink.com"],
+      sourceType: "community",
+    }];
+  } catch {
+    return [];
+  }
+}
+
+export const FEED_SOURCE_DEFINITIONS: FeedSourceDefinition[] = [
+  ...FIXED_FEED_SOURCE_DEFINITIONS,
+  ...optionalXiaohongshuSource(),
 ];
 
 const xmlParser = new XMLParser({
@@ -127,6 +216,7 @@ const xmlParser = new XMLParser({
   removeNSPrefix: true,
   trimValues: true,
   textNodeName: "#text",
+  processEntities: false,
 });
 
 const RFC822_DATE = /\b(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun), \d{2} (?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{4} \d{2}:\d{2}:\d{2} [+-]\d{4}\b/;
@@ -234,6 +324,56 @@ export function parseLinuxDoMarkdown(markdown: string): FeedItem[] {
   return items;
 }
 
+type V2exTopic = {
+  id?: number;
+  title?: string;
+  url?: string;
+  content?: string;
+  content_rendered?: string;
+  created?: number;
+};
+
+export function parseV2exTopics(payload: unknown, now: number): FeedItem[] {
+  if (!Array.isArray(payload)) throw new Error("V2EX 响应不是主题数组");
+  return payload.flatMap((raw) => {
+    if (!raw || typeof raw !== "object") return [];
+    const topic = raw as V2exTopic;
+    const title = cleanText(topic.title ?? "", 300);
+    const url = topic.url || (topic.id ? `https://www.v2ex.com/t/${topic.id}` : "");
+    const publishedAt = typeof topic.created === "number" ? topic.created * 1_000 : null;
+    if (!title || !url || (publishedAt != null && publishedAt > now + SEVEN_DAYS_MS)) return [];
+    return [{
+      url,
+      title,
+      summary: cleanText(topic.content_rendered || topic.content || "", 320),
+      publishedAt,
+      expiresAt: null,
+    }];
+  });
+}
+
+export function parseTelegramPreview(html: string, account: string): FeedItem[] {
+  if (!html.includes("tgme_widget_message_wrap")) throw new Error("Telegram 公开页没有可解析消息");
+  const items: FeedItem[] = [];
+  for (const block of html.split('class="tgme_widget_message_wrap').slice(1)) {
+    const idMatch = /data-post="([^"/]+)\/(\d+)"/.exec(block);
+    const textMatch = /<div class="tgme_widget_message_text[^"]*"[^>]*>([\s\S]*?)<\/div>/.exec(block);
+    const timeMatch = /<time[^>]*datetime="([^"]+)"/.exec(block);
+    if (!idMatch?.[2] || !textMatch?.[1]) continue;
+    const content = cleanText(textMatch[1].replace(/<br\s*\/?>/gi, " "), 600);
+    if (!content) continue;
+    items.push({
+      url: `https://t.me/${account}/${idMatch[2]}`,
+      title: content.slice(0, 180),
+      summary: content.slice(0, 320),
+      publishedAt: timeMatch?.[1] ? safeTime(timeMatch[1]) : null,
+      expiresAt: null,
+    });
+  }
+  if (!items.length) throw new Error("Telegram 公开页消息结构已变化或频道不可用");
+  return items.slice(-30);
+}
+
 export function parseSyndicationFeed(xml: string, now: number): FeedItem[] {
   const head = xml.slice(0, 400).toLowerCase();
   if (head.includes("<!doctype html") || /<html[\s>]/.test(head)) throw new Error("返回的是网页而不是订阅源，可能被阻断");
@@ -334,6 +474,26 @@ async function readLimitedResponse(response: Response): Promise<string> {
   return body;
 }
 
+class HttpStatusError extends Error {
+  status: number;
+  retryAfterMs: number | null;
+
+  constructor(status: number, retryAfter: number | null) {
+    super(`HTTP ${status}`);
+    this.status = status;
+    this.retryAfterMs = retryAfter;
+  }
+}
+
+function retryAfterMs(response: Response): number | null {
+  const value = response.headers.get("retry-after")?.trim();
+  if (!value) return null;
+  const seconds = Number(value);
+  if (Number.isFinite(seconds)) return Math.min(Math.max(seconds * 1_000, 1_000), 30_000);
+  const timestamp = Date.parse(value);
+  return Number.isFinite(timestamp) ? Math.min(Math.max(timestamp - Date.now(), 1_000), 30_000) : null;
+}
+
 export async function loadFeedSource(source: FeedSourceDefinition, now: number, fetchImpl: typeof fetch = fetch): Promise<FeedSourceResult> {
   const startedAt = Date.now();
   let lastError = "抓取失败";
@@ -341,11 +501,13 @@ export async function loadFeedSource(source: FeedSourceDefinition, now: number, 
    try {
     const headers: Record<string, string> = {
       accept: "application/rss+xml, application/atom+xml, application/xml, application/json, text/markdown, text/plain, */*",
-      "user-agent": "GlobalDealHunter/1.0 (+https://github.com/free2way/discount)",
+      "user-agent": "Mozilla/5.0 (compatible; GlobalDealHunter/1.0; +https://github.com/free2way/discount)",
     };
-    if (source.id === "linuxdo" && process.env.JINA_API_KEY?.trim()) headers.authorization = `Bearer ${process.env.JINA_API_KEY.trim()}`;
+    if (new URL(source.url).hostname === "r.jina.ai" && process.env.JINA_API_KEY?.trim()) {
+      headers.authorization = `Bearer ${process.env.JINA_API_KEY.trim()}`;
+    }
     const response = await fetchImpl(source.url, { headers, redirect: "follow", signal: AbortSignal.timeout(25_000) });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    if (!response.ok) throw new HttpStatusError(response.status, retryAfterMs(response));
     const body = await readLimitedResponse(response);
     let parsed: FeedItem[];
     if (source.format === "linuxdo_markdown") parsed = parseLinuxDoMarkdown(body);
@@ -356,6 +518,15 @@ export async function loadFeedSource(source: FeedSourceDefinition, now: number, 
         if (error instanceof SyntaxError) throw new Error("Epic 响应不是 JSON");
         throw error;
       }
+    } else if (source.format === "v2ex_json") {
+      try {
+        parsed = parseV2exTopics(JSON.parse(body), now);
+      } catch (error) {
+        if (error instanceof SyntaxError) throw new Error("V2EX 响应不是 JSON");
+        throw error;
+      }
+    } else if (source.format === "telegram_html") {
+      parsed = parseTelegramPreview(body, source.sourceAccount ?? "");
     } else parsed = parseSyndicationFeed(body, now);
     const items = parsed.flatMap((item) => {
       const allowed = onAllowedHost(item.url, source);
@@ -364,14 +535,29 @@ export async function loadFeedSource(source: FeedSourceDefinition, now: number, 
     return { source, ok: true, finalUrl: response.url || source.url, items, error: null, attempts: attempt, responseMs: Date.now() - startedAt };
    } catch (error) {
     lastError = (error instanceof Error ? error.message : String(error)).slice(0, 180) || "抓取失败";
-    if (attempt < 3) await new Promise((resolve) => setTimeout(resolve, attempt * 750));
+    if (attempt < 3) {
+      const waitMs = error instanceof HttpStatusError && error.status === 429
+        ? error.retryAfterMs ?? attempt * 12_000
+        : attempt * 750;
+      await new Promise((resolve) => setTimeout(resolve, waitMs));
+    }
    }
   }
   return { source, ok: false, finalUrl: null, items: [], error: lastError, attempts: 3, responseMs: Date.now() - startedAt };
 }
 
 export async function scanFeedSources(now = Date.now(), fetchImpl: typeof fetch = fetch): Promise<FeedSourceResult[]> {
-  return Promise.all(FEED_SOURCE_DEFINITIONS.map((source) => loadFeedSource(source, now, fetchImpl)));
+  const redditSources = FEED_SOURCE_DEFINITIONS.filter((source) => new URL(source.url).hostname.endsWith("reddit.com"));
+  const otherSources = FEED_SOURCE_DEFINITIONS.filter((source) => !redditSources.includes(source));
+  const collected = new Map<string, FeedSourceResult>();
+  const otherPromise = Promise.all(otherSources.map((source) => loadFeedSource(source, now, fetchImpl)));
+
+  for (const [index, source] of redditSources.entries()) {
+    collected.set(source.id, await loadFeedSource(source, now, fetchImpl));
+    if (index < redditSources.length - 1) await new Promise((resolve) => setTimeout(resolve, 8_000));
+  }
+  for (const result of await otherPromise) collected.set(result.source.id, result);
+  return FEED_SOURCE_DEFINITIONS.map((source) => collected.get(source.id)!).filter(Boolean);
 }
 
 function stableId(value: string): number {
@@ -383,15 +569,22 @@ function stableId(value: string): number {
   return 100_000 + (hash >>> 0) % 1_900_000_000;
 }
 
-function categoryFor(title: string, sourceId: string): Deal["category"] {
-  if (sourceId === "epic") return "software";
+function categoryFor(title: string, source: FeedSourceDefinition, itemUrl: string): Deal["category"] {
+  if (source.id === "epic") return "software";
   const value = title.toLowerCase();
-  if (/chatgpt|claude|gemini|midjourney|suno|ai|人工智能|大模型|gpt|llm/.test(value)) return "ai";
+  if (/chatgpt|claude|gemini|midjourney|suno|人工智能|大模型|\b(?:ai|gpt|llm)\b/.test(value)) return "ai";
   if (/vps|服务器|云主机|主机|域名|cloud|hosting|docker|kubernetes/.test(value)) return "cloud";
   if (/crypto|空投|airdrop|交易所|区块链|web3|usdt|btc|eth/.test(value)) return "crypto";
   if (/银行卡|信用卡|借记卡|返现|开户|银行|虚拟卡|u卡/.test(value)) return "cards";
   if (/软件|限免|app|工具|开源|license|会员|订阅|pro/.test(value)) return "software";
-  return "other";
+  if (/\/r\/cryptoairdrops\//i.test(itemUrl)) return "crypto";
+  if (/\/r\/(?:selfhosted|vps|webhosting)\//i.test(itemUrl)) return "cloud";
+  return source.categoryHint ?? "other";
+}
+
+function subredditFromUrl(itemUrl: string, fallback: string | undefined) {
+  const match = /\/r\/([^/]+)/i.exec(itemUrl);
+  return match?.[1] ?? fallback ?? null;
 }
 
 export function feedResultsToDeals(
@@ -411,7 +604,7 @@ export function feedResultsToDeals(
       .slice(0, MAX_DASHBOARD_ITEMS_PER_SOURCE)
       .map((item) => {
         const official = result.source.id === "epic";
-        const category = categoryFor(item.title, result.source.id);
+        const category = categoryFor(item.title, result.source, item.url);
         const endingSoon = item.expiresAt != null && item.expiresAt - now <= SEVEN_DAYS_MS;
         const firstSeen = previousFirstSeen.get(canonicalKey(item.url, item.title)) ?? scannedAt;
         return {
@@ -432,9 +625,11 @@ export function feedResultsToDeals(
           official_url: item.url,
           source_url: item.url,
           source_name: result.source.name,
-          source_type: official ? "official" : "feed",
-          source_subreddit: null,
-          source_account: null,
+          source_type: official ? "official" : result.source.sourceType ?? "feed",
+          source_subreddit: result.source.sourceType === "reddit"
+            ? subredditFromUrl(item.url, result.source.sourceSubreddit)
+            : null,
+          source_account: result.source.sourceAccount ?? null,
           source_official: official,
           verification_status: official ? "verified" : "pending",
           status: endingSoon ? "ending_soon" : "active",

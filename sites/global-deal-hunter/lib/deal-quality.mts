@@ -12,6 +12,8 @@ const STRONG_DEAL_PATTERNS = [
   /(?:全场|低至|立享|优惠|折扣|促销|大促|特价)/i,
   /\b(?:free|discount|promotion|promo|coupon|cashback|rebate|giveaway|deal|trial)\b/i,
   /\b(?:free trial|lifetime deal|bogo|clearance|price drop|limited[- ]time)\b/i,
+  /\b(?:airdrop|testnet|points? program|task rewards?|hosting deal|vps deal|black friday|cyber monday)\b/i,
+  /(?:空投|测试网|积分计划|任务奖励|主机促销|年付特价)/i,
   /\$\s?\d+(?:\.\d+)?\s*(?:off|discount|rebate)\b/i,
   /(?:返现|返利|立减|减免|注册送|首充送|送)[^。；，,]{0,18}(?:\d|额度|会员|credits?)/i,
   /(?:\d+(?:\.\d+)?\s*折|\d+%\s*(?:off|返现|折扣))/i,

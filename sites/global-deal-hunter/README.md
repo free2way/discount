@@ -2,9 +2,11 @@
 
 一个同时支持标准 Next.js/Vercel 与 Vinext/Sites 的全球优惠情报看板。看板优先读取数据库；数据库未连接或为空时，会回退到最近一次经过官方复核的扫描快照，避免部署后出现空白数据页。
 
-当前来源类型包括官方网站、官方公告、X、Reddit，以及 LINUX DO、V2EX、Epic、NodeSeek、小众软件、果核剥壳、异次元软件世界、Slickdeals、Reddit r/freebies、Product Hunt 等固定订阅源。除 Epic 当前零价促销外，社区和订阅源默认只用于发现线索；只有回溯到官方页面或条款后才标记为 `verified`。
+当前来源类型包括官方网站、官方公告、X、Reddit，以及 LINUX DO 福利羊毛/资源荟萃、V2EX 推广/免费赠送、DeepFlood、NodeLoc、NodeSeek、Telegram、Epic、小众软件、果核剥壳、异次元软件世界、Slickdeals、Product Hunt 等固定来源。除 Epic 当前零价促销外，社区和订阅源默认只用于发现线索；只有回溯到官方页面或条款后才标记为 `verified`。
 
-运行 `npm run scan:feeds` 可刷新十个固定订阅源并原子更新 `data/feed-scan.json`。LINUX DO 固定经过 Jina Reader；当公开访问返回 401 时，需要通过运行环境提供 `JINA_API_KEY`，不要把密钥提交到仓库。
+运行 `npm run scan:feeds` 可刷新 17 个固定来源并原子更新 `data/feed-scan.json`。LINUX DO 两个分类固定经过 Jina Reader；当公开访问返回 401 时，需要通过运行环境提供 `JINA_API_KEY`，不要把密钥提交到仓库。Reddit 来源按同域串行执行，并对 429 遵循 `Retry-After` 或退避重试。
+
+小红书不支持可靠的匿名服务端抓取。若已部署带登录态、只返回公开笔记的私有 RSS/浏览器桥接器，可在 GitHub Actions Secret 中配置 `XHS_RSS_URL`；未配置时不会显示或伪造小红书数据。连接器要求见 [`docs/XIAOHONGSHU-CONNECTOR.md`](docs/XIAOHONGSHU-CONNECTOR.md)。
 
 Vercel 页面每 10 分钟从 GitHub Raw 重新验证最新快照，拉取失败时自动使用构建内快照，不会白屏。可通过 `SNAPSHOT_SOURCE_URL` 覆盖默认公开仓库地址。
 

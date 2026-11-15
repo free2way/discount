@@ -11,11 +11,14 @@
 
 ## 固定订阅源
 
-- LINUX DO 福利羊毛：固定走 Jina Markdown 地址，解析主题标题、`linux.do/t/topic/<id>` 链接和 RFC822 日期；不得改成绕过站点挑战的直连抓取。若 Jina 返回 401，需在运行环境配置 `JINA_API_KEY`，不得把密钥写入仓库。
-- V2EX 推广：固定使用复数 `promotions.xml`；规范化链接时删除 `#reply0`。
+- LINUX DO 福利羊毛与资源荟萃：分别监控分类 36 与 14，固定走 Jina Markdown 地址，解析主题标题、`linux.do/t/topic/<id>` 链接和 RFC822 日期；不得改成绕过站点挑战的直连抓取。若 Jina 返回 401，需在运行环境配置 `JINA_API_KEY`，不得把密钥写入仓库。
+- V2EX：推广区固定使用复数 `promotions.xml` 并删除链接中的 `#reply0`；免费赠送节点使用公开 JSON API `node_name=free`。
 - Epic：只收录当前处于 `start <= now < end` 促销窗口、折扣价为 0 且折扣百分比为 0 或 100 的项目。
-- NodeSeek、小众软件、果核剥壳、异次元软件世界：解析 RSS/Atom，只保留来源允许域名内、最近 7 天的条目；异次元允许跟随重定向。
+- DeepFlood、NodeLoc、NodeSeek、小众软件、果核剥壳、异次元软件世界：解析 RSS/Atom，只保留来源允许域名内、最近 7 天的条目；异次元允许跟随重定向。
 - Slickdeals Frontpage、Reddit r/freebies、Product Hunt：作为英文优惠发现源，统一携带明确 `User-Agent`，只保留各自允许域名内的 RSS/Atom 条目；频控或失败时保留上次仍有效的数据。
+- Reddit IT/VPS/Crypto/Hosting：使用 `selfhosted+VPS+webhosting+CryptoAirdrops` 聚合 RSS，和 r/freebies 串行抓取，源间至少间隔 8 秒；HTTP 429 按响应头或退避策略重试。
+- Telegram：只解析 `t.me/s/<channel>` 公开预览页，不使用用户账号、Cookie 或私聊内容；当前固定监控 `freegamesnews` 与 `zaihuapd`。
+- 小红书：仅当配置 `XHS_RSS_URL` 私有登录态桥接器时启用；桥接器只允许输出 `xiaohongshu.com` / `xhslink.com` 公开笔记链接。未配置时不计入来源数、不标记失败。
 - 除 Epic 外，上述订阅源都是发现线索，默认 `pending`；必须回溯官方活动页后才能升级为 `verified`。
 - 每源超时 25 秒；响应上限 150 万字符；单个 feed 最多解析 2000 条、看板最多展示每源最新 12 条。某个来源失败不得清空其他来源数据。
 

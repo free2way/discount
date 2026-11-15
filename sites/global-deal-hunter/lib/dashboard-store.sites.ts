@@ -7,7 +7,7 @@ const snapshot = { deals: snapshotDeals, latestScan: snapshotScanRun, sourceHeal
 
 export async function loadDashboard(): Promise<{
   deals: Deal[];
-  latestScan: ScanRun;
+  latestScan: NonNullable<ScanRun>;
   sourceHealth: typeof snapshotSourceHealth;
 }> {
   try {

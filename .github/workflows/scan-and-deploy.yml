@@ -78,6 +78,7 @@ jobs:
         working-directory: sites/global-deal-hunter
         env:
           JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
+          XHS_RSS_URL: ${{ secrets.XHS_RSS_URL }}
         run: npm run scan:feeds
       - name: Evaluate consecutive failures
         if: steps.freshness.outputs.should_scan == 'true'
