@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-17T13:51:47.503Z",
+  "generated_at": "2026-11-17T15:56:31.255Z",
   "status": "success",
   "sources_checked": 17,
   "candidates_found": 392,
   "verified_count": 1,
-  "pending_count": 64,
+  "pending_count": 61,
   "failures": [],
   "source_results": [
     {
@@ -14,9 +14,9 @@
       "count": 25,
       "final_url": "https://r.jina.ai/https://linux.do/c/welfare/36.rss",
       "attempts": 1,
-      "response_ms": 856,
+      "response_ms": 274,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-17T13:51:47.503Z",
+      "last_success_at": "2026-11-17T15:56:31.255Z",
       "error": null
     },
     {
@@ -26,9 +26,9 @@
       "count": 25,
       "final_url": "https://r.jina.ai/https://linux.do/c/resource/14.rss",
       "attempts": 1,
-      "response_ms": 246,
+      "response_ms": 512,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-17T13:51:47.503Z",
+      "last_success_at": "2026-11-17T15:56:31.255Z",
       "error": null
     },
     {
@@ -38,9 +38,9 @@
       "count": 50,
       "final_url": "https://www.v2ex.com/feed/promotions.xml",
       "attempts": 1,
-      "response_ms": 86,
+      "response_ms": 118,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-17T13:51:47.503Z",
+      "last_success_at": "2026-11-17T15:56:31.255Z",
       "error": null
     },
     {
@@ -50,9 +50,9 @@
       "count": 10,
       "final_url": "https://www.v2ex.com/api/topics/show.json?node_name=free",
       "attempts": 1,
-      "response_ms": 66,
+      "response_ms": 95,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-17T13:51:47.503Z",
+      "last_success_at": "2026-11-17T15:56:31.255Z",
       "error": null
     },
     {
@@ -62,9 +62,9 @@
       "count": 1,
       "final_url": "https://store-site-backend-static.ak.epicgames.com/freeGamesPromotions?locale=zh-CN&country=CN&allowCountries=CN",
       "attempts": 1,
-      "response_ms": 139,
+      "response_ms": 574,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-17T13:51:47.503Z",
+      "last_success_at": "2026-11-17T15:56:31.255Z",
       "error": null
     },
     {
@@ -74,9 +74,9 @@
       "count": 20,
       "final_url": "https://rss.nodeseek.com/",
       "attempts": 1,
-      "response_ms": 256,
+      "response_ms": 299,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-17T13:51:47.503Z",
+      "last_success_at": "2026-11-17T15:56:31.255Z",
       "error": null
     },
     {
@@ -86,9 +86,9 @@
       "count": 20,
       "final_url": "https://www.deepflood.com/rss.xml",
       "attempts": 1,
-      "response_ms": 900,
+      "response_ms": 548,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-17T13:51:47.503Z",
+      "last_success_at": "2026-11-17T15:56:31.255Z",
       "error": null
     },
     {
@@ -98,9 +98,9 @@
       "count": 30,
       "final_url": "https://www.nodeloc.com/latest.rss",
       "attempts": 1,
-      "response_ms": 998,
+      "response_ms": 907,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-17T13:51:47.503Z",
+      "last_success_at": "2026-11-17T15:56:31.255Z",
       "error": null
     },
     {
@@ -110,9 +110,9 @@
       "count": 9,
       "final_url": "https://www.appinn.com/feed/",
       "attempts": 1,
-      "response_ms": 1174,
+      "response_ms": 1085,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-17T13:51:47.503Z",
+      "last_success_at": "2026-11-17T15:56:31.255Z",
       "error": null
     },
     {
@@ -122,9 +122,9 @@
       "count": 10,
       "final_url": "https://www.ghxi.com/feed",
       "attempts": 1,
-      "response_ms": 1240,
+      "response_ms": 1182,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-17T13:51:47.503Z",
+      "last_success_at": "2026-11-17T15:56:31.255Z",
       "error": null
     },
     {
@@ -134,9 +134,9 @@
       "count": 30,
       "final_url": "https://feed.iplaysoft.com/",
       "attempts": 1,
-      "response_ms": 718,
+      "response_ms": 820,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-17T13:51:47.503Z",
+      "last_success_at": "2026-11-17T15:56:31.255Z",
       "error": null
     },
     {
@@ -146,9 +146,9 @@
       "count": 25,
       "final_url": "https://feeds.feedburner.com/SlickdealsnetFP",
       "attempts": 1,
-      "response_ms": 847,
+      "response_ms": 467,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-17T13:51:47.503Z",
+      "last_success_at": "2026-11-17T15:56:31.255Z",
       "error": null
     },
     {
@@ -158,9 +158,9 @@
       "count": 25,
       "final_url": "https://www.reddit.com/r/freebies/.rss",
       "attempts": 1,
-      "response_ms": 1380,
+      "response_ms": 884,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-17T13:51:47.503Z",
+      "last_success_at": "2026-11-17T15:56:31.255Z",
       "error": null
     },
     {
@@ -169,10 +169,10 @@
       "ok": true,
       "count": 25,
       "final_url": "https://www.reddit.com/r/selfhosted+VPS+webhosting+CryptoAirdrops/hot.rss",
-      "attempts": 2,
-      "response_ms": 12583,
+      "attempts": 3,
+      "response_ms": 36762,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-17T13:51:47.503Z",
+      "last_success_at": "2026-11-17T15:56:31.255Z",
       "error": null
     },
     {
@@ -182,9 +182,9 @@
       "count": 50,
       "final_url": "https://www.producthunt.com/feed",
       "attempts": 1,
-      "response_ms": 543,
+      "response_ms": 371,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-17T13:51:47.503Z",
+      "last_success_at": "2026-11-17T15:56:31.255Z",
       "error": null
     },
     {
@@ -194,9 +194,9 @@
       "count": 20,
       "final_url": "https://t.me/s/freegamesnews",
       "attempts": 1,
-      "response_ms": 1128,
+      "response_ms": 947,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-17T13:51:47.503Z",
+      "last_success_at": "2026-11-17T15:56:31.255Z",
       "error": null
     },
     {
@@ -206,9 +206,9 @@
       "count": 17,
       "final_url": "https://t.me/s/zaihuapd",
       "attempts": 1,
-      "response_ms": 1213,
+      "response_ms": 1027,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-17T13:51:47.503Z",
+      "last_success_at": "2026-11-17T15:56:31.255Z",
       "error": null
     }
   ],
@@ -240,7 +240,152 @@
       "confidence": 96,
       "risk_notes": "领取前确认结算价为 0；不要使用第三方代领或共享账号。",
       "first_seen_at": "2026-11-12T18:16:50.179Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
+    },
+    {
+      "id": 185072139,
+      "name": "免费一级域名一年",
+      "category": "cloud",
+      "summary": "LINUX DO 福利羊毛 返回的公开线索；原始订阅未提供摘要。",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 52,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-17T14:55:22.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://linux.do/t/topic/3193251",
+      "source_url": "https://linux.do/t/topic/3193251",
+      "source_name": "LINUX DO 福利羊毛",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-17T15:56:31.255Z",
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
+    },
+    {
+      "id": 817661324,
+      "name": "【富可敌国】【流光AI】11/17｜混元 Hy4 Flash 上新，留 ID 送 3 元",
+      "category": "ai",
+      "summary": "LINUX DO 福利羊毛 返回的公开线索；原始订阅未提供摘要。",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 52,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-17T14:25:32.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://linux.do/t/topic/3193089",
+      "source_url": "https://linux.do/t/topic/3193089",
+      "source_name": "LINUX DO 福利羊毛",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-17T15:56:31.255Z",
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
+    },
+    {
+      "id": 1757304003,
+      "name": "中国移动10元话费折扣羊毛，20冲30元，移动官方充值优惠",
+      "category": "cloud",
+      "summary": "3 个帖子 - 3 位参与者 阅读完整话题",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 52,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-17T14:27:33.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://nodeloc.com/t/topic/118259",
+      "source_url": "https://nodeloc.com/t/topic/118259",
+      "source_name": "NodeLoc 中文羊毛与 VPS",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-17T15:56:31.255Z",
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
+    },
+    {
+      "id": 58635431,
+      "name": "Google Gemini Ultra 12个月免费开脚本",
+      "category": "ai",
+      "summary": "关注 Telegram: View @pk_oa 第一时间获取最新羊毛信息 plug.zip (156.4 KB) 20 个帖子 - 14 位参与者 阅读完整话题",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 52,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-17T14:13:53.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://nodeloc.com/t/topic/118255",
+      "source_url": "https://nodeloc.com/t/topic/118255",
+      "source_name": "NodeLoc 中文羊毛与 VPS",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-17T15:56:31.255Z",
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
+    },
+    {
+      "id": 41857812,
+      "name": "Gemini 0元Ultra原理和技术",
+      "category": "ai",
+      "summary": "当前 Google AI Ultra 订阅体系划分为两个梯度： Ultra 5x ：包含 20TB 存储配额，常规月费为 $99.99； Ultra 20x ：包含 30TB 存储配额，常规月费为 $199.99。 从常规客户端交互来看，无论是通过网页端还是 Google One 移动端应用进入订阅页面，前端 UI 均未暴露任何免费试用入口——界面仅提供单一的升级按钮，触发后直接拉起 $199.99 的全额扣费确认弹窗。但从底层协议与结算逻辑切入可以发现，上述两个梯度的 $0 免费试用方案实际上均已配置在 Google Play 结算服务（ BillingClient ）的下发数据中，仅在客户端展示层被屏蔽或绕过。 通过直接与结算接",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 52,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-17T14:04:09.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://nodeloc.com/t/topic/118254",
+      "source_url": "https://nodeloc.com/t/topic/118254",
+      "source_name": "NodeLoc 中文羊毛与 VPS",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-17T15:56:31.255Z",
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 272418566,
@@ -269,36 +414,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
-    },
-    {
-      "id": 1639513292,
-      "name": "出MK沪港",
-      "category": "cloud",
-      "summary": "198款单ix85折循环12.9到期流量用了40G120包转移中介费自理",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 52,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-17T13:46:32.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://nodeseek.com/post-1061188-1",
-      "source_url": "https://nodeseek.com/post-1061188-1",
-      "source_name": "NodeSeek 福利情报",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 1874747336,
@@ -327,7 +443,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 172832281,
@@ -356,7 +472,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 374163709,
@@ -385,13 +501,13 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 357386090,
       "name": "TerraDomain免费域名上线",
       "category": "cloud",
-      "summary": "https://nic.299282.xyz 站长是我 自购两个域名 spaceship太便宜了 反馈群 16 个帖子 - 7 位参与者 阅读完整话题",
+      "summary": "https://nic.299282.xyz 站长是我 自购两个域名 spaceship太便宜了 反馈群 17 个帖子 - 7 位参与者 阅读完整话题",
       "value_amount": null,
       "value_currency": null,
       "value_label": "待核实线索",
@@ -414,94 +530,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
-    },
-    {
-      "id": 72019472,
-      "name": "【维多利亚草丛】免费节点 · 邀请码领取方式说明-以后邀请码可能锁定本贴",
-      "category": "cloud",
-      "summary": "32 个帖子 - 29 位参与者 阅读完整话题",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 52,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-17T07:43:42.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://nodeloc.com/t/topic/118207",
-      "source_url": "https://nodeloc.com/t/topic/118207",
-      "source_name": "NodeLoc 中文羊毛与 VPS",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
-    },
-    {
-      "id": 105574710,
-      "name": "小心骗子🚨 🚨",
-      "category": "cloud",
-      "summary": "市面上那些便宜到离谱的Gemini Ultra号，基本都是黑产靠漏洞白嫖出来的，还故意包装成土区号来卖。 从流出的Google Play收据交叉验证，整条黑产链条已经跑通： 全新未订阅过的Gmail白号，可利用订阅促销接口的权限校验漏洞，0美元开通Google AI Ultra（20TB）+YouTube Premium附加包，首月全免（官方合计价111.98美元/月）。 产业链三级分工明确： 上游：越南号码农场批量产出标准全新Gmail白号 中游：国内工作室写自动化脚本，搭配美国中部时区代理、免税州地址与低额虚拟卡，绕过预授权后批量激活免费订阅 下游：渠道在电报、推特等平台以230–300元人民币出货，多数伪装成土耳其区账号坑人 ",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 52,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-17T07:25:46.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://nodeloc.com/t/topic/118205",
-      "source_url": "https://nodeloc.com/t/topic/118205",
-      "source_name": "NodeLoc 中文羊毛与 VPS",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
-    },
-    {
-      "id": 139129948,
-      "name": "差点被一个免费网盘坑死：上传全显示成功，文件全是空气",
-      "category": "cloud",
-      "summary": "前几天看站里大佬分享了一批免费资源，啥都有，免费主机、免费域名、64G 网盘、免费容器，手痒就挨个注册了一遍。 正好手头有个事能用上：我有个小站，备份一直就存在服务器本地，等于跟正本放一个篮子里，硬盘哪天不高兴了就一起没了。想着这回拿白嫖的网盘做个正经异地备份，64G 呢，听着多稳。 结果就栽在这网盘上。 脚本跑完，日志一片绿：文件一个个传完，最后打了个 complete，退出码 0，挑不出毛病。我这人有个习惯，备份完得回头看一眼才踏实。就这一眼：远端目录是空的，刚传的文件下载回来是 404，网盘用量显示 0，64G 一点没动。 不死心，手拿小文件又试了一遍：上传回 201，跟我说建好了；转头去取，404，没有。要的就是这个效果：它",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 52,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-17T07:16:37.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://nodeloc.com/t/topic/118203",
-      "source_url": "https://nodeloc.com/t/topic/118203",
-      "source_name": "NodeLoc 中文羊毛与 VPS",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 1522297652,
@@ -530,7 +559,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 511176400,
@@ -559,7 +588,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T05:15:29.856Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 1177315205,
@@ -588,7 +617,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T03:10:28.183Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 311416427,
@@ -617,7 +646,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T03:10:28.183Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 1892270540,
@@ -646,7 +675,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T03:10:28.183Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 245973497,
@@ -675,7 +704,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T03:10:28.183Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 119667569,
@@ -704,7 +733,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-16T12:03:16.511Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 1748414308,
@@ -733,7 +762,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-16T12:03:16.511Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 1475754214,
@@ -762,36 +791,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-16T09:35:48.428Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
-    },
-    {
-      "id": 1047833315,
-      "name": "[推广] 优米 API：gpt-image-2/2.5 生图 ¥0.01/张",
-      "category": "ai",
-      "summary": "站点： https://api.uxmio.com 目前生图按次计费： - gpt-image-2 / gpt-image-2.5：¥0.01/张 - gemini-3.1-flash-image：¥0.06/张 - gemini-3-pro-image：¥0.12/张 VIP 95 折，SVIP 9 折。价格以站内为准： https://api.uxmio.com/pricing 接口兼容 OpenAI 格式，注册后创建令牌即可调用。",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 52,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-16T02:39:55.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://v2ex.com/t/1257341",
-      "source_url": "https://v2ex.com/t/1257341",
-      "source_name": "V2EX 推广",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-16T07:16:48.300Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 1210721334,
@@ -820,7 +820,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-15T01:15:15.434Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 360175216,
@@ -849,11 +849,40 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-14T23:53:32.688Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
+    },
+    {
+      "id": 21822360,
+      "name": "免费试用Canva可画高级版45天",
+      "category": "other",
+      "summary": "LINUX DO 福利羊毛 返回的公开线索；原始订阅未提供摘要。",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 42,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-17T14:58:28.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://linux.do/t/topic/3193276",
+      "source_url": "https://linux.do/t/topic/3193276",
+      "source_name": "LINUX DO 福利羊毛",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-17T15:56:31.255Z",
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 1397353100,
-      "name": "Google送了6个月Antigravity Ultra",
+      "name": "Google给Scientist送了6个月Antigravity Ultra",
       "category": "other",
       "summary": "LINUX DO 福利羊毛 返回的公开线索；原始订阅未提供摘要。",
       "value_amount": null,
@@ -877,8 +906,66 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "first_seen_at": "2026-11-17T15:56:31.255Z",
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
+    },
+    {
+      "id": 1896746937,
+      "name": "【深夜出机】折价出一台干杯云att 8pro 续费188 剩余时间3天",
+      "category": "software",
+      "summary": "rt剩余价值8折出明盘150*0.8=120",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 42,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-17T15:50:12.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://nodeseek.com/post-1061503-1",
+      "source_url": "https://nodeseek.com/post-1061503-1",
+      "source_name": "NodeSeek 福利情报",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-17T15:56:31.255Z",
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
+    },
+    {
+      "id": 4614806,
+      "name": "免费领取Canva pro",
+      "category": "software",
+      "summary": "无需付款，卡号随便填都可以过 3 个帖子 - 3 位参与者 阅读完整话题",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 42,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-17T15:04:12.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://nodeloc.com/t/topic/118263",
+      "source_url": "https://nodeloc.com/t/topic/118263",
+      "source_name": "NodeLoc 中文羊毛与 VPS",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-17T15:56:31.255Z",
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 1307077708,
@@ -907,7 +994,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 550389147,
@@ -936,7 +1023,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 321538931,
@@ -965,36 +1052,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
-    },
-    {
-      "id": 513463532,
-      "name": "众安银行 Lv2 新团，免费领实体卡 -已失效",
-      "category": "cards",
-      "summary": "LINUX DO 福利羊毛 返回的公开线索；原始订阅未提供摘要。",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 42,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-16T19:48:11.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://linux.do/t/topic/3187941",
-      "source_url": "https://linux.do/t/topic/3187941",
-      "source_name": "LINUX DO 福利羊毛",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 196386381,
@@ -1023,7 +1081,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 110101121,
@@ -1052,7 +1110,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 1847658344,
@@ -1081,7 +1139,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 1010763240,
@@ -1110,7 +1168,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 667018920,
@@ -1139,7 +1197,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 1750602252,
@@ -1168,7 +1226,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 171270452,
@@ -1197,7 +1255,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 376802489,
@@ -1226,7 +1284,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 1505056463,
@@ -1255,7 +1313,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 186454862,
@@ -1284,7 +1342,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 1510366405,
@@ -1313,7 +1371,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 1621576438,
@@ -1342,7 +1400,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 426789769,
@@ -1371,7 +1429,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 1898479572,
@@ -1400,7 +1458,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 989557224,
@@ -1429,7 +1487,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 292410387,
@@ -1458,7 +1516,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 1424324572,
@@ -1487,7 +1545,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 1161227120,
@@ -1516,7 +1574,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 115693454,
@@ -1545,94 +1603,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T05:15:29.856Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
-    },
-    {
-      "id": 1637272415,
-      "name": "【富可敌国】飓星API 上新：拼车、聚合站一站俱全｜回帖留 ID 送 5$｜闲置账号挂货架躺赚、鹈鹕自动查降智",
-      "category": "other",
-      "summary": "LINUX DO 福利羊毛 返回的公开线索；原始订阅未提供摘要。",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 42,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-16T14:44:10.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://linux.do/t/topic/3187333",
-      "source_url": "https://linux.do/t/topic/3187333",
-      "source_name": "LINUX DO 福利羊毛",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-17T05:15:29.856Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
-    },
-    {
-      "id": 237499858,
-      "name": "abu-api 的阿不创作上线了，送 3 美刀体验，想听听佬友们的意见",
-      "category": "other",
-      "summary": "LINUX DO 福利羊毛 返回的公开线索；原始订阅未提供摘要。",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 42,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-17T00:34:55.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://linux.do/t/topic/3188102",
-      "source_url": "https://linux.do/t/topic/3188102",
-      "source_name": "LINUX DO 福利羊毛",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-17T03:10:28.183Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
-    },
-    {
-      "id": 372173359,
-      "name": "支付宝免费领华莱士大薯条",
-      "category": "other",
-      "summary": "LINUX DO 福利羊毛 返回的公开线索；原始订阅未提供摘要。",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 42,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-16T16:21:25.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://linux.do/t/topic/3187702",
-      "source_url": "https://linux.do/t/topic/3187702",
-      "source_name": "LINUX DO 福利羊毛",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-16T18:55:11.684Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 1294609429,
@@ -1661,65 +1632,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-16T18:55:11.684Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
-    },
-    {
-      "id": 1622305238,
-      "name": "Notebook to Notes",
-      "category": "other",
-      "summary": "<p> Move your OneNote notebooks to Apple Notes, 100% offline </p> <p> <a href=\"https://www.producthunt.com/products/notebook-to-notes?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1318205?app_id=339\"",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 42,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-16T01:20:51.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://producthunt.com/products/notebook-to-notes",
-      "source_url": "https://producthunt.com/products/notebook-to-notes",
-      "source_name": "Product Hunt",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-16T09:35:48.428Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
-    },
-    {
-      "id": 167390045,
-      "name": "Freebuff",
-      "category": "other",
-      "summary": "<p> The 100% free coding agent </p> <p> <a href=\"https://www.producthunt.com/products/freebuff-2?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1317855?app_id=339\">Link</a> </p>",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 42,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-15T17:59:28.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://producthunt.com/products/freebuff-2",
-      "source_url": "https://producthunt.com/products/freebuff-2",
-      "source_name": "Product Hunt",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-16T09:35:48.428Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 1148646124,
@@ -1748,7 +1661,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-16T07:16:48.300Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 1198978981,
@@ -1777,7 +1690,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-16T07:16:48.300Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 1177166096,
@@ -1806,7 +1719,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-16T02:00:39.763Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 557014778,
@@ -1835,7 +1748,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-15T15:38:37.773Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 512942381,
@@ -1864,7 +1777,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-15T15:38:37.773Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 159189468,
@@ -1893,7 +1806,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-15T01:15:15.434Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 1193943715,
@@ -1922,7 +1835,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-15T01:15:15.434Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 1227351858,
@@ -1951,7 +1864,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-15T01:15:15.434Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 1193796620,
@@ -1980,7 +1893,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-15T01:15:15.434Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 1177019001,
@@ -2009,7 +1922,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-15T01:15:15.434Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 1143463763,
@@ -2038,7 +1951,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-15T01:15:15.434Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 1525661232,
@@ -2067,7 +1980,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-15T01:15:15.434Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
       "id": 818041480,
@@ -2096,7 +2009,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-13T02:54:35.872Z",
-      "last_verified_at": "2026-11-17T13:51:47.503Z"
+      "last_verified_at": "2026-11-17T15:56:31.255Z"
     }
   ]
 }
