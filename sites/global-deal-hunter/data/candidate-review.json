@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-20T01:46:16.243Z",
-  "queued_count": 222,
-  "rejected_count": 38,
+  "generated_at": "2026-11-20T03:44:14.677Z",
+  "queued_count": 216,
+  "rejected_count": 42,
   "candidates": [
     {
       "key": "v2ex:https://v2ex.com/t/1258288",
@@ -139,23 +139,21 @@
       "review_status": "rejected"
     },
     {
-      "key": "telegram_cn_deals:https://t.me/zaihuapd/45225",
-      "source_id": "telegram_cn_deals",
-      "source_name": "Telegram 中文科技与羊毛",
-      "source_url": "https://t.me/zaihuapd/45225",
-      "title": "网易 UU 远程将于 12 月推出增值服务 网易 UU 远程计划于 2026 年 12 月 1 日推出增值服务，基础远程控制继续免费，且不限次数、不限时、不排队、无广告。此前注册成功的用户可领取年卡五折优惠；页面显示 VIP 年费为 238 元，原价 288 元。 HarmonyOS 和 Linux 客户端即将上线，Beta 期间全部付费功能免费使用。 网易",
-      "summary": "网易 UU 远程将于 12 月推出增值服务 网易 UU 远程计划于 2026 年 12 月 1 日推出增值服务，基础远程控制继续免费，且不限次数、不限时、不排队、无广告。此前注册成功的用户可领取年卡五折优惠；页面显示 VIP 年费为 238 元，原价 288 元。 HarmonyOS 和 Linux 客户端即将上线，Beta 期间全部付费功能免费使用。 网易 UU 远程 🌸 科技圈 · 茶馆 · 投稿",
-      "published_at": "2026-11-19T03:27:32.000Z",
+      "key": "slickdeals:https://slickdeals.net/f/20346456-50-x60-bedsure-gentlesoft-reversible-sherpa-fleece-throw-blanket-grey-9-59-free-shipping-w-prime-or-orders-35?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_id": "slickdeals",
+      "source_name": "Slickdeals Frontpage",
+      "source_url": "https://slickdeals.net/f/20346456-50-x60-bedsure-gentlesoft-reversible-sherpa-fleece-throw-blanket-grey-9-59-free-shipping-w-prime-or-orders-35?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "title": "50\"x60\" Bedsure GentleSoft Reversible Sherpa Fleece Throw Blanket (Grey) $9.60",
+      "summary": "Bedsure via Amazon [amazon.com] has* 50\"x60\" Bedsure GentleSoft Sherpa Fleece Throw Blanket (Grey)* for $15.99 - 40% off when you apply promo code BDZ58Z7Z or HAHF12I1 or 3P7TBO6G or JX1RVU2K at...",
+      "published_at": "2026-11-20T02:28:56.000Z",
       "expires_at": null,
       "relevance_score": 100,
-      "risk_score": 45,
-      "risk_flags": [
-        "credential_theft"
-      ],
+      "risk_score": 0,
+      "risk_flags": [],
       "reasons": [
-        "命中高风险或不受支持的交易/软件规则"
+        "优惠相关性达到公开候选阈值"
       ],
-      "review_status": "rejected"
+      "review_status": "queued"
     },
     {
       "key": "v2ex:https://v2ex.com/t/1258383",
@@ -178,26 +176,6 @@
       "review_status": "rejected"
     },
     {
-      "key": "v2ex:https://v2ex.com/t/1257869",
-      "source_id": "v2ex",
-      "source_name": "V2EX 推广",
-      "source_url": "https://v2ex.com/t/1257869",
-      "title": "Codex 自建站｜6.2 全线路上线",
-      "summary": "• 纯 Pro 池，多线路稳定供应，高缓存 95 上下 • Codex 全模型可用，6.2 已上线 • 高 RPM / 高并发，适合长时间持续跑 • 按量全场 0.2 ，充值立享 0.17 优惠，月度阶梯最低 0.15 • 模型卡单价全部与官方一致 • 源头站，可接下游，注册送免费额度（ agent 延迟发放） 地址： codex.zhuanyedaili.com ⁠ 联系方式：QQ 群：1106944249 https://codex.zhuanyedaili.com/scripts/codex-qq-group.jpg",
-      "published_at": "2026-11-17T23:26:30.000Z",
-      "expires_at": null,
-      "relevance_score": 98,
-      "risk_score": 45,
-      "risk_flags": [
-        "account_abuse"
-      ],
-      "reasons": [
-        "内容更像资讯、问答、测评或普通软件更新",
-        "命中高风险或不受支持的交易/软件规则"
-      ],
-      "review_status": "rejected"
-    },
-    {
       "key": "v2ex:https://v2ex.com/t/1258327",
       "source_id": "v2ex",
       "source_name": "V2EX 推广",
@@ -212,6 +190,26 @@
         "unverified_reseller"
       ],
       "reasons": [
+        "命中高风险或不受支持的交易/软件规则"
+      ],
+      "review_status": "rejected"
+    },
+    {
+      "key": "deepflood:https://deepflood.com/post-39344-1",
+      "source_id": "deepflood",
+      "source_name": "DeepFlood AI 与实用资源",
+      "source_url": "https://deepflood.com/post-39344-1",
+      "title": "🔥 ZooProxy 优惠全攻略｜新用户 5 折 + 免费领 200MB",
+      "summary": "🔥搞数据采集、跨境电商、社媒多账号的看过来ZooProxy一站式原生IP代理⚡1.1亿+真实住宅IP，覆盖195+地区🎯城市级精准定位，想要哪里的IP就选哪里🚀99.92%稳定运行率，跨境延迟低至0.3s📦四种套餐，按任务选：🌐动态住宅→按流量，低至$0.46/GB适合：网页抓取、价格监控、大规模采集📌",
+      "published_at": "2026-11-20T02:53:44.000Z",
+      "expires_at": null,
+      "relevance_score": 86,
+      "risk_score": 45,
+      "risk_flags": [
+        "unverified_reseller"
+      ],
+      "reasons": [
+        "内容更像资讯、问答、测评或普通软件更新",
         "命中高风险或不受支持的交易/软件规则"
       ],
       "review_status": "rejected"
@@ -275,64 +273,13 @@
       "review_status": "rejected"
     },
     {
-      "key": "slickdeals:https://slickdeals.net/f/20334048-skg-ts700-4d-shiatsu-cordless-full-back-massager-w-graphene-heating-56-49-free-shipping?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "key": "slickdeals:https://slickdeals.net/f/20348358-hinton-12l-stainless-steel-dog-water-fountain-w-4-stage-filtration-31-25-free-shipping-w-prime-or-on-35?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
       "source_id": "slickdeals",
       "source_name": "Slickdeals Frontpage",
-      "source_url": "https://slickdeals.net/f/20334048-skg-ts700-4d-shiatsu-cordless-full-back-massager-w-graphene-heating-56-49-free-shipping?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "title": "SKG TS700 Cordless Full Back Deep Tissue Massager $56.50 + Free S&H",
-      "summary": "*Note*: Final price at checkout after the promo code will be the same for Prime and Non-Prime Members. SKG Health Store via Amazon has *SKG TS700 Cordless Full Back Deep Tissue Massager* on sale...",
-      "published_at": "2026-11-20T00:51:25.000Z",
-      "expires_at": null,
-      "relevance_score": 76,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "优惠相关性达到公开候选阈值"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "slickdeals:https://slickdeals.net/f/20341581-sns-ac-7-99-or-6-99-6-pk-3-56-oz-nongshim-tonkotsu-ramen-w-kuromayu-at-amazon-1-33-each?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_id": "slickdeals",
-      "source_name": "Slickdeals Frontpage",
-      "source_url": "https://slickdeals.net/f/20341581-sns-ac-7-99-or-6-99-6-pk-3-56-oz-nongshim-tonkotsu-ramen-w-kuromayu-at-amazon-1-33-each?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "title": "6-Pk 3.56-Oz Nongshim Tonkotsu Ramen w/ Kuromayu Noodle Big Bowl $8 w/ S&S",
-      "summary": "Amazon [amazon.com] has *6-Pk 3.56-Oz Nongshim Tonkotsu Ramen w/ Kuromayu* for $9.99 - 15% when you 'clip' the coupon on product page - 5% when you check out via Subscribe & Save = *$7.99*....",
-      "published_at": "2026-11-20T00:37:51.000Z",
-      "expires_at": null,
-      "relevance_score": 76,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "优惠相关性达到公开候选阈值"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "slickdeals:https://slickdeals.net/f/20348352-wolfbox-cordless-tire-inflator-portable-air-compressor-150psi-dual-power-air-pump-for-car-tires-motorcycle-bicycle-ball-18-03?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_id": "slickdeals",
-      "source_name": "Slickdeals Frontpage",
-      "source_url": "https://slickdeals.net/f/20348352-wolfbox-cordless-tire-inflator-portable-air-compressor-150psi-dual-power-air-pump-for-car-tires-motorcycle-bicycle-ball-18-03?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "title": "150PSI WOLFBOX Cordless & Corded Tire Inflator / Air Compressor $18.05 + Free S&H",
-      "summary": "Tanlink US via Amazon has WOLFBOX Cordless Tire Inflator Portable Air Compressor for $18.03 when you clip coupon on product page and use code *VXDDW1FS *at checkout ...",
-      "published_at": "2026-11-20T00:36:19.000Z",
-      "expires_at": null,
-      "relevance_score": 76,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "优惠相关性达到公开候选阈值"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "slickdeals:https://slickdeals.net/f/20334378-nike-women-s-nike-sb-heritage-vulc-skate-shoes-summit-white-white-gum-light-brown-cardinal-red-7-5-9-10-11-5-13-35-23-free-shipping-on-50?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_id": "slickdeals",
-      "source_name": "Slickdeals Frontpage",
-      "source_url": "https://slickdeals.net/f/20334378-nike-women-s-nike-sb-heritage-vulc-skate-shoes-summit-white-white-gum-light-brown-cardinal-red-7-5-9-10-11-5-13-35-23-free-shipping-on-50?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "title": "Nike SB Heritage Vulc Unisex Skate Shoes (White / Brown / Red) $35.25 + Free S&H on $50+",
-      "summary": "Nike [nike.com] has * Nike Women's Nike SB Heritage Vulc Skate Shoes (Summit White/White/Gum Light Brown/Cardinal Red, 7.5-9,10,11.5,13) *for $46.97 - 25% off with code *EARLYBF* = *$35.23*. Shipping...",
-      "published_at": "2026-11-20T00:35:30.000Z",
+      "source_url": "https://slickdeals.net/f/20348358-hinton-12l-stainless-steel-dog-water-fountain-w-4-stage-filtration-31-25-free-shipping-w-prime-or-on-35?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "title": "12L HINTON Stainless Steel Dog Water Fountain w/ 4-Stage Filtration (Large Dogs) $31.25 + Free S&H",
+      "summary": "PEKTACO via Amazon [amazon.com] has *HINTON 12L Stainless Steel Dog Water Fountain w/ 4-Stage Filtration* on sale for $44.64 - $13.39 with promo code H0VHLT0S = *$31.25*. Shipping is free w/ Prime or...",
+      "published_at": "2026-11-20T02:50:46.000Z",
       "expires_at": null,
       "relevance_score": 76,
       "risk_score": 0,
@@ -383,13 +330,33 @@
       "review_status": "rejected"
     },
     {
-      "key": "v2ex:https://v2ex.com/t/1258330",
+      "key": "v2ex:https://v2ex.com/t/1258467",
       "source_id": "v2ex",
       "source_name": "V2EX 推广",
-      "source_url": "https://v2ex.com/t/1258330",
-      "title": "🚀 AigateGo：主推 AWS Bedrock 纯血 Claude ，1.8x",
-      "summary": "👉 https://api.aigatego.com 1.8x 看着确实比很多站贵，我们也不打算跟那些 0.x 的渠道比谁更便宜。 做中转做到现在，最大的体会就是 一分钱一分货 。便宜的渠道很多时候质量波动大，时不时会注水，用着用着就不太对味。我们现在主推的 Claude 是纯血 AWS Bedrock，质量高、纯度高，基本不用担心注水的问题。 倍率高一点，但用起来踏实，可以作为稳定的生成工具来用，长任务或者内容生成都比较稳。GPT 这边也是同样思路，稳一点、干净一点。 我们不记对话内容，也不卖数据，只留必要的消费日志。速度和稳定性优先。 想先感受下质量的话，可以领点额度自己跑跑： 🎁 注册 + 回帖送 $2，进群再送 $2 文",
-      "published_at": "2026-11-19T09:17:54.000Z",
+      "source_url": "https://v2ex.com/t/1258467",
+      "title": "🔥 ZooProxy 优惠全攻略｜新用户 5 折 + 免费领 200MB",
+      "summary": "🔥 搞数据采集、跨境电商、社媒多账号的看过来 ZooProxy 一站式原生 IP 代理 ⚡ 1.1 亿+ 真实住宅 IP，覆盖 195+地区 🎯 城市级精准定位，想要哪里的 IP 就选哪里 🚀 99.92% 稳定运行率，跨境延迟低至 0.3s 📦 四种套餐，按任务选： 🌐 动态住宅 → 按流量，低至 $0.46/GB 适合：网页抓取、价格监控、大规模采集 📌 静态 ISP → 独享固定 IP，低至 $0.9/IP 适合：跨境电商店铺、社媒账号长期运营 ♾️ 无限流量 → 按端口 ，不限速不限量 $0.38/端口 适合：7×24 持续采集、多账号自动化 ♾️ 无限流量 → 按带宽 ，按 Mbps 选 $19.67/天 适合",
+      "published_at": "2026-11-20T02:48:47.000Z",
+      "expires_at": null,
+      "relevance_score": 58,
+      "risk_score": 45,
+      "risk_flags": [
+        "unverified_reseller"
+      ],
+      "reasons": [
+        "内容更像资讯、问答、测评或普通软件更新",
+        "命中高风险或不受支持的交易/软件规则"
+      ],
+      "review_status": "rejected"
+    },
+    {
+      "key": "v2ex:https://v2ex.com/t/1258444",
+      "source_id": "v2ex",
+      "source_name": "V2EX 推广",
+      "source_url": "https://v2ex.com/t/1258444",
+      "title": "试用福利🎁｜动态 / 静态住宅代理，流量永久有效，无隐形扣费",
+      "summary": "经常做指纹浏览器调试、跨境业务测试、数据采集的朋友应该都踩过坑：IP 纯净度差、没用完的流量到期清零、各种隐藏扣费，测试成本很高。 这次放一批新用户试用额度，方便大家实测线路质量、适配对接，有需要的可以试试。 ✅ 产品简要说明 动态住宅代理｜0.47$/GB 起 ：流量计费， 流量永久有效，不会自动清零 ，无额外隐形扣费，适合调试、批量采集。 长效静态 ISP 代理｜3.2$/ 月起 ：包月独享 IP，端口不限流量，低延迟稳定性好，适合长期养号、固定业务持续运行。 短效静态住宅代理｜0.02$/ 条起 ：单条 IP 成本低，在线周期可控，适配短期高频任务，用完即换，不浪费资源。 无限流量套餐｜0.3$/ 天 / 端口起 ：不用紧盯流",
+      "published_at": "2026-11-20T02:06:16.000Z",
       "expires_at": null,
       "relevance_score": 50,
       "risk_score": 45,
@@ -402,13 +369,13 @@
       "review_status": "rejected"
     },
     {
-      "key": "v2ex:https://v2ex.com/t/1257921",
+      "key": "v2ex:https://v2ex.com/t/1258330",
       "source_id": "v2ex",
       "source_name": "V2EX 推广",
-      "source_url": "https://v2ex.com/t/1257921",
-      "title": "无套路不烧心 S 级中转站 跃点 API 上线 GPT‑6.2 Sol 和 Astra，回帖送 $5 站内体验额度",
-      "summary": "跃点 API 运行 3 个月了，支持 GPT 和 Claude，可接 Codex 和 Claude Code。今天刚上线 GPT‑6.2 Sol 和 Astra，欢迎拿平时的任务来试。 附图是站内 GPT‑6.1 Sol 的一次实测，拿到 S 级 100 分。官网 mxwq.net 首页也有公开测试记录，无需登录就能看。 想试的朋友在本帖留下 跃点站内用户 ID ，我会发 5 站内余额。后台显示 $5 ，按本站充值比例相当于人民币 5 元， 从发放起 48 小时有效 。",
-      "published_at": "2026-11-18T02:46:24.000Z",
+      "source_url": "https://v2ex.com/t/1258330",
+      "title": "🚀 AigateGo：主推 AWS Bedrock 纯血 Claude ，1.8x",
+      "summary": "👉 https://api.aigatego.com 1.8x 看着确实比很多站贵，我们也不打算跟那些 0.x 的渠道比谁更便宜。 做中转做到现在，最大的体会就是 一分钱一分货 。便宜的渠道很多时候质量波动大，时不时会注水，用着用着就不太对味。我们现在主推的 Claude 是纯血 AWS Bedrock，质量高、纯度高，基本不用担心注水的问题。 倍率高一点，但用起来踏实，可以作为稳定的生成工具来用，长任务或者内容生成都比较稳。GPT 这边也是同样思路，稳一点、干净一点。 我们不记对话内容，也不卖数据，只留必要的消费日志。速度和稳定性优先。 想先感受下质量的话，可以领点额度自己跑跑： 🎁 注册 + 回帖送 $2，进群再送 $2 文",
+      "published_at": "2026-11-19T09:17:54.000Z",
       "expires_at": null,
       "relevance_score": 50,
       "risk_score": 45,
@@ -433,25 +400,6 @@
       "risk_score": 45,
       "risk_flags": [
         "untrusted_software"
-      ],
-      "reasons": [
-        "命中高风险或不受支持的交易/软件规则"
-      ],
-      "review_status": "rejected"
-    },
-    {
-      "key": "linuxdo:https://linux.do/t/topic/3203393",
-      "source_id": "linuxdo",
-      "source_name": "LINUX DO 福利羊毛",
-      "source_url": "https://linux.do/t/topic/3203393",
-      "title": "（已拉闸）对于Devin羊毛没有mac设备，iPhone注册无法接码的解决方案",
-      "summary": "",
-      "published_at": "2026-11-19T07:30:16.000Z",
-      "expires_at": null,
-      "relevance_score": 38,
-      "risk_score": 45,
-      "risk_flags": [
-        "account_abuse"
       ],
       "reasons": [
         "命中高风险或不受支持的交易/软件规则"
@@ -535,13 +483,13 @@
       "review_status": "rejected"
     },
     {
-      "key": "slickdeals:https://slickdeals.net/f/20347656-adidas-men-s-runfalcon-5-wide-running-shoes-core-black-core-black-cloud-white-19-50-free-s-h?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "key": "slickdeals:https://slickdeals.net/f/20346759-champion-men-s-pullover-hoodie-2-colors-from-15-30?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
       "source_id": "slickdeals",
       "source_name": "Slickdeals Frontpage",
-      "source_url": "https://slickdeals.net/f/20347656-adidas-men-s-runfalcon-5-wide-running-shoes-core-black-core-black-cloud-white-19-50-free-s-h?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "title": "adidas Men's Runfalcon 5 Wide Running Shoes (Core Black/Core Black/Cloud White) $19.50 + Free S&H",
-      "summary": "adidas men Runfalcon 5 WIDE Running Shoes (Core Black / Core Black / Cloud White) *$19.50* Apply code *EXTRA50SALE* at checkout. Free shipping. _Details_ * Wide fit * Laces * Upper:...",
-      "published_at": "2026-11-20T00:59:29.000Z",
+      "source_url": "https://slickdeals.net/f/20346759-champion-men-s-pullover-hoodie-2-colors-from-15-30?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "title": "Champion Men's Pullover Hoodie (2 Colors) from $15.30",
+      "summary": "Amazon has *Champion Men's Pullover Hoodie (*2 Colors, Select Sizes*)* on sale *from $15.30*. *Shipping is free* with Prime or on $35+ orders. Thanks to Deal Hunter *minntwins* for finding this...",
+      "published_at": "2026-11-20T02:45:11.000Z",
       "expires_at": null,
       "relevance_score": 38,
       "risk_score": 0,
@@ -552,13 +500,13 @@
       "review_status": "queued"
     },
     {
-      "key": "slickdeals:https://slickdeals.net/f/20336328-levi-strauss-signature-gold-men-s-flannel-lined-shirt-jacket-2-colors-s-xl-20-99?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "key": "slickdeals:https://slickdeals.net/f/20340654-18-99-2-port-47w-anker-nano-compact-foldable-usb-c-gan-charger-various-at-amazon?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
       "source_id": "slickdeals",
       "source_name": "Slickdeals Frontpage",
-      "source_url": "https://slickdeals.net/f/20336328-levi-strauss-signature-gold-men-s-flannel-lined-shirt-jacket-2-colors-s-xl-20-99?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "title": "Levi Strauss Signature Gold Men’s Flannel-Lined Shirt Jacket (2 Colors, S-XL) $21",
-      "summary": "Amazon [amazon.com] has *Levi Strauss Signature Gold Men's Flannel-Lined Shirt Jacket (Indigo Rinse, Large)* for *$20.99*. Shipping is free w/ Prime or on orders $35+. *Other sizes and...",
-      "published_at": "2026-11-20T00:58:08.000Z",
+      "source_url": "https://slickdeals.net/f/20340654-18-99-2-port-47w-anker-nano-compact-foldable-usb-c-gan-charger-various-at-amazon?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "title": "2-Port 47W Anker Nano Compact Foldable USB-C GaN Charger (3 Colors) $19",
+      "summary": "AnkerDirect via Amazon has *2-Port 47W Anker Nano Compact Foldable USB-C GaN Charger* (A2039, various) on sale for *$18.99*. *Shipping is free* w/ Prime or on $35+ orders. Thanks to Community...",
+      "published_at": "2026-11-20T02:42:46.000Z",
       "expires_at": null,
       "relevance_score": 38,
       "risk_score": 0,
@@ -569,13 +517,13 @@
       "review_status": "queued"
     },
     {
-      "key": "slickdeals:https://slickdeals.net/f/20342640-44-99-magic-the-gathering-avengers-assemble-marvel-super-heroes-commander-deck-at-amazon?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "key": "slickdeals:https://slickdeals.net/f/20351781-costco-members-pok-mon-tcg-elite-trainer-box-booster-bundle-mega-evolution-perfect-order-2-pack-124-99?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
       "source_id": "slickdeals",
       "source_name": "Slickdeals Frontpage",
-      "source_url": "https://slickdeals.net/f/20342640-44-99-magic-the-gathering-avengers-assemble-marvel-super-heroes-commander-deck-at-amazon?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "title": "Magic The Gathering - Avengers Assemble Marvel Super Heroes Commander Deck $45 + Free S&H",
-      "summary": "Amazon [amazon.com] has *Magic The Gathering - Avengers Assemble Marvel Super Heroes Commander Deck* for *$44.99*. *Shipping is free*. *** Previous *Frontpage Deal* at *$45* with *43* Deal Score...",
-      "published_at": "2026-11-20T00:57:16.000Z",
+      "source_url": "https://slickdeals.net/f/20351781-costco-members-pok-mon-tcg-elite-trainer-box-booster-bundle-mega-evolution-perfect-order-2-pack-124-99?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "title": "Costco Members: 2-Pk Pokémon TCG: Perfect Order Elite Trainer Box + Booster Bundle $125 + Free S&H",
+      "summary": "Limit 1. These have been up for a few hours now I think and the queue time should be really short. https://www.costco.com/p/-/pokmon...4201042378",
+      "published_at": "2026-11-20T02:36:53.000Z",
       "expires_at": null,
       "relevance_score": 38,
       "risk_score": 0,
@@ -586,13 +534,13 @@
       "review_status": "queued"
     },
     {
-      "key": "slickdeals:https://slickdeals.net/f/20329758-ymmv-husky-3-4-in-dia-x-50-ft-max-duty-contractor-hose-12-49-at-home-depot?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "key": "slickdeals:https://slickdeals.net/f/20347764-adidas-men-x-plr-path-shoes-2-colors-from-21-50?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
       "source_id": "slickdeals",
       "source_name": "Slickdeals Frontpage",
-      "source_url": "https://slickdeals.net/f/20329758-ymmv-husky-3-4-in-dia-x-50-ft-max-duty-contractor-hose-12-49-at-home-depot?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "title": "Select Home Depot Stores: 50' 3/4\" Husky Max Duty Contractor Hose $12.50 (In-Store Only)",
-      "summary": "YMMV, on in store clearance at select home depot stores. https://www.homedepot.com/p/Husky...store=2602",
-      "published_at": "2026-11-20T00:56:33.000Z",
+      "source_url": "https://slickdeals.net/f/20347764-adidas-men-x-plr-path-shoes-2-colors-from-21-50?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "title": "adidas Men's X_PLR Path Shoes (2 colors) from $21.50 + Free S&H",
+      "summary": "adidas men X_PLR Path Shoes (2 Colors) from *$22.50* Apply code *EXTRA50SALE* at checkout. Free shipping. _Available_ * Grey Two / Cloud White / Grey Two [ebay.com] *$22.50 -> now $21.50*...",
+      "published_at": "2026-11-20T02:33:30.000Z",
       "expires_at": null,
       "relevance_score": 38,
       "risk_score": 0,
@@ -603,13 +551,13 @@
       "review_status": "queued"
     },
     {
-      "key": "slickdeals:https://slickdeals.net/f/20342916-owala-freesip-stainless-steel-water-bottle-24-oz-from-22-79-32-oz-from-26-58-more-free-shipping-w-prime-or-on-35?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "key": "slickdeals:https://slickdeals.net/f/20333307-1-2l-lululemon-leather-alternative-mini-bag-pouch-black-54-free-shipping?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
       "source_id": "slickdeals",
       "source_name": "Slickdeals Frontpage",
-      "source_url": "https://slickdeals.net/f/20342916-owala-freesip-stainless-steel-water-bottle-24-oz-from-22-79-32-oz-from-26-58-more-free-shipping-w-prime-or-on-35?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "title": "Owala FreeSip Stainless Steel Water Bottle: 40-Oz $32, 32-Oz from $26.60, 24-Oz from $22.80",
-      "summary": "Amazon [amazon.com] has select *Owala FreeSip Stainless Steel Water Bottles *on sale as listed below. Shipping is free w/ Prime or on $35+. *Available options:*[LIST][*]24 Ounces[LIST][*]Shy...",
-      "published_at": "2026-11-20T00:47:41.000Z",
+      "source_url": "https://slickdeals.net/f/20333307-1-2l-lululemon-leather-alternative-mini-bag-pouch-black-54-free-shipping?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "title": "1.2L lululemon Women's Leather Alternative Mini Bag + Detachable Pouch $54 + Free S&H",
+      "summary": "lululemon has *1.2L lululemon Women's Leather Alternative Mini Bag + Detachable Pouch* (Black/Silver) for *$54*. *Shipping is free*. Thanks to Deal Hunter *minntwins* for sharing this deal. ...",
+      "published_at": "2026-11-20T02:26:09.000Z",
       "expires_at": null,
       "relevance_score": 38,
       "risk_score": 0,
@@ -620,13 +568,13 @@
       "review_status": "queued"
     },
     {
-      "key": "slickdeals:https://slickdeals.net/f/20348094-9-99-klein-tools-modbox-6-pocket-tool-pouch-at-amazon?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "key": "slickdeals:https://slickdeals.net/f/20339553-worx-pegasus-2-in-1-portable-folding-workbench-sawhorse-wx051-99-99-free-shipping?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
       "source_id": "slickdeals",
       "source_name": "Slickdeals Frontpage",
-      "source_url": "https://slickdeals.net/f/20348094-9-99-klein-tools-modbox-6-pocket-tool-pouch-at-amazon?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "title": "Klein Tools MODbox 6-Pocket Tool Pouch $10",
-      "summary": "Amazon [amazon.com] has *Klein Tools MODbox 6-Pocket Tool Pouch* for *$9.99*. *Shipping is free* with Prime or on $35+ orders. *** *Deal history:*[list][*]*Frontpage Deal* at *$10* with *66* Deal...",
-      "published_at": "2026-11-20T00:46:49.000Z",
+      "source_url": "https://slickdeals.net/f/20339553-worx-pegasus-2-in-1-portable-folding-workbench-sawhorse-wx051-99-99-free-shipping?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "title": "Worx Pegasus 2-in-1 Folding Work Table & Sawhorse $100 + Free S&H",
+      "summary": "Amazon has *Worx Pegasus 2-in-1 Folding Work Table & Sawhorse* (WX051) on sale for *$99.99*. *Shipping is free*. Thanks to Deal Hunter *niki4h* for sharing this deal. *About this...",
+      "published_at": "2026-11-20T02:25:06.000Z",
       "expires_at": null,
       "relevance_score": 38,
       "risk_score": 0,
@@ -637,13 +585,13 @@
       "review_status": "queued"
     },
     {
-      "key": "slickdeals:https://slickdeals.net/f/20338173-ryobi-one-18v-cordless-dual-function-inflator-deflator-w-4-0ah-battery-charger-79-free-shipping?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "key": "slickdeals:https://slickdeals.net/f/20339136-milwaukee-m18-18v-brushless-cordless-compact-drill-driver-w-2-0ah-battery-charger-120-piece-bit-set-129-free-shipping?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
       "source_id": "slickdeals",
       "source_name": "Slickdeals Frontpage",
-      "source_url": "https://slickdeals.net/f/20338173-ryobi-one-18v-cordless-dual-function-inflator-deflator-w-4-0ah-battery-charger-79-free-shipping?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "title": "RYOBI ONE+ 18V 4.0Ah Battery Starter Kit + Cordless Dual Function Inflator $79 + Free S&H",
-      "summary": "Home Depot [homedepot.com] has *RYOBI ONE+ 18V Cordless Dual Function Inflator/Deflator w/ 4.0Ah Battery & Charger* on sale for *$79*. *Shipping is free.* *Compiled From Merchant's Product...",
-      "published_at": "2026-11-20T00:43:00.000Z",
+      "source_url": "https://slickdeals.net/f/20339136-milwaukee-m18-18v-brushless-cordless-compact-drill-driver-w-2-0ah-battery-charger-120-piece-bit-set-129-free-shipping?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "title": "Milwaukee M18 18V Cordless Compact Drill/Driver w/ 2Ah Battery & 120-Pc Bit Set $129 + Free S&H",
+      "summary": "Home Depot [homedepot.com] has *Milwaukee M18 18V Brushless Cordless Compact Drill/Driver w/ 2.0Ah Battery, Charger & 120-Piece Bit Set* on sale for *$129*. *Shipping is free.*",
+      "published_at": "2026-11-20T02:20:41.000Z",
       "expires_at": null,
       "relevance_score": 38,
       "risk_score": 0,
@@ -654,30 +602,13 @@
       "review_status": "queued"
     },
     {
-      "key": "slickdeals:https://slickdeals.net/f/20348124-adidas-men-runfalcon-5-running-shoes-cloud-white-cloud-white-cloud-white-18?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "key": "slickdeals:https://slickdeals.net/f/20338296-levi-s-men-s-washed-cotton-hooded-military-jacket-dark-brown-size-s-28-05?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
       "source_id": "slickdeals",
       "source_name": "Slickdeals Frontpage",
-      "source_url": "https://slickdeals.net/f/20348124-adidas-men-runfalcon-5-running-shoes-cloud-white-cloud-white-cloud-white-18?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "title": "adidas Men's Runfalcon 5 Running Shoes (Cloud White) $18 + Free S&H",
-      "summary": "adidas men Runfalcon 5 Running Shoes (Cloud White / Cloud White / Cloud White) *$18.00* Apply code *EXTRA50SALE* at checkout. Free shipping. _Details_ * Regular fit * Lace closure *...",
-      "published_at": "2026-11-20T00:39:57.000Z",
-      "expires_at": null,
-      "relevance_score": 38,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "优惠相关性达到公开候选阈值"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "slickdeals:https://slickdeals.net/f/20340597-8bitdo-ultimate-2c-bluetooth-wireless-gaming-controller-for-nintendo-switch-switch-2-transparent-black-21-99-free-shipping?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_id": "slickdeals",
-      "source_name": "Slickdeals Frontpage",
-      "source_url": "https://slickdeals.net/f/20340597-8bitdo-ultimate-2c-bluetooth-wireless-gaming-controller-for-nintendo-switch-switch-2-transparent-black-21-99-free-shipping?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "title": "8BitDo Ultimate 2C Wireless Controller for Nintendo Switch (Transparent Black) $22 + Free S&H",
-      "summary": "*Best Buy* [bestbuy.com] has *8BitDo Ultimate 2C Bluetooth Wireless Gaming Controller for Nintendo Switch & Switch 2 (Transparent Black)* on sale for *$21.99*. *Shipping is free* for My Best Buy...",
-      "published_at": "2026-11-20T00:30:58.000Z",
+      "source_url": "https://slickdeals.net/f/20338296-levi-s-men-s-washed-cotton-hooded-military-jacket-dark-brown-size-s-28-05?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "title": "Levi's Men's Washed Cotton Hooded Military Jacket (Limited Sizes & Colors) from $28.05",
+      "summary": "Amazon [amazon.com] has *Levi's Men's Washed Cotton Hooded Military Jacket Coat, Dark Brown, Size S* for *$28.05*. Shipping is free w/ Prime or on orders $35+. That's a lower price than the last...",
+      "published_at": "2026-11-20T02:16:03.000Z",
       "expires_at": null,
       "relevance_score": 38,
       "risk_score": 0,
@@ -810,6 +741,23 @@
       "review_status": "queued"
     },
     {
+      "key": "v2ex:https://v2ex.com/t/1258445",
+      "source_id": "v2ex",
+      "source_name": "V2EX 推广",
+      "source_url": "https://v2ex.com/t/1258445",
+      "title": "Revia：把已检查的程序结构变成确定性契约与人类可读投影（开源，预览阶段）",
+      "summary": "项目地址： https://github.com/regrevia/Revia （源码 MPL-2.0） Revia 是一个以语义图为核心的开源语言实现，面向「Agent 编写、人类做语义治理」这个场景。 它想解决的一件事：程序结构一旦通过检查，就把这份结构固化成两份东西——一份给机器执行的确定性契约，一份给人读的语义投影。两份都从同一份结构生成，所以它们对不上就是实现问题，而不是「文档没跟上代码」这种没人负责的状态。 现在可以自己复核的部分： 最新候选 v1.0.0-rc.2.2.1 有 Linux x64 与 Windows x64 的原生构建与测试证据，按目标分开记在 runtime/rc2.2.1/ 仓库里有可运行的项目模板",
+      "published_at": "2026-11-20T02:11:31.000Z",
+      "expires_at": null,
+      "relevance_score": 12,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
       "key": "v2ex:https://v2ex.com/t/1258382",
       "source_id": "v2ex",
       "source_name": "V2EX 推广",
@@ -817,6 +765,40 @@
       "title": "MiniMax 开源 H3 Image ！一个模型同时生图和改图，最多吃 16 张参考图，还能接 H3 直接出视频",
       "summary": "MiniMax 11 月 11 日发布了图片模型 H3 Image ，权重直接开源，Hugging Face 和 GitHub 都能下载。这次最有意思的是一个模型同时管生图和改图：改图时最多可以传 16 张参考图，在提示词里用 Image 1、Image 2 指代，早期测试的人拿它做同一角色的多姿势、多表情设定图。 另一项也挺实用。 4K 最高大约 1600 万像素，21:9 能出到 6272 × 2688 。它是在 H3 视频模型的基础上做的，生成的图可以直接当首帧，接 H3 Max 做成视频，出图到视频算是一条链路打通了。 不过本地跑就别想了：模型 33.1B 参数，权重 69 GB ，还要再加一个 67 GB 的文本编码器，官",
       "published_at": "2026-11-19T14:29:10.000Z",
+      "expires_at": null,
+      "relevance_score": 12,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1067339-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek 福利情报",
+      "source_url": "https://nodeseek.com/post-1067339-1",
+      "title": "icloud 有什么低价区吗？ 2T 这种",
+      "summary": "bd之前的尼区取消了，找不到低价区了找不到的话，自己弄个车是不是也可以",
+      "published_at": "2026-11-20T03:39:53.000Z",
+      "expires_at": null,
+      "relevance_score": 12,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1067337-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek 福利情报",
+      "source_url": "https://nodeseek.com/post-1067337-1",
+      "title": "（人找车）TEAM周限，另外想问一下这个比PLUS多多少额度",
+      "summary": "如题",
+      "published_at": "2026-11-20T03:39:12.000Z",
       "expires_at": null,
       "relevance_score": 12,
       "risk_score": 0,
@@ -901,6 +883,23 @@
       "review_status": "queued"
     },
     {
+      "key": "v2ex:https://v2ex.com/t/1258463",
+      "source_id": "v2ex",
+      "source_name": "V2EX 推广",
+      "source_url": "https://v2ex.com/t/1258463",
+      "title": "程序员整点副业了哎",
+      "summary": "优惠劵攻略群，网购还是划算有需要的大佬们可以进群 https://ibb.co/J1Q45sJ https://ibb.co/ymLw0mDm",
+      "published_at": "2026-11-20T02:45:37.000Z",
+      "expires_at": null,
+      "relevance_score": 10,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "内容更像资讯、问答、测评或普通软件更新"
+      ],
+      "review_status": "queued"
+    },
+    {
       "key": "v2ex:https://v2ex.com/t/1258297",
       "source_id": "v2ex",
       "source_name": "V2EX 推广",
@@ -923,7 +922,7 @@
       "source_name": "NodeLoc 中文羊毛与 VPS",
       "source_url": "https://nodeloc.com/t/topic/118564",
       "title": "gpt 6.1 sol公益站，速度嘎嘎快",
-      "summary": "邀请注册送1000刀，每日签到(具体规则还不清楚，今天领了300刀)，只有gpt 6.1 sol一个模型 首字和速度都还不错： 有需要的佬们赶紧去蹬吧～链接含AFF，介意勿点。 12 个帖子 - 7 位参与者 阅读完整话题",
+      "summary": "邀请注册送1000刀，每日签到(具体规则还不清楚，今天领了300刀)，只有gpt 6.1 sol一个模型 首字和速度都还不错： 有需要的佬们赶紧去蹬吧～链接含AFF，介意勿点。 15 个帖子 - 9 位参与者 阅读完整话题",
       "published_at": "2026-11-20T01:12:17.000Z",
       "expires_at": null,
       "relevance_score": 10,
@@ -1006,6 +1005,26 @@
       "review_status": "rejected"
     },
     {
+      "key": "linuxdo_resource:https://linux.do/t/topic/3207713",
+      "source_id": "linuxdo_resource",
+      "source_name": "LINUX DO 资源荟萃",
+      "source_url": "https://linux.do/t/topic/3207713",
+      "title": "点灯2叩门怨-v1.1 (破解无限提示版-国风悬疑解谜游戏",
+      "summary": "",
+      "published_at": "2026-11-20T01:56:22.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 45,
+      "risk_flags": [
+        "untrusted_software"
+      ],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号",
+        "命中高风险或不受支持的交易/软件规则"
+      ],
+      "review_status": "rejected"
+    },
+    {
       "key": "v2ex:https://v2ex.com/t/1258245",
       "source_id": "v2ex",
       "source_name": "V2EX 推广",
@@ -1067,18 +1086,78 @@
       "review_status": "rejected"
     },
     {
-      "key": "nodeseek:https://nodeseek.com/post-1066994-1",
+      "key": "nodeseek:https://nodeseek.com/post-1067349-1",
       "source_id": "nodeseek",
       "source_name": "NodeSeek 福利情报",
-      "source_url": "https://nodeseek.com/post-1066994-1",
-      "title": "20 收日区 学生Gemini 资格号， 30 收成品号",
-      "summary": "RT",
-      "published_at": "2026-11-20T01:32:00.000Z",
+      "source_url": "https://nodeseek.com/post-1067349-1",
+      "title": "出售 VMISS US.LA.CN2.Basic 年付60cad 剩余330天 无溢价，买家出中介/push费用",
+      "summary": "抢到tri了终于等到冷静期过了。出一个一直给ai专用的小鸡。历经2次大会未曾被封PurchaseDate2026-09-16TheDueDate2027-10-16价值计算https://vpsworth.com/?a=60&c=CAD&s=2026-11-20&e=2027-10-16&a",
+      "published_at": "2026-11-20T03:42:44.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 45,
+      "risk_flags": [
+        "secondary_market"
+      ],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号",
+        "命中高风险或不受支持的交易/软件规则"
+      ],
+      "review_status": "rejected"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1067345-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek 福利情报",
+      "source_url": "https://nodeseek.com/post-1067345-1",
+      "title": "【收】ppflight lift 历史套餐年付",
+      "summary": "最好是s,m,L其他的也行，带价来",
+      "published_at": "2026-11-20T03:41:32.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 45,
+      "risk_flags": [
+        "secondary_market"
+      ],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号",
+        "命中高风险或不受支持的交易/软件规则"
+      ],
+      "review_status": "rejected"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1067344-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek 福利情报",
+      "source_url": "https://nodeseek.com/post-1067344-1",
+      "title": "【分享】解决 Muse.ai 提示“所在地区不支持”，亲测用 Gemini Task 模式绕过注册成功",
+      "summary": "今天在坛子里看到这么多关于Muse的帖子，自己也手痒想注册一个。结果折腾了一圈：试了两个Gmail邮箱，外加接码了一次GV手机号，全都没成功。网络环境切了全局美国（机房IP）以及新加坡家宽，依然全部提示“您所在的地区不支持”。后来隐约想起来论坛里好像有大佬提过可以用Gemini辅助注册，于是去试了一下，居然一次就成",
+      "published_at": "2026-11-20T03:41:31.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 45,
       "risk_flags": [
         "account_abuse"
+      ],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号",
+        "命中高风险或不受支持的交易/软件规则"
+      ],
+      "review_status": "rejected"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1067342-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek 福利情报",
+      "source_url": "https://nodeseek.com/post-1067342-1",
+      "title": "出 raksmart 4837 2c4g",
+      "summary": "rt号上还有3.8刀余额，总价55出，有内网，ns邮箱转移，12月25到期",
+      "published_at": "2026-11-20T03:40:23.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 45,
+      "risk_flags": [
+        "secondary_market"
       ],
       "reasons": [
         "未发现明确的免费、折扣、返现或赠送信号",
@@ -1209,13 +1288,51 @@
       "review_status": "rejected"
     },
     {
-      "key": "linuxdo:https://linux.do/t/topic/3207149",
+      "key": "telegram_cn_deals:https://t.me/zaihuapd/45246",
+      "source_id": "telegram_cn_deals",
+      "source_name": "Telegram 中文科技与羊毛",
+      "source_url": "https://t.me/zaihuapd/45246",
+      "title": "🤖 Anthropic 上市首日开盘涨 34% 市值达到 1.5 万亿美元 人工智能公司 Anthropic（ANT）今日正式登陆纳斯达克，发行价为 83 美元/股，开盘报 111.5 美元，较发行价上涨 34%。按开盘价计算，公司市值约为 1.5 万亿美元。本次 IPO 发行 9.8 亿股，发行总额约 813.4 亿美元，其中公司发行 9.5635 亿股",
+      "summary": "🤖 Anthropic 上市首日开盘涨 34% 市值达到 1.5 万亿美元 人工智能公司 Anthropic（ANT）今日正式登陆纳斯达克，发行价为 83 美元/股，开盘报 111.5 美元，较发行价上涨 34%。按开盘价计算，公司市值约为 1.5 万亿美元。本次 IPO 发行 9.8 亿股，发行总额约 813.4 亿美元，其中公司发行 9.5635 亿股，老股东出售 2364.86 万股。 此外，Anthropic 还将通过同步私募配售募集 260 亿美元，涉及谷歌、英伟达、微软、AMD、博通、美光及台积电等战略投资者。IPO…",
+      "published_at": "2026-11-20T01:58:33.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 45,
+      "risk_flags": [
+        "secondary_market"
+      ],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号",
+        "内容更像资讯、问答、测评或普通软件更新",
+        "命中高风险或不受支持的交易/软件规则"
+      ],
+      "review_status": "rejected"
+    },
+    {
+      "key": "linuxdo:https://linux.do/t/topic/3208330",
       "source_id": "linuxdo",
       "source_name": "LINUX DO 福利羊毛",
-      "source_url": "https://linux.do/t/topic/3207149",
-      "title": "星驰公益站这是做慈善吗",
+      "source_url": "https://linux.do/t/topic/3208330",
+      "title": "【46周】周五了来点轻松的，抽个 Premium 名额",
       "summary": "",
-      "published_at": "2026-11-19T23:38:23.000Z",
+      "published_at": "2026-11-20T03:07:50.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "linuxdo:https://linux.do/t/topic/3207992",
+      "source_id": "linuxdo",
+      "source_name": "LINUX DO 福利羊毛",
+      "source_url": "https://linux.do/t/topic/3207992",
+      "title": "中国银行 2233 卡抽奖活动",
+      "summary": "",
+      "published_at": "2026-11-20T02:30:26.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -1467,13 +1584,13 @@
       "review_status": "queued"
     },
     {
-      "key": "linuxdo:https://linux.do/t/topic/3203644",
-      "source_id": "linuxdo",
-      "source_name": "LINUX DO 福利羊毛",
-      "source_url": "https://linux.do/t/topic/3203644",
-      "title": "抽奖1个十亿手搓muse账户（已开奖）",
+      "key": "linuxdo_resource:https://linux.do/t/topic/3208126",
+      "source_id": "linuxdo_resource",
+      "source_name": "LINUX DO 资源荟萃",
+      "source_url": "https://linux.do/t/topic/3208126",
+      "title": "某博主《手机短视频拍摄实操课》",
       "summary": "",
-      "published_at": "2026-11-19T08:00:55.000Z",
+      "published_at": "2026-11-20T02:43:39.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -1484,13 +1601,13 @@
       "review_status": "queued"
     },
     {
-      "key": "linuxdo_resource:https://linux.do/t/topic/3207398",
+      "key": "linuxdo_resource:https://linux.do/t/topic/3208115",
       "source_id": "linuxdo_resource",
       "source_name": "LINUX DO 资源荟萃",
-      "source_url": "https://linux.do/t/topic/3207398",
-      "title": "gemini订阅要账号地址 ip地址都一致吗",
+      "source_url": "https://linux.do/t/topic/3208115",
+      "title": "给每天盯屏幕的佬分享护眼软件CareUEyes",
       "summary": "",
-      "published_at": "2026-11-20T01:08:25.000Z",
+      "published_at": "2026-11-20T02:42:26.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -1501,13 +1618,13 @@
       "review_status": "queued"
     },
     {
-      "key": "linuxdo_resource:https://linux.do/t/topic/3207306",
+      "key": "linuxdo_resource:https://linux.do/t/topic/3208085",
       "source_id": "linuxdo_resource",
       "source_name": "LINUX DO 资源荟萃",
-      "source_url": "https://linux.do/t/topic/3207306",
-      "title": "🆕 【11.19】最新付费社群公众号文章",
+      "source_url": "https://linux.do/t/topic/3208085",
+      "title": "吴师兄大模型训练营新版实战课程",
       "summary": "",
-      "published_at": "2026-11-20T00:49:15.000Z",
+      "published_at": "2026-11-20T02:38:36.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -1518,13 +1635,13 @@
       "review_status": "queued"
     },
     {
-      "key": "linuxdo_resource:https://linux.do/t/topic/3207232",
+      "key": "linuxdo_resource:https://linux.do/t/topic/3208081",
       "source_id": "linuxdo_resource",
       "source_name": "LINUX DO 资源荟萃",
-      "source_url": "https://linux.do/t/topic/3207232",
-      "title": "五六年级阅读分享",
+      "source_url": "https://linux.do/t/topic/3208081",
+      "title": "沧元图第 第104集 4K高码【每周五】",
       "summary": "",
-      "published_at": "2026-11-20T00:31:05.000Z",
+      "published_at": "2026-11-20T02:38:19.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -1535,13 +1652,13 @@
       "review_status": "queued"
     },
     {
-      "key": "linuxdo_resource:https://linux.do/t/topic/3207228",
+      "key": "linuxdo_resource:https://linux.do/t/topic/3208061",
       "source_id": "linuxdo_resource",
       "source_name": "LINUX DO 资源荟萃",
-      "source_url": "https://linux.do/t/topic/3207228",
-      "title": "🤖 【AI 实操】AIGC导演实战课第二期11月新课，声音-画面与导演-MJ与配乐",
+      "source_url": "https://linux.do/t/topic/3208061",
+      "title": "沧元图【✨纯净收藏版】【104集最新】【4K】",
       "summary": "",
-      "published_at": "2026-11-20T00:29:30.000Z",
+      "published_at": "2026-11-20T02:36:45.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -1552,13 +1669,13 @@
       "review_status": "queued"
     },
     {
-      "key": "linuxdo_resource:https://linux.do/t/topic/3207157",
+      "key": "linuxdo_resource:https://linux.do/t/topic/3208042",
       "source_id": "linuxdo_resource",
       "source_name": "LINUX DO 资源荟萃",
-      "source_url": "https://linux.do/t/topic/3207157",
-      "title": "黑马 AI 从入门到大神一套通关",
+      "source_url": "https://linux.do/t/topic/3208042",
+      "title": "纪主任·拼多多特训营（更新10月）跟着学，少走弯路，轻松搞定拼多多运营",
       "summary": "",
-      "published_at": "2026-11-19T23:51:22.000Z",
+      "published_at": "2026-11-20T02:36:03.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -1569,13 +1686,13 @@
       "review_status": "queued"
     },
     {
-      "key": "linuxdo_resource:https://linux.do/t/topic/3207156",
+      "key": "linuxdo_resource:https://linux.do/t/topic/3208039",
       "source_id": "linuxdo_resource",
       "source_name": "LINUX DO 资源荟萃",
-      "source_url": "https://linux.do/t/topic/3207156",
-      "title": "动力节点 Java多线程与并发编程",
+      "source_url": "https://linux.do/t/topic/3208039",
+      "title": "沧元图3 更新104集【4K画质】& 大主宰 年番 2（2026）第48集（总第100集）【4K画质】 双更臻享",
       "summary": "",
-      "published_at": "2026-11-19T23:49:21.000Z",
+      "published_at": "2026-11-20T02:35:56.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -1586,13 +1703,13 @@
       "review_status": "queued"
     },
     {
-      "key": "linuxdo_resource:https://linux.do/t/topic/3207115",
+      "key": "linuxdo_resource:https://linux.do/t/topic/3207954",
       "source_id": "linuxdo_resource",
       "source_name": "LINUX DO 资源荟萃",
-      "source_url": "https://linux.do/t/topic/3207115",
-      "title": "适合幼儿听的国学故事，非常适合磨耳朵",
+      "source_url": "https://linux.do/t/topic/3207954",
+      "title": "从零到50万美元：通过无脸Instagram账号赚取10倍收益的完整指南",
       "summary": "",
-      "published_at": "2026-11-19T22:48:00.000Z",
+      "published_at": "2026-11-20T02:26:35.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -1603,13 +1720,13 @@
       "review_status": "queued"
     },
     {
-      "key": "linuxdo_resource:https://linux.do/t/topic/3207104",
+      "key": "linuxdo_resource:https://linux.do/t/topic/3207952",
       "source_id": "linuxdo_resource",
       "source_name": "LINUX DO 资源荟萃",
-      "source_url": "https://linux.do/t/topic/3207104",
-      "title": "前几天佬出的macos清理工具在哪里",
+      "source_url": "https://linux.do/t/topic/3207952",
+      "title": "【日剧】工地恋歌【更新至第7集】",
       "summary": "",
-      "published_at": "2026-11-19T22:19:23.000Z",
+      "published_at": "2026-11-20T02:26:26.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -1620,13 +1737,13 @@
       "review_status": "queued"
     },
     {
-      "key": "linuxdo_resource:https://linux.do/t/topic/3207027",
+      "key": "linuxdo_resource:https://linux.do/t/topic/3207951",
       "source_id": "linuxdo_resource",
       "source_name": "LINUX DO 资源荟萃",
-      "source_url": "https://linux.do/t/topic/3207027",
-      "title": "1119影视资源汇总",
+      "source_url": "https://linux.do/t/topic/3207951",
+      "title": "政治的逻辑 马克思主义政治学原理(王沪宁)",
       "summary": "",
-      "published_at": "2026-11-19T19:01:33.000Z",
+      "published_at": "2026-11-20T02:26:21.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -1637,13 +1754,13 @@
       "review_status": "queued"
     },
     {
-      "key": "linuxdo_resource:https://linux.do/t/topic/3207018",
+      "key": "linuxdo_resource:https://linux.do/t/topic/3207945",
       "source_id": "linuxdo_resource",
       "source_name": "LINUX DO 资源荟萃",
-      "source_url": "https://linux.do/t/topic/3207018",
-      "title": "林震线上美妆摄影课，5天系统化实战教学，全程手机实操，不用专业相机，搞定美妆种草图、美妆短视频拍摄",
+      "source_url": "https://linux.do/t/topic/3207945",
+      "title": "【日剧】主妇与酒店小姐的交换人生 【更新至第7集】",
       "summary": "",
-      "published_at": "2026-11-19T19:00:21.000Z",
+      "published_at": "2026-11-20T02:25:57.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -1654,13 +1771,13 @@
       "review_status": "queued"
     },
     {
-      "key": "linuxdo_resource:https://linux.do/t/topic/3206715",
+      "key": "linuxdo_resource:https://linux.do/t/topic/3207920",
       "source_id": "linuxdo_resource",
       "source_name": "LINUX DO 资源荟萃",
-      "source_url": "https://linux.do/t/topic/3206715",
-      "title": "戈登档案（2026）NF 4K DV&HDR 内封官中 全07集",
+      "source_url": "https://linux.do/t/topic/3207920",
+      "title": "查看你的网络环境，暴露机率",
       "summary": "",
-      "published_at": "2026-11-19T16:29:06.000Z",
+      "published_at": "2026-11-20T02:21:14.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -1671,13 +1788,13 @@
       "review_status": "queued"
     },
     {
-      "key": "linuxdo_resource:https://linux.do/t/topic/3206694",
+      "key": "linuxdo_resource:https://linux.do/t/topic/3207901",
       "source_id": "linuxdo_resource",
       "source_name": "LINUX DO 资源荟萃",
-      "source_url": "https://linux.do/t/topic/3206694",
-      "title": "猫课《小红书高利润AI经营课杭州站》",
+      "source_url": "https://linux.do/t/topic/3207901",
+      "title": "宝子哥·无人直播-非实时防风技术（更新11月）",
       "summary": "",
-      "published_at": "2026-11-19T16:20:59.000Z",
+      "published_at": "2026-11-20T02:19:18.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -1688,13 +1805,13 @@
       "review_status": "queued"
     },
     {
-      "key": "linuxdo_resource:https://linux.do/t/topic/3206669",
+      "key": "linuxdo_resource:https://linux.do/t/topic/3207826",
       "source_id": "linuxdo_resource",
       "source_name": "LINUX DO 资源荟萃",
-      "source_url": "https://linux.do/t/topic/3206669",
-      "title": "好女儿(2026)【6集全】【4K.HDR10】【高码率】【外挂简英双语字幕】【惊悚/犯罪】",
+      "source_url": "https://linux.do/t/topic/3207826",
+      "title": "读书笔记 六十六张PPT读懂 底层逻辑",
       "summary": "",
-      "published_at": "2026-11-19T16:14:08.000Z",
+      "published_at": "2026-11-20T02:11:18.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -1705,13 +1822,13 @@
       "review_status": "queued"
     },
     {
-      "key": "linuxdo_resource:https://linux.do/t/topic/3206662",
+      "key": "linuxdo_resource:https://linux.do/t/topic/3207794",
       "source_id": "linuxdo_resource",
       "source_name": "LINUX DO 资源荟萃",
-      "source_url": "https://linux.do/t/topic/3206662",
-      "title": "猫叔的大基数燃脂课-28天零损伤减重计划",
+      "source_url": "https://linux.do/t/topic/3207794",
+      "title": "黑马程序员- Java+AI新版V16零基础就业班",
       "summary": "",
-      "published_at": "2026-11-19T16:12:01.000Z",
+      "published_at": "2026-11-20T02:08:56.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -1722,13 +1839,13 @@
       "review_status": "queued"
     },
     {
-      "key": "linuxdo_resource:https://linux.do/t/topic/3206661",
+      "key": "linuxdo_resource:https://linux.do/t/topic/3207782",
       "source_id": "linuxdo_resource",
       "source_name": "LINUX DO 资源荟萃",
-      "source_url": "https://linux.do/t/topic/3206661",
-      "title": "【美剧】黑帮领地 第二季【4k】【更新至第10集】",
+      "source_url": "https://linux.do/t/topic/3207782",
+      "title": "终极销售培训：提升沟通技巧，掌握高效销售策略",
       "summary": "",
-      "published_at": "2026-11-19T16:11:34.000Z",
+      "published_at": "2026-11-20T02:07:08.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -1739,13 +1856,13 @@
       "review_status": "queued"
     },
     {
-      "key": "linuxdo_resource:https://linux.do/t/topic/3206660",
+      "key": "linuxdo_resource:https://linux.do/t/topic/3207774",
       "source_id": "linuxdo_resource",
       "source_name": "LINUX DO 资源荟萃",
-      "source_url": "https://linux.do/t/topic/3206660",
-      "title": "备婚资料合集",
+      "source_url": "https://linux.do/t/topic/3207774",
+      "title": "🏛️ 【公考】【申论】杨天明张琦：天琦（含2026最新+2025+2024）",
       "summary": "",
-      "published_at": "2026-11-19T16:11:19.000Z",
+      "published_at": "2026-11-20T02:05:56.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -1756,13 +1873,13 @@
       "review_status": "queued"
     },
     {
-      "key": "linuxdo_resource:https://linux.do/t/topic/3206659",
+      "key": "linuxdo_resource:https://linux.do/t/topic/3207747",
       "source_id": "linuxdo_resource",
       "source_name": "LINUX DO 资源荟萃",
-      "source_url": "https://linux.do/t/topic/3206659",
-      "title": "【泰剧】午夜规则【更新至第5集】【规则怪谈】",
+      "source_url": "https://linux.do/t/topic/3207747",
+      "title": "班主任期末评语大全",
       "summary": "",
-      "published_at": "2026-11-19T16:10:24.000Z",
+      "published_at": "2026-11-20T02:03:17.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -1773,13 +1890,13 @@
       "review_status": "queued"
     },
     {
-      "key": "linuxdo_resource:https://linux.do/t/topic/3206636",
+      "key": "linuxdo_resource:https://linux.do/t/topic/3207726",
       "source_id": "linuxdo_resource",
       "source_name": "LINUX DO 资源荟萃",
-      "source_url": "https://linux.do/t/topic/3206636",
-      "title": "AI短视频批量创作实战营 多种玩法一站式学会",
+      "source_url": "https://linux.do/t/topic/3207726",
+      "title": "考哥《零基础学习书单剪辑》",
       "summary": "",
-      "published_at": "2026-11-19T16:05:46.000Z",
+      "published_at": "2026-11-20T01:58:10.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -1790,13 +1907,13 @@
       "review_status": "queued"
     },
     {
-      "key": "linuxdo_resource:https://linux.do/t/topic/3206580",
+      "key": "linuxdo_resource:https://linux.do/t/topic/3207665",
       "source_id": "linuxdo_resource",
       "source_name": "LINUX DO 资源荟萃",
-      "source_url": "https://linux.do/t/topic/3206580",
-      "title": "我的一个世纪 董竹君自传",
+      "source_url": "https://linux.do/t/topic/3207665",
+      "title": "AI赋能职场4天直播课课堂练习资料（MD文档 +提示词 ）",
       "summary": "",
-      "published_at": "2026-11-19T15:51:39.000Z",
+      "published_at": "2026-11-20T01:49:24.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -1807,13 +1924,13 @@
       "review_status": "queued"
     },
     {
-      "key": "linuxdo_resource:https://linux.do/t/topic/3206574",
+      "key": "linuxdo_resource:https://linux.do/t/topic/3207636",
       "source_id": "linuxdo_resource",
       "source_name": "LINUX DO 资源荟萃",
-      "source_url": "https://linux.do/t/topic/3206574",
-      "title": "奇异博士 全2部【4K IMAX 满屏版】【内封简繁英字幕】",
+      "source_url": "https://linux.do/t/topic/3207636",
+      "title": "野狼团队·多平台实操运营课（更新11月）",
       "summary": "",
-      "published_at": "2026-11-19T15:49:21.000Z",
+      "published_at": "2026-11-20T01:46:24.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -1824,13 +1941,13 @@
       "review_status": "queued"
     },
     {
-      "key": "linuxdo_resource:https://linux.do/t/topic/3206547",
+      "key": "linuxdo_resource:https://linux.do/t/topic/3207616",
       "source_id": "linuxdo_resource",
       "source_name": "LINUX DO 资源荟萃",
-      "source_url": "https://linux.do/t/topic/3206547",
-      "title": "彭老师·TikTok跨境出海实操课（更新11月）",
+      "source_url": "https://linux.do/t/topic/3207616",
+      "title": "🎥 【内容创作】摄影师短视频爆款变现训练营2026年，一套课程搞定短视频内容、IP打造、引流获客、接单变现",
       "summary": "",
-      "published_at": "2026-11-19T15:42:20.000Z",
+      "published_at": "2026-11-20T01:44:17.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -1841,13 +1958,13 @@
       "review_status": "queued"
     },
     {
-      "key": "linuxdo_resource:https://linux.do/t/topic/3206526",
+      "key": "linuxdo_resource:https://linux.do/t/topic/3207597",
       "source_id": "linuxdo_resource",
       "source_name": "LINUX DO 资源荟萃",
-      "source_url": "https://linux.do/t/topic/3206526",
-      "title": "人际关系实战课，练就江湖行走的必备技能",
+      "source_url": "https://linux.do/t/topic/3207597",
+      "title": "全新Langchain大模型 AI应用与多智能体实战开发",
       "summary": "",
-      "published_at": "2026-11-19T15:36:29.000Z",
+      "published_at": "2026-11-20T01:41:28.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -1858,13 +1975,13 @@
       "review_status": "queued"
     },
     {
-      "key": "linuxdo_resource:https://linux.do/t/topic/3206481",
+      "key": "linuxdo_resource:https://linux.do/t/topic/3207546",
       "source_id": "linuxdo_resource",
       "source_name": "LINUX DO 资源荟萃",
-      "source_url": "https://linux.do/t/topic/3206481",
-      "title": "路飞程序员AI智能体+大模型产品经理实战",
+      "source_url": "https://linux.do/t/topic/3207546",
+      "title": "逆天改命系列精品书籍：",
       "summary": "",
-      "published_at": "2026-11-19T15:23:46.000Z",
+      "published_at": "2026-11-20T01:34:56.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -1875,13 +1992,13 @@
       "review_status": "queued"
     },
     {
-      "key": "linuxdo_resource:https://linux.do/t/topic/3206470",
-      "source_id": "linuxdo_resource",
-      "source_name": "LINUX DO 资源荟萃",
-      "source_url": "https://linux.do/t/topic/3206470",
-      "title": "十一研习社《AI短视频挂车特训营》",
-      "summary": "",
-      "published_at": "2026-11-19T15:21:34.000Z",
+      "key": "v2ex:https://v2ex.com/t/1258443",
+      "source_id": "v2ex",
+      "source_name": "V2EX 推广",
+      "source_url": "https://v2ex.com/t/1258443",
+      "title": "昨天找朋友注册了两个免 K Claude 账号，隔离环境操作，相当稳定。",
+      "summary": "昨天找朋友注册了两个免 K Claude 账号，隔离环境操作，相当稳定。 有需要的可以联系 V（base64） ：MjI3Mjc3OTI=",
+      "published_at": "2026-11-20T02:04:31.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -2137,98 +2254,13 @@
       "review_status": "queued"
     },
     {
-      "key": "v2ex:https://v2ex.com/t/1257917",
-      "source_id": "v2ex",
-      "source_name": "V2EX 推广",
-      "source_url": "https://v2ex.com/t/1257917",
-      "title": "gpt-6.2-astra 6.2sol 官方正式版上线，价络便宜 60%性能直逼 fb5.2,倍率 0.15，发 30 个兑换码欢迎各 v 佬来偿。",
-      "summary": "地址： https://www.jiji.cc GPT-6.2 Astra 相比上一代 GPT-6 Astra，标准输入及输出价格同步下调 20%，缓存读取价格更是直降 60%。 一、核心性能：直接对标顶级竞品 GPT-6.2 Astra：旗舰能力再突破 专业任务：Agents' Last Exam 领先 Claude Fable 5.2 达 5.5 分，任务成本约为对方的 5%。 科学研究：Terminal-Bench-Science 相比上一代提升 9 个百分点，任务成本不到上一代三分之一。 3D 生成：Artificial Analysis AA-3D 获得 1318 Elo，超过 Claude Fable 5.2 的 127",
-      "published_at": "2026-11-18T02:36:29.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "内容更像资讯、问答、测评或普通软件更新"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "v2ex:https://v2ex.com/t/1257891",
-      "source_id": "v2ex",
-      "source_name": "V2EX 推广",
-      "source_url": "https://v2ex.com/t/1257891",
-      "title": "看到很多兄弟下载使用了 MV2 这个 V2EX 客户端，非常感慨，再送吗",
-      "summary": "我在后台看到了几百个下载，想象之前做的烂应用，确实对不住兄弟们， 特别是刚开始下载使用的，现在也找不到他们了。 这次用 Flutter 改版后，确实比较流畅，就是让大家看帖子的时候舒服点。简单点 还有两条评论我没有及时回复，还请兄弟们见谅，问题我看到了，正在修复中。感谢！！！ WALU28P6JSQEGL51N4LFBT4 S56Y2WD074KFQ8317H3Y4GA CSDHEVH0T4JZ0TYK0LKDX7C U9UWGQ639H9VR0NM6F1NFUF JNWFUQ4SVYVGL8ZV6E8GMYB QTRWUFN7E0L1A2C6EGDG6YE S1CLULAFQ7HG8L94X26DN5V AXA4WY9C2L1NN",
-      "published_at": "2026-11-18T01:44:07.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "v2ex:https://v2ex.com/t/1257875",
-      "source_id": "v2ex",
-      "source_name": "V2EX 推广",
-      "source_url": "https://v2ex.com/t/1257875",
-      "title": "GPT-6.2 Astra 上线,欢迎友友来这里为自己账号订阅❤",
-      "summary": "地址: https://dalangpt.com 网站交互丝滑流畅,用过的都说好👍 定价(每月): Plus 126 Pro $100 680 Pro $200 1199 服务亮点: 1. 免登录,0 手续费 2. 可质保,可开票",
-      "published_at": "2026-11-18T00:41:21.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "v2ex:https://v2ex.com/t/1257867",
-      "source_id": "v2ex",
-      "source_name": "V2EX 推广",
-      "source_url": "https://v2ex.com/t/1257867",
-      "title": "做了个把照片生成「弯臂比心」短视频的小工具，欢迎拍砖",
-      "summary": "大家好，最近上线了一个小项目 Bicep Heart Trend，想发出来听听大家的意见。 它的功能比较直接：上传一张人物照片，生成一段从抬臂展示肌肉到比心的短视频。动作效果可以先看首页预览，再决定是否生成。 地址： https://bicep-heart-trend.com/ 目前支持 JPG、PNG 照片，输出为 15 秒、9:16、720p 的 MP4 视频，有 Fast 和 Premium 两种生成模式。视频不带音乐，方便下载后自行配音、加字幕，或者放到短视频平台继续编辑。生成效果会受原图清晰度、人物角度等因素影响。 提前说明一下，我是这个项目的开发者，生成服务采用付费积分制，具体价格在首页和 Pricing 页面可以看到。",
-      "published_at": "2026-11-17T22:31:45.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "v2ex:https://v2ex.com/t/1257858",
-      "source_id": "v2ex",
-      "source_name": "V2EX 推广",
-      "source_url": "https://v2ex.com/t/1257858",
-      "title": "[macmini.ca] 加拿大 Mac mini 托管与租赁",
-      "summary": "之前发过 三万主机的 Mac 租赁服务 ，这次新增了自有设备托管，也做了个独立站 macmini.ca ，借推广节点介绍一下。 机器放在加拿大温哥华。有自己的 Mac mini，可以放过来托管，设备仍然归你；没有机器，也可以直接租一台。 开发环境、代码和 Claude Code / Codex 任务可以留在上面，平时用电脑连，出门也能用手机通过 SSH 看进度、补需求。也能拿来跑自动化、打包 iOS，具体装什么自己定。 自有设备托管 US$59/台/月起 ，一次性上架费 US$49 起 ，具体金额及服务范围以审核报价为准。租用按配置和租期计价。 macmini.ca 配置、价格和下单统一在三万主机 30000.cn 。有需要可以看看",
-      "published_at": "2026-11-17T17:57:20.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1067010-1",
+      "key": "nodeseek:https://nodeseek.com/post-1067352-1",
       "source_id": "nodeseek",
       "source_name": "NodeSeek 福利情报",
-      "source_url": "https://nodeseek.com/post-1067010-1",
-      "title": "[出]总价50出raksmart 4837 2c2g+2c4g 和 cn2 1c1g",
-      "summary": "总价50出raksmart48372c2g+2c4g和cn21c1g，一号三鸡线路配置流量备注48372C2G3T秒杀款48372C4G1T非秒杀CN21C1G1T注意：是1C1G，非秒杀2+2关键提醒三台机都有内网CN2没有送中，4837送中ns邮箱直出上家原帖：https://www.nodeseek.com/",
-      "published_at": "2026-11-20T01:46:04.000Z",
+      "source_url": "https://nodeseek.com/post-1067352-1",
+      "title": "2233卡不能存外汇的？我买外汇转不进去。但是人民币能进去",
+      "summary": "2233卡不能存外汇的？我买外汇转不进去。但是人民币能进去。那如果支付用这个卡，能扣美元？这个不是要提前充的",
+      "published_at": "2026-11-20T03:43:18.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -2239,115 +2271,13 @@
       "review_status": "queued"
     },
     {
-      "key": "nodeseek:https://nodeseek.com/post-1067008-1",
+      "key": "nodeseek:https://nodeseek.com/post-1067351-1",
       "source_id": "nodeseek",
       "source_name": "NodeSeek 福利情报",
-      "source_url": "https://nodeseek.com/post-1067008-1",
-      "title": "70出几个az100教育邮箱",
-      "summary": "有效期一年，教育邮箱，给账号密码。70/个，只质保首次登陆。需要的佬可以私信我或者tg我，",
-      "published_at": "2026-11-20T01:45:03.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1067007-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek 福利情报",
-      "source_url": "https://nodeseek.com/post-1067007-1",
-      "title": "积存金766了",
-      "summary": "",
-      "published_at": "2026-11-20T01:44:20.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1067006-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek 福利情报",
-      "source_url": "https://nodeseek.com/post-1067006-1",
-      "title": "不想为了一个博客买鸡，我把 GitHub 做成了主页：System 6 / Win98 四套皮肤",
-      "summary": "给2026年的互联网，留一个1998年的入口。ClassyGit把你的GitHub公开数据渲染成你的复古个人主页+博客。不用登录、不用部署、不用服务器。这是体验：https://classygit.dev仓库地址：https://github.com/Dnevend/classy-github为什么是ClassyG",
-      "published_at": "2026-11-20T01:44:01.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1067005-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek 福利情报",
-      "source_url": "https://nodeseek.com/post-1067005-1",
-      "title": "【NQ】AetherCloud，LA留档",
-      "summary": "💻基本信息++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 硬件质量体检报告： 23.246.*.* https://github.com/xykt/HardwareQuality[",
-      "published_at": "2026-11-20T01:42:33.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1067004-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek 福利情报",
-      "source_url": "https://nodeseek.com/post-1067004-1",
-      "title": "50出raksmart 3.99cn2和1.99的4837",
-      "summary": "",
-      "published_at": "2026-11-20T01:42:11.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1067002-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek 福利情报",
-      "source_url": "https://nodeseek.com/post-1067002-1",
-      "title": "wawo pis222中配 现在还溢价吗",
-      "summary": "rt",
-      "published_at": "2026-11-20T01:39:16.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1067001-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek 福利情报",
-      "source_url": "https://nodeseek.com/post-1067001-1",
-      "title": "请教一个问题。dmit的eb联通怎么样",
-      "summary": "是这样的情况，移动流量太贵了，转联通。",
-      "published_at": "2026-11-20T01:38:52.000Z",
+      "source_url": "https://nodeseek.com/post-1067351-1",
+      "title": "RAKsmart 3.99 CN2 NQ测试报告,YT送终怎么搞。",
+      "summary": "💻基本信息++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 硬件质量体检报告： 104.233.*.* https://github.com/xykt/HardwareQuality",
+      "published_at": "2026-11-20T03:43:07.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -2359,64 +2289,13 @@
       "review_status": "queued"
     },
     {
-      "key": "nodeseek:https://nodeseek.com/post-1067000-1",
+      "key": "nodeseek:https://nodeseek.com/post-1067350-1",
       "source_id": "nodeseek",
       "source_name": "NodeSeek 福利情报",
-      "source_url": "https://nodeseek.com/post-1067000-1",
-      "title": "咕咕嘎嘎最近发模型是真快",
-      "summary": "先是argon，然后是carbon和hydrogen，再之后是neon，现在又说krypton快上了而且，发模型太快导致自家订阅都来不及更新了，carbon还是只对ultra用户开放，但是Neon却是谁都能用",
-      "published_at": "2026-11-20T01:37:38.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1066999-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek 福利情报",
-      "source_url": "https://nodeseek.com/post-1066999-1",
-      "title": "188出 HKcloudX AMD 200M（新款）",
-      "summary": "原价收摸完出CPU-1核内存-1GB系统盘-SSD-30G流量-500G带宽-200MbpsIPv4-1个IPv6-1个续费价格29刀/年11/05https://www.nodeseek.com/jump?to=https%3A%2F%2Fnodequality.com%2Fr%2FSB6fDo0UTtvh87m",
-      "published_at": "2026-11-20T01:36:19.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1066996-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek 福利情报",
-      "source_url": "https://nodeseek.com/post-1066996-1",
-      "title": "【人找车】gemini ultra 5x，只用网页端，不用反重力",
-      "summary": "rt,个人只使用网页端，预算的话40-50左右吧，可以商量。主要是用gemini来搜索信息使用，不写代码这些，所以用不到反重力.",
-      "published_at": "2026-11-20T01:33:39.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeseek:https://nodeseek.com/post-1066995-1",
-      "source_id": "nodeseek",
-      "source_name": "NodeSeek 福利情报",
-      "source_url": "https://nodeseek.com/post-1066995-1",
-      "title": "各位CDT的大佬是什么配置",
-      "summary": "2核（vCPU）512MiB我当前的配置，有必要降到1核512吗",
-      "published_at": "2026-11-20T01:32:11.000Z",
+      "source_url": "https://nodeseek.com/post-1067350-1",
+      "title": "Gemini 学生 pro 开了美区的",
+      "summary": "Gemini学生pro开了美区的能转到日区吗",
+      "published_at": "2026-11-20T03:42:49.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -2428,13 +2307,31 @@
       "review_status": "queued"
     },
     {
-      "key": "nodeseek:https://nodeseek.com/post-1066992-1",
+      "key": "nodeseek:https://nodeseek.com/post-1067347-1",
       "source_id": "nodeseek",
       "source_name": "NodeSeek 福利情报",
-      "source_url": "https://nodeseek.com/post-1066992-1",
-      "title": "70出jcloud eco01 月付2.95o",
-      "summary": "有high01了，eco准备出掉，12月7号以后才能push，可以先给root，排不到急用的来",
-      "published_at": "2026-11-20T01:31:56.000Z",
+      "source_url": "https://nodeseek.com/post-1067347-1",
+      "title": "家人们, 千万别尝试在已有 Gemini Jio Pro 的基础上开 Gemini Ultra Bug",
+      "summary": "痛!取消了Ultra的同时把JioPro也取消了.https://cdn.nodeimage.com/i/VhHs8Ls4gBNkGWeG7XO2TYUYZT4mxUi1.webp",
+      "published_at": "2026-11-20T03:42:31.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号",
+        "内容更像资讯、问答、测评或普通软件更新"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1067346-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek 福利情报",
+      "source_url": "https://nodeseek.com/post-1067346-1",
+      "title": "【人找车】找个claude备份车",
+      "summary": "已经上了一辆车，但是为了能在断电，连不上等一些情况下有备份，期望能找个备份车，一个月估计就两三天用一下；预算：150",
+      "published_at": "2026-11-20T03:42:11.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -2445,13 +2342,132 @@
       "review_status": "queued"
     },
     {
-      "key": "nodeseek:https://nodeseek.com/post-1066990-1",
+      "key": "nodeseek:https://nodeseek.com/post-1067343-1",
       "source_id": "nodeseek",
       "source_name": "NodeSeek 福利情报",
-      "source_url": "https://nodeseek.com/post-1066990-1",
-      "title": "总价50出BageVM DE，9950x,4T年付20刀",
-      "summary": "去年黑五款，入了AKKO299套餐，用不到了出了11-27号续费，用不到了出给有需要的，包push费，有意的联系联通可以直连，北京联通延迟也就120-160ms",
-      "published_at": "2026-11-20T01:31:46.000Z",
+      "source_url": "https://nodeseek.com/post-1067343-1",
+      "title": "TQ hostyun美西三网各自精品，TRI同上游，太满意了",
+      "summary": "终于有可以长期用的主力机器了朋友友情出了我两台（一模一样的，邻居）第一台开了BBR和IPv6，BBR开的有点过猛了，实际上不开BBR基本上我自己测速也能跑到400左右，不知道是不是受BBR影响，它的去程有点慢，不开反而更好。虽然它有IPv6，但是IPv6是完全没有优化的，晚上基本上也是直接完蛋，最多当个出口和备用。",
+      "published_at": "2026-11-20T03:40:58.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1067341-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek 福利情报",
+      "source_url": "https://nodeseek.com/post-1067341-1",
+      "title": "【人找车】gemini拼车 只用反重力做短剧方面的",
+      "summary": "rt，有一个pro不够用",
+      "published_at": "2026-11-20T03:40:15.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1067340-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek 福利情报",
+      "source_url": "https://nodeseek.com/post-1067340-1",
+      "title": "現在macmini這麽貴是不是都在搞claude的海外搭建",
+      "summary": "現在macmini這麽貴是不是都在搞claude的海外搭建這個事情，這玩意有人瞭解嗎賺錢麽，放到海外難道就不封號了嗎，看到淘寶上面好多賣這種的，到底是中轉站還是這種實體機器在外面的",
+      "published_at": "2026-11-20T03:40:05.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1067338-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek 福利情报",
+      "source_url": "https://nodeseek.com/post-1067338-1",
+      "title": "卡台",
+      "summary": "广东的天气的天气冷了热一下，热了冷一下@bosky#1我不就发下日常",
+      "published_at": "2026-11-20T03:39:15.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1067336-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek 福利情报",
+      "source_url": "https://nodeseek.com/post-1067336-1",
+      "title": "[NQ+TQ]Datawave SG legendvps替代品",
+      "summary": "💻基本信息++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 硬件质量体检报告： 94.118.*.* https://github.com/xykt/HardwareQuality[",
+      "published_at": "2026-11-20T03:38:15.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1067335-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek 福利情报",
+      "source_url": "https://nodeseek.com/post-1067335-1",
+      "title": "这同一招还能用两次啊",
+      "summary": "",
+      "published_at": "2026-11-20T03:38:13.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1067334-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek 福利情报",
+      "source_url": "https://nodeseek.com/post-1067334-1",
+      "title": "求推荐洛杉矶落地机",
+      "summary": "rt，机子国际互联尚可，稳定性优秀，价格合理即可，感谢大佬们",
+      "published_at": "2026-11-20T03:36:46.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeseek:https://nodeseek.com/post-1067333-1",
+      "source_id": "nodeseek",
+      "source_name": "NodeSeek 福利情报",
+      "source_url": "https://nodeseek.com/post-1067333-1",
+      "title": "剩余价值出Wawo HK-Simple-1G-SE-2G-53",
+      "summary": "VPS剩余价值详情项目数值處理器1vcpu記憶體1024M磁盤10GSSD流量3TB端口3000MbpsIPipv4（隨機IP）IPipv6（香港IP）续费金额158.00CNY·年付交易日期2026-11-20到期日期2027-10-17剩余天数331天/365天(90.7%)剩余价值¥143.28NQ+TQht",
+      "published_at": "2026-11-20T03:36:46.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -2466,8 +2482,8 @@
       "source_id": "deepflood",
       "source_name": "DeepFlood AI 与实用资源",
       "source_url": "https://deepflood.com/post-39343-1",
-      "title": "11月20日早间新闻精选",
-      "summary": "1、11月19日下午，国家主席习近平在深圳同俄罗斯总统普京、美国总统特朗普举行中俄美元首会晤。三国元首围绕“维护世界和平，促进大国关系战略稳定”主题进行深入讨论。习近平指出，中俄美三国最高领导人有史以来首次聚首，具有开创性意义。会后，三国发表《中俄美元首和平宣言》。2、11月19日下午，国家主席习近平在深圳会见来华",
+      "title": "11月20日资本市场大事提醒",
+      "summary": "①今日暂无新股申购。②2026北京国际消费电子技术博览会将于11月20日至22日举办。③博鳌乐城第二届全球创新药械博览会暨第二届海南博鳌乐城国际创新药械技术大会将于11月20日至21日举办。④2026虹桥国际科技周将于11月20日至22日举行。⑤欧盟-英国峰会将于11月20日在布鲁塞尔举行。⑥恒生指数：将于11月2",
       "published_at": "2026-11-20T01:08:05.000Z",
       "expires_at": null,
       "relevance_score": 0,
@@ -2615,13 +2631,134 @@
       "review_status": "queued"
     },
     {
-      "key": "deepflood:https://deepflood.com/post-39312-1",
-      "source_id": "deepflood",
-      "source_name": "DeepFlood AI 与实用资源",
-      "source_url": "https://deepflood.com/post-39312-1",
-      "title": "11月16日资本市场大事提醒",
-      "summary": "①今日暂无新股申购。②国新办就国民经济运行情况举行新闻发布会。③国家统计局公布70个大中城市住宅销售价格月度报告。④美联储生产力与就业工作组将于11月16日在旧金山湾区就人工智能举行现场听证会。⑤中国国际金融论坛·香港峰会将于11月16日召开。⑥香港海运周2026开幕式暨2026世界航商大会主论坛将于11月16日举",
-      "published_at": "2026-11-16T01:41:31.000Z",
+      "key": "nodeloc:https://nodeloc.com/t/topic/118612",
+      "source_id": "nodeloc",
+      "source_name": "NodeLoc 中文羊毛与 VPS",
+      "source_url": "https://nodeloc.com/t/topic/118612",
+      "title": "B 端系统全流程测试，AI 到底能落地到哪一步？求大佬分享",
+      "summary": "最近在做 B 端系统的测试提效，想请教下 AI 在这块到底能落地到什么程度。有没有全流程跑通过的大佬来分享下 现在的困惑： 全流程（需求 → 用例 → 执行 → 回归）真能串起来吗？还是只能做单点提效？ B 端这种重业务规则的系统，AI 生成的用例质量怎么评估？有没有量化指标？ 落地成本（prompt 工程、数据准备、维护）和收益怎么算账？ 有没有实际跑通的团队，愿意分享下工具链和踩过的坑？ 对于固有后台包含流程的系统 一般抽离技能包按什么纬度抽离比较好（即流程/需求变更后最小改动量可接着跑全流程） 不求全套方案，单点经验也行。先感谢大佬解惑 1 个帖子 - 1 位参与者 阅读完整话题",
+      "published_at": "2026-11-20T03:43:02.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号",
+        "内容更像资讯、问答、测评或普通软件更新"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeloc:https://nodeloc.com/t/topic/118611",
+      "source_id": "nodeloc",
+      "source_name": "NodeLoc 中文羊毛与 VPS",
+      "source_url": "https://nodeloc.com/t/topic/118611",
+      "title": "codex越来越傻了，尤其那个6.2 sol",
+      "summary": "让做东非得干西，干了东还自己额外添加需求，我都服了，跟个逆子一样，还是严肃退回6.1了 1 个帖子 - 1 位参与者 阅读完整话题",
+      "published_at": "2026-11-20T03:34:12.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeloc:https://nodeloc.com/t/topic/118607",
+      "source_id": "nodeloc",
+      "source_name": "NodeLoc 中文羊毛与 VPS",
+      "source_url": "https://nodeloc.com/t/topic/118607",
+      "title": "Earn $1,000 plus $300 per day using GPT",
+      "summary": "Access: Telegram: Launch @xingchi66bot 1 个帖子 - 1 位参与者 阅读完整话题",
+      "published_at": "2026-11-20T03:17:38.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeloc:https://nodeloc.com/t/topic/118605",
+      "source_id": "nodeloc",
+      "source_name": "NodeLoc 中文羊毛与 VPS",
+      "source_url": "https://nodeloc.com/t/topic/118605",
+      "title": "想问下大佬az100是不是只能开机器，不能用api key",
+      "summary": "最近搞了几个az100，都是100刀的学生认证年卡那种， 据说用不api key，要200刀的那种绑卡的才行。 有没有大佬知道的。 1 个帖子 - 1 位参与者 阅读完整话题",
+      "published_at": "2026-11-20T03:10:49.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeloc:https://nodeloc.com/t/topic/118604",
+      "source_id": "nodeloc",
+      "source_name": "NodeLoc 中文羊毛与 VPS",
+      "source_url": "https://nodeloc.com/t/topic/118604",
+      "title": "PHP 严重安全漏洞修复，宝塔已同步更新",
+      "summary": "11 月 19 日，PHP 官方发布安全更新，修复了 7 个严重漏洞及 4 个高危漏洞。 其中 7 个严重漏洞的 CVSS 4.0 评分均为 9.2，部分漏洞在特定条件下可能导致远程代码执行，建议正在运行 PHP 网站的用户及时检查。 目前宝塔已同步以下安全修复版本： PHP 8.2 → 8.2.36 PHP 8.3 → 8.3.37 PHP 8.4 → 8.4.28 PHP 8.5 → 8.5.13 宝塔用户可以直接进入「软件商店」，刷新软件列表后更新对应的 PHP，无需先升级面板。 升级前请备份相关数据及配置，更新后确认 PHP 服务、扩展和网站运行正常。 关于老版本 PHP 我们也注意到有不少用户还在运行 PHP 7.x、8.",
+      "published_at": "2026-11-20T03:07:15.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号",
+        "内容更像资讯、问答、测评或普通软件更新"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeloc:https://nodeloc.com/t/topic/118601",
+      "source_id": "nodeloc",
+      "source_name": "NodeLoc 中文羊毛与 VPS",
+      "source_url": "https://nodeloc.com/t/topic/118601",
+      "title": "网站好久换了ip了呢？以前是cf的。快多了",
+      "summary": "网站好久换了ip了呢？以前是cf的。最近没有注意到，换到hk非cfip了。 1 个帖子 - 1 位参与者 阅读完整话题",
+      "published_at": "2026-11-20T02:57:24.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeloc:https://nodeloc.com/t/topic/118591",
+      "source_id": "nodeloc",
+      "source_name": "NodeLoc 中文羊毛与 VPS",
+      "source_url": "https://nodeloc.com/t/topic/118591",
+      "title": "L站青春版邀请码一个，22号周日开奖",
+      "summary": "老规矩，购买奖券参与抽奖 感谢回帖支持 开奖就发送邀请码，24小时有效，请及时上线注册，过期不候 屡次参与，累计500能量不中，下次生成就送 不参与争论，那边是个摸鱼的好地方 4 个帖子 - 3 位参与者 阅读完整话题",
+      "published_at": "2026-11-20T02:34:04.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "nodeloc:https://nodeloc.com/t/topic/118573",
+      "source_id": "nodeloc",
+      "source_name": "NodeLoc 中文羊毛与 VPS",
+      "source_url": "https://nodeloc.com/t/topic/118573",
+      "title": "邀请十个好友领3个月gemini pro",
+      "summary": "邀请十个好友领3个月gemini pro aff： Telegram: Launch @pixel_verification_bot 走aff双方都算一个头，自测吧 1 个帖子 - 1 位参与者 阅读完整话题",
+      "published_at": "2026-11-20T01:51:19.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -2637,7 +2774,7 @@
       "source_name": "NodeLoc 中文羊毛与 VPS",
       "source_url": "https://nodeloc.com/t/topic/118567",
       "title": "ai公益站收集数据训练模型，你还会继续使用吗",
-      "summary": "最近注册支持6.1 ，6.2 sol 公益站，今天发了公告收集数据 我纠结要不要继续使用，大家都是怎么样想的，会继续使用? 11 个帖子 - 6 位参与者 阅读完整话题",
+      "summary": "最近注册支持6.1 ，6.2 sol 公益站，今天发了公告收集数据 我纠结要不要继续使用，大家都是怎么样想的，会继续使用? 26 个帖子 - 15 位参与者 阅读完整话题",
       "published_at": "2026-11-20T01:24:16.000Z",
       "expires_at": null,
       "relevance_score": 0,
@@ -2689,7 +2826,7 @@
       "source_name": "NodeLoc 中文羊毛与 VPS",
       "source_url": "https://nodeloc.com/t/topic/118559",
       "title": "天塌了、被Muse推荐的Vps服务器网站炸骗了",
-      "summary": "天塌了，求助各位大佬！ 本来想租个 VPS 测个小项目，Muse 给我推荐了 CheapServ 的 VPS-8，新加坡月付 $15.39。结果充了 $32 显示已支付、未入账，又充了 $25 还是已支付、未入账，两笔一共 $57 全卡住了。 想去发工单，结果要先有充值或服务器才能发，充值又不回调，死循环了。去网上搜了一下，CheapServ 风评很差，Trustpilot 上全是说炸骗的，有人也是充了 25 USDT 就没下文了。 现在钱也没了，服务器也没拿到，各位友友遇到这种情况该怎么办？还能追回来吗？ 3 个帖子 - 3 位参与者 阅读完整话题",
+      "summary": "天塌了，求助各位大佬！ 本来想租个 VPS 测个小项目，Muse 给我推荐了 CheapServ 的 VPS-8，新加坡月付 $15.39。结果充了 $32 显示已支付、未入账，又充了 $25 还是已支付、未入账，两笔一共 $57 全卡住了。 想去发工单，结果要先有充值或服务器才能发，充值又不回调，死循环了。去网上搜了一下，CheapServ 风评很差，Trustpilot 上全是说炸骗的，有人也是充了 25 USDT 就没下文了。 现在钱也没了，服务器也没拿到，各位友友遇到这种情况该怎么办？还能追回来吗？ 8 个帖子 - 8 位参与者 阅读完整话题",
       "published_at": "2026-11-19T22:38:31.000Z",
       "expires_at": null,
       "relevance_score": 0,
@@ -2776,7 +2913,7 @@
       "source_name": "NodeLoc 中文羊毛与 VPS",
       "source_url": "https://nodeloc.com/t/topic/118537",
       "title": "《由于服务器负载过大，暂时向所有人都显示未登录用户可以看到的内容。》",
-      "summary": "啥意思啊 11 个帖子 - 11 位参与者 阅读完整话题",
+      "summary": "啥意思啊 12 个帖子 - 12 位参与者 阅读完整话题",
       "published_at": "2026-11-19T13:43:54.000Z",
       "expires_at": null,
       "relevance_score": 0,
@@ -2812,197 +2949,6 @@
       "title": "[UlziX TG自动转发] 香港23区IP再次被封及后续策略调整",
       "summary": "香港23区IP再次被封及后续策略调整 香港23区（质量区）IP再次被封，原母鸡5个IP已全部用尽。目前新AMD机器已开通（原香港23区为E5），不出意外预计今晚或明天完成原机器数据传送，并按照惯例启动AI审查。 近期多次大型会议期间的网络管控导致我们IP资源受损严重。经决策，我们将调整策略，考虑在大型国家会议或类似本次APEC峰会期间实施临时禁网等措施，以降低IP被连坐的风险。具体方案确定后另行公告。 同步自 Telegram 频道 UlziX 云服务官方通知频道 3 个帖子 - 3 位参与者 阅读完整话题",
       "published_at": "2026-11-19T12:50:58.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeloc:https://nodeloc.com/t/topic/118528",
-      "source_id": "nodeloc",
-      "source_name": "NodeLoc 中文羊毛与 VPS",
-      "source_url": "https://nodeloc.com/t/topic/118528",
-      "title": "《那些年，我们一起揍过的修仙者》",
-      "summary": "剧情简介 修仙界炸锅了!没有灵根的凡人林小鹿，偏要提刀闯仙门。他带妹妹入峨眉，不修灵力只练武，拳碎石、刀斩敌，还建了个”以德服人帮\"。别人笑他痴心妄想，他用汗水和拳头证明，没有天赋，也能逆天改命!黄天蜃楼，东瀛来犯，他一人一刀护神州。第一季，看林小鹿如何打成修仙界第一祸害!热血、爆笑、逆袭、守护，全程高能! 1 个帖子 - 1 位参与者 阅读完整话题",
-      "published_at": "2026-11-19T12:33:34.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeloc:https://nodeloc.com/t/topic/118527",
-      "source_id": "nodeloc",
-      "source_name": "NodeLoc 中文羊毛与 VPS",
-      "source_url": "https://nodeloc.com/t/topic/118527",
-      "title": "DeepSeek是怎么做到胡言乱语的",
-      "summary": "RT，我随便埋了个坑，就一本正经的答错了（自己都没发现），这让我对其中的技术细节很是怀疑 4 个帖子 - 4 位参与者 阅读完整话题",
-      "published_at": "2026-11-19T12:33:28.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号",
-        "内容更像资讯、问答、测评或普通软件更新"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeloc:https://nodeloc.com/t/topic/118525",
-      "source_id": "nodeloc",
-      "source_name": "NodeLoc 中文羊毛与 VPS",
-      "source_url": "https://nodeloc.com/t/topic/118525",
-      "title": "《天下无拐》",
-      "summary": "剧情简介 被拐十年的顾清辞被困闭塞山村，生下一双儿女。她强忍折磨，悄悄教孩子识字、辨出路，藏好能证明身份的信物。哥哥顾青天为寻出山道路，深夜独自闯深山做标记;妹妹顾挽云陪伴母亲，偷偷传递消息。兄妹二人甘愿以身涉险掩护母亲逃向牢笼。儿女在逃亡中偶遇寻妹多年的刘启被救，后治安局凭借刘启及顾清辞母子三人收集的全部线索，端掉山村人贩窝点，恶徒尽数伏法。苦难里生出相守的勇气，正义终会抵达每一个破碎的家庭。 1 个帖子 - 1 位参与者 阅读完整话题",
-      "published_at": "2026-11-19T12:30:20.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeloc:https://nodeloc.com/t/topic/118524",
-      "source_id": "nodeloc",
-      "source_name": "NodeLoc 中文羊毛与 VPS",
-      "source_url": "https://nodeloc.com/t/topic/118524",
-      "title": "华为云-你们积分兑换了吗?",
-      "summary": "华为开发者空间好像要升级几天 不知道升级以后还没有卷呢, 大家的积分都兑换了吗? 我已经全部都兑换了 4 个帖子 - 4 位参与者 阅读完整话题",
-      "published_at": "2026-11-19T12:29:32.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeloc:https://nodeloc.com/t/topic/118523",
-      "source_id": "nodeloc",
-      "source_name": "NodeLoc 中文羊毛与 VPS",
-      "source_url": "https://nodeloc.com/t/topic/118523",
-      "title": "关于“Ai短剧”节点",
-      "summary": "分享三观正且有意思的AI短剧 1 个帖子 - 1 位参与者 阅读完整话题",
-      "published_at": "2026-11-19T12:28:16.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeloc:https://nodeloc.com/t/topic/118522",
-      "source_id": "nodeloc",
-      "source_name": "NodeLoc 中文羊毛与 VPS",
-      "source_url": "https://nodeloc.com/t/topic/118522",
-      "title": "wp是不是出现漏洞了？",
-      "summary": "好几个空壳站都被入侵了 3 个帖子 - 3 位参与者 阅读完整话题",
-      "published_at": "2026-11-19T12:25:01.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号",
-        "内容更像资讯、问答、测评或普通软件更新"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeloc:https://nodeloc.com/t/topic/118517",
-      "source_id": "nodeloc",
-      "source_name": "NodeLoc 中文羊毛与 VPS",
-      "source_url": "https://nodeloc.com/t/topic/118517",
-      "title": "PHP 今晚有严重安全更新，宝塔已经安排值守",
-      "summary": "PHP 官方预告，今晚北京时间 22:00–22:30 将发布新一轮安全更新，涉及所有受支持的 PHP 版本，最高严重等级为 CRITICAL。 不过大家也不用过度恐慌，官方表示严重漏洞需要在非默认配置或特殊环境下才会触发，具体情况还要等正式公告。 宝塔今晚已经安排技术人员值守，等 PHP 官方发布后就会着手打包、测试，确认没问题后尽快推送面板更新。 这次提前跟大家同步一下进度，后续更新完成也会及时通知。 官方公告： php.net Upcoming Critical PHP Security Release - PHP: News Archive - 2026 The PHP security team announces upc",
-      "published_at": "2026-11-19T11:39:29.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号",
-        "内容更像资讯、问答、测评或普通软件更新"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeloc:https://nodeloc.com/t/topic/118516",
-      "source_id": "nodeloc",
-      "source_name": "NodeLoc 中文羊毛与 VPS",
-      "source_url": "https://nodeloc.com/t/topic/118516",
-      "title": "好女儿(2026)【6集全】【4K.HDR10】【高码率】【外挂简英双语字幕】【惊悚/犯罪】",
-      "summary": "导演: 斯戴芙·格林 编剧: 卡琳·斯劳特 主演: 萝丝·拜恩 / 梅格翰·法伊 / 布莱丹·格里森 / 奥黛丽·格蕾丝·马歇尔 / Shayna Benardo / 李·珀金斯 / Ian Elrick / 瑞安·安东尼·霍尔库姆 / 雷·潘莎基 / 斯科特·凯西克斯 / Dave Z. Martin / James Donadio / Heather Konowal / Tim Peek / 比尔·凯利 / 阿曼达·L·米勒 类型: 剧情 / 惊悚 / 犯罪 制片国家/地区: 美国 语言: 英语 首播: 2026-11-12(美国) 集数: 6 单集片长: 51分钟 IMDb: tt31842126 剧情简介 《好女儿》是一部悬",
-      "published_at": "2026-11-19T11:30:13.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeloc:https://nodeloc.com/t/topic/118513",
-      "source_id": "nodeloc",
-      "source_name": "NodeLoc 中文羊毛与 VPS",
-      "source_url": "https://nodeloc.com/t/topic/118513",
-      "title": "外挂抢 LABUBU被判刑",
-      "summary": "11月17日，检察日报旗下正义网披露了首例“潮玩黄牛入刑案”。上海两名利用 外挂 程序抢购泡泡 玛特 潮玩的涉案人员获刑，吴某、夏某用外挂程序群控3000多部手机抢购泡泡玛特限量款，被上海市静安区法院以非法获取计算机信息系统数据罪分别判处有期徒刑三年、缓刑四年和有期徒刑三年、缓刑三年，分别被处罚金5万元和3万元。 同一条产业链上，率先落网的“传统大牛”王某，至今仍在“另案处理”的状态中等待定性。 抢 Labubu 的技术黄牛被宣判 该案件的判决焦点，是外挂程序是否突破了平台的安全防护，而非黄牛抢购商品后加价倒卖。 据披露，法院最终认定，吴某、夏某利用外挂绕过平台风控，非法获取计算机信息系统数据，构成刑事犯罪。然庭审中，辩护方提出无罪",
-      "published_at": "2026-11-19T11:01:46.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeloc:https://nodeloc.com/t/topic/118511",
-      "source_id": "nodeloc",
-      "source_name": "NodeLoc 中文羊毛与 VPS",
-      "source_url": "https://nodeloc.com/t/topic/118511",
-      "title": "国内怎么安装codex？",
-      "summary": "兄弟们，求一个国内安装codex的教程，抖音找到的很多都要钱，来个不要钱的，让我也学习一下 25 个帖子 - 20 位参与者 阅读完整话题",
-      "published_at": "2026-11-19T10:28:55.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号",
-        "内容更像资讯、问答、测评或普通软件更新"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "nodeloc:https://nodeloc.com/t/topic/118509",
-      "source_id": "nodeloc",
-      "source_name": "NodeLoc 中文羊毛与 VPS",
-      "source_url": "https://nodeloc.com/t/topic/118509",
-      "title": "Claude跟手机模拟器",
-      "summary": "我现在用的是MuMu，但是在上面用google play给claude付款后，会弹kyc 我是机房IP，弹kyc正常，但是我想知道这个还跟手机模拟器有关系吗 2 个帖子 - 2 位参与者 阅读完整话题",
-      "published_at": "2026-11-19T10:24:19.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -3257,6 +3203,57 @@
       "review_status": "queued"
     },
     {
+      "key": "slickdeals:https://slickdeals.net/f/20308650-acer-predator-helios-neo-16-ai-16-qhd-240hz-ips-intel-ultra-9-290hx-plus-rtx-5080-32gb-ddr5-1tb-ssd-2499-99?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_id": "slickdeals",
+      "source_name": "Slickdeals Frontpage",
+      "source_url": "https://slickdeals.net/f/20308650-acer-predator-helios-neo-16-ai-16-qhd-240hz-ips-intel-ultra-9-290hx-plus-rtx-5080-32gb-ddr5-1tb-ssd-2499-99?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "title": "Micro Center: Acer Predator Laptop: 16\" QHD+ 240Hz, Ultra 9, RTX 5080, 16GB, 1TB $2100 & More (In-Store Only)",
+      "summary": "*Available In-Store Only;* In stock at all stores when posting:[list][*](NH.U46AA.001): [microcenter.com] 16\" QHD+ 240Hz IPS, Intel Ultra 9 290HX Plus, RTX 5080, 32GB DDR5, 1TB SSD -...",
+      "published_at": "2026-11-20T02:25:51.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "slickdeals:https://slickdeals.net/f/20302308-prime-29-99-soundcore-p31i-by-anker-translation-earbuds-with-real-time-adaptive-anc-various-colors?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_id": "slickdeals",
+      "source_name": "Slickdeals Frontpage",
+      "source_url": "https://slickdeals.net/f/20302308-prime-29-99-soundcore-p31i-by-anker-translation-earbuds-with-real-time-adaptive-anc-various-colors?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "title": "Soundcore P31i Adaptive Noise Cancelling Wireless Earbuds (4 colors) $30",
+      "summary": "Amazon.com has soundcore P31i by Anker Translation Earbuds with Real-Time Adaptive ANC, Real-Time Adaptive Noise Cancelling, Hi-Res Sound, Translation Earbuds, 50H Playtime, Spatial Audio, Fast...",
+      "published_at": "2026-11-20T02:22:15.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "slickdeals:https://slickdeals.net/f/20327700-disney-perks-offer-for-disney-subscriber-complete-the-holiday-challenge-earn-5-disney-gift-card?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_id": "slickdeals",
+      "source_name": "Slickdeals Frontpage",
+      "source_url": "https://slickdeals.net/f/20327700-disney-perks-offer-for-disney-subscriber-complete-the-holiday-challenge-earn-5-disney-gift-card?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "title": "Disney+ Members Perks Holiday Challenge Offer: Complete Perks, Earn a $5 Disney eGC (Complete by Jan 4, 2027)",
+      "summary": "Disney Perks For those interested Note, offer valid for active Disney+ Subscribers only. Limited quantity/while supplies last ---Quote--- The holidays are full of surprises and so are...",
+      "published_at": "2026-11-20T02:18:03.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
       "key": "producthunt:https://producthunt.com/products/verse-engine-by-ctruh",
       "source_id": "producthunt",
       "source_name": "Product Hunt",
@@ -3274,64 +3271,13 @@
       "review_status": "queued"
     },
     {
-      "key": "producthunt:https://producthunt.com/products/context-dev",
+      "key": "producthunt:https://producthunt.com/products/tabstack",
       "source_id": "producthunt",
       "source_name": "Product Hunt",
-      "source_url": "https://producthunt.com/products/context-dev",
-      "title": "Enrichable by Context.dev",
-      "summary": "<p> Open-source AI spreadsheet for data enrichment </p> <p> <a href=\"https://www.producthunt.com/products/context-dev?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1321590?app_id=339\">Link</a> </p>",
-      "published_at": "2026-11-18T11:43:41.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "producthunt:https://producthunt.com/products/play-that-back",
-      "source_id": "producthunt",
-      "source_name": "Product Hunt",
-      "source_url": "https://producthunt.com/products/play-that-back",
-      "title": "Play That Back",
-      "summary": "<p> A pro camera built for iPhone Duo </p> <p> <a href=\"https://www.producthunt.com/products/play-that-back?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1322260?app_id=339\">Link</a> </p>",
-      "published_at": "2026-11-18T23:42:14.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "producthunt:https://producthunt.com/products/ofintech-desk",
-      "source_id": "producthunt",
-      "source_name": "Product Hunt",
-      "source_url": "https://producthunt.com/products/ofintech-desk",
-      "title": "OfinTech Desk",
-      "summary": "<p> Finance AI where every figure traces to its source </p> <p> <a href=\"https://www.producthunt.com/products/ofintech-desk?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1319697?app_id=339\">Link</a> ",
-      "published_at": "2026-11-17T03:25:07.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "producthunt:https://producthunt.com/products/source-public-beta",
-      "source_id": "producthunt",
-      "source_name": "Product Hunt",
-      "source_url": "https://producthunt.com/products/source-public-beta",
-      "title": "Source",
-      "summary": "<p> The attribution data layer for your agents to drive pipeline </p> <p> <a href=\"https://www.producthunt.com/products/source-public-beta?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1319192?app_id",
-      "published_at": "2026-11-16T17:34:12.000Z",
+      "source_url": "https://producthunt.com/products/tabstack",
+      "title": "Tabstack by Mozilla",
+      "summary": "<p> Give your model the web without giving up your privacy </p> <p> <a href=\"https://www.producthunt.com/products/tabstack?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1319464?app_id=339\">Link</a> <",
+      "published_at": "2026-11-16T21:57:39.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -3359,6 +3305,23 @@
       "review_status": "queued"
     },
     {
+      "key": "producthunt:https://producthunt.com/products/play-that-back",
+      "source_id": "producthunt",
+      "source_name": "Product Hunt",
+      "source_url": "https://producthunt.com/products/play-that-back",
+      "title": "Play That Back",
+      "summary": "<p> A pro camera built for iPhone Duo </p> <p> <a href=\"https://www.producthunt.com/products/play-that-back?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1322260?app_id=339\">Link</a> </p>",
+      "published_at": "2026-11-18T23:42:14.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
       "key": "producthunt:https://producthunt.com/products/tecla-3",
       "source_id": "producthunt",
       "source_name": "Product Hunt",
@@ -3376,13 +3339,13 @@
       "review_status": "queued"
     },
     {
-      "key": "producthunt:https://producthunt.com/products/codedesign",
+      "key": "producthunt:https://producthunt.com/products/source-public-beta",
       "source_id": "producthunt",
       "source_name": "Product Hunt",
-      "source_url": "https://producthunt.com/products/codedesign",
-      "title": "CodeDesign v3",
-      "summary": "<p> Run your website and business apps from ChatGPT or Claude </p> <p> <a href=\"https://www.producthunt.com/products/codedesign?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1319789?app_id=339\">Link<",
-      "published_at": "2026-11-17T05:24:17.000Z",
+      "source_url": "https://producthunt.com/products/source-public-beta",
+      "title": "Source",
+      "summary": "<p> The attribution data layer for your agents to drive pipeline </p> <p> <a href=\"https://www.producthunt.com/products/source-public-beta?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1319192?app_id",
+      "published_at": "2026-11-16T17:34:12.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -3410,75 +3373,6 @@
       "review_status": "queued"
     },
     {
-      "key": "producthunt:https://producthunt.com/products/noteshell",
-      "source_id": "producthunt",
-      "source_name": "Product Hunt",
-      "source_url": "https://producthunt.com/products/noteshell",
-      "title": "Noteshell",
-      "summary": "<p> AI teammates that build and run your workspace </p> <p> <a href=\"https://www.producthunt.com/products/noteshell?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1321837?app_id=339\">Link</a> </p>",
-      "published_at": "2026-11-18T15:28:16.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "producthunt:https://producthunt.com/products/tooljet",
-      "source_id": "producthunt",
-      "source_name": "Product Hunt",
-      "source_url": "https://producthunt.com/products/tooljet",
-      "title": "ToolJet",
-      "summary": "<p> Vibe-coded business apps that pass the security review </p> <p> <a href=\"https://www.producthunt.com/products/tooljet?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1322382?app_id=339\">Link</a> </",
-      "published_at": "2026-11-19T03:07:11.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号",
-        "内容更像资讯、问答、测评或普通软件更新"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "producthunt:https://producthunt.com/products/tabstack",
-      "source_id": "producthunt",
-      "source_name": "Product Hunt",
-      "source_url": "https://producthunt.com/products/tabstack",
-      "title": "Tabstack by Mozilla",
-      "summary": "<p> Give your model the web without giving up your privacy </p> <p> <a href=\"https://www.producthunt.com/products/tabstack?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1319464?app_id=339\">Link</a> <",
-      "published_at": "2026-11-16T21:57:39.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "producthunt:https://producthunt.com/products/every-signal",
-      "source_id": "producthunt",
-      "source_name": "Product Hunt",
-      "source_url": "https://producthunt.com/products/every-signal",
-      "title": "Every Signal",
-      "summary": "<p> Diligence on any company in an hour, every number sourced </p> <p> <a href=\"https://www.producthunt.com/products/every-signal?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1316668?app_id=339\">Lin",
-      "published_at": "2026-11-14T17:43:52.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
       "key": "producthunt:https://producthunt.com/products/room-ai-2",
       "source_id": "producthunt",
       "source_name": "Product Hunt",
@@ -3496,13 +3390,30 @@
       "review_status": "queued"
     },
     {
-      "key": "producthunt:https://producthunt.com/products/upsolve-ai",
+      "key": "producthunt:https://producthunt.com/products/codedesign",
       "source_id": "producthunt",
       "source_name": "Product Hunt",
-      "source_url": "https://producthunt.com/products/upsolve-ai",
-      "title": "Upsolve MCP Connections",
-      "summary": "<p> Plug Notion, Linear and more into your data agent </p> <p> <a href=\"https://www.producthunt.com/products/upsolve-ai?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1322197?app_id=339\">Link</a> </p>",
-      "published_at": "2026-11-18T21:56:08.000Z",
+      "source_url": "https://producthunt.com/products/codedesign",
+      "title": "CodeDesign v3",
+      "summary": "<p> Run your website and business apps from ChatGPT or Claude </p> <p> <a href=\"https://www.producthunt.com/products/codedesign?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1319789?app_id=339\">Link<",
+      "published_at": "2026-11-17T05:24:17.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "producthunt:https://producthunt.com/products/ofintech-desk",
+      "source_id": "producthunt",
+      "source_name": "Product Hunt",
+      "source_url": "https://producthunt.com/products/ofintech-desk",
+      "title": "OfinTech Desk",
+      "summary": "<p> Finance AI where every figure traces to its source </p> <p> <a href=\"https://www.producthunt.com/products/ofintech-desk?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1319697?app_id=339\">Link</a> ",
+      "published_at": "2026-11-17T03:25:07.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -3547,13 +3458,48 @@
       "review_status": "queued"
     },
     {
-      "key": "producthunt:https://producthunt.com/products/heygen",
+      "key": "producthunt:https://producthunt.com/products/tooljet",
       "source_id": "producthunt",
       "source_name": "Product Hunt",
-      "source_url": "https://producthunt.com/products/heygen",
-      "title": "HeyGen Avatar 6",
-      "summary": "<p> AI Avatar Model That Looks Like You </p> <p> <a href=\"https://www.producthunt.com/products/heygen?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1321617?app_id=339\">Link</a> </p>",
-      "published_at": "2026-11-18T12:03:30.000Z",
+      "source_url": "https://producthunt.com/products/tooljet",
+      "title": "ToolJet",
+      "summary": "<p> Vibe-coded business apps that pass the security review </p> <p> <a href=\"https://www.producthunt.com/products/tooljet?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1322382?app_id=339\">Link</a> </",
+      "published_at": "2026-11-19T03:07:11.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号",
+        "内容更像资讯、问答、测评或普通软件更新"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "producthunt:https://producthunt.com/products/every-signal",
+      "source_id": "producthunt",
+      "source_name": "Product Hunt",
+      "source_url": "https://producthunt.com/products/every-signal",
+      "title": "Every Signal",
+      "summary": "<p> Diligence on any company in an hour, every number sourced </p> <p> <a href=\"https://www.producthunt.com/products/every-signal?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1316668?app_id=339\">Lin",
+      "published_at": "2026-11-14T17:43:52.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "producthunt:https://producthunt.com/products/rezora-io-ai-calling-assistant",
+      "source_id": "producthunt",
+      "source_name": "Product Hunt",
+      "source_url": "https://producthunt.com/products/rezora-io-ai-calling-assistant",
+      "title": "Rezora IO",
+      "summary": "<p> Shopify for AI voice agents: live in 10 minutes </p> <p> <a href=\"https://www.producthunt.com/products/rezora-io-ai-calling-assistant?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1322251?app_id=",
+      "published_at": "2026-11-18T23:23:32.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -3581,13 +3527,13 @@
       "review_status": "queued"
     },
     {
-      "key": "producthunt:https://producthunt.com/products/nuko",
+      "key": "producthunt:https://producthunt.com/products/context-dev",
       "source_id": "producthunt",
       "source_name": "Product Hunt",
-      "source_url": "https://producthunt.com/products/nuko",
-      "title": "Nuko",
-      "summary": "<p> Motion design in your browser </p> <p> <a href=\"https://www.producthunt.com/products/nuko?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1322401?app_id=339\">Link</a> </p>",
-      "published_at": "2026-11-19T03:34:35.000Z",
+      "source_url": "https://producthunt.com/products/context-dev",
+      "title": "Enrichable by Context.dev",
+      "summary": "<p> Open-source AI spreadsheet for data enrichment </p> <p> <a href=\"https://www.producthunt.com/products/context-dev?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1321590?app_id=339\">Link</a> </p>",
+      "published_at": "2026-11-18T11:43:41.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -3598,13 +3544,64 @@
       "review_status": "queued"
     },
     {
-      "key": "producthunt:https://producthunt.com/products/rezora-io-ai-calling-assistant",
+      "key": "producthunt:https://producthunt.com/products/heygen",
       "source_id": "producthunt",
       "source_name": "Product Hunt",
-      "source_url": "https://producthunt.com/products/rezora-io-ai-calling-assistant",
-      "title": "Rezora IO",
-      "summary": "<p> Shopify for AI voice agents: live in 10 minutes </p> <p> <a href=\"https://www.producthunt.com/products/rezora-io-ai-calling-assistant?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1322251?app_id=",
-      "published_at": "2026-11-18T23:23:32.000Z",
+      "source_url": "https://producthunt.com/products/heygen",
+      "title": "HeyGen Avatar 6",
+      "summary": "<p> AI Avatar Model That Looks Like You </p> <p> <a href=\"https://www.producthunt.com/products/heygen?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1321617?app_id=339\">Link</a> </p>",
+      "published_at": "2026-11-18T12:03:30.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "producthunt:https://producthunt.com/products/noteshell",
+      "source_id": "producthunt",
+      "source_name": "Product Hunt",
+      "source_url": "https://producthunt.com/products/noteshell",
+      "title": "Noteshell",
+      "summary": "<p> AI teammates that build and run your workspace </p> <p> <a href=\"https://www.producthunt.com/products/noteshell?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1321837?app_id=339\">Link</a> </p>",
+      "published_at": "2026-11-18T15:28:16.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "producthunt:https://producthunt.com/products/upsolve-ai",
+      "source_id": "producthunt",
+      "source_name": "Product Hunt",
+      "source_url": "https://producthunt.com/products/upsolve-ai",
+      "title": "Upsolve MCP Connections",
+      "summary": "<p> Plug Notion, Linear and more into your data agent </p> <p> <a href=\"https://www.producthunt.com/products/upsolve-ai?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1322197?app_id=339\">Link</a> </p>",
+      "published_at": "2026-11-18T21:56:08.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "producthunt:https://producthunt.com/products/nuko",
+      "source_id": "producthunt",
+      "source_name": "Product Hunt",
+      "source_url": "https://producthunt.com/products/nuko",
+      "title": "Nuko",
+      "summary": "<p> Motion design in your browser </p> <p> <a href=\"https://www.producthunt.com/products/nuko?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1322401?app_id=339\">Link</a> </p>",
+      "published_at": "2026-11-19T03:34:35.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -3649,23 +3646,6 @@
       "review_status": "queued"
     },
     {
-      "key": "producthunt:https://producthunt.com/products/soreqen-code",
-      "source_id": "producthunt",
-      "source_name": "Product Hunt",
-      "source_url": "https://producthunt.com/products/soreqen-code",
-      "title": "SoreQen Code",
-      "summary": "<p> The coding agent that checks its own work </p> <p> <a href=\"https://www.producthunt.com/products/soreqen-code?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1321045?app_id=339\">Link</a> </p>",
-      "published_at": "2026-11-18T03:14:00.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
       "key": "producthunt:https://producthunt.com/products/replayio",
       "source_id": "producthunt",
       "source_name": "Product Hunt",
@@ -3700,23 +3680,6 @@
       "review_status": "queued"
     },
     {
-      "key": "producthunt:https://producthunt.com/products/qwen3",
-      "source_id": "producthunt",
-      "source_name": "Product Hunt",
-      "source_url": "https://producthunt.com/products/qwen3",
-      "title": "Qwen4-Max",
-      "summary": "<p> Qwen's new flagship for long-running agent work </p> <p> <a href=\"https://www.producthunt.com/products/qwen3?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1318799?app_id=339\">Link</a> </p>",
-      "published_at": "2026-11-16T12:32:32.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
       "key": "producthunt:https://producthunt.com/products/lepoly",
       "source_id": "producthunt",
       "source_name": "Product Hunt",
@@ -3741,23 +3704,6 @@
       "title": "Introzy",
       "summary": "<p> Track referrals from intro to commission </p> <p> <a href=\"https://www.producthunt.com/products/introzy?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1320759?app_id=339\">Link</a> </p>",
       "published_at": "2026-11-17T19:39:36.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "producthunt:https://producthunt.com/products/kadeep-ai",
-      "source_id": "producthunt",
-      "source_name": "Product Hunt",
-      "source_url": "https://producthunt.com/products/kadeep-ai",
-      "title": "KaDeep AI",
-      "summary": "<p> Ready to ship? One agent tests, translates and audits it </p> <p> <a href=\"https://www.producthunt.com/products/kadeep-ai?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1319952?app_id=339\">Link</a",
-      "published_at": "2026-11-17T08:00:01.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -3836,13 +3782,13 @@
       "review_status": "queued"
     },
     {
-      "key": "producthunt:https://producthunt.com/products/kwatch",
+      "key": "producthunt:https://producthunt.com/products/s-space",
       "source_id": "producthunt",
       "source_name": "Product Hunt",
-      "source_url": "https://producthunt.com/products/kwatch",
-      "title": "kwatch",
-      "summary": "<p> Kubernetes alerts that name the root cause </p> <p> <a href=\"https://www.producthunt.com/products/kwatch?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1320256?app_id=339\">Link</a> </p>",
-      "published_at": "2026-11-17T12:05:53.000Z",
+      "source_url": "https://producthunt.com/products/s-space",
+      "title": "S.Space",
+      "summary": "<p> Your team and everyone's AI agents, in one workspace </p> <p> <a href=\"https://www.producthunt.com/products/s-space?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1317562?app_id=339\">Link</a> </p>",
+      "published_at": "2026-11-15T13:26:16.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -3853,13 +3799,13 @@
       "review_status": "queued"
     },
     {
-      "key": "producthunt:https://producthunt.com/products/saas-toolkit-mcp",
+      "key": "producthunt:https://producthunt.com/products/soreqen-code",
       "source_id": "producthunt",
       "source_name": "Product Hunt",
-      "source_url": "https://producthunt.com/products/saas-toolkit-mcp",
-      "title": "SaaS Toolkit MCP",
-      "summary": "<p> An SDR and CMO on your site 24/7, for one JavaScript snippet </p> <p> <a href=\"https://www.producthunt.com/products/saas-toolkit-mcp?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1315797?app_id=3",
-      "published_at": "2026-11-13T22:25:43.000Z",
+      "source_url": "https://producthunt.com/products/soreqen-code",
+      "title": "SoreQen Code",
+      "summary": "<p> The coding agent that checks its own work </p> <p> <a href=\"https://www.producthunt.com/products/soreqen-code?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1321045?app_id=339\">Link</a> </p>",
+      "published_at": "2026-11-18T03:14:00.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -3870,13 +3816,48 @@
       "review_status": "queued"
     },
     {
-      "key": "producthunt:https://producthunt.com/products/beacon-26",
+      "key": "producthunt:https://producthunt.com/products/icons-2",
       "source_id": "producthunt",
       "source_name": "Product Hunt",
-      "source_url": "https://producthunt.com/products/beacon-26",
-      "title": "Beacon",
-      "summary": "<p> Give your AI agent the browser you're already signed into </p> <p> <a href=\"https://www.producthunt.com/products/beacon-26?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1320163?app_id=339\">Link</",
-      "published_at": "2026-11-17T10:45:51.000Z",
+      "source_url": "https://producthunt.com/products/icons-2",
+      "title": "ICONS",
+      "summary": "<p> Where brands book creators, or license their AI likeness </p> <p> <a href=\"https://www.producthunt.com/products/icons-2?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1316666?app_id=339\">Link</a> ",
+      "published_at": "2026-11-14T17:43:08.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "producthunt:https://producthunt.com/products/diagramly-2",
+      "source_id": "producthunt",
+      "source_name": "Product Hunt",
+      "source_url": "https://producthunt.com/products/diagramly-2",
+      "title": "Diagramly 2.0",
+      "summary": "<p> Type a diagram. Get it reviewed. Present it as the deck. </p> <p> <a href=\"https://www.producthunt.com/products/diagramly-2?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1320941?app_id=339\">Link<",
+      "published_at": "2026-11-17T23:51:50.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号",
+        "内容更像资讯、问答、测评或普通软件更新"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "producthunt:https://producthunt.com/products/qwen3",
+      "source_id": "producthunt",
+      "source_name": "Product Hunt",
+      "source_url": "https://producthunt.com/products/qwen3",
+      "title": "Qwen4-Max",
+      "summary": "<p> Qwen's new flagship for long-running agent work </p> <p> <a href=\"https://www.producthunt.com/products/qwen3?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1318799?app_id=339\">Link</a> </p>",
+      "published_at": "2026-11-16T12:32:32.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -3894,41 +3875,6 @@
       "title": "[Epic Games Mobile] (Game) Lonesome Village 🏷️ Until Nov 26 16:00 UTC # 📝 Transactions Page (To see if you claimed or not) # ⏩ Instant Checkout (Login to Epic Games first to use)",
       "summary": "[Epic Games Mobile] (Game) Lonesome Village 🏷️ Until Nov 26 16:00 UTC # 📝 Transactions Page (To see if you claimed or not) # ⏩ Instant Checkout (Login to Epic Games first to use) 🎮 CLAIM ALL: Android & iOS 🎮 Individual Checkout: Android ／ iOS # 🎮 Storepages: Android ／ iOS 💬 View Post on Reddit for comments Join |",
       "published_at": "2026-11-19T16:10:27.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "telegram_cn_deals:https://t.me/zaihuapd/45227",
-      "source_id": "telegram_cn_deals",
-      "source_name": "Telegram 中文科技与羊毛",
-      "source_url": "https://t.me/zaihuapd/45227",
-      "title": "🤖 Anthropic 拟下周启动 IPO 路演，计划 11 月 16 日当周挂牌 知情人士透露，Anthropic 计划下周启动 IPO 路演，向潜在投资者展开推介，并拟于 11 月 16 日当周、美国感恩节假期之前挂牌上市。 此次路演发生在科技股经历两周剧烈波动之后。市场此前预计该公司将以 1.5 万亿美元估值募资超 800 亿美元，但近期对 AI 股",
-      "summary": "🤖 Anthropic 拟下周启动 IPO 路演，计划 11 月 16 日当周挂牌 知情人士透露，Anthropic 计划下周启动 IPO 路演，向潜在投资者展开推介，并拟于 11 月 16 日当周、美国感恩节假期之前挂牌上市。 此次路演发生在科技股经历两周剧烈波动之后。市场此前预计该公司将以 1.5 万亿美元估值募资超 800 亿美元，但近期对 AI 股票及支出的担忧，可能促使其寻求更低估值。 The Information | 新浪网 🌸 科技圈· 茶馆 · 投稿",
-      "published_at": "2026-11-19T04:15:01.000Z",
-      "expires_at": null,
-      "relevance_score": 0,
-      "risk_score": 0,
-      "risk_flags": [],
-      "reasons": [
-        "未发现明确的免费、折扣、返现或赠送信号",
-        "内容更像资讯、问答、测评或普通软件更新"
-      ],
-      "review_status": "queued"
-    },
-    {
-      "key": "telegram_cn_deals:https://t.me/zaihuapd/45228",
-      "source_id": "telegram_cn_deals",
-      "source_name": "Telegram 中文科技与羊毛",
-      "source_url": "https://t.me/zaihuapd/45228",
-      "title": "富士康与 OpenAI 合作开发 AI 硬件制造 富士康宣布与 OpenAI 达成合作协议，将共同设计和制造数据中心机架、组件及其他人工智能硬件设备。虽然初期协议不包含采购承诺或财务义务，但 OpenAI 将获得优先评估权和购买选择权。 Reuters 🍀 在花频道 🍵 茶馆 📮 投稿新鲜事",
-      "summary": "富士康与 OpenAI 合作开发 AI 硬件制造 富士康宣布与 OpenAI 达成合作协议，将共同设计和制造数据中心机架、组件及其他人工智能硬件设备。虽然初期协议不包含采购承诺或财务义务，但 OpenAI 将获得优先评估权和购买选择权。 Reuters 🍀 在花频道 🍵 茶馆 📮 投稿新鲜事",
-      "published_at": "2026-11-19T04:33:15.000Z",
       "expires_at": null,
       "relevance_score": 0,
       "risk_score": 0,
@@ -4185,8 +4131,8 @@
       "source_id": "telegram_cn_deals",
       "source_name": "Telegram 中文科技与羊毛",
       "source_url": "https://t.me/zaihuapd/45245",
-      "title": "ChatGPT 测试新移动端，Dot 开始向 Plus 用户放量 ChatGPT 正在测试新的移动端体验，首批面向拥有 dot 或符合创建条件的 Pro 用户。用户可将 Codex、Projects、Images 等功能固定到标签栏，dot 也有独立标签页，部分用户会默认启用。 Tibo 还表示，正开始在一小部分 ChatGPT Plus 用户和更多 Cha",
-      "summary": "ChatGPT 测试新移动端，Dot 开始向 Plus 用户放量 ChatGPT 正在测试新的移动端体验，首批面向拥有 dot 或符合创建条件的 Pro 用户。用户可将 Codex、Projects、Images 等功能固定到标签栏，dot 也有独立标签页，部分用户会默认启用。 Tibo 还表示，正开始在一小部分 ChatGPT Plus 用户和更多 ChatGPT Business Standard 用户中测试 dot。 Tibo(@thsottiaux) | Tibo(@thsottiaux) 🌸 科技圈 · 茶馆 · 投稿",
+      "title": "🤖 ChatGPT 测试新移动端，Dot 开始向 Plus 用户放量 ChatGPT 正在测试新的移动端体验，首批面向拥有 dot 或符合创建条件的 Pro 用户。用户可将 Codex、Projects、Images 等功能固定到标签栏，dot 也有独立标签页，部分用户会默认启用。 Tibo 还表示，正开始在一小部分 ChatGPT Plus 用户和更多 ",
+      "summary": "🤖 ChatGPT 测试新移动端，Dot 开始向 Plus 用户放量 ChatGPT 正在测试新的移动端体验，首批面向拥有 dot 或符合创建条件的 Pro 用户。用户可将 Codex、Projects、Images 等功能固定到标签栏，dot 也有独立标签页，部分用户会默认启用。 Tibo 还表示，正开始在一小部分 ChatGPT Plus 用户和更多 ChatGPT Business Standard 用户中测试 dot。 Tibo(@thsottiaux) | Tibo(@thsottiaux) 🌸 科技圈 · 茶馆 · 投稿",
       "published_at": "2026-11-20T01:20:14.000Z",
       "expires_at": null,
       "relevance_score": 0,
@@ -4194,6 +4140,41 @@
       "risk_flags": [],
       "reasons": [
         "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "telegram_cn_deals:https://t.me/zaihuapd/45247",
+      "source_id": "telegram_cn_deals",
+      "source_name": "Telegram 中文科技与羊毛",
+      "source_url": "https://t.me/zaihuapd/45247",
+      "title": "🤖 Gemini 在 Mac 上开始代用户操作，后台运行还能随时暂停 Google Gemini 新增“电脑操作”功能，可在 Mac 上点击、输入、浏览菜单和填写表单，代用户完成任务。该功能已向美国地区使用 Mac 版 Gemini、订阅 Google AI Plus、Pro 或 Ultra 的用户开放。 用户可在独立后台窗口运行 Gemini，同时继续使",
+      "summary": "🤖 Gemini 在 Mac 上开始代用户操作，后台运行还能随时暂停 Google Gemini 新增“电脑操作”功能，可在 Mac 上点击、输入、浏览菜单和填写表单，代用户完成任务。该功能已向美国地区使用 Mac 版 Gemini、订阅 Google AI Plus、Pro 或 Ultra 的用户开放。 用户可在独立后台窗口运行 Gemini，同时继续使用主屏幕和光标；还可限制它能访问的应用、实时查看操作、随时暂停，并在关键操作前审批。 Bloomberg 🌸 科技圈 · 茶馆 · 投稿",
+      "published_at": "2026-11-20T02:51:33.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号"
+      ],
+      "review_status": "queued"
+    },
+    {
+      "key": "telegram_cn_deals:https://t.me/zaihuapd/45248",
+      "source_id": "telegram_cn_deals",
+      "source_name": "Telegram 中文科技与羊毛",
+      "source_url": "https://t.me/zaihuapd/45248",
+      "title": "PHP 的 https 大写为 httpS 会静默关掉 TLS，20 年无人发现 PHP 的 HTTP/FTP 流包装器在识别 scheme 时不分大小写，但只有在第五个字符是小写 s 时才启用 TLS。于是 HTTPS://、httpS://、FTPS:// 会被当成明文的 HTTP/FTP 发出去，令牌、Basic 认证、Cookie、POST 请求体和",
+      "summary": "PHP 的 https 大写为 httpS 会静默关掉 TLS，20 年无人发现 PHP 的 HTTP/FTP 流包装器在识别 scheme 时不分大小写，但只有在第五个字符是小写 s 时才启用 TLS。于是 HTTPS://、httpS://、FTPS:// 会被当成明文的 HTTP/FTP 发出去，令牌、Basic 认证、Cookie、POST 请求体和 FTP 登录信息全部裸奔；被第三方重定向到这种地址也一样中招。 漏洞编号 CVE-2026-128064（GHSA-f6gg-rchx-xw8j），CVSS 4.0 评分 8.2。已在 PHP 8.2.36、8.3.37、8.4.28、8.5.13 和 8.6.0 修复；8.1",
+      "published_at": "2026-11-20T03:04:33.000Z",
+      "expires_at": null,
+      "relevance_score": 0,
+      "risk_score": 0,
+      "risk_flags": [],
+      "reasons": [
+        "未发现明确的免费、折扣、返现或赠送信号",
+        "内容更像资讯、问答、测评或普通软件更新"
       ],
       "review_status": "queued"
     },
