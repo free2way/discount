@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-19T22:27:24.777Z",
+  "generated_at": "2026-11-20T01:46:16.243Z",
   "status": "partial",
   "sources_checked": 17,
-  "candidates_found": 345,
+  "candidates_found": 346,
   "verified_count": 1,
-  "pending_count": 61,
+  "pending_count": 63,
   "failures": [
     {
       "source_id": "reddit_freebies",
@@ -25,9 +25,9 @@
       "count": 25,
       "final_url": "https://r.jina.ai/https://linux.do/c/welfare/36.rss",
       "attempts": 1,
-      "response_ms": 403,
+      "response_ms": 511,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-19T22:27:24.777Z",
+      "last_success_at": "2026-11-20T01:46:16.243Z",
       "error": null
     },
     {
@@ -37,9 +37,9 @@
       "count": 25,
       "final_url": "https://r.jina.ai/https://linux.do/c/resource/14.rss",
       "attempts": 1,
-      "response_ms": 632,
+      "response_ms": 294,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-19T22:27:24.777Z",
+      "last_success_at": "2026-11-20T01:46:16.243Z",
       "error": null
     },
     {
@@ -49,9 +49,9 @@
       "count": 50,
       "final_url": "https://www.v2ex.com/feed/promotions.xml",
       "attempts": 1,
-      "response_ms": 157,
+      "response_ms": 230,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-19T22:27:24.777Z",
+      "last_success_at": "2026-11-20T01:46:16.243Z",
       "error": null
     },
     {
@@ -61,9 +61,9 @@
       "count": 10,
       "final_url": "https://www.v2ex.com/api/topics/show.json?node_name=free",
       "attempts": 1,
-      "response_ms": 237,
+      "response_ms": 168,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-19T22:27:24.777Z",
+      "last_success_at": "2026-11-20T01:46:16.243Z",
       "error": null
     },
     {
@@ -73,9 +73,9 @@
       "count": 1,
       "final_url": "https://store-site-backend-static.ak.epicgames.com/freeGamesPromotions?locale=zh-CN&country=CN&allowCountries=CN",
       "attempts": 1,
-      "response_ms": 359,
+      "response_ms": 250,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-19T22:27:24.777Z",
+      "last_success_at": "2026-11-20T01:46:16.243Z",
       "error": null
     },
     {
@@ -85,9 +85,9 @@
       "count": 20,
       "final_url": "https://rss.nodeseek.com/",
       "attempts": 1,
-      "response_ms": 414,
+      "response_ms": 261,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-19T22:27:24.777Z",
+      "last_success_at": "2026-11-20T01:46:16.243Z",
       "error": null
     },
     {
@@ -97,9 +97,9 @@
       "count": 20,
       "final_url": "https://www.deepflood.com/rss.xml",
       "attempts": 1,
-      "response_ms": 1209,
+      "response_ms": 661,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-19T22:27:24.777Z",
+      "last_success_at": "2026-11-20T01:46:16.243Z",
       "error": null
     },
     {
@@ -109,9 +109,9 @@
       "count": 30,
       "final_url": "https://www.nodeloc.com/latest.rss",
       "attempts": 1,
-      "response_ms": 987,
+      "response_ms": 927,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-19T22:27:24.777Z",
+      "last_success_at": "2026-11-20T01:46:16.243Z",
       "error": null
     },
     {
@@ -121,9 +121,9 @@
       "count": 10,
       "final_url": "https://www.appinn.com/feed/",
       "attempts": 1,
-      "response_ms": 1321,
+      "response_ms": 1120,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-19T22:27:24.777Z",
+      "last_success_at": "2026-11-20T01:46:16.243Z",
       "error": null
     },
     {
@@ -133,9 +133,9 @@
       "count": 10,
       "final_url": "https://www.ghxi.com/feed",
       "attempts": 1,
-      "response_ms": 1515,
+      "response_ms": 1455,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-19T22:27:24.777Z",
+      "last_success_at": "2026-11-20T01:46:16.243Z",
       "error": null
     },
     {
@@ -145,9 +145,9 @@
       "count": 30,
       "final_url": "https://feed.iplaysoft.com/",
       "attempts": 1,
-      "response_ms": 1201,
+      "response_ms": 831,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-19T22:27:24.777Z",
+      "last_success_at": "2026-11-20T01:46:16.243Z",
       "error": null
     },
     {
@@ -157,9 +157,9 @@
       "count": 25,
       "final_url": "https://feeds.feedburner.com/SlickdealsnetFP",
       "attempts": 1,
-      "response_ms": 637,
+      "response_ms": 802,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-19T22:27:24.777Z",
+      "last_success_at": "2026-11-20T01:46:16.243Z",
       "error": null
     },
     {
@@ -169,8 +169,8 @@
       "count": 0,
       "final_url": null,
       "attempts": 3,
-      "response_ms": 25427,
-      "consecutive_failures": 12,
+      "response_ms": 25456,
+      "consecutive_failures": 13,
       "last_success_at": "2026-11-17T15:56:31.255Z",
       "error": "HTTP 429"
     },
@@ -181,8 +181,8 @@
       "count": 0,
       "final_url": null,
       "attempts": 3,
-      "response_ms": 13615,
-      "consecutive_failures": 12,
+      "response_ms": 13644,
+      "consecutive_failures": 13,
       "last_success_at": "2026-11-17T15:56:31.255Z",
       "error": "HTTP 429"
     },
@@ -193,9 +193,9 @@
       "count": 50,
       "final_url": "https://www.producthunt.com/feed",
       "attempts": 1,
-      "response_ms": 579,
+      "response_ms": 505,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-19T22:27:24.777Z",
+      "last_success_at": "2026-11-20T01:46:16.243Z",
       "error": null
     },
     {
@@ -205,21 +205,21 @@
       "count": 20,
       "final_url": "https://t.me/s/freegamesnews",
       "attempts": 1,
-      "response_ms": 926,
+      "response_ms": 883,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-19T22:27:24.777Z",
+      "last_success_at": "2026-11-20T01:46:16.243Z",
       "error": null
     },
     {
       "source_id": "telegram_cn_deals",
       "source_name": "Telegram 中文科技与羊毛",
       "ok": true,
-      "count": 19,
+      "count": 20,
       "final_url": "https://t.me/s/zaihuapd",
       "attempts": 1,
-      "response_ms": 1005,
+      "response_ms": 1041,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-19T22:27:24.777Z",
+      "last_success_at": "2026-11-20T01:46:16.243Z",
       "error": null
     }
   ],
@@ -251,13 +251,13 @@
       "confidence": 96,
       "risk_notes": "领取前确认结算价为 0；不要使用第三方代领或共享账号。",
       "first_seen_at": "2026-11-19T19:00:07.928Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
-      "id": 1438321316,
-      "name": "送一个muse 10亿额度号",
-      "category": "cloud",
-      "summary": "抽个muse账号，看你们都在送，我也送一个，新人不知道发的对不对https://www.nodeseek.com/lucky?post=134383&time=1795123168194&count=1&start=1&duplicate=false&mode=view",
+      "id": 546998170,
+      "name": "免费白嫖三个月的gemini的机器人",
+      "category": "ai",
+      "summary": "邀请十个好友领3个月geminiprohttps://t.me/pixel_verification_bot?start=5885401178走aff双方都算一个头，自测吧",
       "value_amount": null,
       "value_currency": null,
       "value_label": "待核实线索",
@@ -265,11 +265,11 @@
       "requirements": "需打开原文确认活动、资格、地区与有效期。",
       "regions": "来源未注明",
       "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-19T21:20:58.000Z",
+      "starts_at": "2026-11-20T01:45:40.000Z",
       "ends_at": null,
       "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://nodeseek.com/post-1066808-1",
-      "source_url": "https://nodeseek.com/post-1066808-1",
+      "official_url": "https://nodeseek.com/post-1067009-1",
+      "source_url": "https://nodeseek.com/post-1067009-1",
       "source_name": "NodeSeek 福利情报",
       "source_type": "feed",
       "source_subreddit": null,
@@ -279,14 +279,14 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-19T22:27:24.777Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "first_seen_at": "2026-11-20T01:46:16.243Z",
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
-      "id": 624866090,
-      "name": "RackNerd(RN)2026年黑五大促vps",
+      "id": 1331427702,
+      "name": "领了一个muse号，大家可以试一试。",
       "category": "cloud",
-      "summary": "RackNerd(RN)2026年黑五大促vps1GB套餐1GB内存1CPU核心20GBSSD存储3000GB月流量1Gbps带宽1个IPv4地址$15.98/年(续费同价)可选机房:多机房可选购买链接:https://my.racknerd.com/aff.php?aff=2217&pid=968====",
+      "summary": "🎁新人免费领Musetoken邀请助力×1/成品账号10亿Token×1（任选一份）用我的专属链接打开@Ppurestorebot，按提示就能领：👉https://t.me/Ppurestorebot?start=r7ss5dwqd•下单自动发货，不用等人工",
       "value_amount": null,
       "value_currency": null,
       "value_label": "待核实线索",
@@ -294,11 +294,11 @@
       "requirements": "需打开原文确认活动、资格、地区与有效期。",
       "regions": "来源未注明",
       "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-19T21:20:18.000Z",
+      "starts_at": "2026-11-20T01:36:11.000Z",
       "ends_at": null,
       "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://nodeseek.com/post-1066806-1",
-      "source_url": "https://nodeseek.com/post-1066806-1",
+      "official_url": "https://nodeseek.com/post-1066998-1",
+      "source_url": "https://nodeseek.com/post-1066998-1",
       "source_name": "NodeSeek 福利情报",
       "source_type": "feed",
       "source_subreddit": null,
@@ -308,8 +308,124 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-19T22:27:24.777Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "first_seen_at": "2026-11-20T01:46:16.243Z",
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
+    },
+    {
+      "id": 1048740207,
+      "name": "车找人 GPT team长期席位 70r/月",
+      "category": "ai",
+      "summary": "长期车，可以续费。标准team：70/月周限team:80/月无5h限制（目前没了。可以先上车5h的等待。）可以拉你自己的邮箱。可以用我提供的邮箱。全程质保，空间封号按天退款、子号有问题免费拉取一次。车友半路跳车：不退款车主停开：提前通知并按比例退款禁止破限、逆向、黄色等违规行为需要私信orq283822904",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 52,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-20T01:33:59.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://nodeseek.com/post-1066997-1",
+      "source_url": "https://nodeseek.com/post-1066997-1",
+      "source_name": "NodeSeek 福利情报",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-20T01:46:16.243Z",
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
+    },
+    {
+      "id": 123917187,
+      "name": "[已出]20R 包 push 出Lamhosting HiNet-Zero",
+      "category": "cloud",
+      "summary": "今天刚续费的。看了一下push费要8块。加了点。应该是78折，续约价格:6.15CNY",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 52,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-20T01:31:59.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://nodeseek.com/post-1066993-1",
+      "source_url": "https://nodeseek.com/post-1066993-1",
+      "source_name": "NodeSeek 福利情报",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-20T01:46:16.243Z",
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
+    },
+    {
+      "id": 752542045,
+      "name": "[roll]一台性能鸡",
+      "category": "cloud",
+      "summary": "gatewaysentry家的2c4gLax(点击查看NQ)，截止到12点开奖，还有12天到期，ns邮箱push给你发送评论12时速抽参与抽奖，如果还能送我一个赞那就更好啦开奖链接",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 52,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-20T01:31:48.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://nodeseek.com/post-1066991-1",
+      "source_url": "https://nodeseek.com/post-1066991-1",
+      "source_name": "NodeSeek 福利情报",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-20T01:46:16.243Z",
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
+    },
+    {
+      "id": 285767189,
+      "name": "免费 AI API HY4 Flash",
+      "category": "ai",
+      "summary": "免费 AI API，每日调用次数无限制！ Cent AI 在 11 月期间免费提供 HY4 Flash。 链接 https://cent-ai.dev 1 个帖子 - 3 位参与者 阅读完整话题",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 52,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-19T20:57:26.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://nodeloc.com/t/topic/118550",
+      "source_url": "https://nodeloc.com/t/topic/118550",
+      "source_name": "NodeLoc 中文羊毛与 VPS",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-20T01:46:16.243Z",
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 561551303,
@@ -338,7 +454,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T19:00:07.928Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 117843904,
@@ -367,7 +483,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T19:00:07.928Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 1329150405,
@@ -396,7 +512,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T19:00:07.928Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 1049778967,
@@ -425,13 +541,13 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T13:54:51.527Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 134474428,
       "name": "某公益站要求一周花600美刀token, 不然封账号",
       "category": "cloud",
-      "summary": "我就没见过这么豪横的要求？token不要钱的？ 试了一下，5.4M token花了约$2.4，估算下来一周要花1350M，也就是13.5亿 这个量，还让不让人摸鱼了？ 我觉得我的账号马上要封了 忘了说，注册送$1000, 每日签到送$300，我没花钱甚至是积分 20 个帖子 - 13 位参与者 阅读完整话题",
+      "summary": "我就没见过这么豪横的要求？token不要钱的？ 试了一下，5.4M token花了约$2.4，估算下来一周要花1350M，也就是13.5亿 这个量，还让不让人摸鱼了？ 我觉得我的账号马上要封了 忘了说，注册送$1000, 每日签到送$300，我没花钱甚至是积分 27 个帖子 - 19 位参与者 阅读完整话题",
       "value_amount": null,
       "value_currency": null,
       "value_label": "待核实线索",
@@ -454,13 +570,13 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T13:54:51.527Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 100919190,
       "name": "收到leaflow的邮件",
       "category": "cloud",
-      "summary": "你在旧平台留下的余额，我们为你留着。 新平台启用了新的账户体系，旧平台的账户不能直接登录，需要重新注册一次。余额按邮箱匹配，所以请务必使用收到这封邮件的邮箱。 1. 用这个邮箱注册。 2. 登录控制台，首页会自动弹出“欢迎回来”。 3. 点“领取”，旧平台余额会换算为美元赠金，金额以页面显示为准，自领取之日起六个月内有效。 3 个帖子 - 3 位参与者 阅读完整话题",
+      "summary": "你在旧平台留下的余额，我们为你留着。 新平台启用了新的账户体系，旧平台的账户不能直接登录，需要重新注册一次。余额按邮箱匹配，所以请务必使用收到这封邮件的邮箱。 1. 用这个邮箱注册。 2. 登录控制台，首页会自动弹出“欢迎回来”。 3. 点“领取”，旧平台余额会换算为美元赠金，金额以页面显示为准，自领取之日起六个月内有效。 7 个帖子 - 7 位参与者 阅读完整话题",
       "value_amount": null,
       "value_currency": null,
       "value_label": "待核实线索",
@@ -483,7 +599,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T13:54:51.527Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 155234005,
@@ -512,7 +628,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T13:54:51.527Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 189637279,
@@ -541,7 +657,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T13:54:51.527Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 1278817548,
@@ -570,7 +686,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T13:54:51.527Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 40113352,
@@ -599,94 +715,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T10:16:29.826Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
-    },
-    {
-      "id": 171717434,
-      "name": "如何看待网页版deepseek限额，有什么替代品吗",
-      "category": "cloud",
-      "summary": "我平时用它，主要是高质量的有限额，豆包降智 现在除了用免费的glm，没有其他办法，大家有推荐的吗 15 个帖子 - 12 位参与者 阅读完整话题",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 52,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-19T09:44:11.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://nodeloc.com/t/topic/118506",
-      "source_url": "https://nodeloc.com/t/topic/118506",
-      "source_name": "NodeLoc 中文羊毛与 VPS",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-19T10:16:29.826Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
-    },
-    {
-      "id": 121384577,
-      "name": "AVAHosting 🏷️ VPS Nano DMCA 摩尔多瓦 初体 🐔",
-      "category": "cloud",
-      "summary": "机器配置 VPS 购买地址 优惠码 SKU CPU RAM SSD Traffic IP 限时价格 AVAHosting AFF 记得把IPv6拉满反正不要钱 VPS Nano 1C 0.5G 20G / 100Mbps IPv4/IPv6 11EUR/Annvally 系统参数硬件性能 ITdog — IPv4 质量测试 CM CU CT Connectivity 去程路由 CM CU CT 北京 上海 广东 回程路由 北京 上海 广东 国内三网延迟 IP 质量 流媒体解锁 TCP 重传检测 心跳线 Speedtest Speedtest（本地电信 100M · TUIC） 多线程 单线程 IPerf3（DMIT HKG T1） ",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 52,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-19T09:34:12.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://nodeloc.com/t/topic/118503",
-      "source_url": "https://nodeloc.com/t/topic/118503",
-      "source_name": "NodeLoc 中文羊毛与 VPS",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-19T10:16:29.826Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
-    },
-    {
-      "id": 1476167440,
-      "name": "TotHost| Vietnam VPS | Dual ISP IP | 20% discount | Vietnam VPS reseller program｜Native IP, no deposit required, Reseller API one-click management se...",
-      "category": "cloud",
-      "summary": "同步自 Bilibili Tothostvietnam 1 个帖子 - 1 位参与者 阅读完整话题",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 52,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-19T07:28:23.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://nodeloc.com/t/topic/118496",
-      "source_url": "https://nodeloc.com/t/topic/118496",
-      "source_name": "NodeLoc 中文羊毛与 VPS",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-19T10:16:29.826Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 1345780929,
@@ -715,7 +744,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T00:20:01.256Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 1414649721,
@@ -744,7 +773,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-18T17:14:12.426Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 1726696484,
@@ -773,7 +802,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-18T13:26:59.109Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 869333942,
@@ -802,7 +831,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-18T03:52:48.005Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 1278670453,
@@ -831,7 +860,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T22:39:18.667Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 1522297652,
@@ -950,10 +979,10 @@
       "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
-      "id": 1357517497,
-      "name": "21-Pc Leatherman Double-Ended Screwdriver Bit Kit $20",
+      "id": 1443295931,
+      "name": "截至今天21点免费使用MinxMaxH3，最高6秒，可以玩一下",
       "category": "other",
-      "summary": "Leatherman Tool Group via Amazon [amazon.com] has *21-Pc Leatherman Double-Ended Screwdriver Bit Kit* for *$20*. *Shipping is free* with Prime or on $35+ orders. *** Previous *Frontpage Deal* at...",
+      "summary": "LINUX DO 福利羊毛 返回的公开线索；原始订阅未提供摘要。",
       "value_amount": null,
       "value_currency": null,
       "value_label": "待核实线索",
@@ -961,12 +990,12 @@
       "requirements": "需打开原文确认活动、资格、地区与有效期。",
       "regions": "来源未注明",
       "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-19T22:21:20.000Z",
+      "starts_at": "2026-11-20T01:20:15.000Z",
       "ends_at": null,
       "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20343030-20-21-pc-leatherman-double-ended-screwdriver-bit-kit-at-amazon?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_url": "https://slickdeals.net/f/20343030-20-21-pc-leatherman-double-ended-screwdriver-bit-kit-at-amazon?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_name": "Slickdeals Frontpage",
+      "official_url": "https://linux.do/t/topic/3207457",
+      "source_url": "https://linux.do/t/topic/3207457",
+      "source_name": "LINUX DO 福利羊毛",
       "source_type": "feed",
       "source_subreddit": null,
       "source_account": null,
@@ -975,14 +1004,14 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-19T22:27:24.777Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "first_seen_at": "2026-11-20T01:46:16.243Z",
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
-      "id": 882877314,
-      "name": "Prime Members: 5\" toolant Mini Groove-Joint Pliers Wrench w/ Smooth Jaws $12.80 & More + Free S&H",
+      "id": 790060587,
+      "name": "MSI Cyborg Max Gaming Laptop: Core 7 240H, 15.6\" FHD IPS 144Hz, RTX 5070, 16GB DDR5 $1299 + Free S&H",
       "category": "other",
-      "summary": "toolant tools via Amazon [amazon.com] has for *Prime Members*: **5\" or 7\" toolant Mini Pliers Wrench w/ Smooth Jaws** (Black Phosphate) on sale for *$12.79*. *Shipping is free*",
+      "summary": "Walmart [walmart.com] has *15.6\" MSI Cyborg Max (Cyborg 15 Max C2WG-444US)* on sale for *$1,299*. *Specs:* * Screen: 15.6\" 144Hz FHD IPS thin bezel * Processor: Intel Core 7 240H * GPU: NVIDIA...",
       "value_amount": null,
       "value_currency": null,
       "value_label": "待核实线索",
@@ -990,11 +1019,11 @@
       "requirements": "需打开原文确认活动、资格、地区与有效期。",
       "regions": "来源未注明",
       "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-19T22:19:18.000Z",
+      "starts_at": "2026-11-20T01:31:27.000Z",
       "ends_at": null,
       "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20344752-prime-5-or-7-toolant-mini-pliers-wrench-w-smooth-jaws-12-79-free-shipping?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_url": "https://slickdeals.net/f/20344752-prime-5-or-7-toolant-mini-pliers-wrench-w-smooth-jaws-12-79-free-shipping?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "official_url": "https://slickdeals.net/f/20350137-msi-cyborg-max-15-6-144hz-intel-core-7-240h-nvidia-geforce-rtx-5070-16gb-512gb-1-299-walmart-1299?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_url": "https://slickdeals.net/f/20350137-msi-cyborg-max-15-6-144hz-intel-core-7-240h-nvidia-geforce-rtx-5070-16gb-512gb-1-299-walmart-1299?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
       "source_name": "Slickdeals Frontpage",
       "source_type": "feed",
       "source_subreddit": null,
@@ -1004,14 +1033,14 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-19T22:27:24.777Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "first_seen_at": "2026-11-20T01:46:16.243Z",
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
-      "id": 754169687,
-      "name": "1-Year Walmart+ w/ Sam's Club Plus Membership (New Members Only) $120 or Upgrade Option w/ Existing Membership",
+      "id": 1332844484,
+      "name": "16-Oz Nature's Eats Ultimate Almond Nut Flour $3.50 w/ S&S",
       "category": "other",
-      "summary": "Update: This popular deal is still available. Sam's Club is offering their *1-Year Walmart+ w/ Sam's Club Plus Membership* on sale for *$120* valid for *New Members* only. Walmart [Announcement...",
+      "summary": "Amazon [amazon.com] has *16-Oz Nature's Eats Ultimate Almond Nut Flour* on sale for $5 - 30% off when you 'clip' the coupon on product page [amazon.com] and check out via Subscribe & Save = *$3.50*....",
       "value_amount": null,
       "value_currency": null,
       "value_label": "待核实线索",
@@ -1019,11 +1048,11 @@
       "requirements": "需打开原文确认活动、资格、地区与有效期。",
       "regions": "来源未注明",
       "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-19T22:10:17.000Z",
+      "starts_at": "2026-11-20T01:30:31.000Z",
       "ends_at": null,
       "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20182197-1-year-walmart-w-sam-s-club-plus-membership-new-members-only-120-or-upgrade-option-w-existing-membership?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_url": "https://slickdeals.net/f/20182197-1-year-walmart-w-sam-s-club-plus-membership-new-members-only-120-or-upgrade-option-w-existing-membership?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "official_url": "https://slickdeals.net/f/20346123-16-oz-nature-s-eats-ultimate-almond-nut-flour-3-50-w-s-s-free-shipping-w-prime-or-on-35?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_url": "https://slickdeals.net/f/20346123-16-oz-nature-s-eats-ultimate-almond-nut-flour-3-50-w-s-s-free-shipping-w-prime-or-on-35?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
       "source_name": "Slickdeals Frontpage",
       "source_type": "feed",
       "source_subreddit": null,
@@ -1033,14 +1062,14 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-19T22:27:24.777Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "first_seen_at": "2026-11-20T01:46:16.243Z",
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
-      "id": 944095981,
-      "name": "Nike Women's Air Max Bolt Shoes (White/White/Black) $45 + Free S&H",
+      "id": 36487510,
+      "name": "15W Energizer 3-in-1 Magnetic MagSafe Qi2 Wireless Fast Charging Stand $16 + Free S&H",
       "category": "other",
-      "summary": "Nike [nike.com] has * Nike Women's Air Max Bolt Shoes (White/White/Black, Sizes: 5-11) *for $59.97 - extra 25% off w/ promo code EARLYBF = *$44.98*. Shipping is free on $50 for Nike Members (free to...",
+      "summary": "*Best Buy* [bestbuy.com] has *Energizer 3-in-1 15W MagSafe/Qi2 Wireless Charging Station for Phone, AirPods & Apple Watch (Black)* on sale for *$15.99*. *Shipping is free* for My Best Buy members...",
       "value_amount": null,
       "value_currency": null,
       "value_label": "待核实线索",
@@ -1048,11 +1077,11 @@
       "requirements": "需打开原文确认活动、资格、地区与有效期。",
       "regions": "来源未注明",
       "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-19T22:04:45.000Z",
+      "starts_at": "2026-11-20T01:22:08.000Z",
       "ends_at": null,
       "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20346339-nike-women-s-air-max-bolt-shoes-white-white-black-45-free-s-h?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_url": "https://slickdeals.net/f/20346339-nike-women-s-air-max-bolt-shoes-white-white-black-45-free-s-h?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "official_url": "https://slickdeals.net/f/20338659-3-in-1-energizer-15w-magsafe-qi2-wireless-charging-station-for-phone-airpods-apple-watch-black-15-99-free-shipping?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_url": "https://slickdeals.net/f/20338659-3-in-1-energizer-15w-magsafe-qi2-wireless-charging-station-for-phone-airpods-apple-watch-black-15-99-free-shipping?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
       "source_name": "Slickdeals Frontpage",
       "source_type": "feed",
       "source_subreddit": null,
@@ -1062,14 +1091,14 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-19T22:27:24.777Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "first_seen_at": "2026-11-20T01:46:16.243Z",
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
-      "id": 166975272,
-      "name": "10-Pk Hanes Toddler's Boxer Briefs (2-3T or 4-5T) $9.30",
+      "id": 672476464,
+      "name": "10-Pk 1-kg Polymaker 1.75mm PETG 3D Printer Filament $73.30 + Free S&H",
       "category": "other",
-      "summary": "Amazon [amazon.com] has *10-Pk Hanes Toddler's Boxer Briefs *(2-3T or 4-5T) for *$9.31*. *Shipping is free* with Prime or on $35+ orders. * 2-3T [amazon.com] * 4-5T [amazon.com] *** Previous...",
+      "summary": "Amazon [amazon.com] (Polymaker via Amazon) has *Polymaker PETG Filament 1.75mm 10KG Bundle 10x Black or 5x White + 5x Black $69.43 with 5+ S&S items or $73.28 with <5 S&S items ($77.14 without S&S)* ...",
       "value_amount": null,
       "value_currency": null,
       "value_label": "待核实线索",
@@ -1077,11 +1106,11 @@
       "requirements": "需打开原文确认活动、资格、地区与有效期。",
       "regions": "来源未注明",
       "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-19T22:04:31.000Z",
+      "starts_at": "2026-11-20T01:20:51.000Z",
       "ends_at": null,
       "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20343816-9-31-10-pk-hanes-toddler-s-boxer-briefs-2-3t-or-4-5t-at-amazon?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_url": "https://slickdeals.net/f/20343816-9-31-10-pk-hanes-toddler-s-boxer-briefs-2-3t-or-4-5t-at-amazon?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "official_url": "https://slickdeals.net/f/20348082-polymaker-petg-filament-1-75mm-10kg-bundle-10x-black-or-5x-white-5x-black-69-43-73-28-with-s-s-77-14-without-69-43-73-28-free-shipping?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_url": "https://slickdeals.net/f/20348082-polymaker-petg-filament-1-75mm-10kg-bundle-10x-black-or-5x-white-5x-black-69-43-73-28-with-s-s-77-14-without-69-43-73-28-free-shipping?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
       "source_name": "Slickdeals Frontpage",
       "source_type": "feed",
       "source_subreddit": null,
@@ -1091,14 +1120,14 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-19T22:27:24.777Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "first_seen_at": "2026-11-20T01:46:16.243Z",
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
-      "id": 1859034637,
-      "name": "The Super Mario Galaxy Movie Collector's Edition (Blu-ray + Digital) $9",
+      "id": 1862055545,
+      "name": "9-Pc Rubbermaid Brilliance Glass Food Storage Containers w/ Lids $50 + Free S&H",
       "category": "other",
-      "summary": "Amazon [amazon.com] has *The Super Mario Galaxy Movie Collector's Edition (Blu-ray + Digital)* on sale for *$8.99*. Shipping is free w/ Prime or on orders $35+. *Don't have Amazon...",
+      "summary": "Amazon [amazon.com] has *9-Pc Rubbermaid Brilliance Glass Food Storage Containers w/ Lids* on sale for *$49.99*. *Shipping is free*. *Compiled From Merchant's Product...",
       "value_amount": null,
       "value_currency": null,
       "value_label": "待核实线索",
@@ -1106,11 +1135,11 @@
       "requirements": "需打开原文确认活动、资格、地区与有效期。",
       "regions": "来源未注明",
       "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-19T21:53:38.000Z",
+      "starts_at": "2026-11-20T01:18:52.000Z",
       "ends_at": null,
       "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20340033-the-super-mario-galaxy-movie-collector-s-edition-blu-ray-digital-8-99-free-shipping-w-prime-or-on-35?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_url": "https://slickdeals.net/f/20340033-the-super-mario-galaxy-movie-collector-s-edition-blu-ray-digital-8-99-free-shipping-w-prime-or-on-35?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "official_url": "https://slickdeals.net/f/20312751-9-pc-rubbermaid-brilliance-glass-food-storage-containers-w-lids-49-99-free-shipping?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_url": "https://slickdeals.net/f/20312751-9-pc-rubbermaid-brilliance-glass-food-storage-containers-w-lids-49-99-free-shipping?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
       "source_name": "Slickdeals Frontpage",
       "source_type": "feed",
       "source_subreddit": null,
@@ -1120,14 +1149,14 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-19T22:27:24.777Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "first_seen_at": "2026-11-20T01:46:16.243Z",
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
-      "id": 1268479080,
-      "name": "DEWALT 20V MAX 8\" Battery Powered Mini Pruning Chainsaw (Tool Only) $99 + Free S&H",
+      "id": 114887451,
+      "name": "17\" Tonka Steel Classics Mighty Dump Truck $18.50",
       "category": "other",
-      "summary": "Available for pickup and delivery https://www.homedepot.com/p/DEWAL.../322138735",
+      "summary": "Amazon [amazon.com] has *Tonka Steel Classics Mighty Dump Truck* on sale for *$18.49*. Shipping is free w/ Prime or on orders $35+. Product Description from Store:[LIST][*]Dimensions: 17\" x 8\" x...",
       "value_amount": null,
       "value_currency": null,
       "value_label": "待核实线索",
@@ -1135,11 +1164,11 @@
       "requirements": "需打开原文确认活动、资格、地区与有效期。",
       "regions": "来源未注明",
       "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-19T21:45:23.000Z",
+      "starts_at": "2026-11-20T01:12:53.000Z",
       "ends_at": null,
       "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20345196-dewalt-20v-max-8-in-brushless-cordless-battery-powered-mini-pruning-chainsaw-tool-only-99-at-home-depot?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_url": "https://slickdeals.net/f/20345196-dewalt-20v-max-8-in-brushless-cordless-battery-powered-mini-pruning-chainsaw-tool-only-99-at-home-depot?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "official_url": "https://slickdeals.net/f/20350641-tonka-steel-classics-mighty-dump-truck-18-49-free-shipping-w-prime-or-on-35?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_url": "https://slickdeals.net/f/20350641-tonka-steel-classics-mighty-dump-truck-18-49-free-shipping-w-prime-or-on-35?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
       "source_name": "Slickdeals Frontpage",
       "source_type": "feed",
       "source_subreddit": null,
@@ -1149,14 +1178,14 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-19T22:27:24.777Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "first_seen_at": "2026-11-20T01:46:16.243Z",
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
-      "id": 1447798995,
-      "name": "Men's Ozark Trail Hike Pants in Classic Navy (various sizes) From $10.50 + Free S&H on $35+",
+      "id": 1694438270,
+      "name": "32.5-Oz Palmolive Ultra Dishwashing Liquid Dish Soap (Pure + Clear) $2.30 w/ S&S",
       "category": "other",
-      "summary": "Ozark Trail Men's and Big Men's Hike Pants, Sizes 30-46 Classic Navy Blue Waist 30, 32, 34, 36, 38 $10.50 Waist 40, 42, 44, 46 $12.25 Key item features Material: 95% Nylon/5%...",
+      "summary": "Amazon [amazon.com] has *32.5-Oz Palmolive Ultra Dishwashing Liquid Dish Soap *(Pure + Clear) for $3.99 - $1.50 when you 'clip' the coupon on product page - 5% when you check out via Subscribe & Save...",
       "value_amount": null,
       "value_currency": null,
       "value_label": "待核实线索",
@@ -1164,11 +1193,11 @@
       "requirements": "需打开原文确认活动、资格、地区与有效期。",
       "regions": "来源未注明",
       "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-19T21:34:42.000Z",
+      "starts_at": "2026-11-20T01:12:44.000Z",
       "ends_at": null,
       "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20337183-ozark-trail-men-s-and-big-men-s-hike-pants-sizes-30-46-10-50-12-25-navy-blue?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_url": "https://slickdeals.net/f/20337183-ozark-trail-men-s-and-big-men-s-hike-pants-sizes-30-46-10-50-12-25-navy-blue?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "official_url": "https://slickdeals.net/f/20315613-sns-ac-2-29-or-1-89-32-5-oz-palmolive-ultra-dishwashing-liquid-dish-soap-pure-clear-at-amazon?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_url": "https://slickdeals.net/f/20315613-sns-ac-2-29-or-1-89-32-5-oz-palmolive-ultra-dishwashing-liquid-dish-soap-pure-clear-at-amazon?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
       "source_name": "Slickdeals Frontpage",
       "source_type": "feed",
       "source_subreddit": null,
@@ -1178,14 +1207,14 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-19T22:27:24.777Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "first_seen_at": "2026-11-20T01:46:16.243Z",
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
-      "id": 1811670710,
-      "name": "Final Fantasy XVI (PlayStation 5) $18",
+      "id": 824260562,
+      "name": "Legion 5i Laptop: 15.3\" 1600p OLED 165Hz, Core 7 245HX RTX 5060, 16GB, 512GB $1200 + Free S&H",
       "category": "other",
-      "summary": "Walmart has *Final Fantasy XVI - PlayStation 5 [Physical] for $17.97* Free shipping for Walmart+ members, $35+ spend, or free store pick-up where available. ...",
+      "summary": "Best Buy has *Lenovo Legion 5i 15.3\" 3K Gaming Laptop* (83VK0068US) on sale for *$1,199.99*. *Shipping is free*, otherwise select free store pickup where available. Best Buy via eBay also has...",
       "value_amount": null,
       "value_currency": null,
       "value_label": "待核实线索",
@@ -1193,11 +1222,11 @@
       "requirements": "需打开原文确认活动、资格、地区与有效期。",
       "regions": "来源未注明",
       "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-19T21:32:24.000Z",
+      "starts_at": "2026-11-20T01:09:22.000Z",
       "ends_at": null,
       "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20348418-final-fantasy-xvi-playstation-5-physical-17-97?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_url": "https://slickdeals.net/f/20348418-final-fantasy-xvi-playstation-5-physical-17-97?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "official_url": "https://slickdeals.net/f/20343156-lenovo-legion-5i-15-3-oled-165hz-3k-intel-core-7-245hx-16gb-ram-nvidia-geforce-rtx-5060-512gb-ssd-glacier-white-1199-99?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_url": "https://slickdeals.net/f/20343156-lenovo-legion-5i-15-3-oled-165hz-3k-intel-core-7-245hx-16gb-ram-nvidia-geforce-rtx-5060-512gb-ssd-glacier-white-1199-99?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
       "source_name": "Slickdeals Frontpage",
       "source_type": "feed",
       "source_subreddit": null,
@@ -1207,14 +1236,14 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-19T22:27:24.777Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "first_seen_at": "2026-11-20T01:46:16.243Z",
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
-      "id": 369882268,
-      "name": "2-Pk 25' DeWALT Magnetic Tape Measure $19.90 + Free S&H",
+      "id": 1032779080,
+      "name": "20L Tzumi Slf Luxury Towel Electric Bucket Towel Warmer w/ Adjustable Timer $45 + Free S&H",
       "category": "other",
-      "summary": "Home Depot [homedepot.com] has *2-Pack DEWALT 25' Magnetic Tape Measure* on sale for *$19.88*. *Shipping is free.*",
+      "summary": "Macy's has the 20L Tzumi SLF Luxury Electric Bucket Towel Warmer (White) on sale for $44.99 as a Black Friday Deal. Shipping is free for Star Rewards members (free to join) since it clears the $39...",
       "value_amount": null,
       "value_currency": null,
       "value_label": "待核实线索",
@@ -1222,11 +1251,11 @@
       "requirements": "需打开原文确认活动、资格、地区与有效期。",
       "regions": "来源未注明",
       "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-19T21:24:50.000Z",
+      "starts_at": "2026-11-20T01:05:06.000Z",
       "ends_at": null,
       "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20340486-2-pack-dewalt-25-magnetic-tape-measure-19-88-free-shipping?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_url": "https://slickdeals.net/f/20340486-2-pack-dewalt-25-magnetic-tape-measure-19-88-free-shipping?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "official_url": "https://slickdeals.net/f/20328168-20l-tzumi-slf-luxury-towel-electric-bucket-towel-warmer-w-adjustable-timer-45-free-s-h?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_url": "https://slickdeals.net/f/20328168-20l-tzumi-slf-luxury-towel-electric-bucket-towel-warmer-w-adjustable-timer-45-free-s-h?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
       "source_name": "Slickdeals Frontpage",
       "source_type": "feed",
       "source_subreddit": null,
@@ -1236,14 +1265,14 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-19T22:27:24.777Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "first_seen_at": "2026-11-20T01:46:16.243Z",
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
-      "id": 1624373282,
-      "name": "75\" Samsung U7900 Series 4K UHD Smart Tizen TV $400 + Free S&H",
+      "id": 1623316597,
+      "name": "Women's adidas Galaxy 7 Running Shoes (2 Colors) $21 + Free S&H",
       "category": "other",
-      "summary": "75\" Samsung U7900 Series UHD 4K Smart Tizen TV $399.99 @Best Buy https://www.bestbuy.com/product/s...ku/6688397",
+      "summary": "adidas via ShopSimon [simon.com] has *adidas Women's Galaxy 7 Running Shoes* (3 Colors, Sizes: 5-11) on sale for $42 - Extra 50% off when you apply promo code NOV50 at checkout = *$21*. Shipping is...",
       "value_amount": null,
       "value_currency": null,
       "value_label": "待核实线索",
@@ -1251,11 +1280,11 @@
       "requirements": "需打开原文确认活动、资格、地区与有效期。",
       "regions": "来源未注明",
       "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-19T21:21:49.000Z",
+      "starts_at": "2026-11-20T01:02:12.000Z",
       "ends_at": null,
       "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20339289-75-samsung-u7900-series-uhd-4k-smart-tizen-tv-399-99-best-buy?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_url": "https://slickdeals.net/f/20339289-75-samsung-u7900-series-uhd-4k-smart-tizen-tv-399-99-best-buy?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "official_url": "https://slickdeals.net/f/20333421-adidas-women-s-galaxy-7-running-shoes-3-colors-sizes-5-11-21-free-shipping-new-customers?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_url": "https://slickdeals.net/f/20333421-adidas-women-s-galaxy-7-running-shoes-3-colors-sizes-5-11-21-free-shipping-new-customers?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
       "source_name": "Slickdeals Frontpage",
       "source_type": "feed",
       "source_subreddit": null,
@@ -1265,14 +1294,14 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-19T22:27:24.777Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "first_seen_at": "2026-11-20T01:46:16.243Z",
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
-      "id": 862764008,
-      "name": "2-Pk 1Kg eSUN PLA Basic 1.75mm 3D Printer Filament (Red + White) $17",
+      "id": 1546428088,
+      "name": "50\"x60\" Bedsure 3D Fleece Bubble Throw Blanket (Off White) $9.25",
       "category": "other",
-      "summary": "eSUN official Store via Amazon [amazon.com] has *2-Pack 1Kg eSUN PLA Basic 1.75mm 3D Printer Filament (Fire Engine Red + Cold White)* on sale for *$16.99*. Shipping is free w/ Prime or on orders...",
+      "summary": "Bedsure via Amazon [amazon.com] has *50\"x60\" Bedsure 3D Fleece Bubble Throw Blanket (Off White)* on sale for $15.38 - $6.15 when you apply promo code X77W71W6 or O7A90EPRat checkout = *$9.23....",
       "value_amount": null,
       "value_currency": null,
       "value_label": "待核实线索",
@@ -1280,11 +1309,11 @@
       "requirements": "需打开原文确认活动、资格、地区与有效期。",
       "regions": "来源未注明",
       "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-19T21:20:46.000Z",
+      "starts_at": "2026-11-20T01:00:54.000Z",
       "ends_at": null,
       "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20346468-2-pack-1kg-esun-pla-basic-1-75mm-3d-printer-filament-fire-engine-red-cold-white-16-99-free-shipping-w-prime-or-on-35?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_url": "https://slickdeals.net/f/20346468-2-pack-1kg-esun-pla-basic-1-75mm-3d-printer-filament-fire-engine-red-cold-white-16-99-free-shipping-w-prime-or-on-35?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "official_url": "https://slickdeals.net/f/20346174-50-x60-bedsure-3d-fleece-bubble-throw-blanket-off-white-9-23-free-shipping-w-prime-or-orders-35?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_url": "https://slickdeals.net/f/20346174-50-x60-bedsure-3d-fleece-bubble-throw-blanket-off-white-9-23-free-shipping-w-prime-or-orders-35?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
       "source_name": "Slickdeals Frontpage",
       "source_type": "feed",
       "source_subreddit": null,
@@ -1294,8 +1323,66 @@
       "status": "active",
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-19T22:27:24.777Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "first_seen_at": "2026-11-20T01:46:16.243Z",
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
+    },
+    {
+      "id": 1660519974,
+      "name": "Dune (4K UHD + Blu-ray) $11.50",
+      "category": "other",
+      "summary": "Amazon [amazon.com] has *Dune (4K UHD + Blu-ray)* on sale for *$11.49*. Shipping is free w/ Prime or on orders $35+.",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 42,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-20T01:00:23.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://slickdeals.net/f/20347836-dune-4k-uhd-blu-ray-11-49-free-shipping-w-prime-or-on-35?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_url": "https://slickdeals.net/f/20347836-dune-4k-uhd-blu-ray-11-49-free-shipping-w-prime-or-on-35?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_name": "Slickdeals Frontpage",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-20T01:46:16.243Z",
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
+    },
+    {
+      "id": 1245262310,
+      "name": "[Steam] (Game) Crinimal Land 🏷️ F2P To Paid 🎁 View Giveaway https://store.steampowered.com/news/app/5192950/view/692026470007046744 💬 View Post on Reddit for comments Join | Sha",
+      "category": "software",
+      "summary": "[Steam] (Game) Crinimal Land 🏷️ F2P To Paid 🎁 View Giveaway https://store.steampowered.com/news/app/5192950/view/692026470007046744 💬 View Post on Reddit for comments Join | Share @FreeGamesNews",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 42,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-19T23:10:26.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://t.me/freegamesnews/13657",
+      "source_url": "https://t.me/freegamesnews/13657",
+      "source_name": "Telegram 免费游戏情报",
+      "source_type": "community",
+      "source_subreddit": null,
+      "source_account": "freegamesnews",
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-20T01:46:16.243Z",
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 1211707072,
@@ -1324,7 +1411,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T22:27:24.777Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 1312372786,
@@ -1353,7 +1440,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T22:27:24.777Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 69089630,
@@ -1382,7 +1469,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T19:00:07.928Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 582882543,
@@ -1411,7 +1498,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T19:00:07.928Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 1294039400,
@@ -1440,7 +1527,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T19:00:07.928Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 1295595167,
@@ -1469,7 +1556,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T19:00:07.928Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 84141571,
@@ -1498,7 +1585,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T13:54:51.527Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 1148646359,
@@ -1527,7 +1614,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T10:16:29.826Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 317355215,
@@ -1556,7 +1643,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T10:16:29.826Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 716601586,
@@ -1585,7 +1672,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T10:16:29.826Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 160284747,
@@ -1614,7 +1701,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T10:16:29.826Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 909003046,
@@ -1643,7 +1730,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T10:16:29.826Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 701446248,
@@ -1672,7 +1759,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T10:16:29.826Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 1681703226,
@@ -1701,7 +1788,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T10:16:29.826Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 1333610751,
@@ -1730,7 +1817,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T03:51:05.356Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 1156940869,
@@ -1759,7 +1846,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T03:51:05.356Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 1329003310,
@@ -1788,7 +1875,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T00:20:01.256Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 1245115215,
@@ -1817,7 +1904,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T00:20:01.256Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 1228337596,
@@ -1846,7 +1933,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-18T22:20:51.820Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 1666461101,
@@ -1875,36 +1962,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-18T17:14:12.426Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
-    },
-    {
-      "id": 1294609429,
-      "name": "[ Itch.io ](Game) Night Maniac 3: The Origin Of Steven 🏷️ Expired 🎁 View Giveaway 💬 View Post on Reddit for comments Join | Share @FreeGamesNews",
-      "category": "software",
-      "summary": "[ Itch.io ](Game) Night Maniac 3: The Origin Of Steven 🏷️ Expired 🎁 View Giveaway 💬 View Post on Reddit for comments Join | Share @FreeGamesNews",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 42,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-16T17:50:26.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://t.me/freegamesnews/13634",
-      "source_url": "https://t.me/freegamesnews/13634",
-      "source_name": "Telegram 免费游戏情报",
-      "source_type": "community",
-      "source_subreddit": null,
-      "source_account": "freegamesnews",
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-18T07:22:08.764Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 989557224,
@@ -1962,7 +2020,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     },
     {
       "id": 512942381,
@@ -2020,7 +2078,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-15T01:15:15.434Z",
-      "last_verified_at": "2026-11-19T22:27:24.777Z"
+      "last_verified_at": "2026-11-20T01:46:16.243Z"
     }
   ]
 }
