@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-20T18:36:15.519Z",
+  "generated_at": "2026-11-20T21:58:19.724Z",
   "status": "partial",
   "sources_checked": 17,
   "candidates_found": 346,
   "verified_count": 1,
-  "pending_count": 70,
+  "pending_count": 68,
   "failures": [
     {
       "source_id": "reddit_freebies",
@@ -25,9 +25,9 @@
       "count": 25,
       "final_url": "https://r.jina.ai/https://linux.do/c/welfare/36.rss",
       "attempts": 1,
-      "response_ms": 271,
+      "response_ms": 552,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-20T18:36:15.519Z",
+      "last_success_at": "2026-11-20T21:58:19.724Z",
       "error": null
     },
     {
@@ -37,9 +37,9 @@
       "count": 25,
       "final_url": "https://r.jina.ai/https://linux.do/c/resource/14.rss",
       "attempts": 1,
-      "response_ms": 495,
+      "response_ms": 496,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-20T18:36:15.519Z",
+      "last_success_at": "2026-11-20T21:58:19.724Z",
       "error": null
     },
     {
@@ -49,9 +49,9 @@
       "count": 50,
       "final_url": "https://www.v2ex.com/feed/promotions.xml",
       "attempts": 1,
-      "response_ms": 177,
+      "response_ms": 116,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-20T18:36:15.519Z",
+      "last_success_at": "2026-11-20T21:58:19.724Z",
       "error": null
     },
     {
@@ -61,9 +61,9 @@
       "count": 10,
       "final_url": "https://www.v2ex.com/api/topics/show.json?node_name=free",
       "attempts": 1,
-      "response_ms": 154,
+      "response_ms": 82,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-20T18:36:15.519Z",
+      "last_success_at": "2026-11-20T21:58:19.724Z",
       "error": null
     },
     {
@@ -73,9 +73,9 @@
       "count": 1,
       "final_url": "https://store-site-backend-static.ak.epicgames.com/freeGamesPromotions?locale=zh-CN&country=CN&allowCountries=CN",
       "attempts": 1,
-      "response_ms": 159,
+      "response_ms": 248,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-20T18:36:15.519Z",
+      "last_success_at": "2026-11-20T21:58:19.724Z",
       "error": null
     },
     {
@@ -85,9 +85,9 @@
       "count": 20,
       "final_url": "https://rss.nodeseek.com/",
       "attempts": 1,
-      "response_ms": 235,
+      "response_ms": 258,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-20T18:36:15.519Z",
+      "last_success_at": "2026-11-20T21:58:19.724Z",
       "error": null
     },
     {
@@ -97,9 +97,9 @@
       "count": 20,
       "final_url": "https://www.deepflood.com/rss.xml",
       "attempts": 1,
-      "response_ms": 518,
+      "response_ms": 870,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-20T18:36:15.519Z",
+      "last_success_at": "2026-11-20T21:58:19.724Z",
       "error": null
     },
     {
@@ -109,9 +109,9 @@
       "count": 30,
       "final_url": "https://www.nodeloc.com/latest.rss",
       "attempts": 1,
-      "response_ms": 893,
+      "response_ms": 930,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-20T18:36:15.519Z",
+      "last_success_at": "2026-11-20T21:58:19.724Z",
       "error": null
     },
     {
@@ -121,9 +121,9 @@
       "count": 10,
       "final_url": "https://www.appinn.com/feed/",
       "attempts": 1,
-      "response_ms": 1194,
+      "response_ms": 1611,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-20T18:36:15.519Z",
+      "last_success_at": "2026-11-20T21:58:19.724Z",
       "error": null
     },
     {
@@ -133,9 +133,9 @@
       "count": 10,
       "final_url": "https://www.ghxi.com/feed",
       "attempts": 1,
-      "response_ms": 1393,
+      "response_ms": 1376,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-20T18:36:15.519Z",
+      "last_success_at": "2026-11-20T21:58:19.724Z",
       "error": null
     },
     {
@@ -145,9 +145,9 @@
       "count": 30,
       "final_url": "https://feed.iplaysoft.com/",
       "attempts": 1,
-      "response_ms": 690,
+      "response_ms": 773,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-20T18:36:15.519Z",
+      "last_success_at": "2026-11-20T21:58:19.724Z",
       "error": null
     },
     {
@@ -157,9 +157,9 @@
       "count": 25,
       "final_url": "https://feeds.feedburner.com/SlickdealsnetFP",
       "attempts": 1,
-      "response_ms": 616,
+      "response_ms": 529,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-20T18:36:15.519Z",
+      "last_success_at": "2026-11-20T21:58:19.724Z",
       "error": null
     },
     {
@@ -169,8 +169,8 @@
       "count": 0,
       "final_url": null,
       "attempts": 3,
-      "response_ms": 25228,
-      "consecutive_failures": 17,
+      "response_ms": 25463,
+      "consecutive_failures": 18,
       "last_success_at": "2026-11-17T15:56:31.255Z",
       "error": "HTTP 429"
     },
@@ -181,8 +181,8 @@
       "count": 0,
       "final_url": null,
       "attempts": 3,
-      "response_ms": 13679,
-      "consecutive_failures": 17,
+      "response_ms": 13809,
+      "consecutive_failures": 18,
       "last_success_at": "2026-11-17T15:56:31.255Z",
       "error": "HTTP 429"
     },
@@ -193,9 +193,9 @@
       "count": 50,
       "final_url": "https://www.producthunt.com/feed",
       "attempts": 1,
-      "response_ms": 370,
+      "response_ms": 441,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-20T18:36:15.519Z",
+      "last_success_at": "2026-11-20T21:58:19.724Z",
       "error": null
     },
     {
@@ -205,9 +205,9 @@
       "count": 20,
       "final_url": "https://t.me/s/freegamesnews",
       "attempts": 1,
-      "response_ms": 721,
+      "response_ms": 1060,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-20T18:36:15.519Z",
+      "last_success_at": "2026-11-20T21:58:19.724Z",
       "error": null
     },
     {
@@ -217,9 +217,9 @@
       "count": 20,
       "final_url": "https://t.me/s/zaihuapd",
       "attempts": 1,
-      "response_ms": 1560,
+      "response_ms": 1155,
       "consecutive_failures": 0,
-      "last_success_at": "2026-11-20T18:36:15.519Z",
+      "last_success_at": "2026-11-20T21:58:19.724Z",
       "error": null
     }
   ],
@@ -251,7 +251,94 @@
       "confidence": 96,
       "risk_notes": "领取前确认结算价为 0；不要使用第三方代领或共享账号。",
       "first_seen_at": "2026-11-19T19:00:07.928Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
+    },
+    {
+      "id": 1154978872,
+      "name": "RackNerd 性价比 VPS 服务器「黑五特价」促销中！终身续费同价",
+      "category": "cloud",
+      "summary": "很多人都需要用到「国外的 VPS 主机」，省钱省事，用来学习 Linux、编程开发、跑外贸网站、博客，或者用 Docker 自建网盘或各种各样的私有网络服务都非常实用。 最近除推荐的 DMIT、板佤工高端 CN2 GIA 线路、HostDare、VirMarch 等 VPS 服务器主机补货之外，不断被网友推荐的“白菜价”性价比主机品牌 RackN…… 「 前往查看原文.... 」 异次元首页 | 微信公众号 | 关注微博 | 软件精选 | 软件激活码折扣",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 52,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-20T19:05:24.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://iplaysoft.com/p/racknerd",
+      "source_url": "https://iplaysoft.com/p/racknerd",
+      "source_name": "异次元软件世界",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-20T21:58:19.724Z",
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
+    },
+    {
+      "id": 604592158,
+      "name": "48\" LG B6 OLED AI 4K 120Hz Smart webOS TV (2026) $600 + Free S&H",
+      "category": "ai",
+      "summary": "LG - 48\" Class B6 OLED AI 4K Smart webOS TV with Perfect Black, Vivid Color and Magic Remote (2026) https://www.bestbuy.com/product/l...u/6679051?",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 52,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-20T20:58:25.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://slickdeals.net/f/20356863-48-lg-b6-4k-120hz-oled-smart-webos-tv-599-99?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_url": "https://slickdeals.net/f/20356863-48-lg-b6-4k-120hz-oled-smart-webos-tv-599-99?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_name": "Slickdeals Frontpage",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-20T21:58:19.724Z",
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
+    },
+    {
+      "id": 1048044944,
+      "name": "Soliom 5W Solar Powered Bird Feeder w/ Camera and AI Species Identifier $24.50 + Free S&H",
+      "category": "ai",
+      "summary": "eCoupon at checkout: R0194OBK ​Note: Promo codes are typically for one-time use and don't always apply seamlessly. If you run into this issue, refresh the page, re-enter the code, or revisit the...",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 52,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-20T20:28:33.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://slickdeals.net/f/20357850-soliom-bf08-2k-smart-bird-feeder-with-camera-solar-powered-2-7l-24-5?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_url": "https://slickdeals.net/f/20357850-soliom-bf08-2k-smart-bird-feeder-with-camera-solar-powered-2-7l-24-5?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_name": "Slickdeals Frontpage",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-20T21:58:19.724Z",
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 1153737477,
@@ -280,71 +367,13 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-20T18:36:15.519Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
-    },
-    {
-      "id": 443957737,
-      "name": "白丝云cloudsilk9929现在还有优惠码吗",
-      "category": "cloud",
-      "summary": "如题",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 52,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-20T18:29:57.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://nodeseek.com/post-1069110-1",
-      "source_url": "https://nodeseek.com/post-1069110-1",
-      "source_name": "NodeSeek 福利情报",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-20T18:36:15.519Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
-    },
-    {
-      "id": 920485856,
-      "name": "【NQ】LegendVPS Lax 1C-512M-2G-1Gbps@2T $0.5/月 福利机",
-      "category": "cloud",
-      "summary": "💻基本信息++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 硬件质量体检报告： 198.102.*.* https://github.com/xykt/HardwareQuality",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 52,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-20T18:18:44.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://nodeseek.com/post-1069104-1",
-      "source_url": "https://nodeseek.com/post-1069104-1",
-      "source_name": "NodeSeek 福利情报",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-20T18:36:15.519Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 1061246017,
       "name": "又一个免费域名，这次一口气给 2 年",
       "category": "cloud",
-      "summary": "4 个帖子 - 4 位参与者 阅读完整话题",
+      "summary": "5 个帖子 - 5 位参与者 阅读完整话题",
       "value_amount": null,
       "value_currency": null,
       "value_label": "待核实线索",
@@ -367,7 +396,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-20T18:36:15.519Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 977505017,
@@ -396,7 +425,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-20T18:36:15.519Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 1145281207,
@@ -425,7 +454,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-20T18:36:15.519Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 1514788968,
@@ -454,7 +483,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-20T13:37:18.737Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 402224814,
@@ -483,7 +512,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-20T09:59:04.987Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 815780855,
@@ -512,7 +541,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-20T09:59:04.987Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 1329150405,
@@ -541,7 +570,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-20T09:59:04.987Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 879350658,
@@ -570,7 +599,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-20T03:44:14.677Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 1049778967,
@@ -599,7 +628,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T13:54:51.527Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 189637279,
@@ -628,7 +657,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T13:54:51.527Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 1278817548,
@@ -657,7 +686,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T13:54:51.527Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 1345780929,
@@ -686,7 +715,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T00:20:01.256Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 1414649721,
@@ -715,7 +744,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-18T17:14:12.426Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 1278670453,
@@ -744,7 +773,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T22:39:18.667Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 1522297652,
@@ -863,6 +892,325 @@
       "last_verified_at": "2026-11-17T15:56:31.255Z"
     },
     {
+      "id": 1733875234,
+      "name": "谷歌高端设备羊毛哪里有渠道啊？",
+      "category": "other",
+      "summary": "LINUX DO 福利羊毛 返回的公开线索；原始订阅未提供摘要。",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 42,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-20T19:23:25.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://linux.do/t/topic/3213785",
+      "source_url": "https://linux.do/t/topic/3213785",
+      "source_name": "LINUX DO 福利羊毛",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-20T21:58:19.724Z",
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
+    },
+    {
+      "id": 1134867790,
+      "name": "Select Locations: Open Box: 65\" Hisense M7 Series Mini-LED 4K Smart Google TV $146 + Free S&H",
+      "category": "other",
+      "summary": "Sold & shipped by Walmart @ Select Locations (YMMV) Condition: Open Box https://www.walmart.com/ip/seort/18823113726",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 42,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-20T21:23:18.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://slickdeals.net/f/20358624-select-locations-open-box-hisense-65-class-m7-series-mini-led-4k-uhd-smart-google-tv-65m7qg-146-walmart?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_url": "https://slickdeals.net/f/20358624-select-locations-open-box-hisense-65-class-m7-series-mini-led-4k-uhd-smart-google-tv-65m7qg-146-walmart?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_name": "Slickdeals Frontpage",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-20T21:58:19.724Z",
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
+    },
+    {
+      "id": 171237500,
+      "name": "55\" TCL QM8CG Series 4K UHD 144Hz SQD-Mini LED Smart Google TV (2026 Model) $750 + Free S&H",
+      "category": "other",
+      "summary": "*TCL 55\" QM8 Crystal Glow Series* 144Hz SQD-Mini-LED 4K TV *$749.99 (Free Delivery)* https://www.bestbuy.com/product/t...ku/6687116 *KEY FEATURES:* *SQD-Mini LED* As the ultimate Mini LED TV,...",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 42,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-20T21:22:31.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://slickdeals.net/f/20355216-tcl-55-qm8cg-series-series-144hz-sqd-mini-led-4k-uhd-google-smart-tv-2026-749-99?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_url": "https://slickdeals.net/f/20355216-tcl-55-qm8cg-series-series-144hz-sqd-mini-led-4k-uhd-google-smart-tv-2026-749-99?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_name": "Slickdeals Frontpage",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-20T21:58:19.724Z",
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
+    },
+    {
+      "id": 1892395716,
+      "name": "LISEN 10000mAh MagSafe iPhone & Apple Watch Power Bank $28.50",
+      "category": "software",
+      "summary": "Amazon [amazon.com] has *10000mAh LISEN MagSafe Power Bank (0.5\" Alloy)* on sale for *$28.49*. Shipping is free w/ Prime or on orders of $35+. This item is sold by a third-party seller and Fulfilled...",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 42,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-20T21:17:53.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://slickdeals.net/f/20354604-lisen-10000mah-0-5-ultra-slim-magsafe-power-bank-with-apple-watch-charger-28-49-amazon?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_url": "https://slickdeals.net/f/20354604-lisen-10000mah-0-5-ultra-slim-magsafe-power-bank-with-apple-watch-charger-28-49-amazon?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_name": "Slickdeals Frontpage",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-20T21:58:19.724Z",
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
+    },
+    {
+      "id": 1816150294,
+      "name": "Azul Family Tile Mosaic Strategy Board Game $22.50",
+      "category": "other",
+      "summary": "Amazon [amazon.com] has *Azul Family Tile Mosaic Strategy Board Game* for *$22.49*. *Shipping is free* with Prime or on $35+ orders. *** Previous *Frontpage Deal* at *$24* with *48* Deal Score...",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 42,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-20T21:16:41.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://slickdeals.net/f/20354616-22-49-azul-family-tile-mosaic-strategy-board-game-at-amazon?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_url": "https://slickdeals.net/f/20354616-22-49-azul-family-tile-mosaic-strategy-board-game-at-amazon?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_name": "Slickdeals Frontpage",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-20T21:58:19.724Z",
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
+    },
+    {
+      "id": 853430772,
+      "name": "TP-Link Networking Sale: 3-Pk BE10000 Tri-Band Wi-Fi 7 Mesh System $370 & More + Free S&H",
+      "category": "other",
+      "summary": "TP-Link via Amazon [amazon.com] has a *Networking Hardware Sale Including BE10000 Tri-Band Wi-Fi 7 Mesh 3-Pack* for $369.99. *Shipping is Free* w/Prime *** Ea**r**n **u**p **t**o **2**5**%...",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 42,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-20T21:04:48.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://slickdeals.net/f/20349798-tp-link-networking-hardware-sale-including-be10000-tri-band-wi-fi-7-mesh-3-pack-369-99-and-more-free-shipping-w-prime-and-prime-card-bonus-on-select-products?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_url": "https://slickdeals.net/f/20349798-tp-link-networking-hardware-sale-including-be10000-tri-band-wi-fi-7-mesh-3-pack-369-99-and-more-free-shipping-w-prime-and-prime-card-bonus-on-select-products?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_name": "Slickdeals Frontpage",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-20T21:58:19.724Z",
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
+    },
+    {
+      "id": 1610143718,
+      "name": "100-Ct 0.52-Oz Fieldcrest Farms Lickable Cat Treats Squeeze Tubes (4 Flavors) $19.35",
+      "category": "other",
+      "summary": "Amazon [amazon.com] has *100-Count Fieldcrest Farms Lickable Cat Treat Squeeze Tubes Variety Pack* (Chicken, Tuna, Duck & Salmon) on sale for *$19.36*. Shipping is free w/ Prime or on orders $35+. ...",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 42,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-20T20:55:13.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://slickdeals.net/f/20357439-100-count-fieldcrest-farms-lickable-cat-treat-squeeze-tubes-variety-pack-chicken-tuna-duck-salmon-19-36-free-shipping-w-prime-or-on-35?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_url": "https://slickdeals.net/f/20357439-100-count-fieldcrest-farms-lickable-cat-treat-squeeze-tubes-variety-pack-chicken-tuna-duck-salmon-19-36-free-shipping-w-prime-or-on-35?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_name": "Slickdeals Frontpage",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-20T21:58:19.724Z",
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
+    },
+    {
+      "id": 925306321,
+      "name": "65\" Hisense QD5 Series Hi-QLED 4K UHD Smart Roku TV (2026) $300 + Free S&H",
+      "category": "other",
+      "summary": "Hisense - 65\" Class QD5 Hi-QLED Series4K UHD Smart Roku TV (2026) • Model: 65QD5SR • Screen Size: 65-inch class • Display: Hi-QLED • Backlight: Direct-lit LED • Resolution: 4K Ultra HD (3840 ×...",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 42,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-20T20:49:36.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://slickdeals.net/f/20301765-65-hisense-qd5-series-hi-qled-4k-uhd-smart-roku-tv-2026-300-free-s-h?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_url": "https://slickdeals.net/f/20301765-65-hisense-qd5-series-hi-qled-4k-uhd-smart-roku-tv-2026-300-free-s-h?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_name": "Slickdeals Frontpage",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-20T21:58:19.724Z",
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
+    },
+    {
+      "id": 193987579,
+      "name": "adidas Black Friday Sale Up to 60% Off + Extra 15% Off + Free S&H",
+      "category": "other",
+      "summary": "adidas [adidas.com] has their* Black Friday Sale: Up to 60% Off Shoes, Clothing, Bags & More*. *Shipping is free* for adiClub members (free to join [adidas.com]). Categories: * Men's [adidas.com]...",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 42,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-20T20:44:19.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://slickdeals.net/f/20355708-adidas-black-friday-sale-up-to-60-off-free-shipping?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_url": "https://slickdeals.net/f/20355708-adidas-black-friday-sale-up-to-60-off-free-shipping?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_name": "Slickdeals Frontpage",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-20T21:58:19.724Z",
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
+    },
+    {
+      "id": 1144645605,
+      "name": "27-Gal Project Source Commander Heavy Duty Storage Tote w/ Snap Lid $7 + Free Pickup",
+      "category": "software",
+      "summary": "this seems to be the holiday price you see every year https://www.lowes.com/pd/COMMANDE...id/3551290",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 42,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-20T20:32:15.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://slickdeals.net/f/20357973-lowes-project-source-commander-large-27-0-gallons-108-0-quarts-black-and-yellow-heavy-duty-stackable-tote-with-standard-snap-lid-44066-6-98?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_url": "https://slickdeals.net/f/20357973-lowes-project-source-commander-large-27-0-gallons-108-0-quarts-black-and-yellow-heavy-duty-stackable-tote-with-standard-snap-lid-44066-6-98?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_name": "Slickdeals Frontpage",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-20T21:58:19.724Z",
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
+    },
+    {
+      "id": 223575170,
+      "name": "adidas Men's Galaxy 7 Running Shoes from $20 + Free S&H",
+      "category": "other",
+      "summary": "adidas men Galaxy 7 Running Shoes (4 Colors) from *$21.00* Apply code *EXTRA50SALE* at checkout. Free shipping. _Available_[list][*]Cloud White / Grey One / Power Red [ebay.com]...",
+      "value_amount": null,
+      "value_currency": null,
+      "value_label": "待核实线索",
+      "value_score": 42,
+      "requirements": "需打开原文确认活动、资格、地区与有效期。",
+      "regions": "来源未注明",
+      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
+      "starts_at": "2026-11-20T20:24:26.000Z",
+      "ends_at": null,
+      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
+      "official_url": "https://slickdeals.net/f/20347962-adidas-men-s-galaxy-7-running-shoes-from-20-free-s-h?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_url": "https://slickdeals.net/f/20347962-adidas-men-s-galaxy-7-running-shoes-from-20-free-s-h?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
+      "source_name": "Slickdeals Frontpage",
+      "source_type": "feed",
+      "source_subreddit": null,
+      "source_account": null,
+      "source_official": false,
+      "verification_status": "pending",
+      "status": "active",
+      "confidence": 55,
+      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
+      "first_seen_at": "2026-11-20T21:58:19.724Z",
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
+    },
+    {
       "id": 311354426,
       "name": "黑五羊毛可以试试",
       "category": "other",
@@ -889,7 +1237,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-20T18:36:15.519Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 561682063,
@@ -918,7 +1266,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-20T18:36:15.519Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 498406450,
@@ -947,7 +1295,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-20T18:36:15.519Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 531502417,
@@ -976,7 +1324,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-20T18:36:15.519Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 1271327905,
@@ -1005,7 +1353,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-20T18:36:15.519Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 101619972,
@@ -1034,355 +1382,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-20T18:36:15.519Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
-    },
-    {
-      "id": 889233134,
-      "name": "Prime Members: G Gradual Men's Athletic Shorts w/ Zip Pockets (5\"/7\"/9\" Inseam) $10 + Free S&H",
-      "category": "other",
-      "summary": "G-GRADUAL via Amazon [amazon.com] has* G Gradual Men's Quick-Dry Workout Shorts w/ Zip Pockets (5\"/7\"/9\" Inseam, S-3XL, Various Colors) *for $14.23 - 30% off when you enter promo code OILD9O9L at...",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 42,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-20T18:04:42.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20348913-g-gradual-men-s-quick-dry-athletic-shorts-w-zip-pockets-5-7-9-inseam-9-99-free-shipping-w-prime-or-orders-35?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_url": "https://slickdeals.net/f/20348913-g-gradual-men-s-quick-dry-athletic-shorts-w-zip-pockets-5-7-9-inseam-9-99-free-shipping-w-prime-or-orders-35?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_name": "Slickdeals Frontpage",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-20T18:36:15.519Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
-    },
-    {
-      "id": 787535485,
-      "name": "eufy C37 Security eufyCam 2K Wireless Outdoor Camera (SoloCam) $60 + Free S&H",
-      "category": "other",
-      "summary": "Anker EufyHome via Amazon [amazon.com] has *eufy C37 Security eufyCam 2K Wireless Outdoor Camera *(SoloCam) for *$59.99*. *Shipping is free*. eufy [eufy.com] has *eufy C37 Security eufyCam 2K...",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 42,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-20T18:00:05.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20306292-eufy-c37-security-eufycam-2k-wireless-outdoor-camera-solocam-60-free-s-h?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_url": "https://slickdeals.net/f/20306292-eufy-c37-security-eufycam-2k-wireless-outdoor-camera-solocam-60-free-s-h?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_name": "Slickdeals Frontpage",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-20T18:36:15.519Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
-    },
-    {
-      "id": 392433813,
-      "name": "Refurb: 768Wh EcoFlow RIVER 2 Pro LiFePO4 Portable Power Station $249 + Free S&H",
-      "category": "software",
-      "summary": "EcoFlow Official Store via eBay has Cert. Refurb: EcoFlow RIVER 2 Pro Lite 700Wh Portable Power Station for $311.25 - 20% off apply coupon *EFCYBER20* = *$249*. Shipping is free. ...",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 42,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-20T17:55:06.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20353257-cert-refurb-ecoflow-river-2-pro-lite-700wh-portable-power-station-249-free-s-h?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_url": "https://slickdeals.net/f/20353257-cert-refurb-ecoflow-river-2-pro-lite-700wh-portable-power-station-249-free-s-h?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_name": "Slickdeals Frontpage",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-20T18:36:15.519Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
-    },
-    {
-      "id": 1039551293,
-      "name": "8-Ct RUSEMLE Aromatherapy Shower Steamers w/ Essential Oils & Flower Petals $3",
-      "category": "other",
-      "summary": "Rusemle US via Amazon [amazon.com] has **8-Count RUSEMLE Aromatherapy Shower Steamers w/ Essential Oils & Flower Petals** on sale for $8.99 - $6 off when you apply promo code V8L8YIFK at checkout =...",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 42,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-20T17:50:23.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20309472-8-count-rusemle-aromatherapy-shower-steamers-w-essential-oils-flower-petals-2-99-free-shipping-w-prime-or-on-35?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_url": "https://slickdeals.net/f/20309472-8-count-rusemle-aromatherapy-shower-steamers-w-essential-oils-flower-petals-2-99-free-shipping-w-prime-or-on-35?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_name": "Slickdeals Frontpage",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-20T18:36:15.519Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
-    },
-    {
-      "id": 860858984,
-      "name": "12-Pk 12-Oz Bloom Nutrition Shirley Temple Prebiotic Soda $15.40 w/ S&S",
-      "category": "other",
-      "summary": "Amazon [amazon.com] has *12-Pack 12-Oz Bloom Nutrition Shirley Temple Prebiotic Soda* on sale for $16.21 - 5% off when you checkout via Subscribe & Save = *$15.40 ($1.28 each)*. Shipping is free w/...",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 42,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-20T17:47:27.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20352876-12-pack-12-oz-bloom-nutrition-shirley-temple-prebiotic-soda-15-40-1-28-each-w-s-s-free-shipping-w-prime-or-on-35?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_url": "https://slickdeals.net/f/20352876-12-pack-12-oz-bloom-nutrition-shirley-temple-prebiotic-soda-15-40-1-28-each-w-s-s-free-shipping-w-prime-or-on-35?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_name": "Slickdeals Frontpage",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-20T18:36:15.519Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
-    },
-    {
-      "id": 34138022,
-      "name": "Logitech G733 Lightspeed Wireless Gaming Headset $80 + Free S&H",
-      "category": "other",
-      "summary": "Amazon [amazon.com] has *Logitech G733 Lightspeed Wireless Gaming Headset (Various)* on sale from *$79.96*. *Shipping is free*.",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 42,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-20T17:46:28.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20341167-logitech-g733-lightspeed-wireless-gaming-headset-various-from-79-96-free-shipping?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_url": "https://slickdeals.net/f/20341167-logitech-g733-lightspeed-wireless-gaming-headset-various-from-79-96-free-shipping?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_name": "Slickdeals Frontpage",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-20T18:36:15.519Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
-    },
-    {
-      "id": 940189428,
-      "name": "RYOBI ONE+ 18V Starter Kit w/ 2.0 Ah, 4.0 Ah Battery, Charger + 1/2\" Impact Wrench $99 + Free S&H",
-      "category": "other",
-      "summary": "Home Depot [homedepot.com] has the *RYOBI ONE+ 18V Starter Kit w/ 1x 2.0 Ah, 1x 4.0 Ah Battery, Charger + 1/2\" Impact Wrench* on sale for *$99 *with *free shipping*. This is a Black Friday sale...",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 42,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-20T17:45:35.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20348787-ryobi-one-18v-starter-kit-w-1x-2-0-ah-1x-4-0-ah-battery-charger-1-2-impact-wrench-99-free-shipping?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_url": "https://slickdeals.net/f/20348787-ryobi-one-18v-starter-kit-w-1x-2-0-ah-1x-4-0-ah-battery-charger-1-2-impact-wrench-99-free-shipping?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_name": "Slickdeals Frontpage",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-20T18:36:15.519Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
-    },
-    {
-      "id": 382611965,
-      "name": "Samsung Galaxy Watch 8 Smartwatch w/ 2-Yr Warranty (Various) from $200 + Free S&H",
-      "category": "other",
-      "summary": "Amazon [amazon.com] has select *Samsung Galaxy Watch 8 Smartwatch with 2-Year Warranty *on sale as listed below. *Shipping is free*. Available:[LIST][*]Bluetooth[LIST][*]40mm * Graphite...",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 42,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-20T17:42:43.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20354448-samsung-galaxy-watch-8-smartwatch-w-2-yr-warranty-various-from-200-free-s-h?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_url": "https://slickdeals.net/f/20354448-samsung-galaxy-watch-8-smartwatch-w-2-yr-warranty-various-from-200-free-s-h?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_name": "Slickdeals Frontpage",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-20T18:36:15.519Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
-    },
-    {
-      "id": 43305547,
-      "name": "Prime Members: 4-Pk 132' SANJICHA Multicolor Solar Christmas String Lights $14.25 + Free S&H",
-      "category": "other",
-      "summary": "Shengyujie via Amazon [amazon.com] has for *Prime Members*: *4-Pack 132' SANJICHA Multicolor Solar Christmas String Lights (320 LED)* on sale for $28.49 - 50% off when you apply promo code TY37N9UF...",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 42,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-20T17:21:07.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20352393-prime-4-pack-132-sanjicha-multicolor-solar-christmas-string-lights-320-led-14-24-free-shipping?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_url": "https://slickdeals.net/f/20352393-prime-4-pack-132-sanjicha-multicolor-solar-christmas-string-lights-320-led-14-24-free-shipping?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_name": "Slickdeals Frontpage",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-20T18:36:15.519Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
-    },
-    {
-      "id": 1660373233,
-      "name": "(Prime Members) 2-Pc Astercook Bamboo Cutting Board Set $9.50 & More + Free S&H",
-      "category": "other",
-      "summary": "Astercook via Amazon [amazon.com] has for *Prime Members*: *Astercook Cutting Boards* on sale for $14.99 - 50% off when you apply promo code YBR9GV99 at checkout = *$7.49*. *Shipping is free*. ...",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 42,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-20T17:01:31.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20327067-prime-members-2-pc-astercook-bamboo-cutting-board-set-9-50-more-free-s-h?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_url": "https://slickdeals.net/f/20327067-prime-members-2-pc-astercook-bamboo-cutting-board-set-9-50-more-free-s-h?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_name": "Slickdeals Frontpage",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-20T18:36:15.519Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
-    },
-    {
-      "id": 378282272,
-      "name": "eufy Security Video Doorbell E340 w/ Dual Cameras & 2K FHD $95 + Free S&H",
-      "category": "other",
-      "summary": "Anker EufyHome via Amazon [amazon.com] has *eufy Security 2K Video Doorbell E340, Dual Cameras, 2K FHD, SD Card Slot Model* for $99.99. > *Now $94.99* *Shipping is free*. amazon.com/dp/B0H86KFVC7...",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 42,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-20T16:56:50.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20325714-prime-members-eufy-security-video-doorbell-e340-w-dual-cameras-2k-fhd-100-free-s-h?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_url": "https://slickdeals.net/f/20325714-prime-members-eufy-security-video-doorbell-e340-w-dual-cameras-2k-fhd-100-free-s-h?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_name": "Slickdeals Frontpage",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-20T18:36:15.519Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
-    },
-    {
-      "id": 1149025455,
-      "name": "6\" MakeFit Filtered Shower Head w/ 1-Touch Filter Replacement (3 Colors) $30 + Free S&H",
-      "category": "other",
-      "summary": "MakeFit Store via Amazon [amazon.com] has *MakeFit 6\" Filtered Rain Shower Head for Hard Water w/ 1-Touch Filter Replacement (Chrome)* on sale for $59.99 - 50% off when you apply promo code WT03ETXS...",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 42,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-20T16:56:46.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://slickdeals.net/f/20319837-makefit-6-filtered-rain-shower-head-for-hard-water-w-1-touch-filter-replacement-chrome-29-99-free-shipping-w-prime-or-on-35?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_url": "https://slickdeals.net/f/20319837-makefit-6-filtered-rain-shower-head-for-hard-water-w-1-touch-filter-replacement-chrome-29-99-free-shipping-w-prime-or-on-35?amp%3Butm_content=fp&amp%3Butm_medium=RSS2",
-      "source_name": "Slickdeals Frontpage",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-20T18:36:15.519Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 1549055787,
@@ -1411,7 +1411,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-20T13:37:18.737Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 1328146581,
@@ -1440,7 +1440,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-20T09:59:04.987Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 267210760,
@@ -1469,7 +1469,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-20T09:59:04.987Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 266422906,
@@ -1498,7 +1498,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-20T09:59:04.987Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 540240925,
@@ -1527,36 +1527,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-20T09:59:04.987Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
-    },
-    {
-      "id": 1172852825,
-      "name": "免费48team优惠码 8折优惠码 不限地区",
-      "category": "other",
-      "summary": "LINUX DO 福利羊毛 返回的公开线索；原始订阅未提供摘要。",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 42,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-20T03:51:10.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://linux.do/t/topic/3208700",
-      "source_url": "https://linux.do/t/topic/3208700",
-      "source_name": "LINUX DO 福利羊毛",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-20T09:59:04.987Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 216696997,
@@ -1585,7 +1556,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-20T09:59:04.987Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 1011726133,
@@ -1614,7 +1585,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-20T09:59:04.987Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 735773440,
@@ -1643,7 +1614,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-20T09:59:04.987Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 256197316,
@@ -1672,7 +1643,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-20T09:59:04.987Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 85088356,
@@ -1701,7 +1672,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-20T09:59:04.987Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 410545553,
@@ -1730,7 +1701,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-20T09:59:04.987Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 258212939,
@@ -1759,7 +1730,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-20T09:59:04.987Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 812240182,
@@ -1788,7 +1759,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-20T03:44:14.677Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 1245262310,
@@ -1817,7 +1788,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-20T01:46:16.243Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 1211707072,
@@ -1846,7 +1817,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T22:27:24.777Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 1312372786,
@@ -1875,7 +1846,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T22:27:24.777Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 582882543,
@@ -1904,7 +1875,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T19:00:07.928Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 1295595167,
@@ -1933,7 +1904,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T19:00:07.928Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 160284747,
@@ -1962,7 +1933,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T10:16:29.826Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 909003046,
@@ -1991,7 +1962,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T10:16:29.826Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 1333610751,
@@ -2020,7 +1991,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T03:51:05.356Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 1156940869,
@@ -2049,7 +2020,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T03:51:05.356Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 1329003310,
@@ -2078,7 +2049,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T00:20:01.256Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 1245115215,
@@ -2107,7 +2078,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-19T00:20:01.256Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 1228337596,
@@ -2136,36 +2107,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-18T22:20:51.820Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
-    },
-    {
-      "id": 1666461101,
-      "name": "开了 7 个 max20x 额度用满，网页版使用超一个月没被封号，为啥非得 APP 呢",
-      "category": "software",
-      "summary": "网页版 code 模式，用 A/自家的云机器，薅他们的羊毛不好吗，为啥非得折腾装 APP，搞各种虚拟机甚至境外 macmini 呢。用他家自己的机器也不暴露你的地区 IP。 再挂个客户端可以连接到他家的机器，使用体验完爆 APP，被封风险极低，很香呀。 https://github.com/chenhg5/myco",
-      "value_amount": null,
-      "value_currency": null,
-      "value_label": "待核实线索",
-      "value_score": 42,
-      "requirements": "需打开原文确认活动、资格、地区与有效期。",
-      "regions": "来源未注明",
-      "hidden_conditions": "RSS/Atom/社区标题只代表发现线索，不证明免费、折扣或仍然有效。",
-      "starts_at": "2026-11-18T13:08:56.000Z",
-      "ends_at": null,
-      "steps": "打开原始来源；回溯品牌或项目官方页面；核对条件后再参与。",
-      "official_url": "https://v2ex.com/t/1258108",
-      "source_url": "https://v2ex.com/t/1258108",
-      "source_name": "V2EX 推广",
-      "source_type": "feed",
-      "source_subreddit": null,
-      "source_account": null,
-      "source_official": false,
-      "verification_status": "pending",
-      "status": "active",
-      "confidence": 55,
-      "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
-      "first_seen_at": "2026-11-18T17:14:12.426Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 989557224,
@@ -2223,7 +2165,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-17T13:51:47.503Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     },
     {
       "id": 512942381,
@@ -2281,7 +2223,7 @@
       "confidence": 55,
       "risk_notes": "未完成官方交叉验证；不要转账、授权钱包、提供验证码、助记词或私钥。",
       "first_seen_at": "2026-11-15T01:15:15.434Z",
-      "last_verified_at": "2026-11-20T18:36:15.519Z"
+      "last_verified_at": "2026-11-20T21:58:19.724Z"
     }
   ]
 }
